@@ -1,0 +1,142 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-pilot-be-003",
+  "candidate_reference": "candidate-synthetic-be-003",
+  "summary": "Ứng viên có dự án Django REST và PostgreSQL nhưng CV không cung cấp thông tin về Git.",
+  "skills": [
+    {
+      "name": "Python",
+      "evidence_ids": [
+        "ev-be003-python",
+        "ev-be003-project"
+      ]
+    },
+    {
+      "name": "Django REST Framework",
+      "evidence_ids": [
+        "ev-be003-api",
+        "ev-be003-project"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "evidence_ids": [
+        "ev-be003-database"
+      ]
+    },
+    {
+      "name": "pytest",
+      "evidence_ids": [
+        "ev-be003-testing"
+      ]
+    }
+  ],
+  "work_experiences": [],
+  "education": [
+    {
+      "education_id": "education-be003",
+      "degree": "Bachelor program",
+      "field_of_study": "Information Technology",
+      "institution_reference": "institution-synthetic-be-003",
+      "evidence_ids": [
+        "ev-be003-education"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "project-be003-inventory-api",
+      "title": "Inventory REST API",
+      "summary": "Xây API quản lý tồn kho với validation, PostgreSQL và một số automated tests.",
+      "technologies": [
+        "Python",
+        "Django REST Framework",
+        "PostgreSQL",
+        "pytest"
+      ],
+      "evidence_ids": [
+        "ev-be003-project",
+        "ev-be003-python",
+        "ev-be003-api",
+        "ev-be003-database",
+        "ev-be003-testing"
+      ]
+    }
+  ],
+  "certifications": [],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be003-python",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng Python cho serializer, service xử lý tồn kho và validation.",
+      "location": {
+        "source_record_id": "record-be003-skills-python"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be003-api",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Django REST API có endpoint sản phẩm và giao dịch kho, status code và xử lý lỗi validation.",
+      "location": {
+        "source_record_id": "record-be003-api"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be003-database",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dùng PostgreSQL với quan hệ sản phẩm, kho và giao dịch; có migration được mô tả.",
+      "location": {
+        "source_record_id": "record-be003-database"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be003-testing",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Có pytest cho validation số lượng âm và trường hợp không tìm thấy sản phẩm.",
+      "location": {
+        "source_record_id": "record-be003-testing"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be003-project",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dự án học tập mô tả vai trò backend và cách chạy cục bộ nhưng không đề cập hệ thống quản lý phiên bản.",
+      "location": {
+        "source_record_id": "record-be003-project"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be003-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Chương trình Information Technology có học phần phát triển web và cơ sở dữ liệu.",
+      "location": {
+        "source_record_id": "record-be003-education"
+      },
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": [
+    {
+      "code": "missing-git-evidence",
+      "severity": "warning",
+      "message": "Không có thông tin khẳng định hoặc phủ định kinh nghiệm Git."
+    }
+  ]
+}

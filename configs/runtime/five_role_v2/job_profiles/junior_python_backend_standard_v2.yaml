@@ -1,0 +1,85 @@
+artifact_kind: job_profile
+artifact_version: 2.0.0
+contract_status: approved_for_runtime
+job_profile_id: junior-python-backend-std-v2
+title: Junior Python Backend Developer - Yêu cầu tiêu chuẩn
+language: vi
+seniority:
+  level: junior
+  experience_range_years:
+    minimum: 0
+    maximum: 2
+  formal_work_experience_required: false
+  equivalent_experience:
+    - relevant internship
+    - academic project
+    - personal project with verifiable evidence
+role_summary: Phát triển dịch vụ backend Python có API, dữ liệu quan hệ, kiểm thử và môi trường chạy có thể tái tạo.
+responsibilities:
+  - Phát triển REST API bằng Python với validation, xác thực và hợp đồng lỗi nhất quán.
+  - Thiết kế schema quan hệ, migration và truy vấn có xem xét index, transaction và tính toàn vẹn.
+  - Viết unit test và integration test, thực hiện code review và duy trì OpenAPI.
+  - Đóng gói dịch vụ để chạy lặp lại, theo dõi log và xử lý lỗi tích hợp cơ bản.
+  - Kết hợp năng lực cốt lõi với quy trình làm việc nhóm.
+mandatory_requirements:
+  - requirement_id: be-python
+    description: Có nền tảng Python dùng cho phần mềm backend có cấu trúc.
+    accepted_evidence:
+      - Dùng Python với module, OOP, type hints, dependency management, validation và exception handling trong dịch vụ backend.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: be-rest-api
+    description: Có dự án REST API bằng FastAPI, Django hoặc Flask.
+    accepted_evidence:
+      - Xây REST API có phân lớp, request validation, status code, pagination, OpenAPI và xử lý lỗi bằng FastAPI, Django hoặc Flask.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: be-relational-data
+    description: Có SQL và thiết kế cơ sở dữ liệu quan hệ.
+    accepted_evidence:
+      - Thiết kế schema PostgreSQL, quan hệ và constraint; dùng migration, transaction, index và truy vấn có JOIN.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: be-testing
+    description: Có kiểm thử tự động cho backend.
+    accepted_evidence:
+      - Viết unit test và integration test bằng pytest cho luồng thành công, validation, xác thực và lỗi cơ sở dữ liệu.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: be-delivery-workflow
+    description: Có Git và khả năng chạy dịch vụ nhất quán bằng container.
+    accepted_evidence:
+      - Dùng branch, pull request và code review; đóng gói API cùng database bằng Docker Compose và cấu hình ngoài source.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+preferred_requirements:
+  - requirement_id: be-async-integration
+    description: Có async, cache, message queue hoặc webhook.
+    accepted_evidence:
+      - Xử lý async I/O, webhook idempotent, Redis cache hoặc background task trong dịch vụ.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+  - requirement_id: be-operations
+    description: Có CI/CD, logging và monitoring.
+    accepted_evidence:
+      - Chạy lint, test và migration check trong CI; thêm structured logging, health check và metrics cơ bản.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+scoring_exclusions:
+  - age
+  - gender
+  - ethnicity
+  - religion
+  - marital_status
+  - disability
+  - hometown
+artifact_links:
+  rubric_id: be-std-rubric-v2
+  rubric_version: 2.0.1
+  scoring_configuration_version: 3.0.0
+  models_configuration_version: 3.0.0

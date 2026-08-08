@@ -1,0 +1,57 @@
+artifact_kind: scoring_rubric_draft
+rubric_id: junior-data-analyst-rubric-v1
+rubric_version: 1.0.0
+contract_status: approved_for_pilot
+job_profile_id: junior-data-analyst-v1
+score_scale:
+  minimum: 0
+  maximum: 100
+criteria:
+  - criterion_id: mandatory-requirements
+    weight: 30
+    description: Đánh giá ba yêu cầu bắt buộc về SQL, Python hoặc R và dự án/thực tập phân tích dữ liệu.
+    evaluation_signals:
+      - Evidence thực hành trực tiếp cho từng yêu cầu bắt buộc.
+      - Mức độ liên quan của evidence với phân tích dữ liệu.
+      - Phân biệt satisfied, unsatisfied, missing và conflicting cho từng yêu cầu.
+    missing_evidence_handling: Evidence thiếu hoặc mâu thuẫn ở bất kỳ yêu cầu bắt buộc nào phải kích hoạt Needs Review.
+  - criterion_id: technical-analysis
+    weight: 25
+    description: Đánh giá năng lực truy vấn, làm sạch, biến đổi, kiểm tra chất lượng và trực quan hóa dữ liệu.
+    evaluation_signals:
+      - SQL có join, aggregate, filter hoặc kiểm tra dữ liệu.
+      - Python hoặc R cho xử lý và phân tích dữ liệu.
+      - Công cụ phân tích hoặc trực quan hóa được dùng trong ngữ cảnh cụ thể.
+    missing_evidence_handling: Không suy diễn mức thành thạo khi CV chỉ liệt kê tên công cụ mà không có evidence liên quan.
+  - criterion_id: analytical-reasoning
+    weight: 20
+    description: Đánh giá cách ứng viên đặt câu hỏi, chọn chỉ số, dùng thống kê phù hợp và nêu giới hạn của kết quả.
+    evaluation_signals:
+      - Mục tiêu phân tích hoặc câu hỏi nghiệp vụ rõ ràng.
+      - Chỉ số, giả định, phương pháp hoặc kiểm tra hợp lý.
+      - A/B testing, thống kê ứng dụng hoặc diễn giải giới hạn khi có evidence.
+    missing_evidence_handling: Không coi việc thiếu thuật ngữ thống kê là evidence không đáp ứng.
+  - criterion_id: projects-and-impact
+    weight: 15
+    description: Đánh giá phạm vi, vai trò, đầu ra và tác động có thể kiểm tra của dự án hoặc thực tập.
+    evaluation_signals:
+      - Vai trò và đóng góp của ứng viên được nêu rõ.
+      - Có dữ liệu đầu vào, đầu ra, dashboard, báo cáo hoặc repository được mô tả.
+      - Có kết quả định lượng hoặc mô tả tác động phù hợp với bằng chứng.
+    missing_evidence_handling: Không bịa tác động hoặc quy mô dự án không được CV xác nhận.
+  - criterion_id: communication-and-evidence-quality
+    weight: 10
+    description: Đánh giá khả năng trình bày phát hiện, ghi nhận nguồn evidence và nêu rõ giới hạn.
+    evaluation_signals:
+      - Mô tả dự án hoặc kinh nghiệm mạch lạc.
+      - Có liên kết portfolio, repository, báo cáo hoặc chi tiết có thể kiểm tra.
+      - Phân biệt rõ kết quả, giả định và giới hạn.
+    missing_evidence_handling: Evidence không rõ nguồn làm giảm điểm chất lượng nhưng không tự suy ra không đáp ứng yêu cầu bắt buộc.
+critical_requirement_ids:
+  - da-sql
+  - da-analysis-language
+  - da-analytical-project
+artifact_links:
+  job_profile_artifact_version: 1.0.0
+  scoring_configuration_version: 1.1.0
+  models_configuration_version: 1.1.0

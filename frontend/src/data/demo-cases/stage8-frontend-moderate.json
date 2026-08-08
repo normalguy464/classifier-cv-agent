@@ -1,0 +1,396 @@
+{
+  "schema_version": "1.0.0",
+  "demo_case_id": "stage8-frontend-moderate",
+  "role": "frontend",
+  "scenario": "moderate",
+  "request": {
+    "schema_version": "1.1.0",
+    "request_id": "demo-request-frontend-moderate",
+    "cv_profile": {
+      "schema_version": "1.0.0",
+      "cv_profile_id": "cv-v2d-fe-04",
+      "candidate_reference": "candidate-v2d-fe-04",
+      "summary": "Hồ sơ đáp ứng tối thiểu nhưng phạm vi và tác động còn vừa phải. Hồ sơ hướng tới vị trí Junior Frontend Developer - Yêu cầu tiêu chuẩn.",
+      "skills": [],
+      "work_experiences": [],
+      "education": [
+        {
+          "education_id": "education-v2d-fe-04",
+          "degree": "Chương trình đào tạo kỹ thuật",
+          "field_of_study": "Phát triển ứng dụng web phía người dùng",
+          "institution_reference": "institution-fe-synthetic",
+          "evidence_ids": [
+            "ev-v2d-fe-04-01"
+          ]
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "project-v2d-fe-04",
+          "title": "Trang điều hành câu lạc bộ",
+          "summary": "Có sản phẩm chạy được trong phạm vi học tập hoặc cá nhân. Nêu lý do lựa chọn chính nhưng chưa phân tích sâu trade-off. Có source và hướng dẫn cơ bản để tái chạy.",
+          "technologies": [],
+          "evidence_ids": [
+            "ev-v2d-fe-04-02",
+            "ev-v2d-fe-04-03",
+            "ev-v2d-fe-04-04",
+            "ev-v2d-fe-04-05",
+            "ev-v2d-fe-04-06",
+            "ev-v2d-fe-04-07",
+            "ev-v2d-fe-04-08",
+            "ev-v2d-fe-04-09"
+          ]
+        }
+      ],
+      "certifications": [],
+      "evidence": [
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-01",
+          "source_type": "candidate",
+          "section": "education",
+          "text": "Chương trình học có bài tổng hợp về trang điều hành câu lạc bộ; mức đóng góp phải được xác định từ các mục thực hành bên dưới.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-02",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Triển khai layout bằng Grid và Flexbox, xử lý keyboard focus và breakpoint cho trang điều hành câu lạc bộ.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-03",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Bật kiểm tra kiểu nghiêm ngặt, loại bỏ kiểu không xác định và xử lý promise cho trang điều hành câu lạc bộ.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-04",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Xây component React tái sử dụng, tách state và tối ưu render cho trang điều hành câu lạc bộ.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-05",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Dùng fetch với token xác thực, ánh xạ lỗi HTTP và đồng bộ dữ liệu màn hình trang điều hành câu lạc bộ.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-06",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Thiết lập lint, unit test và quy trình merge có kiểm tra tự động cho trang điều hành câu lạc bộ.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-07",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Chiều sâu kỹ thuật của trang điều hành câu lạc bộ: Có sản phẩm chạy được trong phạm vi học tập hoặc cá nhân.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-08",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Lập luận trong trang điều hành câu lạc bộ: Nêu lý do lựa chọn chính nhưng chưa phân tích sâu trade-off.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-09",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Bàn giao trang điều hành câu lạc bộ: Có source và hướng dẫn cơ bản để tái chạy.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-fe-04-10",
+          "source_type": "candidate",
+          "section": "other",
+          "text": "Cách trình bày trang điều hành câu lạc bộ: Thông tin đủ hiểu nhưng thiếu số đo tác động độc lập.",
+          "location": {
+            "source_record_id": "source-v2d-fe-04",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        }
+      ],
+      "quality_warnings": []
+    },
+    "job_profile": {
+      "schema_version": "1.0.0",
+      "job_profile_id": "junior-frontend-std-v2",
+      "title": "Junior Frontend Developer - Yêu cầu tiêu chuẩn",
+      "language": "vi",
+      "seniority": "junior",
+      "experience_range": {
+        "minimum_years": 0,
+        "maximum_years": 2,
+        "formal_work_experience_required": false
+      },
+      "responsibilities": [
+        "Xây giao diện responsive và accessible bằng React cùng TypeScript.",
+        "Tích hợp API, xác thực và quản lý trạng thái loading, error, empty và cache phía client.",
+        "Viết unit hoặc component test, thực hiện code review và theo dõi lỗi giao diện.",
+        "Tối ưu bundle, rendering và trải nghiệm trên nhiều kích thước màn hình.",
+        "Kết hợp năng lực cốt lõi với quy trình làm việc nhóm."
+      ],
+      "requirements": [
+        {
+          "requirement_id": "fe-web-foundations",
+          "title": "Có nền tảng HTML, CSS, responsive design và accessibility.",
+          "description": "Có nền tảng HTML, CSS, responsive design và accessibility.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Xây giao diện bằng semantic HTML, CSS Grid hoặc Flexbox, responsive breakpoint, form accessible và keyboard navigation.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "fe-language",
+          "title": "Có JavaScript hiện đại và TypeScript.",
+          "description": "Có JavaScript hiện đại và TypeScript.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Dùng ES modules, async flow, array/object transformation và khai báo kiểu cho props, state và API response bằng TypeScript.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "fe-framework",
+          "title": "Có React hoặc framework component tương đương.",
+          "description": "Có React hoặc framework component tương đương.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Xây React component bằng Hooks, routing, form validation, composition và quản lý state phù hợp phạm vi.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "fe-api",
+          "title": "Có kinh nghiệm tích hợp API phía client.",
+          "description": "Có kinh nghiệm tích hợp API phía client.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Tích hợp REST API có authentication, xử lý loading, empty, retry, lỗi và hủy request khi cần.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "fe-testing-workflow",
+          "title": "Có Git và kiểm thử component hoặc luồng người dùng.",
+          "description": "Có Git và kiểm thử component hoặc luồng người dùng.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Dùng branch và pull request; viết test bằng Vitest hoặc Testing Library cho render, tương tác, lỗi API và trạng thái biên.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "fe-framework-advanced",
+          "title": "Có Next.js hoặc rendering phía server.",
+          "description": "Có Next.js hoặc rendering phía server.",
+          "priority": "preferred",
+          "is_critical": false,
+          "accepted_evidence": [
+            "Dùng routing, server rendering hoặc data fetching của Next.js và giải thích ranh giới server-client."
+          ],
+          "missing_evidence_policy": "Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.",
+          "explicit_failure_policy": "Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp."
+        },
+        {
+          "requirement_id": "fe-performance",
+          "title": "Có web performance và accessibility.",
+          "description": "Có web performance và accessibility.",
+          "priority": "preferred",
+          "is_critical": false,
+          "accepted_evidence": [
+            "Đo bundle hoặc Core Web Vitals, áp dụng lazy loading, memoization có chủ đích và tối ưu hình ảnh."
+          ],
+          "missing_evidence_policy": "Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.",
+          "explicit_failure_policy": "Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp."
+        }
+      ]
+    },
+    "rubric": {
+      "schema_version": "1.0.0",
+      "rubric_id": "fe-std-rubric-v2",
+      "rubric_version": "2.0.1",
+      "job_profile_id": "junior-frontend-std-v2",
+      "criteria": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "title": "Yêu cầu bắt buộc",
+          "description": "Đối chiếu riêng từng yêu cầu bắt buộc và phân biệt đạt, không đạt, thiếu và mâu thuẫn.",
+          "weight": "30"
+        },
+        {
+          "criterion_id": "fe-technical-specialization",
+          "title": "Năng lực kỹ thuật chuyên môn",
+          "description": "Đánh giá HTML, CSS, JavaScript, TypeScript, React, kiểm thử và chất lượng component.",
+          "weight": "25"
+        },
+        {
+          "criterion_id": "fe-role-capability",
+          "title": "Năng lực theo vai trò",
+          "description": "Đánh giá responsive, accessibility, API, authentication, state, performance và xử lý lỗi.",
+          "weight": "20"
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "title": "Dự án, thực tập và tác động",
+          "description": "Đánh giá phạm vi đóng góp, khả năng tái tạo đầu ra và tác động phù hợp cấp junior.",
+          "weight": "15"
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "title": "Độ rõ ràng và khả năng kiểm tra của thông tin trong CV",
+          "description": "Đánh giá mức rõ ràng, nhất quán, khả năng kiểm tra và giới hạn được ứng viên trình bày.",
+          "weight": "10"
+        }
+      ],
+      "critical_requirement_ids": [
+        "fe-web-foundations",
+        "fe-language",
+        "fe-framework",
+        "fe-api",
+        "fe-testing-workflow"
+      ]
+    },
+    "configuration": {
+      "schema_version": "1.1.0",
+      "configuration_id": "classification-scoring-v3",
+      "configuration_version": "3.0.0",
+      "job_profile_artifact_version": "2.0.0",
+      "l1_rules_configuration_version": "3.0.0",
+      "models_configuration_version": "3.0.0",
+      "aggregation": {
+        "l1_deterministic_rules": "0.2",
+        "l2_section_semantic_matching": "0.3",
+        "l3_evidence_grounded_reasoning": "0.5"
+      },
+      "thresholds": {
+        "pass_minimum": "82",
+        "waitlist_minimum": "67"
+      },
+      "needs_review_policy": {
+        "missing_critical_evidence": true,
+        "conflicting_critical_evidence": true,
+        "invalid_provider_output": true,
+        "disagreement_points": "45",
+        "boundary_score_bands": [
+          {
+            "minimum": "65",
+            "maximum": "69"
+          },
+          {
+            "minimum": "80",
+            "maximum": "84"
+          }
+        ]
+      },
+      "models": {
+        "embedding_model_identifier": "intfloat/multilingual-e5-base",
+        "embedding_model_version": "d128750597153bb5987e10b1c3493a34e5a4502a",
+        "llm_provider_identifier": "deterministic_fake",
+        "llm_model_identifier": "deterministic-evidence-scorer-v1",
+        "prompt_version": "l3-evidence-rubric-v15"
+      }
+    }
+  }
+}

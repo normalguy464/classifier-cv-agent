@@ -1,0 +1,39 @@
+artifact_kind: classification_models_configuration_draft
+configuration_version: 1.1.0
+contract_status: approved_for_pilot
+embedding:
+  adapter: sentence_transformers
+  model_identifier: intfloat/multilingual-e5-base
+  execution_mode: local
+  model_version: multilingual-e5-base
+  dimension: 768
+  query_prefix: query
+  passage_prefix: passage
+  language_support: multilingual
+  use_for: l2_section_semantic_matching
+  matching:
+    top_k: 2
+    similarity_floor: 0.20
+    similarity_ceiling: 0.80
+llm:
+  use_for: l3_evidence_grounded_reasoning
+  structured_output_required: true
+  prompt_version: l3-evidence-rubric-v1
+  runtime_provider:
+    adapter: environment_configured
+    provider_environment_variable: CLASSIFIER_LLM_PROVIDER
+    model_environment_variable: CLASSIFIER_LLM_MODEL
+    api_key_environment_variable: CLASSIFIER_LLM_API_KEY
+  deterministic_fake:
+    adapter: deterministic_fake
+    model_identifier: deterministic-evidence-scorer-v1
+    use_for:
+      - unit_tests
+      - contract_tests
+      - offline_demo
+  provider_response_handling:
+    invalid_or_unavailable_output: route_to_needs_review
+artifact_links:
+  scoring_configuration_version: 1.1.0
+  supported_rubric_versions:
+    - 1.0.0

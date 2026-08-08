@@ -1,0 +1,90 @@
+{
+  "schema_version": "1.2.0",
+  "dataset_id": "synthetic-cv-jd-expansion-v2-reviewed-silver",
+  "dataset_version": "2.3.0",
+  "status": "human_reviewed_silver",
+  "generated_at": "2026-08-01T13:40:06.047788+07:00",
+  "cv_schema_version": "1.0.0",
+  "job_profile_schema_version": "1.0.0",
+  "rubric_schema_version": "1.0.0",
+  "configuration_version": "1.1.0",
+  "roles": [
+    "data_analyst",
+    "python_backend",
+    "frontend",
+    "qa_engineer",
+    "data_engineer"
+  ],
+  "job_variants": [
+    "minimum",
+    "standard",
+    "preferred_heavy",
+    "ambiguous",
+    "project_equivalent"
+  ],
+  "scenarios": [
+    "strong",
+    "solid",
+    "moderate",
+    "missing_critical",
+    "conflicting_critical",
+    "explicit_failure",
+    "lower_boundary",
+    "upper_boundary",
+    "transferable",
+    "hard_negative"
+  ],
+  "cv_profile_count": 50,
+  "job_profile_count": 25,
+  "rubric_count": 25,
+  "pair_count": 250,
+  "tier_counts": {
+    "silver": 250
+  },
+  "human_reviewed_pair_count": 250,
+  "split_status": "unassigned",
+  "frozen_test_created": false,
+  "market_reference_version": "vn-junior-market-2026-07-31-v1",
+  "reviewer_references": [
+    "reviewer-user-001"
+  ],
+  "reviewed_at": "2026-08-01T13:40:06.047788+07:00",
+  "source_dataset_id": "synthetic-cv-jd-expansion-v2-reviewed-silver",
+  "source_dataset_version": "2.2.0",
+  "source_manifest_sha256": "5e2bd2f29833928798c0831bd4c9d72bc002d58b2354e6b6ed283996afdb0377",
+  "provenance": [
+    "Synthetic content authored for this repository; no external CV or job posting text was copied verbatim.",
+    "Role requirements were synthesized from current Vietnamese employer postings reviewed on 2026-07-31 and documented in docs/junior_market_requirements_v1.md.",
+    "O*NET and ESCO were retained as occupation-taxonomy references rather than sources of CV-JD labels.",
+    "The Claude reference directory informed workflow design only; its records and labels were not imported.",
+    "All 250 draft annotations were approved unchanged by one pseudonymous human reviewer.",
+    "The fifth criterion display title was clarified without changing its identifier, weight, score or meaning.",
+    "Version 2.2.0 removes unintended SQL evidence from cv-syn-da-missing-v2.",
+    "Version 2.2.0 removes unintended Python evidence from cv-syn-de-missing-v2.",
+    "The user approved retaining missing_critical intent, scores, labels and rationales for all ten affected development pairs.",
+    "Version 2.3.0 removes contradictory testing-foundation claims from cv-syn-qa-failed-v2.",
+    "The user approved retaining the explicit_failure intent and qa-testing-foundations=unsatisfied status for all five affected development pairs."
+  ],
+  "files": [
+    {
+      "path": "cv_profiles.jsonl",
+      "sha256": "ce058af28c694cd621743483289901ed1a144bf439d3271498f000bf7c457ce9",
+      "record_count": 50
+    },
+    {
+      "path": "job_profiles.jsonl",
+      "sha256": "46e12f6b6ae69a1cbb2afa2c066d30262f4ef130fddc4f5f445a47ea807a66e3",
+      "record_count": 25
+    },
+    {
+      "path": "rubrics.jsonl",
+      "sha256": "64c97ccc670af8541a292f1bea10f8b4b5150f2d1599f0ff5fef72d7e39b6b6c",
+      "record_count": 25
+    },
+    {
+      "path": "pairs.jsonl",
+      "sha256": "1dd5c2151ac31292bc13b68d9070642e2ca266ee30623acfd32c91f7df7b88b4",
+      "record_count": 250
+    }
+  ]
+}

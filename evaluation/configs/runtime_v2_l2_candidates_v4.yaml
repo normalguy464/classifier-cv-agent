@@ -1,0 +1,47 @@
+schema_version: 1.0.0
+experiment_id: runtime-v2-l2-candidates-v1
+experiment_version: 1.0.0
+status: approved_for_offline_tuning
+stage7_v1_test_allowed: false
+llm_provider_calls_allowed: false
+candidates:
+  - candidate_id: l2-quality-v3-top2-70-95-min20
+    similarity_floor: 0.70
+    similarity_ceiling: 0.95
+    minimum_query_score: 20
+    query_profile: rubric-quality-v3
+  - candidate_id: l2-quality-v3-top2-78-89-min20
+    similarity_floor: 0.78
+    similarity_ceiling: 0.89
+    minimum_query_score: 20
+    query_profile: rubric-quality-v3
+  - candidate_id: l2-quality-v3-top2-79-88-min20
+    similarity_floor: 0.79
+    similarity_ceiling: 0.88
+    minimum_query_score: 20
+    query_profile: rubric-quality-v3
+  - candidate_id: l2-quality-v3-top2-80-89-min25
+    similarity_floor: 0.80
+    similarity_ceiling: 0.89
+    minimum_query_score: 25
+    query_profile: rubric-quality-v3
+top_k: 2
+section_weights:
+  - section: skills
+    weight: 0.55
+  - section: work_experience
+    weight: 1.00
+  - section: projects
+    weight: 1.00
+  - section: education
+    weight: 0.65
+  - section: certifications
+    weight: 0.55
+  - section: other
+    weight: 0.70
+selection:
+  require_all_offline_checks: true
+  rank_by:
+    - failed_check_count_ascending
+    - validation_total_score_mae_ascending
+    - validation_score_correlation_descending

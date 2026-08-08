@@ -1,0 +1,81 @@
+{
+  "schema_version": "1.1.0",
+  "dataset_id": "synthetic-cv-jd-expansion-v2",
+  "dataset_version": "2.0.1",
+  "status": "draft_for_human_review",
+  "generated_at": "2026-07-31T21:00:00+07:00",
+  "cv_schema_version": "1.0.0",
+  "job_profile_schema_version": "1.0.0",
+  "rubric_schema_version": "1.0.0",
+  "configuration_version": "1.1.0",
+  "roles": [
+    "data_analyst",
+    "python_backend",
+    "frontend",
+    "qa_engineer",
+    "data_engineer"
+  ],
+  "job_variants": [
+    "minimum",
+    "standard",
+    "preferred_heavy",
+    "ambiguous",
+    "project_equivalent"
+  ],
+  "scenarios": [
+    "strong",
+    "solid",
+    "moderate",
+    "missing_critical",
+    "conflicting_critical",
+    "explicit_failure",
+    "lower_boundary",
+    "upper_boundary",
+    "transferable",
+    "hard_negative"
+  ],
+  "cv_profile_count": 50,
+  "job_profile_count": 25,
+  "rubric_count": 25,
+  "pair_count": 250,
+  "tier_counts": {
+    "bronze": 250
+  },
+  "human_reviewed_pair_count": 0,
+  "split_status": "unassigned",
+  "frozen_test_created": false,
+  "market_reference_version": "vn-junior-market-2026-07-31-v1",
+  "reviewer_references": [],
+  "reviewed_at": null,
+  "source_dataset_id": null,
+  "source_dataset_version": null,
+  "source_manifest_sha256": null,
+  "provenance": [
+    "Synthetic content authored for this repository; no external CV or job posting text was copied verbatim.",
+    "Role requirements were synthesized from current Vietnamese employer postings reviewed on 2026-07-31 and documented in docs/junior_market_requirements_v1.md.",
+    "O*NET and ESCO were retained as occupation-taxonomy references rather than sources of CV-JD labels.",
+    "The Claude reference directory informed workflow design only; its records and labels were not imported."
+  ],
+  "files": [
+    {
+      "path": "cv_profiles.jsonl",
+      "sha256": "f88aef2f11bd0a616edb0e0a6fe3896c5c5d3de0f986569d8db63d5d0b141f50",
+      "record_count": 50
+    },
+    {
+      "path": "job_profiles.jsonl",
+      "sha256": "46e12f6b6ae69a1cbb2afa2c066d30262f4ef130fddc4f5f445a47ea807a66e3",
+      "record_count": 25
+    },
+    {
+      "path": "rubrics.jsonl",
+      "sha256": "64c97ccc670af8541a292f1bea10f8b4b5150f2d1599f0ff5fef72d7e39b6b6c",
+      "record_count": 25
+    },
+    {
+      "path": "pairs.jsonl",
+      "sha256": "0c7404a95a1c6df73dc270329070b2c74325e29d36b07d9a90a37fa294459c84",
+      "record_count": 250
+    }
+  ]
+}

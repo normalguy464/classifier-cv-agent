@@ -1,0 +1,58 @@
+artifact_kind: scoring_rubric_draft
+rubric_id: junior-python-backend-developer-rubric-v1
+rubric_version: 1.0.0
+contract_status: approved_for_pilot
+job_profile_id: junior-python-backend-developer-v1
+score_scale:
+  minimum: 0
+  maximum: 100
+criteria:
+  - criterion_id: mandatory-requirements
+    weight: 30
+    description: Đánh giá bốn yêu cầu bắt buộc về Python, REST API, dữ liệu quan hệ/SQL và Git.
+    evaluation_signals:
+      - Evidence thực hành trực tiếp cho từng yêu cầu bắt buộc.
+      - Mức độ liên quan của evidence với phát triển backend.
+      - Phân biệt satisfied, unsatisfied, missing và conflicting cho từng yêu cầu.
+    missing_evidence_handling: Evidence thiếu hoặc mâu thuẫn ở bất kỳ yêu cầu bắt buộc nào phải kích hoạt Needs Review.
+  - criterion_id: backend-implementation
+    weight: 25
+    description: Đánh giá chất lượng triển khai Python backend, cấu trúc dịch vụ, xử lý lỗi và kiểm thử khi có evidence.
+    evaluation_signals:
+      - Framework backend, endpoint, validation hoặc xử lý lỗi.
+      - Tổ chức mã nguồn, logic nghiệp vụ hoặc tích hợp service.
+      - Unit test, integration test hoặc chiến lược kiểm thử phù hợp.
+    missing_evidence_handling: Không suy diễn chất lượng triển khai chỉ từ tên framework hoặc ngôn ngữ.
+  - criterion_id: api-and-data-design
+    weight: 20
+    description: Đánh giá thiết kế API, truy cập dữ liệu quan hệ, tính nhất quán dữ liệu và bảo mật cơ bản.
+    evaluation_signals:
+      - Thiết kế request/response, validation, status code hoặc hợp đồng API.
+      - Schema, ORM, truy vấn, migration hoặc tối ưu dữ liệu ở mức junior.
+      - Xác thực, phân quyền hoặc quản lý error phù hợp khi có evidence.
+    missing_evidence_handling: Không coi việc thiếu chi tiết bảo mật nâng cao là evidence không đáp ứng yêu cầu bắt buộc.
+  - criterion_id: projects-and-delivery
+    weight: 15
+    description: Đánh giá vai trò, phạm vi, khả năng bàn giao và vận hành cơ bản của dự án hoặc thực tập.
+    evaluation_signals:
+      - Vai trò và đóng góp của ứng viên được nêu rõ.
+      - Có repository, tài liệu API, Docker, CI/CD hoặc triển khai khi được mô tả.
+      - Có đầu ra hoặc tác động kỹ thuật được xác nhận bởi evidence.
+    missing_evidence_handling: Không bịa quy mô hệ thống, lưu lượng hay mức độ vận hành không được CV xác nhận.
+  - criterion_id: communication-and-evidence-quality
+    weight: 10
+    description: Đánh giá khả năng diễn đạt quyết định kỹ thuật, cộng tác và cung cấp evidence có thể kiểm tra.
+    evaluation_signals:
+      - README, tài liệu API, mô tả dự án hoặc lịch sử cộng tác được nêu rõ.
+      - Có liên kết repository, portfolio hoặc chi tiết kỹ thuật nhất quán.
+      - Mô tả rõ phần việc của ứng viên thay vì chỉ nêu tên dự án.
+    missing_evidence_handling: Evidence không rõ nguồn làm giảm điểm chất lượng nhưng không tự suy ra không đáp ứng yêu cầu bắt buộc.
+critical_requirement_ids:
+  - be-python
+  - be-rest-api
+  - be-relational-data
+  - be-git
+artifact_links:
+  job_profile_artifact_version: 1.0.0
+  scoring_configuration_version: 1.1.0
+  models_configuration_version: 1.1.0

@@ -1,0 +1,40 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "stage7-five-role-test-v1",
+  "candidate_count": 50,
+  "job_profile_count": 5,
+  "rubric_count": 5,
+  "pair_count": 50,
+  "role_pair_counts": {
+    "data_analyst": 10,
+    "python_backend": 10,
+    "frontend": 10,
+    "qa_engineer": 10,
+    "data_engineer": 10
+  },
+  "scenario_pair_counts": {
+    "strong": 5,
+    "solid": 5,
+    "moderate": 5,
+    "missing_critical": 5,
+    "conflicting_critical": 5,
+    "explicit_failure": 5,
+    "lower_boundary": 5,
+    "upper_boundary": 5,
+    "transferable": 5,
+    "hard_negative": 5
+  },
+  "draft_label_counts": {
+    "pass": 10,
+    "waitlist": 10,
+    "needs_review": 25,
+    "reject": 5
+  },
+  "prior_candidate_overlap_count": 0,
+  "prior_profile_id_overlap_count": 0,
+  "prior_exact_evidence_overlap_count": 0,
+  "maximum_prior_cv_token_jaccard": "0.5403",
+  "classifier_results_generated": false,
+  "errors": [],
+  "warnings": []
+}

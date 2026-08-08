@@ -1,0 +1,81 @@
+artifact_kind: classification_models_configuration
+configuration_version: 3.0.0
+contract_status: approved_for_runtime
+embedding:
+  adapter: sentence_transformers
+  model_identifier: intfloat/multilingual-e5-base
+  execution_mode: local
+  model_version: multilingual-e5-base
+  resolved_revision: d128750597153bb5987e10b1c3493a34e5a4502a
+  dimension: 768
+  query_prefix: query
+  passage_prefix: passage
+  language_support: multilingual
+  use_for: l2_section_semantic_matching
+  matching:
+    candidate_id: rubric-quality-v3-extra-trees-leaf3-v1
+    scoring_mode: query_coverage
+    top_k: 1
+    similarity_floor: 0.70
+    similarity_ceiling: 0.95
+    minimum_query_score: 20
+    query_profile: rubric-quality-v3
+    section_weights:
+      - section: skills
+        weight: 0.55
+      - section: work_experience
+        weight: 1.00
+      - section: projects
+        weight: 1.00
+      - section: education
+        weight: 0.65
+      - section: certifications
+        weight: 0.55
+      - section: other
+        weight: 0.70
+  calibration:
+    adapter: sklearn_extra_trees
+    candidate_id: extra-trees-leaf3-v1
+    model_path: evaluation/models/runtime_v2_l2_calibrator_development_v1.joblib
+    model_sha256: ef1e7534db8ad6358fa085a1591e6e633050145b8d5949a36dbf8a9db54cfc0f
+    semantic_candidate_id: l2-quality-v3-70-95-min20
+    trained_dataset_id: five-role-runtime-v2-development-v1-reviewed-silver
+    split_manifest_sha256: 3711c4735fc51970a62c76e925ba8bce3696eaaf078b7d583b5393acefcfd4dd
+    feature_roles: [data_analyst, data_engineer, frontend, python_backend, qa_engineer]
+    job_profile_roles:
+      - job_profile_id: junior-data-analyst-std-v2
+        role: data_analyst
+      - job_profile_id: junior-data-engineer-std-v2
+        role: data_engineer
+      - job_profile_id: junior-frontend-std-v2
+        role: frontend
+      - job_profile_id: junior-python-backend-std-v2
+        role: python_backend
+      - job_profile_id: junior-qa-engineer-std-v2
+        role: qa_engineer
+    criterion_maximums: [30, 25, 20, 15, 10]
+llm:
+  use_for: l3_evidence_grounded_reasoning
+  structured_output_required: true
+  prompt_version: l3-evidence-rubric-v15
+  score_mapping_version: l3-deterministic-level-mapping-v3
+  runtime_provider:
+    adapter: environment_configured
+    provider_environment_variable: CLASSIFIER_LLM_PROVIDER
+    model_environment_variable: CLASSIFIER_LLM_MODEL
+    api_key_environment_variable: CLASSIFIER_LLM_API_KEY
+    approved_provider_identifier: openai
+    approved_model_identifier: gpt-5.4-mini-2026-03-17
+  deterministic_fake:
+    adapter: deterministic_fake
+    model_identifier: deterministic-evidence-scorer-v1
+    use_for:
+      - unit_tests
+      - contract_tests
+      - offline_demo
+  provider_response_handling:
+    invalid_or_unavailable_output: route_to_needs_review
+artifact_links:
+  scoring_configuration_version: 3.0.0
+  supported_rubric_versions:
+    - 2.0.1

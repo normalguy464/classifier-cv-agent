@@ -1,0 +1,395 @@
+{
+  "schema_version": "1.0.0",
+  "demo_case_id": "stage8-qa-explicit-failure",
+  "role": "qa_engineer",
+  "scenario": "explicit_failure",
+  "request": {
+    "schema_version": "1.1.0",
+    "request_id": "demo-request-qa-explicit-failure",
+    "cv_profile": {
+      "schema_version": "1.0.0",
+      "cv_profile_id": "cv-v2d-qa-07",
+      "candidate_reference": "candidate-v2d-qa-07",
+      "summary": "Hồ sơ xác nhận rõ một yêu cầu bắt buộc chưa đạt. Hồ sơ hướng tới vị trí Junior QA Engineer - Yêu cầu tiêu chuẩn.",
+      "skills": [],
+      "work_experiences": [],
+      "education": [
+        {
+          "education_id": "education-v2d-qa-07",
+          "degree": "Chương trình đào tạo kỹ thuật",
+          "field_of_study": "Kiểm thử phần mềm và đảm bảo chất lượng",
+          "institution_reference": "institution-qa-synthetic",
+          "evidence_ids": [
+            "ev-v2d-qa-07-01"
+          ]
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "project-v2d-qa-07",
+          "title": "Đánh giá chất lượng ứng dụng thương mại",
+          "summary": "Một phần công việc phụ thuộc vào thành viên khác và không có khả năng thay thế. Nêu đúng giới hạn hiện tại nhưng chưa có kế hoạch kiểm chứng năng lực thiếu. Chỉ bàn giao được phần việc hẹp.",
+          "technologies": [],
+          "evidence_ids": [
+            "ev-v2d-qa-07-02",
+            "ev-v2d-qa-07-03",
+            "ev-v2d-qa-07-05",
+            "ev-v2d-qa-07-06",
+            "ev-v2d-qa-07-07",
+            "ev-v2d-qa-07-08",
+            "ev-v2d-qa-07-09"
+          ]
+        }
+      ],
+      "certifications": [],
+      "evidence": [
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-01",
+          "source_type": "candidate",
+          "section": "education",
+          "text": "Chương trình học có bài tổng hợp về đánh giá chất lượng ứng dụng thương mại; mức đóng góp phải được xác định từ các mục thực hành bên dưới.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-02",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Mô tả các bước STLC, xác định rủi ro và ưu tiên kiểm thử cho đánh giá chất lượng ứng dụng thương mại.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-03",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Duy trì bộ test theo yêu cầu thay đổi và theo dõi vòng đời lỗi của đánh giá chất lượng ứng dụng thương mại.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-04",
+          "source_type": "candidate",
+          "section": "other",
+          "text": "Không thể dùng Postman để xác minh endpoint của đánh giá chất lượng ứng dụng thương mại.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-05",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Kiểm tra ràng buộc và bản ghi bất thường bằng SQL khi xác minh đánh giá chất lượng ứng dụng thương mại.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-06",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Tạo test Cypress có setup dữ liệu, assertion và báo cáo kết quả cho đánh giá chất lượng ứng dụng thương mại.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-07",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Chiều sâu kỹ thuật của đánh giá chất lượng ứng dụng thương mại: Một phần công việc phụ thuộc vào thành viên khác và không có khả năng thay thế.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-08",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Lập luận trong đánh giá chất lượng ứng dụng thương mại: Nêu đúng giới hạn hiện tại nhưng chưa có kế hoạch kiểm chứng năng lực thiếu.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-09",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Bàn giao đánh giá chất lượng ứng dụng thương mại: Chỉ bàn giao được phần việc hẹp.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-qa-07-10",
+          "source_type": "candidate",
+          "section": "other",
+          "text": "Cách trình bày đánh giá chất lượng ứng dụng thương mại: Thông tin phủ định rõ và không bị che bởi danh sách từ khóa.",
+          "location": {
+            "source_record_id": "source-v2d-qa-07",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        }
+      ],
+      "quality_warnings": []
+    },
+    "job_profile": {
+      "schema_version": "1.0.0",
+      "job_profile_id": "junior-qa-engineer-std-v2",
+      "title": "Junior QA Engineer - Yêu cầu tiêu chuẩn",
+      "language": "vi",
+      "seniority": "junior",
+      "experience_range": {
+        "minimum_years": 0,
+        "maximum_years": 2,
+        "formal_work_experience_required": false
+      },
+      "responsibilities": [
+        "Phân tích requirement và acceptance criteria để lập phạm vi, mức ưu tiên và test coverage.",
+        "Thực hiện functional, regression, exploratory, API và database testing.",
+        "Ghi, theo dõi và xác nhận defect với thông tin tái hiện và mức ảnh hưởng rõ ràng.",
+        "Duy trì một phần automation regression và phối hợp trong quy trình Agile.",
+        "Kết hợp năng lực cốt lõi với quy trình làm việc nhóm."
+      ],
+      "requirements": [
+        {
+          "requirement_id": "qa-testing-foundations",
+          "title": "Hiểu STLC và áp dụng kỹ thuật thiết kế test từ requirement.",
+          "description": "Hiểu STLC và áp dụng kỹ thuật thiết kế test từ requirement.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Phân tích acceptance criteria và áp dụng equivalence partitioning, boundary value, decision table cùng risk-based prioritization.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "qa-test-cases",
+          "title": "Có thực hành test case, regression và quản lý defect.",
+          "description": "Có thực hành test case, regression và quản lý defect.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Viết test case có precondition, dữ liệu, bước chạy, expected result; lập regression checklist và bug report có severity cùng bằng chứng tái hiện.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "qa-api-testing",
+          "title": "Có kiểm thử REST API.",
+          "description": "Có kiểm thử REST API.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Dùng Postman hoặc công cụ tương đương để kiểm tra method, status, schema, authentication, validation và negative cases.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "qa-data-check",
+          "title": "Có thể kiểm tra dữ liệu bằng SQL.",
+          "description": "Có thể kiểm tra dữ liệu bằng SQL.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Dùng SELECT, JOIN, GROUP BY và truy vấn đối soát để xác minh dữ liệu sau thao tác kiểm thử.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "qa-automation-foundation",
+          "title": "Có nền tảng automation bằng một ngôn ngữ và framework kiểm thử.",
+          "description": "Có nền tảng automation bằng một ngôn ngữ và framework kiểm thử.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Viết một test suite nhỏ bằng Playwright, Cypress, Selenium hoặc framework tương đương, có assertion, fixture và chạy lặp lại bằng Git.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "qa-ci",
+          "title": "Có tích hợp test trong CI.",
+          "description": "Có tích hợp test trong CI.",
+          "priority": "preferred",
+          "is_critical": false,
+          "accepted_evidence": [
+            "Chạy API hoặc UI test trong pipeline, lưu report và phân biệt test failure với environment failure."
+          ],
+          "missing_evidence_policy": "Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.",
+          "explicit_failure_policy": "Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp."
+        },
+        {
+          "requirement_id": "qa-performance-security",
+          "title": "Có performance hoặc security testing cơ bản.",
+          "description": "Có performance hoặc security testing cơ bản.",
+          "priority": "preferred",
+          "is_critical": false,
+          "accepted_evidence": [
+            "Tạo kịch bản tải nhỏ bằng k6 hoặc JMeter, hoặc kiểm tra rủi ro xác thực và phân quyền."
+          ],
+          "missing_evidence_policy": "Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.",
+          "explicit_failure_policy": "Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp."
+        }
+      ]
+    },
+    "rubric": {
+      "schema_version": "1.0.0",
+      "rubric_id": "qa-std-rubric-v2",
+      "rubric_version": "2.0.1",
+      "job_profile_id": "junior-qa-engineer-std-v2",
+      "criteria": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "title": "Yêu cầu bắt buộc",
+          "description": "Đối chiếu riêng từng yêu cầu bắt buộc và phân biệt đạt, không đạt, thiếu và mâu thuẫn.",
+          "weight": "30"
+        },
+        {
+          "criterion_id": "qa-technical-specialization",
+          "title": "Năng lực kỹ thuật chuyên môn",
+          "description": "Đánh giá STLC, thiết kế test, API, SQL, automation và khả năng duy trì regression suite.",
+          "weight": "25"
+        },
+        {
+          "criterion_id": "qa-role-capability",
+          "title": "Năng lực theo vai trò",
+          "description": "Đánh giá phân tích requirement, risk-based coverage, defect lifecycle và xác nhận bản sửa.",
+          "weight": "20"
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "title": "Dự án, thực tập và tác động",
+          "description": "Đánh giá phạm vi đóng góp, khả năng tái tạo đầu ra và tác động phù hợp cấp junior.",
+          "weight": "15"
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "title": "Độ rõ ràng và khả năng kiểm tra của thông tin trong CV",
+          "description": "Đánh giá mức rõ ràng, nhất quán, khả năng kiểm tra và giới hạn được ứng viên trình bày.",
+          "weight": "10"
+        }
+      ],
+      "critical_requirement_ids": [
+        "qa-testing-foundations",
+        "qa-test-cases",
+        "qa-api-testing",
+        "qa-data-check",
+        "qa-automation-foundation"
+      ]
+    },
+    "configuration": {
+      "schema_version": "1.1.0",
+      "configuration_id": "classification-scoring-v3",
+      "configuration_version": "3.0.0",
+      "job_profile_artifact_version": "2.0.0",
+      "l1_rules_configuration_version": "3.0.0",
+      "models_configuration_version": "3.0.0",
+      "aggregation": {
+        "l1_deterministic_rules": "0.2",
+        "l2_section_semantic_matching": "0.3",
+        "l3_evidence_grounded_reasoning": "0.5"
+      },
+      "thresholds": {
+        "pass_minimum": "82",
+        "waitlist_minimum": "67"
+      },
+      "needs_review_policy": {
+        "missing_critical_evidence": true,
+        "conflicting_critical_evidence": true,
+        "invalid_provider_output": true,
+        "disagreement_points": "45",
+        "boundary_score_bands": [
+          {
+            "minimum": "65",
+            "maximum": "69"
+          },
+          {
+            "minimum": "80",
+            "maximum": "84"
+          }
+        ]
+      },
+      "models": {
+        "embedding_model_identifier": "intfloat/multilingual-e5-base",
+        "embedding_model_version": "d128750597153bb5987e10b1c3493a34e5a4502a",
+        "llm_provider_identifier": "deterministic_fake",
+        "llm_model_identifier": "deterministic-evidence-scorer-v1",
+        "prompt_version": "l3-evidence-rubric-v15"
+      }
+    }
+  }
+}

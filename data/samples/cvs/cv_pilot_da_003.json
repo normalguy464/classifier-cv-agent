@@ -1,0 +1,105 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-pilot-da-003",
+  "candidate_reference": "candidate-synthetic-da-003",
+  "summary": "Ứng viên có dự án Python và Tableau nhưng CV không cung cấp thông tin về SQL.",
+  "skills": [
+    {
+      "name": "Python",
+      "evidence_ids": [
+        "ev-da003-python",
+        "ev-da003-project"
+      ]
+    },
+    {
+      "name": "Tableau",
+      "evidence_ids": [
+        "ev-da003-tableau",
+        "ev-da003-project"
+      ]
+    }
+  ],
+  "work_experiences": [],
+  "education": [
+    {
+      "education_id": "education-da003",
+      "degree": "Bachelor program",
+      "field_of_study": "Economics",
+      "institution_reference": "institution-synthetic-da-003",
+      "evidence_ids": [
+        "ev-da003-education"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "project-da003-churn-analysis",
+      "title": "Customer churn exploration",
+      "summary": "Làm sạch dữ liệu churn tổng hợp bằng pandas, tính thống kê mô tả và trình bày các nhóm rủi ro trên Tableau.",
+      "technologies": [
+        "Python",
+        "pandas",
+        "Tableau"
+      ],
+      "evidence_ids": [
+        "ev-da003-project",
+        "ev-da003-python",
+        "ev-da003-tableau"
+      ]
+    }
+  ],
+  "certifications": [],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da003-python",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng Python và pandas để xử lý giá trị thiếu, loại bản ghi trùng và nhóm dữ liệu.",
+      "location": {
+        "source_record_id": "record-da003-skills-python"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da003-tableau",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Tạo Tableau story mô tả tỷ lệ churn theo nhóm sử dụng.",
+      "location": {
+        "source_record_id": "record-da003-skills-tableau"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da003-project",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dự án cá nhân nêu nguồn dữ liệu tổng hợp, các bước làm sạch, chỉ số churn và giới hạn do dữ liệu không có lịch sử hỗ trợ khách hàng.",
+      "location": {
+        "source_record_id": "record-da003-project"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da003-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Chương trình Economics có học phần thống kê mô tả.",
+      "location": {
+        "source_record_id": "record-da003-education"
+      },
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": [
+    {
+      "code": "missing-sql-evidence",
+      "severity": "warning",
+      "message": "Không có thông tin khẳng định hoặc phủ định kinh nghiệm SQL."
+    }
+  ]
+}

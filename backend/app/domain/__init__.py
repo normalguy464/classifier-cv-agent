@@ -1,0 +1,36 @@
+from backend.app.domain.classification import (
+    AggregationResult,
+    BoundaryRule,
+    CriterionAssessment,
+    L1Policy,
+    L2CriterionPolicy,
+    L2Policy,
+    L2ScoringMode,
+    LevelAssessment,
+    MatchMode,
+    RequirementAssessment,
+    RequirementRule,
+    RoutingPolicy,
+    RoutingResult,
+    ScoringLevel,
+)
+from backend.app.domain.errors import ClassifierCoreError, ScoringInputError
+
+__all__ = [
+    "AggregationResult",
+    "BoundaryRule",
+    "ClassifierCoreError",
+    "CriterionAssessment",
+    "L1Policy",
+    "L2CriterionPolicy",
+    "L2Policy",
+    "L2ScoringMode",
+    "LevelAssessment",
+    "MatchMode",
+    "RequirementAssessment",
+    "RequirementRule",
+    "RoutingPolicy",
+    "RoutingResult",
+    "ScoringInputError",
+    "ScoringLevel",
+]

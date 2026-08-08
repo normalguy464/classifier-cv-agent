@@ -1,0 +1,85 @@
+artifact_kind: job_profile
+artifact_version: 2.0.0
+contract_status: approved_for_runtime
+job_profile_id: junior-qa-engineer-std-v2
+title: Junior QA Engineer - Yêu cầu tiêu chuẩn
+language: vi
+seniority:
+  level: junior
+  experience_range_years:
+    minimum: 0
+    maximum: 2
+  formal_work_experience_required: false
+  equivalent_experience:
+    - relevant internship
+    - academic project
+    - personal project with verifiable evidence
+role_summary: Đảm bảo chất lượng phần mềm bằng thiết kế test, kiểm thử API và dữ liệu, quản lý defect và automation cơ bản.
+responsibilities:
+  - Phân tích requirement và acceptance criteria để lập phạm vi, mức ưu tiên và test coverage.
+  - Thực hiện functional, regression, exploratory, API và database testing.
+  - Ghi, theo dõi và xác nhận defect với thông tin tái hiện và mức ảnh hưởng rõ ràng.
+  - Duy trì một phần automation regression và phối hợp trong quy trình Agile.
+  - Kết hợp năng lực cốt lõi với quy trình làm việc nhóm.
+mandatory_requirements:
+  - requirement_id: qa-testing-foundations
+    description: Hiểu STLC và áp dụng kỹ thuật thiết kế test từ requirement.
+    accepted_evidence:
+      - Phân tích acceptance criteria và áp dụng equivalence partitioning, boundary value, decision table cùng risk-based prioritization.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: qa-test-cases
+    description: Có thực hành test case, regression và quản lý defect.
+    accepted_evidence:
+      - Viết test case có precondition, dữ liệu, bước chạy, expected result; lập regression checklist và bug report có severity cùng bằng chứng tái hiện.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: qa-api-testing
+    description: Có kiểm thử REST API.
+    accepted_evidence:
+      - Dùng Postman hoặc công cụ tương đương để kiểm tra method, status, schema, authentication, validation và negative cases.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: qa-data-check
+    description: Có thể kiểm tra dữ liệu bằng SQL.
+    accepted_evidence:
+      - Dùng SELECT, JOIN, GROUP BY và truy vấn đối soát để xác minh dữ liệu sau thao tác kiểm thử.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: qa-automation-foundation
+    description: Có nền tảng automation bằng một ngôn ngữ và framework kiểm thử.
+    accepted_evidence:
+      - Viết một test suite nhỏ bằng Playwright, Cypress, Selenium hoặc framework tương đương, có assertion, fixture và chạy lặp lại bằng Git.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+preferred_requirements:
+  - requirement_id: qa-ci
+    description: Có tích hợp test trong CI.
+    accepted_evidence:
+      - Chạy API hoặc UI test trong pipeline, lưu report và phân biệt test failure với environment failure.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+  - requirement_id: qa-performance-security
+    description: Có performance hoặc security testing cơ bản.
+    accepted_evidence:
+      - Tạo kịch bản tải nhỏ bằng k6 hoặc JMeter, hoặc kiểm tra rủi ro xác thực và phân quyền.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+scoring_exclusions:
+  - age
+  - gender
+  - ethnicity
+  - religion
+  - marital_status
+  - disability
+  - hometown
+artifact_links:
+  rubric_id: qa-std-rubric-v2
+  rubric_version: 2.0.1
+  scoring_configuration_version: 3.0.0
+  models_configuration_version: 3.0.0

@@ -1,0 +1,70 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "stage7-runtime-v2-preflight-v1",
+  "generated_at": "2026-08-08T16:00:00+07:00",
+  "passed": true,
+  "runtime_configuration_set_id": "five-role-runtime-v2",
+  "runtime_manifest_sha256": "641eb9d0106f11621bc62db23942d5a3182949d70a17fbafc6184ce2a2c1b19e",
+  "dataset_id": "stage7-five-role-runtime-v2-test-v1",
+  "dataset_version": "1.0.0",
+  "dataset_manifest_sha256": "148f1a36d2a179475d26b21394a4a1a695603448b5247b39332954c6b0f1650b",
+  "protocol_id": "stage7-five-role-runtime-v2-frozen-evaluation-v1",
+  "protocol_version": "1.0.0",
+  "protocol_sha256": "457fba526712dd5c1810009fe00fed99f5b53ba2b7061c7993259cd67a9a2add",
+  "provider_execution_authorized": false,
+  "provider_requests_made": false,
+  "api_key_loaded": false,
+  "checks": [
+    {
+      "check_id": "runtime-frozen",
+      "status": "passed",
+      "detail": "Runtime manifest must be five-role-runtime-v2 with frozen_for_stage7 status."
+    },
+    {
+      "check_id": "runtime-role-coverage",
+      "status": "passed",
+      "detail": "Runtime must load exactly five approved Job Profiles and linked rubrics."
+    },
+    {
+      "check_id": "gold-dataset-locked",
+      "status": "passed",
+      "detail": "Test dataset must be a locked, human-reviewed Gold set with 50 pairs."
+    },
+    {
+      "check_id": "two-person-consensus",
+      "status": "passed",
+      "detail": "Review record must contain two distinct reviewers and all 50 approved pairs."
+    },
+    {
+      "check_id": "dataset-quality-control",
+      "status": "passed",
+      "detail": "Frozen dataset QC must contain zero errors and zero warnings."
+    },
+    {
+      "check_id": "no-pre-lock-classifier-output",
+      "status": "passed",
+      "detail": "No classifier result or LLM request may exist before the dataset lock."
+    },
+    {
+      "check_id": "protocol-identity",
+      "status": "passed",
+      "detail": "Protocol runtime and dataset identifiers must match the frozen artifacts."
+    },
+    {
+      "check_id": "protocol-safety-gates",
+      "status": "passed",
+      "detail": "Protocol must retain the approved accuracy floor and zero unsafe decisions."
+    },
+    {
+      "check_id": "stability-case-coverage",
+      "status": "passed",
+      "detail": "Every preselected stability pair must exist in the frozen test dataset."
+    },
+    {
+      "check_id": "provider-execution-separated",
+      "status": "passed",
+      "detail": "Provider execution must remain separately authorized, capped and sanitized."
+    }
+  ],
+  "errors": []
+}

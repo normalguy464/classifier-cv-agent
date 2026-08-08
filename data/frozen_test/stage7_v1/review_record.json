@@ -1,0 +1,20 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "stage7-five-role-test-v1",
+  "dataset_version": "1.0.1",
+  "review_mode": "two_person_consensus_panel",
+  "reviewer_references": [
+    "reviewer-user-001",
+    "reviewer-peer-001"
+  ],
+  "reviewed_at": "2026-08-07T18:00:00+07:00",
+  "approved_pair_count": 50,
+  "approved_correction_pair_ids": [
+    "s7-pair-be-04",
+    "s7-pair-be-06",
+    "s7-pair-fe-06",
+    "s7-pair-qa-04",
+    "s7-pair-qa-06"
+  ],
+  "approval_statement": "Tôi duyệt toàn bộ 50 case Stage 7 phiên bản 1.0.1, gồm 5 case đã sửa, và chấp nhận kết quả thảo luận chung của hai người là human review cuối cùng."
+}

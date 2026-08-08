@@ -1,0 +1,16 @@
+{
+  "schema_version": "1.0.0",
+  "authorization_id": "stage7-runtime-v2-provider-execution-v1",
+  "authorized_at": "2026-08-08T16:15:00+07:00",
+  "authorized": true,
+  "runtime_configuration_set_id": "five-role-runtime-v2",
+  "runtime_manifest_sha256": "641eb9d0106f11621bc62db23942d5a3182949d70a17fbafc6184ce2a2c1b19e",
+  "dataset_id": "stage7-five-role-runtime-v2-test-v1",
+  "dataset_manifest_sha256": "148f1a36d2a179475d26b21394a4a1a695603448b5247b39332954c6b0f1650b",
+  "protocol_id": "stage7-five-role-runtime-v2-frozen-evaluation-v1",
+  "protocol_sha256": "457fba526712dd5c1810009fe00fed99f5b53ba2b7061c7993259cd67a9a2add",
+  "maximum_http_request_count": 60,
+  "persist_raw_provider_response": false,
+  "tuning_allowed": false,
+  "authorization_statement": "Tôi xác nhận Gold lock và preflight Stage 7 Runtime v2 đã đạt; cho phép chạy final evaluation theo protocol version 1.0.0, tối đa 60 HTTP request, không lưu raw provider response và không tuning runtime theo test output."
+}

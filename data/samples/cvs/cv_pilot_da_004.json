@@ -1,0 +1,109 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-pilot-da-004",
+  "candidate_reference": "candidate-synthetic-da-004",
+  "summary": "Ứng viên có kinh nghiệm lập báo cáo bảng tính và xác nhận chưa dùng Python hoặc R, đồng thời chưa thực hiện dự án phân tích dữ liệu.",
+  "skills": [
+    {
+      "name": "SQL",
+      "evidence_ids": [
+        "ev-da004-sql"
+      ]
+    },
+    {
+      "name": "Spreadsheet reporting",
+      "evidence_ids": [
+        "ev-da004-spreadsheet",
+        "ev-da004-report-work"
+      ]
+    }
+  ],
+  "work_experiences": [
+    {
+      "experience_id": "experience-da004-reporting",
+      "title": "Reporting Assistant",
+      "organization_reference": "organization-synthetic-da-004",
+      "duration_months": 8,
+      "summary": "Nhập dữ liệu và cập nhật báo cáo theo mẫu có sẵn.",
+      "technologies": [
+        "Spreadsheet",
+        "SQL"
+      ],
+      "evidence_ids": [
+        "ev-da004-report-work",
+        "ev-da004-sql"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "education_id": "education-da004",
+      "degree": "College program",
+      "field_of_study": "Office Administration",
+      "institution_reference": "institution-synthetic-da-004",
+      "evidence_ids": [
+        "ev-da004-education"
+      ]
+    }
+  ],
+  "projects": [],
+  "certifications": [],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da004-sql",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Đã chạy các câu lệnh SELECT và filter đơn giản theo hướng dẫn có sẵn.",
+      "location": {
+        "source_record_id": "record-da004-skills-sql"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da004-spreadsheet",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Sử dụng spreadsheet để nhập dữ liệu và cập nhật biểu đồ theo mẫu.",
+      "location": {
+        "source_record_id": "record-da004-skills-spreadsheet"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da004-report-work",
+      "source_type": "manual",
+      "section": "work_experience",
+      "text": "Công việc tập trung vào nhập liệu và sao chép số liệu vào báo cáo định kỳ, không bao gồm việc tự đặt câu hỏi hoặc chọn phương pháp phân tích.",
+      "location": {
+        "source_record_id": "record-da004-work"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da004-explicit-gap",
+      "source_type": "candidate",
+      "section": "other",
+      "text": "Ứng viên xác nhận chưa từng sử dụng Python hoặc R và chưa thực hiện dự án hay thực tập phân tích dữ liệu.",
+      "location": {
+        "source_record_id": "record-da004-candidate-statement"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da004-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Chương trình Office Administration tập trung vào quy trình văn phòng và spreadsheet.",
+      "location": {
+        "source_record_id": "record-da004-education"
+      },
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": []
+}

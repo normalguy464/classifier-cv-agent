@@ -1,0 +1,75 @@
+artifact_kind: job_profile_draft
+artifact_version: 1.0.0
+contract_status: approved_for_pilot
+job_profile_id: junior-python-backend-developer-v1
+title: Junior Python Backend Developer
+language: vi
+seniority:
+  level: junior
+  experience_range_years:
+    minimum: 0
+    maximum: 2
+  formal_work_experience_required: false
+  equivalent_experience:
+    - relevant internship
+    - academic project
+    - personal project with verifiable evidence
+role_summary: Xây dựng và duy trì dịch vụ backend bằng Python với API, lưu trữ dữ liệu, kiểm thử và tài liệu kỹ thuật đủ rõ để nhóm có thể vận hành.
+responsibilities:
+  - Phát triển và bảo trì REST API bằng Python theo yêu cầu chức năng đã xác định.
+  - Tích hợp cơ sở dữ liệu quan hệ, xử lý truy vấn và duy trì tính đúng đắn của dữ liệu.
+  - Viết kiểm thử phù hợp, xử lý lỗi và ghi nhận quyết định kỹ thuật trong phạm vi công việc.
+  - Làm việc với Git, review thay đổi và hỗ trợ triển khai dịch vụ ở mức junior.
+mandatory_requirements:
+  - requirement_id: be-python
+    description: Có kỹ năng lập trình Python dùng cho phát triển backend.
+    accepted_evidence:
+      - Skill Python được nêu rõ kèm dự án, thực tập hoặc kinh nghiệm phát triển phần mềm.
+      - Repository hoặc mô tả dự án có module, endpoint, xử lý nghiệp vụ hoặc tích hợp dữ liệu bằng Python.
+    missing_evidence_policy: Thiếu thông tin không được coi là không đáp ứng và phải được đánh dấu missing.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi CV nêu rõ không có Python hoặc evidence xác nhận năng lực chỉ giới hạn ở công cụ không liên quan.
+  - requirement_id: be-rest-api
+    description: Có ít nhất một dự án hoặc thực tập xây dựng HTTP hoặc REST API bằng FastAPI, Django, Flask hoặc framework tương đương.
+    accepted_evidence:
+      - Mô tả endpoint, request/response, xử lý lỗi, xác thực hoặc tích hợp service trong dự án.
+      - Repository hoặc portfolio được mô tả rõ có API backend.
+    missing_evidence_policy: Thiếu thông tin không được coi là không đáp ứng và phải được đánh dấu missing.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi CV nêu rõ chưa từng xây dựng API hoặc evidence xác nhận dự án không có thành phần backend/API.
+  - requirement_id: be-relational-data
+    description: Có kiến thức thực hành về cơ sở dữ liệu quan hệ và SQL.
+    accepted_evidence:
+      - Sử dụng PostgreSQL, MySQL, SQLite hoặc hệ quản trị quan hệ tương đương trong dự án hoặc thực tập.
+      - Mô tả schema, truy vấn, migration, ORM hoặc xử lý dữ liệu quan hệ.
+    missing_evidence_policy: Thiếu thông tin không được coi là không đáp ứng và phải được đánh dấu missing.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi CV nêu rõ không có kiến thức dữ liệu quan hệ/SQL hoặc evidence xác nhận chỉ dùng công nghệ không phù hợp.
+  - requirement_id: be-git
+    description: Có thể sử dụng Git trong quy trình phát triển phần mềm.
+    accepted_evidence:
+      - Skill Git được nêu rõ kèm repository, dự án nhóm, pull request hoặc lịch sử thay đổi được mô tả.
+      - Thực tập hoặc dự án nêu việc dùng branch, commit, code review hoặc workflow tương đương.
+    missing_evidence_policy: Thiếu thông tin không được coi là không đáp ứng và phải được đánh dấu missing.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi CV nêu rõ không có kinh nghiệm Git hoặc evidence xác nhận không dùng quản lý phiên bản.
+preferred_requirements:
+  - requirement_id: be-testing
+    description: Có unit test, integration test hoặc công cụ kiểm thử Python.
+  - requirement_id: be-containerization
+    description: Có Docker hoặc quy trình đóng gói, triển khai dịch vụ.
+  - requirement_id: be-async
+    description: Có hiểu biết về async I/O, background work hoặc xử lý đồng thời trong phạm vi phù hợp.
+  - requirement_id: be-operations
+    description: Có CI/CD, logging, monitoring, Redis, caching hoặc queue ở mức dự án.
+  - requirement_id: be-security
+    description: Có xác thực, phân quyền, quản lý secret hoặc thực hành bảo mật API cơ bản.
+scoring_exclusions:
+  - age
+  - gender
+  - ethnicity
+  - religion
+  - marital_status
+  - disability
+  - hometown
+artifact_links:
+  rubric_id: junior-python-backend-developer-rubric-v1
+  rubric_version: 1.0.0
+  scoring_configuration_version: 1.1.0
+  models_configuration_version: 1.1.0

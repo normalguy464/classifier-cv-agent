@@ -1,0 +1,74 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "synthetic-cv-jd-expansion-v1",
+  "dataset_version": "1.0.0",
+  "status": "draft_for_human_review",
+  "generated_at": "2026-07-31T18:00:00+07:00",
+  "cv_schema_version": "1.0.0",
+  "job_profile_schema_version": "1.0.0",
+  "rubric_schema_version": "1.0.0",
+  "configuration_version": "1.1.0",
+  "roles": [
+    "data_analyst",
+    "python_backend",
+    "frontend",
+    "qa_engineer",
+    "data_engineer"
+  ],
+  "job_variants": [
+    "minimum",
+    "standard",
+    "preferred_heavy",
+    "ambiguous",
+    "project_equivalent"
+  ],
+  "scenarios": [
+    "strong",
+    "solid",
+    "moderate",
+    "missing_critical",
+    "conflicting_critical",
+    "explicit_failure",
+    "lower_boundary",
+    "upper_boundary",
+    "transferable",
+    "hard_negative"
+  ],
+  "cv_profile_count": 50,
+  "job_profile_count": 25,
+  "rubric_count": 25,
+  "pair_count": 250,
+  "tier_counts": {
+    "bronze": 250
+  },
+  "human_reviewed_pair_count": 0,
+  "split_status": "unassigned",
+  "frozen_test_created": false,
+  "provenance": [
+    "Synthetic content authored for this repository; no external CV or job posting text was copied.",
+    "Role coverage was informed by O*NET occupational data and ESCO occupation-skill relationships.",
+    "The Claude reference directory was inspected for workflow ideas but its records and labels were not imported."
+  ],
+  "files": [
+    {
+      "path": "cv_profiles.jsonl",
+      "sha256": "164513a7069ab574166dce5a67396eeb85a74976764841b3e4607e6dec25c467",
+      "record_count": 50
+    },
+    {
+      "path": "job_profiles.jsonl",
+      "sha256": "17647cc44d1ce181ec822031177f7ad97174ef6e19f0086db98d4061637f49a6",
+      "record_count": 25
+    },
+    {
+      "path": "rubrics.jsonl",
+      "sha256": "6aec82d01686df369f3554088167d7d56cd9f781f9b69c9b0bf1e25114557897",
+      "record_count": 25
+    },
+    {
+      "path": "pairs.jsonl",
+      "sha256": "ff29c5b11b8c43e8168e8f60632223149f479c0346d1b8e886f014d69fcda4a5",
+      "record_count": 250
+    }
+  ]
+}

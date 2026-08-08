@@ -1,0 +1,78 @@
+artifact_kind: job_profile
+artifact_version: 2.0.0
+contract_status: approved_for_runtime
+job_profile_id: junior-data-analyst-std-v2
+title: Junior Data Analyst - Yêu cầu tiêu chuẩn
+language: vi
+seniority:
+  level: junior
+  experience_range_years:
+    minimum: 0
+    maximum: 2
+  formal_work_experience_required: false
+  equivalent_experience:
+    - relevant internship
+    - academic project
+    - personal project with verifiable evidence
+role_summary: Phân tích dữ liệu end-to-end bằng SQL, Python hoặc R và BI để trả lời câu hỏi nghiệp vụ bằng kết quả có thể kiểm tra.
+responsibilities:
+  - Thu thập, làm sạch, đối soát và kết hợp dữ liệu từ cơ sở dữ liệu, tệp hoặc API.
+  - Dùng SQL và Python hoặc R để phân tích chỉ số, xu hướng và nguyên nhân sai lệch.
+  - Xây dashboard có định nghĩa chỉ số nhất quán và kiểm tra chất lượng dữ liệu đầu vào.
+  - Chuyển câu hỏi nghiệp vụ thành phân tích có khuyến nghị, giả định và giới hạn rõ ràng.
+  - Kết hợp năng lực cốt lõi với quy trình làm việc nhóm.
+mandatory_requirements:
+  - requirement_id: da-sql
+    description: Dùng SQL ở mức trung cấp để truy vấn, tổng hợp và kiểm tra chất lượng dữ liệu.
+    accepted_evidence:
+      - Dùng nhiều JOIN, CTE, window function, CASE và truy vấn đối soát bản ghi trùng hoặc thiếu trong một dự án.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: da-analysis-language
+    description: Dùng Python hoặc R để làm sạch, phân tích và tự động hóa tác vụ lặp lại.
+    accepted_evidence:
+      - Dùng Python với pandas hoặc R để chuẩn hóa kiểu dữ liệu, xử lý missing value, phát hiện outlier và tạo phân tích có thể chạy lại.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: da-bi-reporting
+    description: Có thể xây dashboard hoặc báo cáo BI và định nghĩa chỉ số nhất quán.
+    accepted_evidence:
+      - Xây dashboard Power BI, Tableau hoặc công cụ tương đương có data model, bộ lọc, drill-down và tài liệu định nghĩa KPI.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: da-business-analysis
+    description: Có dự án hoặc thực tập phân tích end-to-end gắn với câu hỏi nghiệp vụ.
+    accepted_evidence:
+      - Chuyển câu hỏi nghiệp vụ thành chỉ số, kiểm tra dữ liệu, phân tích nguyên nhân, trình bày khuyến nghị và nêu giới hạn.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+preferred_requirements:
+  - requirement_id: da-statistics
+    description: Có thống kê ứng dụng hoặc A/B testing.
+    accepted_evidence:
+      - Áp dụng phân phối, khoảng tin cậy, kiểm định giả thuyết và diễn giải effect size trên dữ liệu mẫu.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+  - requirement_id: da-warehouse
+    description: Có data warehouse, data modeling hoặc ETL/ELT.
+    accepted_evidence:
+      - Mô hình hóa fact, dimension, grain và luồng incremental load cho báo cáo.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+scoring_exclusions:
+  - age
+  - gender
+  - ethnicity
+  - religion
+  - marital_status
+  - disability
+  - hometown
+artifact_links:
+  rubric_id: da-std-rubric-v2
+  rubric_version: 2.0.1
+  scoring_configuration_version: 3.0.0
+  models_configuration_version: 3.0.0

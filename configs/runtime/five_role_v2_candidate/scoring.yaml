@@ -1,0 +1,69 @@
+artifact_kind: classification_scoring_configuration
+configuration_version: 3.0.0
+contract_status: development_candidate
+score_scale:
+  minimum: 0
+  maximum: 100
+aggregation:
+  level_weights:
+    l1_deterministic_rules: 0.20
+    l2_section_semantic_matching: 0.30
+    l3_evidence_grounded_reasoning: 0.50
+  required_weight_total: 1.00
+  output_rounding_decimal_places: 2
+decision_policy:
+  precedence:
+    - needs_review
+    - pass
+    - waitlist
+    - reject
+  thresholds:
+    pass_minimum: 82
+    waitlist_minimum: 67
+    reject_maximum_exclusive: 67
+  reject_conditions:
+    require_final_score_below: 67
+    require_explicit_unsatisfied_critical_requirement: true
+    missing_critical_evidence_allows_reject: false
+    conflicting_critical_evidence_allows_reject: false
+  needs_review_rules:
+    - rule_id: missing-critical-evidence
+      condition: Any critical requirement has missing evidence.
+    - rule_id: conflicting-critical-evidence
+      condition: Any critical requirement has conflicting evidence.
+    - rule_id: low-score-without-explicit-critical-unsatisfied
+      condition: Final score is below the waitlist minimum and no critical requirement is explicitly unsatisfied.
+    - rule_id: critical-unsatisfied-at-or-above-waitlist-threshold
+      condition: Any critical requirement is explicitly unsatisfied and final score is at or above the waitlist minimum.
+    - rule_id: invalid-provider-output
+      condition: L2 or L3 provider output is invalid, unavailable or fails structured validation.
+    - rule_id: large-level-disagreement
+      condition: The maximum difference between valid L1, L2 and L3 scores is at least 45 points.
+    - rule_id: lower-threshold-boundary
+      condition: Final score is inclusively between 65 and 69.
+    - rule_id: upper-threshold-boundary
+      condition: Final score is inclusively between 80 and 84.
+evidence_policy:
+  statuses:
+    - satisfied
+    - unsatisfied
+    - missing
+    - conflicting
+  missing_is_unsatisfied: false
+  infer_unstated_skills: false
+  accept_academic_or_personal_projects_for_junior_roles: true
+semantic_matching:
+  matching_scope:
+    - skills
+    - experience
+    - projects
+    - education
+  whole_cv_embedding_allowed: false
+  score_interpretation: Similarity is a relevance signal and is not a probability of candidate suitability.
+artifact_links:
+  supported_job_profile_versions:
+    - 2.0.0
+  supported_rubric_versions:
+    - 2.0.1
+  l1_rules_configuration_version: 3.0.0
+  models_configuration_version: 3.0.0

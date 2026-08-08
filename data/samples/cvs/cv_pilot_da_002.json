@@ -1,0 +1,117 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-pilot-da-002",
+  "candidate_reference": "candidate-synthetic-da-002",
+  "summary": "Ứng viên chưa có kinh nghiệm chính thức, có dự án học tập phân tích hành vi người dùng bằng SQL và R.",
+  "skills": [
+    {
+      "name": "SQL",
+      "evidence_ids": [
+        "ev-da002-sql",
+        "ev-da002-project"
+      ]
+    },
+    {
+      "name": "R",
+      "evidence_ids": [
+        "ev-da002-r",
+        "ev-da002-project"
+      ]
+    },
+    {
+      "name": "Tableau",
+      "evidence_ids": [
+        "ev-da002-tableau"
+      ]
+    }
+  ],
+  "work_experiences": [],
+  "education": [
+    {
+      "education_id": "education-da002",
+      "degree": "Bachelor program",
+      "field_of_study": "Business Analytics",
+      "institution_reference": "institution-synthetic-da-002",
+      "evidence_ids": [
+        "ev-da002-education"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "project-da002-cohort-analysis",
+      "title": "Cohort and funnel analysis",
+      "summary": "Dùng dữ liệu học tập tổng hợp để tính retention theo cohort và mô tả các bước rời khỏi funnel.",
+      "technologies": [
+        "SQL",
+        "R",
+        "Tableau"
+      ],
+      "evidence_ids": [
+        "ev-da002-project",
+        "ev-da002-sql",
+        "ev-da002-r",
+        "ev-da002-tableau"
+      ]
+    }
+  ],
+  "certifications": [],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da002-sql",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng SQL để join ba bảng và tính số người dùng theo cohort.",
+      "location": {
+        "source_record_id": "record-da002-skills-sql"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da002-r",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng R với dplyr và ggplot2 cho làm sạch và biểu đồ mô tả.",
+      "location": {
+        "source_record_id": "record-da002-skills-r"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da002-tableau",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Tạo một dashboard Tableau cơ bản cho retention và funnel.",
+      "location": {
+        "source_record_id": "record-da002-skills-tableau"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da002-project",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dự án học tập mô tả mục tiêu và các phép tính chính nhưng chưa nêu tác động định lượng, kiểm tra độ nhạy hoặc repository.",
+      "location": {
+        "source_record_id": "record-da002-project"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da002-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Chương trình Business Analytics có học phần SQL nhập môn và trực quan hóa dữ liệu.",
+      "location": {
+        "source_record_id": "record-da002-education"
+      },
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": []
+}

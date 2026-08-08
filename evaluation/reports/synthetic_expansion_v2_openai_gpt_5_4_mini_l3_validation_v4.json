@@ -1,0 +1,560 @@
+{
+  "report_schema_version": "1.0.0",
+  "report_id": "synthetic-expansion-v2-openai-gpt-5-4-mini-l3-validation-v4",
+  "report_scope": "silver-development-openai-live-l3",
+  "is_final_performance": false,
+  "experiment_status": "stopped_quality_failure",
+  "generated_at": "2026-08-01T16:30:25.129549+07:00",
+  "traceability": {
+    "configuration_file": "evaluation/configs/synthetic_expansion_l3_openai_gpt_5_4_mini_v4.yaml",
+    "configuration_sha256": "a0f02b2c86e907a964590edeb30f19057b1c77e9f289ab09903f6297a95a9a6d",
+    "dataset_manifest_sha256": "72abfb5c408b5767c6a7aca56532f124e6a57b0a5e40ef15dbac6a1f333caab4",
+    "split_manifest_sha256": "0072602b4173e0467ddaedcb781ad0bbf637df40c6cc55a6956ae2e7d942cf1f",
+    "dataset_id": "synthetic-cv-jd-expansion-v2-reviewed-silver",
+    "dataset_version": "2.3.1",
+    "development_partition_id": "synthetic-expansion-v2-3-1-development-silver",
+    "primary_pair_count": 25,
+    "held_out_partition_id": "synthetic-expansion-v2-3-1-held-out-silver",
+    "held_out_evaluated": false,
+    "original_stage6_frozen_test_evaluated": false,
+    "provider_identifier": "openai",
+    "model_identifier": "gpt-5.4-mini-2026-03-17",
+    "prompt_version": "l3-evidence-rubric-v10",
+    "raw_provider_response_persisted": false
+  },
+  "request_accounting": {
+    "hard_request_cap": 32,
+    "prior_series_request_count": 13,
+    "series_hard_request_cap": 45,
+    "cumulative_series_request_count": 18,
+    "minimum_request_interval_seconds": 1.0,
+    "request_timeout_seconds": 60.0,
+    "maximum_total_retries_per_attempt": 1,
+    "include_temperature_parameter": false,
+    "max_completion_tokens": 4096,
+    "reasoning_effort": "none",
+    "total_http_request_count": 5,
+    "valid_attempt_count": 5,
+    "failed_request_count": 0,
+    "invalid_structured_output_count": 0,
+    "billing_tier_assumption": "paid_tier_1",
+    "estimated_provider_charge_usd": 0.04468875,
+    "charge_verified": false,
+    "cost_control": {
+      "estimated_provider_charge_usd": 0.04468875,
+      "maximum_estimated_experiment_cost_usd": 1.0,
+      "worst_case_estimated_experiment_cost_usd": 0.877824,
+      "requests_with_priced_usage": 5,
+      "requests_without_priced_usage": 0,
+      "charge_verified": false
+    },
+    "request_quality": {
+      "valid_output_rate": 1.0,
+      "failure_category_counts": {},
+      "average_duration_milliseconds": 6313.6,
+      "maximum_duration_milliseconds": 6897
+    }
+  },
+  "early_stopping": {
+    "triggered": true,
+    "reason": "The development panel did not satisfy the configured provider quality thresholds, so batch collection was not opened."
+  },
+  "provider_quality": {
+    "sample_count": 25,
+    "attempted_pair_count": 5,
+    "available_output_count": 5,
+    "valid_output_rate": 0.2,
+    "valid_output_rate_among_attempted_pairs": 1.0,
+    "endpoint_score_count": 0,
+    "endpoint_score_rate": 0.0,
+    "requirement_status_match_rate": 1.0,
+    "criterion_mean_absolute_error": 2.78,
+    "total_score_mean_absolute_error": 13.3,
+    "calibration_policy": {
+      "maximum_endpoint_score_rate": 0.4,
+      "maximum_criterion_mean_absolute_error": 3.5,
+      "maximum_total_score_mean_absolute_error": 12.0,
+      "passes": false
+    },
+    "usage_and_latency": {
+      "request_count": 5,
+      "requests_with_usage": 5,
+      "input_tokens": 28823,
+      "output_tokens": 5127,
+      "total_tokens": 33950,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_duration_milliseconds": 31568,
+      "average_duration_milliseconds": 6313.6,
+      "maximum_duration_milliseconds": 6897
+    },
+    "passes_primary_policy": false,
+    "cases": [
+      {
+        "pair_id": "pair-qa-failed-std",
+        "role": "qa_engineer",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "outcome": "available",
+        "human_total_score": 38.0,
+        "l3_score": 52.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 8.0,
+          "qa-technical-specialization": 3.0,
+          "qa-role-capability": 0.0,
+          "projects-and-impact": 1.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 14.0
+      },
+      {
+        "pair_id": "pair-da-missing-std",
+        "role": "data_analyst",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 62.0,
+        "l3_score": 56.0,
+        "requirement_status_match_count": 4,
+        "requirement_status_count": 4,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 1.0,
+          "da-technical-specialization": 1.0,
+          "da-role-capability": 2.0,
+          "projects-and-impact": 0.5,
+          "communication-and-evidence-quality": 1.5
+        },
+        "total_score_absolute_error": 6.0
+      },
+      {
+        "pair_id": "pair-de-missing-std",
+        "role": "data_engineer",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 62.0,
+        "l3_score": 62.5,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 1.5,
+          "de-technical-specialization": 0.0,
+          "de-role-capability": 2.0,
+          "projects-and-impact": 0.0,
+          "communication-and-evidence-quality": 0.0
+        },
+        "total_score_absolute_error": 0.5
+      },
+      {
+        "pair_id": "pair-be-failed-std",
+        "role": "python_backend",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "outcome": "available",
+        "human_total_score": 38.0,
+        "l3_score": 16.5,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 1.0,
+          "be-technical-specialization": 7.5,
+          "be-role-capability": 5.5,
+          "projects-and-impact": 4.0,
+          "communication-and-evidence-quality": 3.5
+        },
+        "total_score_absolute_error": 21.5
+      },
+      {
+        "pair_id": "pair-fe-conflict-std",
+        "role": "frontend",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 64.0,
+        "l3_score": 39.5,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 9.0,
+          "fe-technical-specialization": 1.0,
+          "fe-role-capability": 2.0,
+          "projects-and-impact": 7.0,
+          "communication-and-evidence-quality": 5.5
+        },
+        "total_score_absolute_error": 24.5
+      },
+      {
+        "pair_id": "pair-de-lowbd-std",
+        "role": "data_engineer",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-moderate-std",
+        "role": "qa_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-hardneg-std",
+        "role": "data_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-da-strong-std",
+        "role": "data_analyst",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-strong-std",
+        "role": "python_backend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-strong-std",
+        "role": "frontend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-strong-std",
+        "role": "qa_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-strong-std",
+        "role": "data_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-da-upbd-std",
+        "role": "data_analyst",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-moderate-std",
+        "role": "python_backend",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-solid-std",
+        "role": "frontend",
+        "scenario": "solid",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-moderate-std",
+        "role": "data_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-da-lowbd-std",
+        "role": "data_analyst",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-hardneg-std",
+        "role": "python_backend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-upbd-std",
+        "role": "frontend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-conflict-std",
+        "role": "qa_engineer",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-da-hardneg-std",
+        "role": "data_analyst",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-upbd-std",
+        "role": "python_backend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-hardneg-std",
+        "role": "frontend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-hardneg-std",
+        "role": "qa_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      }
+    ]
+  },
+  "development_panel": {
+    "required_before_batch": true,
+    "pair_count": 5,
+    "complete": true,
+    "passed": false,
+    "quality": {
+      "sample_count": 5,
+      "attempted_pair_count": 5,
+      "available_output_count": 5,
+      "valid_output_rate": 1.0,
+      "valid_output_rate_among_attempted_pairs": 1.0,
+      "endpoint_score_count": 0,
+      "endpoint_score_rate": 0.0,
+      "requirement_status_match_rate": 1.0,
+      "criterion_mean_absolute_error": 2.78,
+      "total_score_mean_absolute_error": 13.3,
+      "calibration_policy": {
+        "maximum_endpoint_score_rate": 0.4,
+        "maximum_criterion_mean_absolute_error": 3.5,
+        "maximum_total_score_mean_absolute_error": 12.0,
+        "passes": false
+      },
+      "usage_and_latency": {
+        "request_count": 5,
+        "requests_with_usage": 5,
+        "input_tokens": 28823,
+        "output_tokens": 5127,
+        "total_tokens": 33950,
+        "cached_input_tokens": 0,
+        "reasoning_tokens": 0,
+        "total_duration_milliseconds": 31568,
+        "average_duration_milliseconds": 6313.6,
+        "maximum_duration_milliseconds": 6897
+      },
+      "passes_primary_policy": false,
+      "cases": [
+        {
+          "pair_id": "pair-qa-failed-std",
+          "role": "qa_engineer",
+          "scenario": "explicit_failure",
+          "expected_label": "reject",
+          "outcome": "available",
+          "human_total_score": 38.0,
+          "l3_score": 52.0,
+          "requirement_status_match_count": 5,
+          "requirement_status_count": 5,
+          "criterion_absolute_errors": {
+            "mandatory-requirements": 8.0,
+            "qa-technical-specialization": 3.0,
+            "qa-role-capability": 0.0,
+            "projects-and-impact": 1.0,
+            "communication-and-evidence-quality": 2.0
+          },
+          "total_score_absolute_error": 14.0
+        },
+        {
+          "pair_id": "pair-da-missing-std",
+          "role": "data_analyst",
+          "scenario": "missing_critical",
+          "expected_label": "needs_review",
+          "outcome": "available",
+          "human_total_score": 62.0,
+          "l3_score": 56.0,
+          "requirement_status_match_count": 4,
+          "requirement_status_count": 4,
+          "criterion_absolute_errors": {
+            "mandatory-requirements": 1.0,
+            "da-technical-specialization": 1.0,
+            "da-role-capability": 2.0,
+            "projects-and-impact": 0.5,
+            "communication-and-evidence-quality": 1.5
+          },
+          "total_score_absolute_error": 6.0
+        },
+        {
+          "pair_id": "pair-de-missing-std",
+          "role": "data_engineer",
+          "scenario": "missing_critical",
+          "expected_label": "needs_review",
+          "outcome": "available",
+          "human_total_score": 62.0,
+          "l3_score": 62.5,
+          "requirement_status_match_count": 5,
+          "requirement_status_count": 5,
+          "criterion_absolute_errors": {
+            "mandatory-requirements": 1.5,
+            "de-technical-specialization": 0.0,
+            "de-role-capability": 2.0,
+            "projects-and-impact": 0.0,
+            "communication-and-evidence-quality": 0.0
+          },
+          "total_score_absolute_error": 0.5
+        },
+        {
+          "pair_id": "pair-be-failed-std",
+          "role": "python_backend",
+          "scenario": "explicit_failure",
+          "expected_label": "reject",
+          "outcome": "available",
+          "human_total_score": 38.0,
+          "l3_score": 16.5,
+          "requirement_status_match_count": 5,
+          "requirement_status_count": 5,
+          "criterion_absolute_errors": {
+            "mandatory-requirements": 1.0,
+            "be-technical-specialization": 7.5,
+            "be-role-capability": 5.5,
+            "projects-and-impact": 4.0,
+            "communication-and-evidence-quality": 3.5
+          },
+          "total_score_absolute_error": 21.5
+        },
+        {
+          "pair_id": "pair-fe-conflict-std",
+          "role": "frontend",
+          "scenario": "conflicting_critical",
+          "expected_label": "needs_review",
+          "outcome": "available",
+          "human_total_score": 64.0,
+          "l3_score": 39.5,
+          "requirement_status_match_count": 5,
+          "requirement_status_count": 5,
+          "criterion_absolute_errors": {
+            "mandatory-requirements": 9.0,
+            "fe-technical-specialization": 1.0,
+            "fe-role-capability": 2.0,
+            "projects-and-impact": 7.0,
+            "communication-and-evidence-quality": 5.5
+          },
+          "total_score_absolute_error": 24.5
+        }
+      ]
+    }
+  },
+  "stability": {
+    "case_count": 5,
+    "evaluable_case_count": 0,
+    "attempts_per_pair": 2,
+    "maximum_score_range": null,
+    "average_score_range": null,
+    "requirement_status_agreement_rate": null,
+    "usage_and_latency": {
+      "request_count": 3,
+      "requests_with_usage": 3,
+      "input_tokens": 17532,
+      "output_tokens": 3006,
+      "total_tokens": 20538,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_duration_milliseconds": 18440,
+      "average_duration_milliseconds": 6146.666666666667,
+      "maximum_duration_milliseconds": 6806
+    },
+    "passes_stability_policy": false,
+    "cases": [
+      {
+        "pair_id": "pair-da-strong-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-be-failed-std",
+        "status": "not_evaluable",
+        "scores": [
+          16.5
+        ],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-fe-conflict-std",
+        "status": "not_evaluable",
+        "scores": [
+          39.5
+        ],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-qa-moderate-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-de-missing-std",
+        "status": "not_evaluable",
+        "scores": [
+          62.5
+        ],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      }
+    ]
+  },
+  "hybrid_diagnostic": {
+    "executed": false,
+    "reason": "Live L3 valid-output coverage is insufficient for a hybrid diagnostic."
+  },
+  "quality_gate_passed": false,
+  "configuration_freeze_eligible": false,
+  "freeze_blockers": [
+    "The configured LLM provider did not satisfy the structured-output quality policy.",
+    "The five-role labels are Silver and have one human reviewer.",
+    "The three new roles do not yet have approved runtime configuration artifacts.",
+    "Held-out and frozen-test evaluation is intentionally not executed."
+  ]
+}

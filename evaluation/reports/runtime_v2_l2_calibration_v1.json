@@ -1,0 +1,217 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "runtime-v2-l2-calibration-v1",
+  "generated_at": "2026-08-08T07:30:00+07:00",
+  "training_partition": "development",
+  "selection_partition": "validation",
+  "training_pair_count": 50,
+  "selection_pair_count": 25,
+  "llm_provider_calls_made": false,
+  "stage7_v1_test_accessed": false,
+  "selected_candidate_id": "extra-trees-leaf3-v1",
+  "selection_passed": true,
+  "candidate_results": [
+    {
+      "candidate_id": "extra-trees-leaf2-v1",
+      "minimum_samples_per_leaf": 2,
+      "development": {
+        "score_mean": 71.02,
+        "score_standard_deviation": 15.447325706763403,
+        "score_minimum": 27.29333333333333,
+        "score_maximum": 89.95933333333336,
+        "score_range": 62.66600000000003,
+        "total_score_mae": 2.341646666666666,
+        "criterion_mae": 0.5385039999999999,
+        "score_correlation": 0.9850960721152549,
+        "label_score_means": {
+          "pass": 86.90203333333335,
+          "waitlist": 80.1747,
+          "reject": 48.00875,
+          "needs_review": 68.03541388888888
+        },
+        "pass_over_waitlist_margin": 6.727333333333348,
+        "waitlist_over_reject_margin": 32.16595
+      },
+      "validation": {
+        "score_mean": 69.60951333333333,
+        "score_standard_deviation": 16.33196374716498,
+        "score_minimum": 31.777916666666666,
+        "score_maximum": 86.18975000000002,
+        "score_range": 54.41183333333335,
+        "total_score_mae": 9.35367333333333,
+        "criterion_mae": 1.904193333333333,
+        "score_correlation": 0.864254314147298,
+        "label_score_means": {
+          "pass": 81.17530000000001,
+          "waitlist": 76.51774999999999,
+          "reject": 54.8204,
+          "needs_review": 67.76705833333332
+        },
+        "pass_over_waitlist_margin": 4.657550000000015,
+        "waitlist_over_reject_margin": 21.697349999999993
+      },
+      "quality_gate": {
+        "passed": true,
+        "checks": {
+          "l1_development_requirement_accuracy": true,
+          "l1_validation_requirement_accuracy": true,
+          "l1_development_unsafe_mismatches": true,
+          "l1_validation_unsafe_mismatches": true,
+          "l2_development_total_score_mae": true,
+          "l2_validation_total_score_mae": true,
+          "l2_development_criterion_mae": true,
+          "l2_validation_criterion_mae": true,
+          "l2_development_score_correlation": true,
+          "l2_validation_score_correlation": true,
+          "l2_development_score_range": true,
+          "l2_validation_score_range": true,
+          "l2_development_pass_over_waitlist_margin": true,
+          "l2_validation_pass_over_waitlist_margin": true,
+          "l2_development_waitlist_over_reject_margin": true,
+          "l2_validation_waitlist_over_reject_margin": true
+        }
+      }
+    },
+    {
+      "candidate_id": "extra-trees-leaf3-v1",
+      "minimum_samples_per_leaf": 3,
+      "development": {
+        "score_mean": 71.02,
+        "score_standard_deviation": 14.010930223211025,
+        "score_minimum": 37.99396428571429,
+        "score_maximum": 87.9325833333333,
+        "score_range": 49.93861904761901,
+        "total_score_mae": 4.034271904761908,
+        "criterion_mae": 0.8924910476190477,
+        "score_correlation": 0.9543027652589724,
+        "label_score_means": {
+          "pass": 84.51246428571429,
+          "waitlist": 80.23050952380953,
+          "reject": 53.69445238095239,
+          "needs_review": 67.87501825396826
+        },
+        "pass_over_waitlist_margin": 4.281954761904757,
+        "waitlist_over_reject_margin": 26.53605714285714
+      },
+      "validation": {
+        "score_mean": 69.64182047619047,
+        "score_standard_deviation": 14.437690295814502,
+        "score_minimum": 39.179130952380966,
+        "score_maximum": 84.29525000000002,
+        "score_range": 45.11611904761906,
+        "total_score_mae": 9.68210619047619,
+        "criterion_mae": 1.9604210476190476,
+        "score_correlation": 0.8643220899941956,
+        "label_score_means": {
+          "pass": 80.52773333333334,
+          "waitlist": 75.92965000000001,
+          "reject": 57.57539761904762,
+          "needs_review": 67.08816071428572
+        },
+        "pass_over_waitlist_margin": 4.598083333333335,
+        "waitlist_over_reject_margin": 18.35425238095239
+      },
+      "quality_gate": {
+        "passed": true,
+        "checks": {
+          "l1_development_requirement_accuracy": true,
+          "l1_validation_requirement_accuracy": true,
+          "l1_development_unsafe_mismatches": true,
+          "l1_validation_unsafe_mismatches": true,
+          "l2_development_total_score_mae": true,
+          "l2_validation_total_score_mae": true,
+          "l2_development_criterion_mae": true,
+          "l2_validation_criterion_mae": true,
+          "l2_development_score_correlation": true,
+          "l2_validation_score_correlation": true,
+          "l2_development_score_range": true,
+          "l2_validation_score_range": true,
+          "l2_development_pass_over_waitlist_margin": true,
+          "l2_validation_pass_over_waitlist_margin": true,
+          "l2_development_waitlist_over_reject_margin": true,
+          "l2_validation_waitlist_over_reject_margin": true
+        }
+      }
+    },
+    {
+      "candidate_id": "extra-trees-leaf4-v1",
+      "minimum_samples_per_leaf": 4,
+      "development": {
+        "score_mean": 71.02,
+        "score_standard_deviation": 13.05341662316391,
+        "score_minimum": 40.98848015873017,
+        "score_maximum": 86.93518073593071,
+        "score_range": 45.946700577200545,
+        "total_score_mae": 4.73357344877345,
+        "criterion_mae": 1.0427117128427128,
+        "score_correlation": 0.9342959544697702,
+        "label_score_means": {
+          "pass": 82.92821527777778,
+          "waitlist": 80.0380182900433,
+          "reject": 56.136355411255416,
+          "needs_review": 68.02819929052428
+        },
+        "pass_over_waitlist_margin": 2.890196987734484,
+        "waitlist_over_reject_margin": 23.90166287878788
+      },
+      "validation": {
+        "score_mean": 69.82133142135643,
+        "score_standard_deviation": 13.210984467640959,
+        "score_minimum": 41.20473015873018,
+        "score_maximum": 84.50321049783548,
+        "score_range": 43.2984803391053,
+        "total_score_mae": 9.855010512265512,
+        "criterion_mae": 2.009045802308802,
+        "score_correlation": 0.8688647055420378,
+        "label_score_means": {
+          "pass": 80.15436075036075,
+          "waitlist": 75.7106256854257,
+          "reject": 58.844193939393946,
+          "needs_review": 67.19873836580088
+        },
+        "pass_over_waitlist_margin": 4.443735064935055,
+        "waitlist_over_reject_margin": 16.86643174603175
+      },
+      "quality_gate": {
+        "passed": false,
+        "checks": {
+          "l1_development_requirement_accuracy": true,
+          "l1_validation_requirement_accuracy": true,
+          "l1_development_unsafe_mismatches": true,
+          "l1_validation_unsafe_mismatches": true,
+          "l2_development_total_score_mae": true,
+          "l2_validation_total_score_mae": true,
+          "l2_development_criterion_mae": true,
+          "l2_validation_criterion_mae": true,
+          "l2_development_score_correlation": true,
+          "l2_validation_score_correlation": true,
+          "l2_development_score_range": true,
+          "l2_validation_score_range": true,
+          "l2_development_pass_over_waitlist_margin": false,
+          "l2_validation_pass_over_waitlist_margin": true,
+          "l2_development_waitlist_over_reject_margin": true,
+          "l2_validation_waitlist_over_reject_margin": true
+        }
+      }
+    }
+  ],
+  "model_artifact": {
+    "path": "evaluation/models/runtime_v2_l2_calibrator_development_v1.joblib",
+    "sha256": "ef1e7534db8ad6358fa085a1591e6e633050145b8d5949a36dbf8a9db54cfc0f",
+    "persisted": true,
+    "trained_on_validation": false
+  },
+  "traceability": {
+    "configuration_path": "evaluation/configs/runtime_v2_l2_calibration_v1.yaml",
+    "configuration_sha256": "76ea627acdbbebd32d8683de1cf40b9bf8dc8f16748b540211866c6881739334",
+    "base_tuning_report_path": "evaluation/reports/runtime_v2_l2_tuning_v3.json",
+    "base_tuning_report_sha256": "be600baf7d67d53fe364ea8cf34d18f43e283d9e7d42310504ab30d735d05fa1",
+    "reviewed_dataset_manifest_sha256": "7a61f45395b7a7ed0be0e957ff7790473b35ca0a7baae4f66e0ef6079f24317a",
+    "split_manifest_sha256": "3711c4735fc51970a62c76e925ba8bce3696eaaf078b7d583b5393acefcfd4dd"
+  },
+  "limitations": [
+    "The calibrator is trained on 50 synthetic Silver pairs and selected on 25 synthetic Silver pairs.",
+    "Validation reuses scenario families across roles, so the checkpoint does not prove real-CV generalization.",
+    "A newly authored frozen test with different wording is still required before final claims."
+  ]
+}

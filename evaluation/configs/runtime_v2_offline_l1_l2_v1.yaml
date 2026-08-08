@@ -1,0 +1,32 @@
+schema_version: 1.0.0
+experiment_id: runtime-v2-offline-l1-l2-v1
+experiment_version: 1.0.0
+status: approved_for_offline_baseline_and_tuning
+reviewed_dataset_directory: data/runtime_v2/reviewed/development_v1
+split_manifest_path: data/runtime_v2/splits/development_v1_split.json
+baseline_runtime_directory: configs/runtime/five_role_v1
+candidate_runtime_directory: configs/runtime/five_role_v2_candidate
+stage7_v1_test_allowed: false
+llm_provider_calls_allowed: false
+l1_quality_policy:
+  minimum_development_requirement_accuracy: 0.95
+  minimum_validation_requirement_accuracy: 0.90
+  maximum_development_unsafe_mismatches: 0
+  maximum_validation_unsafe_mismatches: 0
+l2_quality_policy:
+  maximum_development_total_score_mae: 15
+  maximum_validation_total_score_mae: 15
+  maximum_development_criterion_mae: 4
+  maximum_validation_criterion_mae: 4
+  minimum_development_score_correlation: 0.65
+  minimum_validation_score_correlation: 0.65
+  minimum_development_score_range: 35
+  minimum_validation_score_range: 35
+  minimum_pass_over_waitlist_margin: 3
+  minimum_waitlist_over_reject_margin: 10
+selection_policy:
+  development_may_change_candidate: true
+  validation_may_select_candidate: true
+  frozen_test_may_change_candidate: false
+  require_all_l1_checks: true
+  require_all_l2_checks: true

@@ -1,0 +1,189 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-pilot-be-001",
+  "candidate_reference": "candidate-synthetic-be-001",
+  "summary": "Ứng viên cấp junior có thực tập backend và dự án FastAPI với PostgreSQL, testing, Docker và Git workflow.",
+  "skills": [
+    {
+      "name": "Python",
+      "evidence_ids": [
+        "ev-be001-python",
+        "ev-be001-internship"
+      ]
+    },
+    {
+      "name": "FastAPI",
+      "evidence_ids": [
+        "ev-be001-api",
+        "ev-be001-project"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "evidence_ids": [
+        "ev-be001-database",
+        "ev-be001-project"
+      ]
+    },
+    {
+      "name": "Git",
+      "evidence_ids": [
+        "ev-be001-git",
+        "ev-be001-internship"
+      ]
+    },
+    {
+      "name": "pytest and Docker",
+      "evidence_ids": [
+        "ev-be001-quality"
+      ]
+    }
+  ],
+  "work_experiences": [
+    {
+      "experience_id": "experience-be001-internship",
+      "title": "Python Backend Intern",
+      "organization_reference": "organization-synthetic-be-001",
+      "duration_months": 6,
+      "summary": "Phát triển endpoint, sửa lỗi validation và tham gia review pull request cho dịch vụ nội bộ.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Git"
+      ],
+      "evidence_ids": [
+        "ev-be001-internship",
+        "ev-be001-api",
+        "ev-be001-git"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "education_id": "education-be001",
+      "degree": "Bachelor program",
+      "field_of_study": "Software Engineering",
+      "institution_reference": "institution-synthetic-be-001",
+      "evidence_ids": [
+        "ev-be001-education"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "project-be001-task-api",
+      "title": "Task management API",
+      "summary": "Xây REST API có validation, JWT authentication, PostgreSQL migration, automated tests, Docker và tài liệu OpenAPI.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "SQLAlchemy",
+        "pytest",
+        "Docker",
+        "Git"
+      ],
+      "evidence_ids": [
+        "ev-be001-project",
+        "ev-be001-python",
+        "ev-be001-api",
+        "ev-be001-database",
+        "ev-be001-git",
+        "ev-be001-quality"
+      ]
+    }
+  ],
+  "certifications": [],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be001-python",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng Python với type hints, Pydantic validation và tách service layer trong backend.",
+      "location": {
+        "source_record_id": "record-be001-skills-python"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be001-api",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Mô tả endpoint CRUD, request validation, status code, xử lý lỗi và JWT authentication bằng FastAPI.",
+      "location": {
+        "source_record_id": "record-be001-api"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be001-database",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Thiết kế bảng PostgreSQL, quan hệ khóa ngoại và migration bằng Alembic.",
+      "location": {
+        "source_record_id": "record-be001-database"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be001-git",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng branch, commit nhỏ và pull request có review trong dự án nhóm.",
+      "location": {
+        "source_record_id": "record-be001-skills-git"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be001-quality",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Có unit test và integration test bằng pytest, Dockerfile, CI check và README hướng dẫn chạy.",
+      "location": {
+        "source_record_id": "record-be001-quality"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be001-internship",
+      "source_type": "manual",
+      "section": "work_experience",
+      "text": "Kỳ thực tập sáu tháng có nhiệm vụ phát triển hai endpoint, sửa lỗi validation và tham gia ba pull request được review.",
+      "location": {
+        "source_record_id": "record-be001-internship"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be001-project",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dự án có repository tổng hợp repo-be001, OpenAPI schema và hướng dẫn chạy kiểm thử cục bộ.",
+      "location": {
+        "source_record_id": "record-be001-project"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be001-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Chương trình Software Engineering có học phần lập trình hướng đối tượng và cơ sở dữ liệu.",
+      "location": {
+        "source_record_id": "record-be001-education"
+      },
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": []
+}

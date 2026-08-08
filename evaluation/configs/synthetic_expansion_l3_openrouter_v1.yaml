@@ -1,0 +1,62 @@
+schema_version: 1.0.0
+experiment_id: synthetic-expansion-v2-openrouter-l3-validation-v1
+experiment_version: 1.0.0
+dataset_id: synthetic-cv-jd-expansion-v2-reviewed-silver
+dataset_version: 2.1.0
+development_partition_id: synthetic-expansion-v2-development-silver
+held_out_partition_id: synthetic-expansion-v2-held-out-silver
+provider_identifier: openrouter
+model_identifier: google/gemma-4-26b-a4b-it:free
+prompt_version: l3-evidence-rubric-v3
+l2_candidate_set_id: synthetic-expansion-v2-l2-development-candidates-v1
+l2_candidate_set_version: 1.1.0
+l2_candidate_id: coverage-70-95-v1
+billing_tier_assumption: free_variant
+data_policy:
+  development_only: true
+  held_out_allowed: false
+  original_frozen_test_allowed: false
+  raw_provider_response_persisted: false
+request_policy:
+  hard_request_cap: 40
+  minimum_request_interval_seconds: 4
+  maximum_invalid_retries_per_attempt: 1
+primary_pair_ids:
+  - pair-da-strong-std
+  - pair-da-upbd-std
+  - pair-da-lowbd-std
+  - pair-da-missing-std
+  - pair-da-hardneg-std
+  - pair-be-strong-std
+  - pair-be-moderate-std
+  - pair-be-failed-std
+  - pair-be-hardneg-std
+  - pair-be-upbd-std
+  - pair-fe-strong-std
+  - pair-fe-solid-std
+  - pair-fe-upbd-std
+  - pair-fe-conflict-std
+  - pair-fe-hardneg-std
+  - pair-qa-strong-std
+  - pair-qa-moderate-std
+  - pair-qa-failed-std
+  - pair-qa-conflict-std
+  - pair-qa-hardneg-std
+  - pair-de-strong-std
+  - pair-de-moderate-std
+  - pair-de-lowbd-std
+  - pair-de-missing-std
+  - pair-de-hardneg-std
+stability:
+  pair_ids:
+    - pair-da-strong-std
+    - pair-be-failed-std
+    - pair-fe-conflict-std
+    - pair-qa-moderate-std
+    - pair-de-missing-std
+  total_attempts_per_pair: 2
+quality_policy:
+  required_primary_valid_output_rate: 1.0
+  required_requirement_status_match_rate: 1.0
+  maximum_stability_score_range: 10
+  required_stability_requirement_agreement_rate: 1.0

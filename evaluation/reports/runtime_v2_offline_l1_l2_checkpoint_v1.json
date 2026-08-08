@@ -1,0 +1,1255 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "runtime-v2-offline-l1-l2-candidate-v1",
+  "generated_at": "2026-08-08T09:00:00+07:00",
+  "runtime_kind": "candidate",
+  "candidate_id": "runtime-v2-candidate-l1-l2-v1",
+  "llm_provider_calls_made": false,
+  "stage7_v1_test_accessed": false,
+  "traceability": {
+    "configuration_path": "evaluation/configs/runtime_v2_offline_l1_l2_v1.yaml",
+    "configuration_sha256": "30a4ff81b560c46479796a54a7c7d583e0fd5c7cb8795563f9fa7b8d7cab93a8",
+    "reviewed_dataset_manifest_sha256": "7a61f45395b7a7ed0be0e957ff7790473b35ca0a7baae4f66e0ef6079f24317a",
+    "split_manifest_sha256": "3711c4735fc51970a62c76e925ba8bce3696eaaf078b7d583b5393acefcfd4dd",
+    "runtime_directory": "configs/runtime/five_role_v2_candidate",
+    "runtime_manifest_sha256": null,
+    "l1_rules_sha256": "6bcf6642438f669ca9787174d88744ee9a7b7a1c1be5dff6968c02afa47a6c2e",
+    "models_sha256": "bc62afc9907d1605371bacc1318dd412b92e0ad985b987d4cb42c92baa93a08c",
+    "dataset_id": "five-role-runtime-v2-development-v1-reviewed-silver",
+    "embedding_model_identifier": "intfloat/multilingual-e5-base",
+    "embedding_model_version": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "configured_embedding_model_executed": true
+  },
+  "development": {
+    "pair_count": 50,
+    "label_counts": {
+      "pass": 10,
+      "waitlist": 5,
+      "needs_review": 30,
+      "reject": 5
+    },
+    "l1": {
+      "requirement_count": 240,
+      "requirement_status_accuracy": 1.0,
+      "requirement_mismatch_count": 0,
+      "unsafe_requirement_mismatch_count": 0,
+      "score_minimum": 0.0,
+      "score_maximum": 100.0,
+      "mismatch_cases": []
+    },
+    "l2": {
+      "score_mean": 71.0206,
+      "score_standard_deviation": 14.010347377563484,
+      "score_minimum": 37.99,
+      "score_maximum": 87.94,
+      "score_range": 49.949999999999996,
+      "total_score_mae": 4.0334,
+      "criterion_mae": 0.8922800000000001,
+      "score_correlation": 0.9543170338503726,
+      "label_score_means": {
+        "pass": 84.513,
+        "waitlist": 80.22999999999999,
+        "reject": 53.696,
+        "needs_review": 67.87566666666666
+      },
+      "pass_over_waitlist_margin": 4.2830000000000155,
+      "waitlist_over_reject_margin": 26.533999999999992,
+      "raw_similarity_minimum": 0.792240048075141,
+      "raw_similarity_maximum": 0.8898230742864631
+    },
+    "cases": [
+      {
+        "pair_id": "v2d-pair-be-01",
+        "role": "python_backend",
+        "expected_label": "pass",
+        "human_total_score": 93.0,
+        "l1_score": 100.0,
+        "l2_score": 87.71,
+        "l2_criterion_scores": [
+          27.04,
+          21.72,
+          17.2,
+          13.14,
+          8.61
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-02",
+        "role": "python_backend",
+        "expected_label": "pass",
+        "human_total_score": 88.0,
+        "l1_score": 100.0,
+        "l2_score": 74.91,
+        "l2_criterion_scores": [
+          22.6,
+          18.71,
+          14.71,
+          11.23,
+          7.66
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-04",
+        "role": "python_backend",
+        "expected_label": "waitlist",
+        "human_total_score": 75.0,
+        "l1_score": 100.0,
+        "l2_score": 76.13,
+        "l2_criterion_scores": [
+          22.97,
+          18.85,
+          15.23,
+          11.45,
+          7.63
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-05",
+        "role": "python_backend",
+        "expected_label": "needs_review",
+        "human_total_score": 66.0,
+        "l1_score": 80.0,
+        "l2_score": 69.97,
+        "l2_criterion_scores": [
+          20.11,
+          17.68,
+          14.32,
+          10.54,
+          7.32
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-06",
+        "role": "python_backend",
+        "expected_label": "needs_review",
+        "human_total_score": 76.0,
+        "l1_score": 80.0,
+        "l2_score": 73.58,
+        "l2_criterion_scores": [
+          21.87,
+          18.34,
+          14.53,
+          11.16,
+          7.68
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-07",
+        "role": "python_backend",
+        "expected_label": "reject",
+        "human_total_score": 57.0,
+        "l1_score": 80.0,
+        "l2_score": 63.58,
+        "l2_criterion_scores": [
+          18.1,
+          16.18,
+          13.12,
+          9.4,
+          6.78
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-09",
+        "role": "python_backend",
+        "expected_label": "needs_review",
+        "human_total_score": 53.0,
+        "l1_score": 40.0,
+        "l2_score": 58.6,
+        "l2_criterion_scores": [
+          16.62,
+          14.36,
+          12.12,
+          8.95,
+          6.55
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-10",
+        "role": "python_backend",
+        "expected_label": "needs_review",
+        "human_total_score": 68.0,
+        "l1_score": 80.0,
+        "l2_score": 71.75,
+        "l2_criterion_scores": [
+          21.35,
+          17.89,
+          14.1,
+          10.79,
+          7.62
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-11",
+        "role": "python_backend",
+        "expected_label": "needs_review",
+        "human_total_score": 85.0,
+        "l1_score": 80.0,
+        "l2_score": 86.08,
+        "l2_criterion_scores": [
+          26.21,
+          21.31,
+          16.98,
+          12.97,
+          8.61
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-12",
+        "role": "python_backend",
+        "expected_label": "needs_review",
+        "human_total_score": 79.0,
+        "l1_score": 80.0,
+        "l2_score": 79.16,
+        "l2_criterion_scores": [
+          23.62,
+          19.79,
+          15.87,
+          11.92,
+          7.96
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-01",
+        "role": "data_analyst",
+        "expected_label": "pass",
+        "human_total_score": 93.0,
+        "l1_score": 100.0,
+        "l2_score": 80.78,
+        "l2_criterion_scores": [
+          24.62,
+          20.05,
+          16.03,
+          12.02,
+          8.06
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-03",
+        "role": "data_analyst",
+        "expected_label": "waitlist",
+        "human_total_score": 82.0,
+        "l1_score": 100.0,
+        "l2_score": 83.16,
+        "l2_criterion_scores": [
+          25.5,
+          20.59,
+          16.47,
+          12.36,
+          8.24
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-05",
+        "role": "data_analyst",
+        "expected_label": "needs_review",
+        "human_total_score": 66.0,
+        "l1_score": 75.0,
+        "l2_score": 66.53,
+        "l2_criterion_scores": [
+          18.96,
+          16.81,
+          13.65,
+          10.02,
+          7.09
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-06",
+        "role": "data_analyst",
+        "expected_label": "needs_review",
+        "human_total_score": 76.0,
+        "l1_score": 75.0,
+        "l2_score": 67.53,
+        "l2_criterion_scores": [
+          19.75,
+          16.74,
+          13.4,
+          10.32,
+          7.32
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-07",
+        "role": "data_analyst",
+        "expected_label": "reject",
+        "human_total_score": 57.0,
+        "l1_score": 75.0,
+        "l2_score": 64.7,
+        "l2_criterion_scores": [
+          18.78,
+          16.29,
+          13.27,
+          9.52,
+          6.84
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-10",
+        "role": "data_analyst",
+        "expected_label": "needs_review",
+        "human_total_score": 68.0,
+        "l1_score": 75.0,
+        "l2_score": 65.02,
+        "l2_criterion_scores": [
+          18.97,
+          16.21,
+          12.89,
+          9.8,
+          7.15
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-12",
+        "role": "data_analyst",
+        "expected_label": "needs_review",
+        "human_total_score": 79.0,
+        "l1_score": 75.0,
+        "l2_score": 79.04,
+        "l2_criterion_scores": [
+          23.64,
+          19.75,
+          15.8,
+          11.87,
+          7.98
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-13",
+        "role": "data_analyst",
+        "expected_label": "needs_review",
+        "human_total_score": 45.0,
+        "l1_score": 0.0,
+        "l2_score": 47.7,
+        "l2_criterion_scores": [
+          12.97,
+          10.99,
+          10.35,
+          7.38,
+          6.01
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-14",
+        "role": "data_analyst",
+        "expected_label": "pass",
+        "human_total_score": 89.0,
+        "l1_score": 100.0,
+        "l2_score": 83.42,
+        "l2_criterion_scores": [
+          25.17,
+          20.69,
+          16.7,
+          12.44,
+          8.42
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-15",
+        "role": "data_analyst",
+        "expected_label": "needs_review",
+        "human_total_score": 58.0,
+        "l1_score": 100.0,
+        "l2_score": 61.21,
+        "l2_criterion_scores": [
+          17.95,
+          15.09,
+          12.17,
+          9.33,
+          6.67
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-01",
+        "role": "data_engineer",
+        "expected_label": "pass",
+        "human_total_score": 93.0,
+        "l1_score": 100.0,
+        "l2_score": 85.82,
+        "l2_criterion_scores": [
+          26.09,
+          21.28,
+          16.97,
+          12.88,
+          8.6
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-03",
+        "role": "data_engineer",
+        "expected_label": "waitlist",
+        "human_total_score": 82.0,
+        "l1_score": 100.0,
+        "l2_score": 79.91,
+        "l2_criterion_scores": [
+          24.24,
+          19.81,
+          15.81,
+          12.01,
+          8.04
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-06",
+        "role": "data_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 76.0,
+        "l1_score": 80.0,
+        "l2_score": 70.24,
+        "l2_criterion_scores": [
+          20.52,
+          17.53,
+          13.97,
+          10.72,
+          7.5
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-08",
+        "role": "data_engineer",
+        "expected_label": "reject",
+        "human_total_score": 24.0,
+        "l1_score": 0.0,
+        "l2_score": 40.1,
+        "l2_criterion_scores": [
+          10.4,
+          9.19,
+          8.93,
+          6.26,
+          5.32
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-10",
+        "role": "data_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 68.0,
+        "l1_score": 80.0,
+        "l2_score": 69.01,
+        "l2_criterion_scores": [
+          20.12,
+          17.3,
+          13.7,
+          10.43,
+          7.46
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-11",
+        "role": "data_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 85.0,
+        "l1_score": 80.0,
+        "l2_score": 83.51,
+        "l2_criterion_scores": [
+          25.06,
+          20.72,
+          16.71,
+          12.49,
+          8.53
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-12",
+        "role": "data_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 79.0,
+        "l1_score": 80.0,
+        "l2_score": 82.43,
+        "l2_criterion_scores": [
+          24.77,
+          20.54,
+          16.47,
+          12.37,
+          8.28
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-13",
+        "role": "data_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 45.0,
+        "l1_score": 0.0,
+        "l2_score": 42.18,
+        "l2_criterion_scores": [
+          11.07,
+          9.43,
+          9.44,
+          6.58,
+          5.66
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-14",
+        "role": "data_engineer",
+        "expected_label": "pass",
+        "human_total_score": 89.0,
+        "l1_score": 100.0,
+        "l2_score": 85.43,
+        "l2_criterion_scores": [
+          25.83,
+          21.16,
+          17.08,
+          12.72,
+          8.64
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-15",
+        "role": "data_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 58.0,
+        "l1_score": 100.0,
+        "l2_score": 66.28,
+        "l2_criterion_scores": [
+          19.6,
+          16.44,
+          13.05,
+          10.09,
+          7.1
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-01",
+        "role": "frontend",
+        "expected_label": "pass",
+        "human_total_score": 93.0,
+        "l1_score": 100.0,
+        "l2_score": 87.94,
+        "l2_criterion_scores": [
+          26.88,
+          21.75,
+          17.33,
+          13.21,
+          8.77
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-04",
+        "role": "frontend",
+        "expected_label": "waitlist",
+        "human_total_score": 75.0,
+        "l1_score": 100.0,
+        "l2_score": 79.35,
+        "l2_criterion_scores": [
+          24.24,
+          19.58,
+          15.81,
+          11.83,
+          7.89
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-05",
+        "role": "frontend",
+        "expected_label": "needs_review",
+        "human_total_score": 66.0,
+        "l1_score": 80.0,
+        "l2_score": 66.42,
+        "l2_criterion_scores": [
+          19.09,
+          16.74,
+          13.46,
+          10.02,
+          7.11
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-06",
+        "role": "frontend",
+        "expected_label": "needs_review",
+        "human_total_score": 76.0,
+        "l1_score": 80.0,
+        "l2_score": 76.88,
+        "l2_criterion_scores": [
+          22.98,
+          19.11,
+          15.34,
+          11.66,
+          7.79
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-07",
+        "role": "frontend",
+        "expected_label": "reject",
+        "human_total_score": 57.0,
+        "l1_score": 80.0,
+        "l2_score": 62.11,
+        "l2_criterion_scores": [
+          17.64,
+          15.77,
+          12.9,
+          9.15,
+          6.65
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-10",
+        "role": "frontend",
+        "expected_label": "needs_review",
+        "human_total_score": 68.0,
+        "l1_score": 80.0,
+        "l2_score": 66.89,
+        "l2_criterion_scores": [
+          19.57,
+          16.69,
+          13.24,
+          10.06,
+          7.33
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-11",
+        "role": "frontend",
+        "expected_label": "needs_review",
+        "human_total_score": 85.0,
+        "l1_score": 80.0,
+        "l2_score": 86.45,
+        "l2_criterion_scores": [
+          26.08,
+          21.37,
+          17.18,
+          13.01,
+          8.81
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-12",
+        "role": "frontend",
+        "expected_label": "needs_review",
+        "human_total_score": 79.0,
+        "l1_score": 80.0,
+        "l2_score": 78.26,
+        "l2_criterion_scores": [
+          23.32,
+          19.56,
+          15.72,
+          11.77,
+          7.89
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-13",
+        "role": "frontend",
+        "expected_label": "needs_review",
+        "human_total_score": 45.0,
+        "l1_score": 0.0,
+        "l2_score": 38.55,
+        "l2_criterion_scores": [
+          9.84,
+          8.52,
+          8.77,
+          6.07,
+          5.35
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-14",
+        "role": "frontend",
+        "expected_label": "pass",
+        "human_total_score": 89.0,
+        "l1_score": 100.0,
+        "l2_score": 86.58,
+        "l2_criterion_scores": [
+          26.41,
+          21.41,
+          17.24,
+          12.87,
+          8.65
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-02",
+        "role": "qa_engineer",
+        "expected_label": "pass",
+        "human_total_score": 88.0,
+        "l1_score": 100.0,
+        "l2_score": 87.84,
+        "l2_criterion_scores": [
+          27.01,
+          21.77,
+          17.26,
+          13.16,
+          8.64
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-03",
+        "role": "qa_engineer",
+        "expected_label": "waitlist",
+        "human_total_score": 82.0,
+        "l1_score": 100.0,
+        "l2_score": 82.6,
+        "l2_criterion_scores": [
+          25.28,
+          20.37,
+          16.37,
+          12.32,
+          8.26
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-05",
+        "role": "qa_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 66.0,
+        "l1_score": 80.0,
+        "l2_score": 65.13,
+        "l2_criterion_scores": [
+          18.35,
+          16.48,
+          13.51,
+          9.84,
+          6.95
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-06",
+        "role": "qa_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 76.0,
+        "l1_score": 80.0,
+        "l2_score": 73.32,
+        "l2_criterion_scores": [
+          21.37,
+          18.37,
+          14.75,
+          11.19,
+          7.64
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-08",
+        "role": "qa_engineer",
+        "expected_label": "reject",
+        "human_total_score": 24.0,
+        "l1_score": 0.0,
+        "l2_score": 37.99,
+        "l2_criterion_scores": [
+          9.72,
+          8.49,
+          8.59,
+          5.98,
+          5.21
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-09",
+        "role": "qa_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 53.0,
+        "l1_score": 40.0,
+        "l2_score": 60.42,
+        "l2_criterion_scores": [
+          16.98,
+          15.2,
+          12.64,
+          9.05,
+          6.55
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-11",
+        "role": "qa_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 85.0,
+        "l1_score": 80.0,
+        "l2_score": 84.55,
+        "l2_criterion_scores": [
+          25.51,
+          20.9,
+          16.82,
+          12.7,
+          8.62
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-13",
+        "role": "qa_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 45.0,
+        "l1_score": 0.0,
+        "l2_score": 41.38,
+        "l2_criterion_scores": [
+          10.86,
+          9.22,
+          9.25,
+          6.47,
+          5.58
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-14",
+        "role": "qa_engineer",
+        "expected_label": "pass",
+        "human_total_score": 89.0,
+        "l1_score": 100.0,
+        "l2_score": 84.7,
+        "l2_criterion_scores": [
+          25.53,
+          20.99,
+          17.0,
+          12.57,
+          8.61
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-15",
+        "role": "qa_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 58.0,
+        "l1_score": 100.0,
+        "l2_score": 58.2,
+        "l2_criterion_scores": [
+          16.84,
+          14.26,
+          11.81,
+          8.91,
+          6.38
+        ]
+      }
+    ]
+  },
+  "validation": {
+    "pair_count": 25,
+    "label_counts": {
+      "waitlist": 5,
+      "reject": 5,
+      "needs_review": 10,
+      "pass": 5
+    },
+    "l1": {
+      "requirement_count": 120,
+      "requirement_status_accuracy": 1.0,
+      "requirement_mismatch_count": 0,
+      "unsafe_requirement_mismatch_count": 0,
+      "score_minimum": 0.0,
+      "score_maximum": 100.0,
+      "mismatch_cases": []
+    },
+    "l2": {
+      "score_mean": 69.6396,
+      "score_standard_deviation": 14.435125071851646,
+      "score_minimum": 39.18,
+      "score_maximum": 84.3,
+      "score_range": 45.12,
+      "total_score_mae": 9.682,
+      "criterion_mae": 1.9604000000000001,
+      "score_correlation": 0.8643196013991317,
+      "label_score_means": {
+        "pass": 80.524,
+        "waitlist": 75.926,
+        "reject": 57.577999999999996,
+        "needs_review": 67.085
+      },
+      "pass_over_waitlist_margin": 4.597999999999999,
+      "waitlist_over_reject_margin": 18.348000000000006,
+      "raw_similarity_minimum": 0.7936347042840777,
+      "raw_similarity_maximum": 0.8932151588892233
+    },
+    "cases": [
+      {
+        "pair_id": "v2d-pair-be-03",
+        "role": "python_backend",
+        "expected_label": "waitlist",
+        "human_total_score": 82.0,
+        "l1_score": 100.0,
+        "l2_score": 72.11,
+        "l2_criterion_scores": [
+          21.43,
+          17.94,
+          14.49,
+          10.85,
+          7.4
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-08",
+        "role": "python_backend",
+        "expected_label": "reject",
+        "human_total_score": 24.0,
+        "l1_score": 0.0,
+        "l2_score": 40.05,
+        "l2_criterion_scores": [
+          10.32,
+          9.07,
+          9.01,
+          6.27,
+          5.38
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-13",
+        "role": "python_backend",
+        "expected_label": "needs_review",
+        "human_total_score": 45.0,
+        "l1_score": 0.0,
+        "l2_score": 39.18,
+        "l2_criterion_scores": [
+          10.06,
+          8.68,
+          8.88,
+          6.16,
+          5.4
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-14",
+        "role": "python_backend",
+        "expected_label": "pass",
+        "human_total_score": 89.0,
+        "l1_score": 100.0,
+        "l2_score": 84.01,
+        "l2_criterion_scores": [
+          25.69,
+          20.79,
+          16.69,
+          12.5,
+          8.34
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-15",
+        "role": "python_backend",
+        "expected_label": "needs_review",
+        "human_total_score": 58.0,
+        "l1_score": 100.0,
+        "l2_score": 65.93,
+        "l2_criterion_scores": [
+          19.35,
+          16.32,
+          13.13,
+          10.01,
+          7.12
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-02",
+        "role": "data_analyst",
+        "expected_label": "pass",
+        "human_total_score": 88.0,
+        "l1_score": 100.0,
+        "l2_score": 81.92,
+        "l2_criterion_scores": [
+          24.94,
+          20.33,
+          16.23,
+          12.26,
+          8.16
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-04",
+        "role": "data_analyst",
+        "expected_label": "waitlist",
+        "human_total_score": 75.0,
+        "l1_score": 100.0,
+        "l2_score": 79.83,
+        "l2_criterion_scores": [
+          23.98,
+          19.88,
+          16.01,
+          11.88,
+          8.08
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-08",
+        "role": "data_analyst",
+        "expected_label": "reject",
+        "human_total_score": 24.0,
+        "l1_score": 0.0,
+        "l2_score": 45.48,
+        "l2_criterion_scores": [
+          12.22,
+          10.62,
+          9.83,
+          7.06,
+          5.75
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-09",
+        "role": "data_analyst",
+        "expected_label": "needs_review",
+        "human_total_score": 53.0,
+        "l1_score": 50.0,
+        "l2_score": 57.96,
+        "l2_criterion_scores": [
+          16.66,
+          14.16,
+          11.77,
+          8.85,
+          6.52
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-11",
+        "role": "data_analyst",
+        "expected_label": "needs_review",
+        "human_total_score": 85.0,
+        "l1_score": 75.0,
+        "l2_score": 82.0,
+        "l2_criterion_scores": [
+          24.93,
+          20.33,
+          16.26,
+          12.24,
+          8.24
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-02",
+        "role": "data_engineer",
+        "expected_label": "pass",
+        "human_total_score": 88.0,
+        "l1_score": 100.0,
+        "l2_score": 79.82,
+        "l2_criterion_scores": [
+          24.1,
+          19.81,
+          15.83,
+          12.02,
+          8.06
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-04",
+        "role": "data_engineer",
+        "expected_label": "waitlist",
+        "human_total_score": 75.0,
+        "l1_score": 100.0,
+        "l2_score": 69.81,
+        "l2_criterion_scores": [
+          20.44,
+          17.4,
+          13.93,
+          10.61,
+          7.43
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-05",
+        "role": "data_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 66.0,
+        "l1_score": 80.0,
+        "l2_score": 73.66,
+        "l2_criterion_scores": [
+          21.68,
+          18.42,
+          14.66,
+          11.16,
+          7.74
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-07",
+        "role": "data_engineer",
+        "expected_label": "reject",
+        "human_total_score": 57.0,
+        "l1_score": 80.0,
+        "l2_score": 79.77,
+        "l2_criterion_scores": [
+          23.99,
+          19.81,
+          15.86,
+          11.98,
+          8.13
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-09",
+        "role": "data_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 53.0,
+        "l1_score": 40.0,
+        "l2_score": 66.12,
+        "l2_criterion_scores": [
+          19.12,
+          16.61,
+          13.34,
+          9.97,
+          7.08
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-02",
+        "role": "frontend",
+        "expected_label": "pass",
+        "human_total_score": 88.0,
+        "l1_score": 100.0,
+        "l2_score": 72.57,
+        "l2_criterion_scores": [
+          21.58,
+          18.11,
+          14.35,
+          10.97,
+          7.56
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-03",
+        "role": "frontend",
+        "expected_label": "waitlist",
+        "human_total_score": 82.0,
+        "l1_score": 100.0,
+        "l2_score": 79.25,
+        "l2_criterion_scores": [
+          23.75,
+          19.77,
+          15.84,
+          11.91,
+          7.98
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-08",
+        "role": "frontend",
+        "expected_label": "reject",
+        "human_total_score": 24.0,
+        "l1_score": 0.0,
+        "l2_score": 41.56,
+        "l2_criterion_scores": [
+          10.89,
+          9.55,
+          9.19,
+          6.47,
+          5.46
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-09",
+        "role": "frontend",
+        "expected_label": "needs_review",
+        "human_total_score": 53.0,
+        "l1_score": 40.0,
+        "l2_score": 59.39,
+        "l2_criterion_scores": [
+          16.98,
+          14.68,
+          12.14,
+          8.96,
+          6.63
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-15",
+        "role": "frontend",
+        "expected_label": "needs_review",
+        "human_total_score": 58.0,
+        "l1_score": 100.0,
+        "l2_score": 61.62,
+        "l2_criterion_scores": [
+          17.87,
+          15.16,
+          12.43,
+          9.39,
+          6.77
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-01",
+        "role": "qa_engineer",
+        "expected_label": "pass",
+        "human_total_score": 93.0,
+        "l1_score": 100.0,
+        "l2_score": 84.3,
+        "l2_criterion_scores": [
+          25.55,
+          20.82,
+          16.75,
+          12.63,
+          8.55
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-04",
+        "role": "qa_engineer",
+        "expected_label": "waitlist",
+        "human_total_score": 75.0,
+        "l1_score": 100.0,
+        "l2_score": 78.63,
+        "l2_criterion_scores": [
+          23.53,
+          19.53,
+          15.77,
+          11.81,
+          7.99
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-07",
+        "role": "qa_engineer",
+        "expected_label": "reject",
+        "human_total_score": 57.0,
+        "l1_score": 80.0,
+        "l2_score": 81.03,
+        "l2_criterion_scores": [
+          24.68,
+          20.05,
+          16.07,
+          12.14,
+          8.09
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-10",
+        "role": "qa_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 68.0,
+        "l1_score": 80.0,
+        "l2_score": 81.39,
+        "l2_criterion_scores": [
+          24.69,
+          20.16,
+          16.17,
+          12.2,
+          8.17
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-12",
+        "role": "qa_engineer",
+        "expected_label": "needs_review",
+        "human_total_score": 79.0,
+        "l1_score": 80.0,
+        "l2_score": 83.6,
+        "l2_criterion_scores": [
+          25.54,
+          20.71,
+          16.57,
+          12.49,
+          8.29
+        ]
+      }
+    ]
+  },
+  "quality_gate": {
+    "passed": true,
+    "checks": {
+      "l1_development_requirement_accuracy": true,
+      "l1_validation_requirement_accuracy": true,
+      "l1_development_unsafe_mismatches": true,
+      "l1_validation_unsafe_mismatches": true,
+      "l2_development_total_score_mae": true,
+      "l2_validation_total_score_mae": true,
+      "l2_development_criterion_mae": true,
+      "l2_validation_criterion_mae": true,
+      "l2_development_score_correlation": true,
+      "l2_validation_score_correlation": true,
+      "l2_development_score_range": true,
+      "l2_validation_score_range": true,
+      "l2_development_pass_over_waitlist_margin": true,
+      "l2_validation_pass_over_waitlist_margin": true,
+      "l2_development_waitlist_over_reject_margin": true,
+      "l2_validation_waitlist_over_reject_margin": true
+    }
+  },
+  "limitations": [
+    "The dataset is synthetic and human-reviewed by one reviewer.",
+    "Development and validation are both tuning data and cannot support final performance claims.",
+    "The frozen Stage 7 v1 test is excluded and remains an immutable runtime v1 result.",
+    "No L3 provider output is included in this offline checkpoint."
+  ]
+}

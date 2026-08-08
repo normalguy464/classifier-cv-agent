@@ -1,0 +1,125 @@
+{
+  "schema_version": "1.1.0",
+  "dataset_id": "stage7-five-role-runtime-v2-test-v1",
+  "dataset_version": "1.0.0",
+  "status": "draft_for_human_review",
+  "generated_at": "2026-08-08T15:00:00+07:00",
+  "source_type": "synthetic_new_profiles",
+  "runtime_configuration_set_id": "five-role-runtime-v2",
+  "runtime_manifest_path": "configs/runtime/five_role_v2/runtime_manifest.yaml",
+  "runtime_manifest_sha256": "641eb9d0106f11621bc62db23942d5a3182949d70a17fbafc6184ce2a2c1b19e",
+  "cv_schema_version": "1.0.0",
+  "job_profile_schema_version": "1.0.0",
+  "rubric_schema_version": "1.0.0",
+  "candidate_count": 50,
+  "job_profile_count": 5,
+  "rubric_count": 5,
+  "pair_count": 50,
+  "role_pair_counts": {
+    "data_analyst": 10,
+    "python_backend": 10,
+    "frontend": 10,
+    "qa_engineer": 10,
+    "data_engineer": 10
+  },
+  "scenario_pair_counts": {
+    "strong": 5,
+    "solid": 5,
+    "moderate": 5,
+    "missing_critical": 5,
+    "conflicting_critical": 5,
+    "explicit_failure": 5,
+    "lower_boundary": 5,
+    "upper_boundary": 5,
+    "transferable": 5,
+    "hard_negative": 5
+  },
+  "draft_label_counts": {
+    "pass": 10,
+    "waitlist": 10,
+    "needs_review": 25,
+    "reject": 5
+  },
+  "dataset_tier": "bronze",
+  "ground_truth_status": "pending_human_review",
+  "minimum_human_reviewers_for_gold": 2,
+  "locked_for_evaluation": false,
+  "classifier_results_generated": false,
+  "llm_requests_made": false,
+  "source_dataset_version": "2.0.0",
+  "source_manifest_sha256": "7a61f45395b7a7ed0be0e957ff7790473b35ca0a7baae4f66e0ef6079f24317a",
+  "prior_datasets": [
+    {
+      "dataset_id": "stage4-reviewed-v1",
+      "cv_profiles_path": "data/reviewed/stage4_cv_profiles_v1.jsonl",
+      "cv_profiles_sha256": "91e10605f62226a8648118faf050e4043f90ba733026e18f23724f0cc2e9ef98"
+    },
+    {
+      "dataset_id": "synthetic-expansion-v1",
+      "cv_profiles_path": "data/synthetic_expansion/v1/cv_profiles.jsonl",
+      "cv_profiles_sha256": "164513a7069ab574166dce5a67396eeb85a74976764841b3e4607e6dec25c467"
+    },
+    {
+      "dataset_id": "synthetic-expansion-v2-draft",
+      "cv_profiles_path": "data/synthetic_expansion/v2/cv_profiles.jsonl",
+      "cv_profiles_sha256": "f88aef2f11bd0a616edb0e0a6fe3896c5c5d3de0f986569d8db63d5d0b141f50"
+    },
+    {
+      "dataset_id": "synthetic-expansion-v2-3-1-reviewed",
+      "cv_profiles_path": "data/synthetic_expansion/reviewed/v2_3_1/cv_profiles.jsonl",
+      "cv_profiles_sha256": "060951ce6b0972700faf73d7d1ceaaf8be3bdc914b63b52c4b6f0fa26397106c"
+    },
+    {
+      "dataset_id": "stage7-runtime-v1-draft",
+      "cv_profiles_path": "data/to_review/stage7_test_v1/cv_profiles.jsonl",
+      "cv_profiles_sha256": "b3f9f435db94e22419c6dd7339d0bf591d030282ae63bb959ff678f9910a3e8a"
+    },
+    {
+      "dataset_id": "stage7-runtime-v1-gold",
+      "cv_profiles_path": "data/frozen_test/stage7_v1/cv_profiles.jsonl",
+      "cv_profiles_sha256": "b3f9f435db94e22419c6dd7339d0bf591d030282ae63bb959ff678f9910a3e8a"
+    },
+    {
+      "dataset_id": "runtime-v2-development-reviewed",
+      "cv_profiles_path": "data/runtime_v2/reviewed/development_v1/cv_profiles.jsonl",
+      "cv_profiles_sha256": "fda97583e0c73bbd589ad95e906154cfb6d4c105d14ac782507735d6c2a342f9"
+    }
+  ],
+  "provenance": [
+    "All CV profiles are synthetic and contain no real candidate data.",
+    "Runtime v2 Job Profiles and rubrics were copied without modification.",
+    "Profiles use new operational contexts and evidence details independent of prior sets.",
+    "All prior Stage 3-7 and Runtime v2 development profiles participate in leakage checks.",
+    "Opaque identifiers do not expose labels or scenarios.",
+    "Draft annotations are not ground truth until two-person human consensus review.",
+    "No classifier layer or LLM provider was executed during construction.",
+    "Cases must not be removed after predictions are observed to improve metrics."
+  ],
+  "files": [
+    {
+      "path": "cv_profiles.jsonl",
+      "sha256": "e471595e57c6e1ebd8f4aec41af3cbd896ff05b2a685fb5b75982bf94ff2c08b",
+      "record_count": 50
+    },
+    {
+      "path": "job_profiles.jsonl",
+      "sha256": "1be52b3995a90305535417a6a032e0d89007150d18cccac38b71377b694cdbd4",
+      "record_count": 5
+    },
+    {
+      "path": "rubrics.jsonl",
+      "sha256": "c6c0b399e65faa9ce83273d0e78fbfd71b00fb302ff88a7ee09835f6b3da63ff",
+      "record_count": 5
+    },
+    {
+      "path": "pairs.jsonl",
+      "sha256": "64ca3805ffe220ba4a1f506a77b3e4145e8ba28261ed5eebfe6e0e3e1e7e921d",
+      "record_count": 50
+    },
+    {
+      "path": "review_sheet.md",
+      "sha256": "8956c57792f1849f98ddb4d744e1b7210fa541ba46d5bb0d47380da76c177191",
+      "record_count": 50
+    }
+  ]
+}

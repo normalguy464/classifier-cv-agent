@@ -1,0 +1,68 @@
+artifact_kind: job_profile_draft
+artifact_version: 1.0.0
+contract_status: approved_for_pilot
+job_profile_id: junior-data-analyst-v1
+title: Junior Data Analyst
+language: vi
+seniority:
+  level: junior
+  experience_range_years:
+    minimum: 0
+    maximum: 2
+  formal_work_experience_required: false
+  equivalent_experience:
+    - relevant internship
+    - academic project
+    - personal project with verifiable evidence
+role_summary: Phân tích dữ liệu để trả lời câu hỏi nghiệp vụ, tạo báo cáo có thể kiểm tra và truyền đạt phát hiện rõ ràng cho các bên liên quan.
+responsibilities:
+  - Truy vấn, làm sạch và kiểm tra chất lượng dữ liệu từ nguồn có cấu trúc.
+  - Phân tích dữ liệu để xác định xu hướng, chỉ số và câu trả lời cho câu hỏi nghiệp vụ.
+  - Xây dựng báo cáo hoặc dashboard và trình bày phát hiện cùng giới hạn của dữ liệu.
+  - Ghi nhận nguồn dữ liệu, định nghĩa chỉ số và các bước phân tích để kết quả có thể kiểm tra.
+mandatory_requirements:
+  - requirement_id: da-sql
+    description: Có kỹ năng SQL để truy vấn và tổng hợp dữ liệu.
+    accepted_evidence:
+      - Skill SQL được nêu rõ kèm dự án, kinh nghiệm hoặc bài tập có mô tả truy vấn.
+      - Dự án hoặc thực tập mô tả việc sử dụng SQL cho join, aggregate, filter hoặc kiểm tra dữ liệu.
+      - Chứng chỉ hoặc bài đánh giá chỉ được dùng làm evidence bổ sung, không thay thế evidence thực hành.
+    missing_evidence_policy: Thiếu thông tin không được coi là không đáp ứng và phải được đánh dấu missing.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi CV nêu rõ không có kỹ năng SQL hoặc evidence xác nhận năng lực SQL không phù hợp.
+  - requirement_id: da-analysis-language
+    description: Có Python hoặc R để xử lý và phân tích dữ liệu.
+    accepted_evidence:
+      - Skill Python hoặc R được nêu rõ kèm pandas, numpy, tidyverse hoặc công cụ phân tích tương đương.
+      - Dự án hoặc thực tập mô tả thao tác làm sạch, biến đổi, phân tích hoặc trực quan hóa dữ liệu bằng Python hoặc R.
+    missing_evidence_policy: Thiếu thông tin không được coi là không đáp ứng và phải được đánh dấu missing.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi CV nêu rõ không có Python và R hoặc evidence xác nhận kỹ năng không liên quan đến phân tích dữ liệu.
+  - requirement_id: da-analytical-project
+    description: Có ít nhất một dự án hoặc thực tập thể hiện quy trình phân tích dữ liệu.
+    accepted_evidence:
+      - Mô tả mục tiêu, nguồn dữ liệu, phương pháp và kết quả của dự án phân tích.
+      - Thực tập có nhiệm vụ phân tích, báo cáo, dashboard hoặc kiểm tra dữ liệu.
+      - Liên kết portfolio, repository hoặc báo cáo được mô tả trong CV.
+    missing_evidence_policy: Thiếu thông tin không được coi là không đáp ứng và phải được đánh dấu missing.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi CV nêu rõ chưa từng thực hiện dự án, thực tập hoặc công việc liên quan đến phân tích dữ liệu.
+preferred_requirements:
+  - requirement_id: da-bi
+    description: Có Power BI, Tableau, Looker Studio hoặc công cụ business intelligence tương đương.
+  - requirement_id: da-statistics
+    description: Có nền tảng thống kê ứng dụng, thiết kế thí nghiệm hoặc A/B testing.
+  - requirement_id: da-warehouse
+    description: Có kinh nghiệm data warehouse, mô hình dữ liệu, dbt hoặc ETL/ELT.
+  - requirement_id: da-business-communication
+    description: Có thể diễn giải phát hiện dữ liệu, giả định và giới hạn cho người không chuyên kỹ thuật.
+scoring_exclusions:
+  - age
+  - gender
+  - ethnicity
+  - religion
+  - marital_status
+  - disability
+  - hometown
+artifact_links:
+  rubric_id: junior-data-analyst-rubric-v1
+  rubric_version: 1.0.0
+  scoring_configuration_version: 1.1.0
+  models_configuration_version: 1.1.0

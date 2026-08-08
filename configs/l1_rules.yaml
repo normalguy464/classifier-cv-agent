@@ -1,0 +1,140 @@
+artifact_kind: l1_requirement_matching_rules
+configuration_version: 1.0.0
+contract_status: stage4_initial
+policies:
+  - job_profile_id: junior-data-analyst-v1
+    rules:
+      - requirement_id: da-sql
+        evidence_sections:
+          - skills
+          - work_experience
+          - projects
+          - other
+        positive_terms:
+          - sql
+          - structured query language
+          - truy vấn dữ liệu
+          - select
+        explicit_negative_terms:
+          - không có kỹ năng sql
+          - chưa từng sử dụng sql
+          - chưa dùng sql
+        match_mode: any
+      - requirement_id: da-analysis-language
+        evidence_sections:
+          - skills
+          - work_experience
+          - projects
+          - other
+        positive_terms:
+          - python
+          - pandas
+          - numpy
+          - tidyverse
+          - dplyr
+          - ggplot2
+          - dùng r để
+          - dùng r với
+          - sử dụng r để
+        explicit_negative_terms:
+          - không có python hoặc r
+          - chưa từng sử dụng python hoặc r
+          - chưa dùng python hoặc r
+          - chưa dùng python
+          - chưa sử dụng python
+        match_mode: any
+      - requirement_id: da-analytical-project
+        evidence_sections:
+          - work_experience
+          - projects
+          - other
+        positive_terms:
+          - dự án phân tích
+          - dự án học tập
+          - dự án cá nhân
+          - dự án nhóm
+          - thực tập
+          - dashboard
+          - chỉ số
+        explicit_negative_terms:
+          - chưa thực hiện dự án
+          - chưa có dự án phân tích
+          - chưa từng thực hiện dự án
+          - chưa thực tập phân tích dữ liệu
+        match_mode: any
+  - job_profile_id: junior-python-backend-developer-v1
+    rules:
+      - requirement_id: be-python
+        evidence_sections:
+          - skills
+          - work_experience
+          - projects
+          - other
+        positive_terms:
+          - python
+          - pydantic
+        explicit_negative_terms:
+          - không có python
+          - chưa từng sử dụng python
+          - chưa dùng python
+        match_mode: any
+      - requirement_id: be-rest-api
+        evidence_sections:
+          - skills
+          - work_experience
+          - projects
+          - other
+        positive_terms:
+          - rest api
+          - http api
+          - fastapi
+          - flask api
+          - django rest
+          - endpoint
+          - openapi
+        explicit_negative_terms:
+          - chưa từng xây http api
+          - chưa từng xây rest api
+          - chưa xây api
+          - không có api
+          - chưa sử dụng framework backend web
+        match_mode: any
+      - requirement_id: be-relational-data
+        evidence_sections:
+          - skills
+          - work_experience
+          - projects
+          - other
+        positive_terms:
+          - sql
+          - postgresql
+          - mysql
+          - sqlite
+          - cơ sở dữ liệu quan hệ
+          - khóa ngoại
+          - migration
+          - orm
+        explicit_negative_terms:
+          - không có kiến thức sql
+          - chưa từng sử dụng sql
+          - chưa dùng cơ sở dữ liệu quan hệ
+          - không có kiến thức dữ liệu quan hệ
+        match_mode: any
+      - requirement_id: be-git
+        evidence_sections:
+          - skills
+          - work_experience
+          - projects
+          - other
+        positive_terms:
+          - git
+          - pull request
+          - merge request
+          - branch
+          - commit
+        explicit_negative_terms:
+          - không có kinh nghiệm git
+          - chưa từng sử dụng git
+          - chưa dùng git
+          - không dùng quản lý phiên bản
+        match_mode: any

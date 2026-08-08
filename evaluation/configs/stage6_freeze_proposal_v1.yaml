@@ -1,0 +1,43 @@
+schema_version: 1.0.0
+proposal_id: stage6-live-freeze-proposal-v1
+proposal_version: 1.0.0
+proposal_status: provisional_pending_human_approval
+validation_partition_id: stage6-validation-v1
+source_report:
+  path: evaluation/reports/stage6_live_llm_validation_v1.json
+  sha256: 458d38876f9769c06c718d78c426e1f3effaad89f300904039868cc898cfcfcd
+  report_id: stage6-live-llm-validation-v1
+live_model_strategy:
+  experiment_id: stage6-live-llm-validation-v1
+  experiment_version: 1.3.0
+  provider_identifier: google_ai_studio
+  model_identifier: gemini-3.5-flash-lite
+  prompt_version: l3-evidence-rubric-v3
+source_candidate_id: approved-current-v1
+candidate:
+  candidate_id: live-l3-automatic-pass-gate-v1
+  description: Keep the approved aggregate thresholds and require very strong L3 support before automatic Pass.
+  l2_matching:
+    similarity_floor: 0.20
+    similarity_ceiling: 0.80
+    top_k: 2
+  aggregation:
+    l1_deterministic_rules: 0.45
+    l2_section_semantic_matching: 0.25
+    l3_evidence_grounded_reasoning: 0.30
+  thresholds:
+    pass_minimum: 75
+    waitlist_minimum: 60
+  disagreement_points: 25
+  boundary_offset_points: 2
+  automatic_pass_gate:
+    l3_minimum_score: 95
+    fallback_decision: needs_review
+    reason_identifier: l3-below-automatic-pass-minimum
+selection_policy:
+  required_needs_review_recall: 1.0
+  required_false_reject_count: 0
+  required_unsafe_pass_count: 0
+  maximum_review_rate: 0.80
+  primary_metric: macro_f1
+  secondary_metric: lower_review_rate

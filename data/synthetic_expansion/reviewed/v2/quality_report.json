@@ -1,0 +1,25 @@
+{
+  "dataset_id": "synthetic-cv-jd-expansion-v2-reviewed-silver",
+  "cv_profile_count": 50,
+  "job_profile_count": 25,
+  "rubric_count": 25,
+  "pair_count": 250,
+  "role_pair_counts": {
+    "data_analyst": 50,
+    "python_backend": 50,
+    "frontend": 50,
+    "qa_engineer": 50,
+    "data_engineer": 50
+  },
+  "label_counts": {
+    "pass": 50,
+    "waitlist": 25,
+    "needs_review": 155,
+    "reject": 20
+  },
+  "tier_counts": {
+    "silver": 250
+  },
+  "errors": [],
+  "warnings": []
+}

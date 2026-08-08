@@ -1,0 +1,153 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "runtime-v2-hybrid-fresh-confirmation-v2",
+  "generated_at": "2026-08-08T23:40:00+07:00",
+  "development_selection_performed": false,
+  "validation_accessed": false,
+  "llm_provider_calls_made": false,
+  "stage7_v1_test_accessed": false,
+  "selected_candidate_id": "hybrid-v5-pass82",
+  "confirmation": {
+    "candidate_id": "hybrid-v5-pass82",
+    "sample_count": 10,
+    "accuracy": 0.8,
+    "macro_f1": 0.38541666666666663,
+    "cohen_kappa": 0.4117647058823529,
+    "needs_review_recall": 0.875,
+    "review_rate": 0.8,
+    "false_reject_count": 1,
+    "false_reject_case_ids": [
+      "v2d-pair-be-12"
+    ],
+    "unsafe_pass_count": 0,
+    "unsafe_pass_case_ids": [],
+    "confusion_matrix": [
+      [
+        0,
+        0,
+        0,
+        1
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        0
+      ],
+      [
+        0,
+        0,
+        1,
+        7
+      ]
+    ],
+    "cases": [
+      {
+        "pair_id": "v2d-pair-be-05",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 67.24,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-be-12",
+        "expected_label": "needs_review",
+        "predicted_label": "reject",
+        "final_score": 67.25,
+        "review_reasons": []
+      },
+      {
+        "pair_id": "v2d-pair-da-06",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 70.76,
+        "review_reasons": [
+          "conflicting-critical-evidence",
+          "lower-threshold-boundary"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-10",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 62.01,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-12",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 68.23,
+        "review_reasons": [
+          "lower-threshold-boundary"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-14",
+        "expected_label": "pass",
+        "predicted_label": "needs_review",
+        "final_score": 81.88,
+        "review_reasons": [
+          "upper-threshold-boundary"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-07",
+        "expected_label": "reject",
+        "predicted_label": "reject",
+        "final_score": 63.13,
+        "review_reasons": []
+      },
+      {
+        "pair_id": "v2d-pair-fe-11",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 72.44,
+        "review_reasons": [
+          "conflicting-critical-evidence"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-09",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 52.63,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-15",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 68.96,
+        "review_reasons": [
+          "low-score-without-explicit-critical-unsatisfied",
+          "lower-threshold-boundary"
+        ]
+      }
+    ]
+  },
+  "quality_gate": {
+    "passed": false
+  },
+  "traceability": {
+    "configuration_sha256": "ae83f4dd3f89d884833f9009e2dcc38958b2f56f7e181406662ad2e035d3df18",
+    "reviewed_pairs_sha256": "9a6ae4b79a2c0001e43288dc3beacd68e02bc1d6ca39c26333a3addf7a01a210",
+    "offline_report_sha256": "316d49facddbe77e35d2c86a61a78f2af49dab71acb5688e0ed5978280896367",
+    "fresh_l3_report_sha256": "11e0359f439827735e914b9a2061da1fdd7348165d001f3cb4ddac490be98bb8"
+  }
+}

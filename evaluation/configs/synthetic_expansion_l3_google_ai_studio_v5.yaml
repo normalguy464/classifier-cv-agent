@@ -1,0 +1,74 @@
+schema_version: 1.0.0
+experiment_id: synthetic-expansion-v2-google-ai-studio-l3-validation-v5
+experiment_version: 20.0.0
+dataset_id: synthetic-cv-jd-expansion-v2-reviewed-silver
+dataset_version: 2.3.0
+reviewed_dataset_directory: data/synthetic_expansion/reviewed/v2_3
+split_manifest_path: data/synthetic_expansion/splits/v2_3_silver_split_manifest.json
+development_partition_id: synthetic-expansion-v2-3-development-silver
+held_out_partition_id: synthetic-expansion-v2-3-held-out-silver
+provider_identifier: google_ai_studio
+model_identifier: gemini-3.5-flash-lite
+prompt_version: l3-evidence-rubric-v7
+l2_configuration_path: evaluation/configs/synthetic_expansion_l2_candidates_v3.yaml
+l2_candidate_set_id: synthetic-expansion-v2-3-l2-development-candidates-v3
+l2_candidate_set_version: 1.3.0
+l2_candidate_id: coverage-70-95-v1
+billing_tier_assumption: free_tier_user_reported
+data_policy:
+  development_only: true
+  held_out_allowed: false
+  original_frozen_test_allowed: false
+  raw_provider_response_persisted: false
+request_policy:
+  hard_request_cap: 35
+  minimum_request_interval_seconds: 6
+  request_timeout_seconds: 60
+  maximum_invalid_retries_per_attempt: 1
+  maximum_unavailable_retries_per_attempt: 1
+  maximum_total_retries_per_attempt: 1
+  require_supported_parameters: false
+  response_healing_enabled: false
+  include_temperature_parameter: false
+primary_pair_ids:
+  - pair-qa-failed-std
+  - pair-da-missing-std
+  - pair-de-missing-std
+  - pair-de-lowbd-std
+  - pair-qa-moderate-std
+  - pair-be-failed-std
+  - pair-de-hardneg-std
+  - pair-da-strong-std
+  - pair-be-strong-std
+  - pair-fe-strong-std
+  - pair-qa-strong-std
+  - pair-de-strong-std
+  - pair-da-upbd-std
+  - pair-be-moderate-std
+  - pair-fe-solid-std
+  - pair-de-moderate-std
+  - pair-da-lowbd-std
+  - pair-fe-upbd-std
+  - pair-be-hardneg-std
+  - pair-fe-conflict-std
+  - pair-qa-conflict-std
+  - pair-da-hardneg-std
+  - pair-be-upbd-std
+  - pair-fe-hardneg-std
+  - pair-qa-hardneg-std
+stability:
+  pair_ids:
+    - pair-da-strong-std
+    - pair-be-failed-std
+    - pair-fe-conflict-std
+    - pair-qa-moderate-std
+    - pair-de-missing-std
+  total_attempts_per_pair: 2
+quality_policy:
+  required_primary_valid_output_rate: 1.0
+  required_requirement_status_match_rate: 1.0
+  maximum_stability_score_range: 10
+  required_stability_requirement_agreement_rate: 1.0
+  maximum_endpoint_score_rate: 0.4
+  maximum_criterion_mean_absolute_error: 3.5
+  maximum_total_score_mean_absolute_error: 12

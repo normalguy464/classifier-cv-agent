@@ -1,0 +1,127 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-pilot-be-004",
+  "candidate_reference": "candidate-synthetic-be-004",
+  "summary": "Ứng viên dùng Python cho script tự động hóa và xác nhận chưa từng xây HTTP hoặc REST API.",
+  "skills": [
+    {
+      "name": "Python scripting",
+      "evidence_ids": [
+        "ev-be004-python",
+        "ev-be004-scripts"
+      ]
+    },
+    {
+      "name": "SQLite and SQL",
+      "evidence_ids": [
+        "ev-be004-sqlite"
+      ]
+    },
+    {
+      "name": "Git",
+      "evidence_ids": [
+        "ev-be004-git"
+      ]
+    }
+  ],
+  "work_experiences": [],
+  "education": [
+    {
+      "education_id": "education-be004",
+      "degree": "College program",
+      "field_of_study": "Information Technology",
+      "institution_reference": "institution-synthetic-be-004",
+      "evidence_ids": [
+        "ev-be004-education"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "project-be004-file-automation",
+      "title": "File processing automation",
+      "summary": "Script dòng lệnh đọc tệp CSV, lưu trạng thái vào SQLite và tạo báo cáo.",
+      "technologies": [
+        "Python",
+        "SQLite",
+        "Git"
+      ],
+      "evidence_ids": [
+        "ev-be004-scripts",
+        "ev-be004-python",
+        "ev-be004-sqlite",
+        "ev-be004-git"
+      ]
+    }
+  ],
+  "certifications": [],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be004-python",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng Python cho script đọc tệp, đổi tên và tổng hợp dữ liệu.",
+      "location": {
+        "source_record_id": "record-be004-skills-python"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be004-sqlite",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dùng SQLite và câu lệnh SQL cơ bản để lưu trạng thái xử lý tệp.",
+      "location": {
+        "source_record_id": "record-be004-database"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be004-git",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng Git commit cho dự án script cá nhân.",
+      "location": {
+        "source_record_id": "record-be004-skills-git"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be004-scripts",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dự án chỉ có giao diện dòng lệnh và không nhận hoặc trả HTTP request.",
+      "location": {
+        "source_record_id": "record-be004-project"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be004-explicit-api-gap",
+      "source_type": "candidate",
+      "section": "other",
+      "text": "Ứng viên xác nhận chưa từng xây HTTP API, REST API hoặc sử dụng framework backend web.",
+      "location": {
+        "source_record_id": "record-be004-candidate-statement"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be004-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Chương trình Information Technology có học phần Python cơ bản.",
+      "location": {
+        "source_record_id": "record-be004-education"
+      },
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": []
+}

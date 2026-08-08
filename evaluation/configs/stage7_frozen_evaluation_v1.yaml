@@ -1,0 +1,79 @@
+schema_version: 1.0.1
+protocol_id: stage7-five-role-frozen-evaluation-v1
+protocol_version: 1.0.1
+status: approved_for_frozen_evaluation
+approved_at: "2026-08-07T14:30:00+07:00"
+runtime_configuration_set_id: five-role-runtime-v1
+test_dataset_id: stage7-five-role-test-v1
+tuning_allowed: false
+test_output_may_change_runtime: false
+preconditions:
+  runtime_status: frozen_for_stage7
+  dataset_status: human_reviewed_gold
+  minimum_human_reviewers: 2
+  human_review_mode: two_person_consensus_panel
+  qc_errors_required: 0
+  qc_warnings_required: 0
+  classifier_results_generated_before_lock: false
+  prior_candidate_overlap_required: 0
+  prior_profile_id_overlap_required: 0
+  prior_exact_evidence_overlap_required: 0
+  provider_calls_require_separate_user_authorization: true
+metrics:
+  minimum_accuracy: 0.70
+  minimum_macro_f1: 0.60
+  minimum_needs_review_recall: 1
+  maximum_false_reject_count: 0
+  maximum_unsafe_pass_count: 0
+  minimum_requirement_status_accuracy: 0.95
+  maximum_unsafe_requirement_mismatch_count: 0
+  maximum_criterion_mae: 3
+  maximum_total_score_mae: 12
+  maximum_review_rate: 0.80
+  minimum_valid_output_rate: 0.95
+  minimum_stability_exact_requirement_agreement: 0.80
+  minimum_stability_route_agreement: 1
+  maximum_stability_score_range: 10
+request_policy:
+  primary_case_count: 50
+  stability_case_count: 5
+  repeats_per_stability_case: 1
+  intended_request_count: 55
+  maximum_http_request_count: 60
+  retry_count_per_attempt: 1
+  stop_on_provider_unavailability: true
+  persist_raw_provider_response: false
+  minimum_request_interval_seconds: 1
+  request_timeout_seconds: 60
+  max_completion_tokens: 4096
+  reasoning_effort: none
+  include_temperature_parameter: false
+  input_usd_per_million_tokens: 0.75
+  cached_input_usd_per_million_tokens: 0.075
+  output_usd_per_million_tokens: 4.50
+  assumed_max_input_tokens_per_request: 12000
+  maximum_estimated_experiment_cost_usd: 2.00
+baselines:
+  - keyword
+  - tfidf
+  - embedding
+ablations:
+  - l1_only
+  - l2_only
+  - l3_only
+  - l1_l2
+  - l1_l3
+  - l2_l3
+  - l1_l2_l3
+bootstrap_seed: 20260807
+bootstrap_resamples: 2000
+report_per_role_metrics: true
+report_confusion_matrix: true
+report_latency_and_usage: true
+limitations_required: true
+stability_pair_ids:
+  - s7-pair-da-01
+  - s7-pair-be-06
+  - s7-pair-fe-05
+  - s7-pair-qa-03
+  - s7-pair-de-04

@@ -1,0 +1,65 @@
+schema_version: 1.0.0
+artifact_kind: classifier_runtime_configuration_manifest
+configuration_set_id: five-role-runtime-v2-development-candidate
+manifest_version: 2.0.0
+configuration_status: development_candidate_pending_review
+user_approval_date: null
+approved_experiment_id: runtime-v2-hybrid-waitlist-tuning-v6
+source_report:
+  path: evaluation/reports/runtime_v2_hybrid_waitlist_tuning_v6.json
+  sha256: 34242f0f6c384c158005c0b791be6b9733e3fc1d4f9da5289484cec793318efd
+  report_id: runtime-v2-hybrid-waitlist-tuning-v6
+source_experiment_configuration:
+  path: evaluation/configs/runtime_v2_hybrid_waitlist_tuning_v6.yaml
+  sha256: 9287c6dc71a8aef46e860065bda465032bb439d89a4da98f1329c88a524e7622
+supported_job_profile_ids:
+  - junior-data-analyst-std-v2
+  - junior-python-backend-std-v2
+  - junior-frontend-std-v2
+  - junior-qa-engineer-std-v2
+  - junior-data-engineer-std-v2
+runtime_artifacts:
+  - path: job_profiles/junior_data_analyst_standard_v2.yaml
+    sha256: 5e291b7e266f614f4eda63726b9075a2e850f761e7154d822ad94e32e09cc4fd
+  - path: job_profiles/junior_data_engineer_standard_v2.yaml
+    sha256: 054eb7239cecc3710b5b8f663395e5d737eb45e518d9367dbe059d225ad0834f
+  - path: job_profiles/junior_frontend_standard_v2.yaml
+    sha256: 5b5b80e23cdbc82e3da656574ead26ac1d96f53fd6d272e68ab88ab04167a44d
+  - path: job_profiles/junior_python_backend_standard_v2.yaml
+    sha256: e1c4d9bb81d819c3c90a62849eadbd3f543781f39887abe11abe95b69786267d
+  - path: job_profiles/junior_qa_engineer_standard_v2.yaml
+    sha256: 557d3a9346ac1ade0cc2c7b46496544549ea52e7ac19b210e9922046d4d7297b
+  - path: l1_rules.yaml
+    sha256: 6bcf6642438f669ca9787174d88744ee9a7b7a1c1be5dff6968c02afa47a6c2e
+  - path: models.yaml
+    sha256: 20f116fe29f99c7a00554e65c413d5bb2e8e86d8b2fbe2f5da4818917e2ea88d
+  - path: rubrics/junior_data_analyst_standard_v2_rubric.yaml
+    sha256: d10aba50b110acf6e5fb5e274b2d3a440b5d61696c539dd73ac213de125d05b3
+  - path: rubrics/junior_data_engineer_standard_v2_rubric.yaml
+    sha256: 6aa68d588947a710426805205cde935209e125dab60e0fb1753e7df85140dd37
+  - path: rubrics/junior_frontend_standard_v2_rubric.yaml
+    sha256: 74a949c1baca83f4bc81877b13e67c55e34fab0b5cc565c6c07c7f8c99356932
+  - path: rubrics/junior_python_backend_standard_v2_rubric.yaml
+    sha256: 393a5c45b9d40d86794473c4ed13f96aa8ebcbf5661730b15675bc3f0b64420d
+  - path: rubrics/junior_qa_engineer_standard_v2_rubric.yaml
+    sha256: 370d36c829c50528c35f7a80e76982ac5b43cf35d0d2b8826b7629961bcca703
+  - path: scoring.yaml
+    sha256: eeed07498e7b22ffe59312781cf69a8826dadf35c562db599cbd60d57832f0dc
+strategy:
+  scoring_configuration_version: 3.0.0
+  models_configuration_version: 3.0.0
+  l1_rules_configuration_version: 3.0.0
+  l2_candidate_id: rubric-quality-v3-extra-trees-leaf3-v1
+  prompt_version: l3-evidence-rubric-v15
+  l3_score_mapping_version: l3-deterministic-level-mapping-v3
+  provider_identifier: openai
+  model_identifier: gpt-5.4-mini-2026-03-17
+  aggregation: [0.20, 0.30, 0.50]
+  thresholds: [67, 82]
+  disagreement_points: 45
+  boundary_offset_points: 2
+data_policy:
+  development_report_only: true
+  held_out_evaluated: false
+  original_frozen_test_evaluated: false
+  raw_provider_response_persisted: false

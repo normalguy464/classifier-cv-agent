@@ -1,0 +1,57 @@
+artifact_kind: scoring_rubric
+rubric_id: de-std-rubric-v2
+rubric_version: 2.0.1
+contract_status: approved_for_runtime
+job_profile_id: junior-data-engineer-std-v2
+score_scale: {minimum: 0, maximum: 100}
+criteria:
+  - criterion_id: mandatory-requirements
+    title: Yêu cầu bắt buộc
+    weight: 30
+    description: Đối chiếu riêng từng yêu cầu bắt buộc và phân biệt đạt, không đạt, thiếu và mâu thuẫn.
+    evaluation_signals:
+      - Thông tin thực hành trực tiếp cho từng yêu cầu bắt buộc.
+      - Phân biệt satisfied, unsatisfied, missing và conflicting.
+      - ETL hoặc SQL không tự chứng minh năng lực Python.
+    missing_evidence_handling: Thiếu hoặc mâu thuẫn ở bất kỳ yêu cầu bắt buộc nào phải kích hoạt Needs Review.
+  - criterion_id: de-technical-specialization
+    title: Năng lực kỹ thuật chuyên môn
+    weight: 25
+    description: Đánh giá Python, SQL trung cấp, ETL/ELT, warehouse modeling, orchestration và môi trường chạy.
+    evaluation_signals:
+      - Python có module, logging, configuration và xử lý lỗi.
+      - SQL có CTE, JOIN, window function hoặc tối ưu cơ bản.
+      - Pipeline và data model có cấu trúc, kiểm tra chất lượng và cách chạy lại.
+    missing_evidence_handling: Không suy diễn năng lực chỉ từ tên công nghệ dữ liệu.
+  - criterion_id: de-role-capability
+    title: Năng lực theo vai trò
+    weight: 20
+    description: Đánh giá incremental load, idempotency, data quality, retry, logging và xử lý job failure.
+    evaluation_signals:
+      - Luồng extract, transform, load và incremental strategy rõ ràng.
+      - Có kiểm tra uniqueness, completeness hoặc referential integrity.
+      - Có retry, logging, quarantine hoặc điều tra job failure khi được nêu.
+    missing_evidence_handling: Không tự bổ sung SLA, quy mô hoặc độ ổn định chưa được CV nêu.
+  - criterion_id: projects-and-impact
+    title: Dự án, thực tập và tác động
+    weight: 15
+    description: Đánh giá phạm vi đóng góp, khả năng tái tạo đầu ra và tác động phù hợp cấp junior.
+    evaluation_signals:
+      - Vai trò, nguồn, đích và phần pipeline do ứng viên thực hiện được nêu rõ.
+      - Có code, schema, test dữ liệu hoặc runbook kiểm tra được.
+      - Tác động phù hợp với phạm vi pipeline.
+    missing_evidence_handling: Không bịa khối lượng dữ liệu hoặc tác động chưa được xác nhận.
+  - criterion_id: communication-and-evidence-quality
+    title: Độ rõ ràng và khả năng kiểm tra của thông tin trong CV
+    weight: 10
+    description: Đánh giá mức rõ ràng, nhất quán, khả năng kiểm tra và giới hạn được ứng viên trình bày.
+    evaluation_signals:
+      - Lineage, nguồn, đích và cách vận hành được mô tả mạch lạc.
+      - Có repository, sơ đồ hoặc chi tiết kỹ thuật kiểm tra được.
+      - Nêu rõ giới hạn dữ liệu và vận hành.
+    missing_evidence_handling: Thông tin khó kiểm tra làm giảm điểm tiêu chí này nhưng không tự tạo unsatisfied.
+critical_requirement_ids: [de-python, de-sql, de-pipeline, de-data-model-quality, de-delivery-workflow]
+artifact_links:
+  job_profile_artifact_version: 2.0.0
+  scoring_configuration_version: 3.0.0
+  models_configuration_version: 3.0.0

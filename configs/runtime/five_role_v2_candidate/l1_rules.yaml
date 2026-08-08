@@ -1,0 +1,277 @@
+artifact_kind: l1_requirement_matching_rules
+configuration_version: 3.0.0
+contract_status: development_candidate
+policies:
+  - job_profile_id: junior-data-analyst-std-v2
+    rules:
+      - requirement_id: da-sql
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [sql, truy vấn, cte, hàm cửa sổ, window function, execution plan, kết hợp nhiều bảng, dữ liệu quan hệ, câu lệnh tổng hợp]
+        positive_term_groups:
+          - [sql]
+          - [truy vấn]
+          - [cte]
+          - [hàm cửa sổ]
+          - [window function]
+          - [execution plan]
+          - [kết hợp nhiều bảng]
+          - [dữ liệu quan hệ, câu lệnh tổng hợp]
+        explicit_negative_terms:
+          - chưa từng sử dụng sql
+          - chưa tự xử lý bài toán nối nhiều bảng
+          - không thể tự viết câu lệnh lấy dữ liệu quan hệ
+          - không có kỹ năng sql
+        match_mode: any
+      - requirement_id: da-analysis-language
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [python, pandas, r, dplyr, ggplot2, notebook]
+        explicit_negative_terms:
+          - chưa từng dùng python hoặc r để xử lý dữ liệu
+          - không thể chỉnh sửa notebook phân tích
+          - không có python hoặc r
+        match_mode: any
+      - requirement_id: da-bi-reporting
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [power bi, tableau, looker studio, dashboard, báo cáo bi]
+        explicit_negative_terms:
+          - chưa từng tự xây dashboard
+          - không sử dụng được công cụ trực quan hóa dữ liệu
+          - chưa sử dụng công cụ bi
+        match_mode: any
+      - requirement_id: da-business-analysis
+        evidence_sections: [work_experience, projects, education, other]
+        positive_evidence_sections: [work_experience, projects]
+        positive_terms: [câu hỏi, kpi, khuyến nghị, chỉ số, luồng phân tích, kết luận]
+        positive_term_groups:
+          - [câu hỏi, kpi]
+          - [chỉ số, khuyến nghị]
+          - [luồng phân tích, kết luận]
+        explicit_negative_terms:
+          - chưa hoàn thành dự án phân tích
+          - không thể giải thích chỉ số
+          - chưa có dự án phân tích end-to-end
+        match_mode: any
+  - job_profile_id: junior-python-backend-std-v2
+    rules:
+      - requirement_id: be-python
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [python]
+        explicit_negative_terms:
+          - chưa từng dùng python để xây phần mềm backend
+          - không thể tự viết module python
+          - không có python
+        match_mode: any
+      - requirement_id: be-rest-api
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [rest api, fastapi, django rest, flask, openapi, endpoint, http api]
+        explicit_negative_terms:
+          - chưa từng xây http api
+          - chưa từng xây http hoặc rest api
+          - không thể thiết kế route hoặc schema request
+          - không có api
+        match_mode: any
+      - requirement_id: be-relational-data
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [postgresql, mysql, sqlite, sql, sqlalchemy, schema, migration, transaction]
+        explicit_negative_terms:
+          - chưa thể thiết kế bảng hoặc viết truy vấn
+          - không có kiến thức sql
+          - chưa dùng cơ sở dữ liệu quan hệ
+        match_mode: any
+      - requirement_id: be-testing
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [pytest, unit test, integration test, fixture, mock, test hồi quy, coverage, kiểm thử tự động]
+        explicit_negative_terms:
+          - chưa từng viết hoặc chạy kiểm thử tự động
+          - không có unit test hay integration test
+          - không có kiểm thử tự động
+        match_mode: any
+      - requirement_id: be-delivery-workflow
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [git, docker, pull request, code review, dockerfile, pipeline, container]
+        positive_term_groups:
+          - [git, docker]
+          - [pull request, dockerfile]
+          - [code review, dockerfile]
+          - [pipeline, container]
+        explicit_negative_terms:
+          - chưa dùng quản lý phiên bản và chưa thể đóng gói dịch vụ
+          - không có git hoặc docker
+          - không có git và docker
+        match_mode: any
+  - job_profile_id: junior-frontend-std-v2
+    rules:
+      - requirement_id: fe-web-foundations
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [html, css, responsive, grid, flexbox, breakpoint, semantic, heading, biểu mẫu]
+        positive_term_groups:
+          - [html, css, responsive]
+          - [grid, flexbox, breakpoint]
+          - [semantic, biểu mẫu]
+          - [heading, biểu mẫu]
+        explicit_negative_terms:
+          - chưa thể tự xây giao diện responsive bằng html và css
+          - không nắm nền tảng bố cục web
+          - không có html và css
+        match_mode: any
+      - requirement_id: fe-language
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [javascript, typescript, promise]
+        explicit_negative_terms:
+          - chưa từng dùng javascript hoặc typescript
+          - không thể tự viết logic phía client
+          - không có javascript và typescript
+        match_mode: any
+      - requirement_id: fe-framework
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [react, vue, angular, svelte, component]
+        explicit_negative_terms:
+          - chưa từng xây ứng dụng bằng framework frontend
+          - không sử dụng react, vue hoặc framework tương đương
+          - không có framework frontend
+        match_mode: any
+      - requirement_id: fe-api
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [rest api, fetch, axios, gọi api, tích hợp api, lớp gọi api, request]
+        explicit_negative_terms:
+          - chưa từng tích hợp api vào giao diện
+          - không thể gọi hoặc xử lý response api
+          - không có kinh nghiệm api phía client
+        match_mode: any
+      - requirement_id: fe-testing-workflow
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [git, component test, testing library, review, lint, unit test]
+        positive_term_groups:
+          - [git, component test]
+          - [testing library, review]
+          - [lint, unit test]
+        explicit_negative_terms:
+          - chưa từng dùng git và chưa từng kiểm thử giao diện
+          - không có component test hoặc quy trình review
+          - không có git và component test
+        match_mode: any
+  - job_profile_id: junior-qa-engineer-std-v2
+    rules:
+      - requirement_id: qa-testing-foundations
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [stlc, phân vùng tương đương, giá trị biên, decision table, test condition, phân tích yêu cầu]
+        explicit_negative_terms:
+          - chưa biết quy trình hoặc kỹ thuật thiết kế kiểm thử
+          - không thể giải thích cách chọn dữ liệu test
+          - không biết stlc
+        match_mode: any
+      - requirement_id: qa-test-cases
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [test case, regression, bug report, defect, bộ test, expected result]
+        explicit_negative_terms:
+          - chưa từng viết test case hoặc báo cáo bug
+          - không có kinh nghiệm quản lý defect
+          - không có kinh nghiệm test case
+        match_mode: any
+      - requirement_id: qa-api-testing
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [postman, api testing, kiểm thử api, request, response, hợp đồng api]
+        positive_term_groups:
+          - [postman]
+          - [request, response]
+          - [hợp đồng api]
+        explicit_negative_terms:
+          - chưa từng kiểm thử api hoặc đọc request và response
+          - không thể dùng postman
+          - không có kiểm thử api
+        match_mode: any
+      - requirement_id: qa-data-check
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [sql, select, join, group by, bảng quan hệ, câu truy vấn]
+        explicit_negative_terms:
+          - chưa thể dùng sql để kiểm tra dữ liệu
+          - không có kỹ năng truy vấn
+          - không có sql
+        match_mode: any
+      - requirement_id: qa-automation-foundation
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [playwright, cypress, selenium, test automation, tự động hóa regression]
+        explicit_negative_terms:
+          - chưa từng viết script hoặc test tự động
+          - không sử dụng framework automation
+          - không có automation testing
+        match_mode: any
+  - job_profile_id: junior-data-engineer-std-v2
+    rules:
+      - requirement_id: de-python
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [python, pandas, pyspark, package python]
+        explicit_negative_terms:
+          - chưa từng dùng python cho xử lý dữ liệu
+          - không thể tự viết bước biến đổi python
+          - không có python
+        match_mode: any
+      - requirement_id: de-sql
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [sql, cte, window function, execution plan, index, incremental merge, truy vấn]
+        explicit_negative_terms:
+          - chưa có kiến thức sql hoặc cơ sở dữ liệu quan hệ
+          - không thể tự viết truy vấn
+          - không có sql
+        match_mode: any
+      - requirement_id: de-pipeline
+        evidence_sections: [work_experience, projects, education, other]
+        positive_evidence_sections: [work_experience, projects]
+        positive_terms: [etl, elt, data pipeline, pipeline, incremental load, extract, transform, load]
+        positive_term_groups:
+          - [etl]
+          - [elt]
+          - [pipeline, incremental load]
+          - [extract, transform, load]
+        explicit_negative_terms:
+          - chưa từng xây pipeline etl hoặc elt
+          - không có kinh nghiệm incremental load
+          - không có dự án pipeline dữ liệu
+        match_mode: any
+      - requirement_id: de-data-model-quality
+        evidence_sections: [work_experience, projects, education, other]
+        positive_evidence_sections: [work_experience, projects]
+        positive_terms: [data modeling, star schema, fact, dimension, data quality, chất lượng dữ liệu, grain]
+        positive_term_groups:
+          - [fact, dimension]
+          - [star schema, grain]
+          - [data quality]
+          - [chất lượng dữ liệu]
+        explicit_negative_terms:
+          - chưa từng mô hình hóa bảng hoặc kiểm tra chất lượng dữ liệu
+          - không thể giải thích grain, fact hay dimension
+          - không có data modeling và data quality
+        match_mode: any
+      - requirement_id: de-delivery-workflow
+        evidence_sections: [skills, work_experience, projects, education, other]
+        positive_evidence_sections: [skills, work_experience, projects]
+        positive_terms: [git, linux, docker, pull request, lệnh kiểm tra, ci, container]
+        positive_term_groups:
+          - [git, linux, docker]
+          - [pull request, lệnh kiểm tra]
+          - [ci, container]
+        explicit_negative_terms:
+          - chưa dùng git, linux và chưa thể bàn giao môi trường pipeline
+          - không có quy trình đóng gói hoặc đọc log
+          - không có git, linux và docker
+        match_mode: any

@@ -1,0 +1,1069 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "pilot-dataset-v1",
+  "dataset_version": "1.0.0",
+  "cv_schema_version": "1.0.0",
+  "job_profile_artifact_version": "1.0.0",
+  "rubric_version": "1.0.0",
+  "configuration_version": "1.1.0",
+  "l1_rules_configuration_version": "1.0.0",
+  "models_configuration_version": "1.1.0",
+  "annotation_status": "reviewed",
+  "records": [
+    {
+      "annotation_id": "annotation-da-001",
+      "cv_profile_id": "cv-pilot-da-001",
+      "source_cv_file": "data/samples/cvs/cv_pilot_da_001.json",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da001-sql",
+            "ev-da001-internship"
+          ],
+          "rationale": "SQL được mô tả trong cả kỹ năng và kỳ thực tập với thao tác cụ thể."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da001-python",
+            "ev-da001-project"
+          ],
+          "rationale": "Python và pandas được dùng trực tiếp để làm sạch và phân tích dữ liệu."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da001-project"
+          ],
+          "rationale": "Dự án có câu hỏi, dữ liệu, chỉ số, phương pháp, đầu ra và giới hạn."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-da001-sql",
+            "ev-da001-python",
+            "ev-da001-project"
+          ],
+          "rationale": "Cả ba yêu cầu bắt buộc đều có evidence thực hành trực tiếp."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 23,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-da001-sql",
+            "ev-da001-python",
+            "ev-da001-bi",
+            "ev-da001-internship"
+          ],
+          "rationale": "Có SQL nâng cao, Python làm sạch dữ liệu và dashboard trong ngữ cảnh cụ thể."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 18,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-da001-project"
+          ],
+          "rationale": "Mục tiêu, chỉ số và giới hạn dữ liệu được trình bày rõ."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 14,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-da001-internship",
+            "ev-da001-project"
+          ],
+          "rationale": "Vai trò và đầu ra rõ, có tác động định lượng tổng hợp phù hợp với evidence."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 9,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-da001-project"
+          ],
+          "rationale": "Evidence có nguồn tham chiếu tổng hợp, mô tả mạch lạc và nêu giới hạn."
+        }
+      ],
+      "total_score": 94,
+      "draft_label": "pass",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ mạnh ở cấp junior, đáp ứng đầy đủ yêu cầu bắt buộc và có evidence rõ về kỹ thuật, reasoning và tác động.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "pass",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    },
+    {
+      "annotation_id": "annotation-da-002",
+      "cv_profile_id": "cv-pilot-da-002",
+      "source_cv_file": "data/samples/cvs/cv_pilot_da_002.json",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da002-sql",
+            "ev-da002-project"
+          ],
+          "rationale": "Dự án có join và tổng hợp dữ liệu theo cohort bằng SQL."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da002-r",
+            "ev-da002-project"
+          ],
+          "rationale": "R được dùng để làm sạch và trực quan hóa dữ liệu."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da002-project"
+          ],
+          "rationale": "Dự án học tập có mục tiêu, phép tính và đầu ra phân tích."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-da002-sql",
+            "ev-da002-r",
+            "ev-da002-project"
+          ],
+          "rationale": "Ba yêu cầu bắt buộc đều có evidence."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 15,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-da002-sql",
+            "ev-da002-r",
+            "ev-da002-tableau"
+          ],
+          "rationale": "Công cụ phù hợp nhưng mức độ triển khai mới ở mức cơ bản."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 11,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-da002-project"
+          ],
+          "rationale": "Có mục tiêu và chỉ số nhưng chưa có kiểm tra độ nhạy hoặc giới hạn rõ."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 8,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-da002-project"
+          ],
+          "rationale": "Dự án hợp lệ ở cấp junior nhưng thiếu tác động và chi tiết kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-da002-project"
+          ],
+          "rationale": "Mô tả đủ hiểu nhưng chưa có repository hoặc báo cáo tham chiếu."
+        }
+      ],
+      "total_score": 70,
+      "draft_label": "waitlist",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ đáp ứng yêu cầu bắt buộc nhưng evidence về chiều sâu, reasoning và tác động mới ở mức vừa.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "waitlist",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    },
+    {
+      "annotation_id": "annotation-da-003",
+      "cv_profile_id": "cv-pilot-da-003",
+      "source_cv_file": "data/samples/cvs/cv_pilot_da_003.json",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "missing",
+          "evidence_ids": [],
+          "rationale": "CV không đề cập SQL và cũng không có evidence phủ định kỹ năng SQL."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da003-python",
+            "ev-da003-project"
+          ],
+          "rationale": "Python và pandas được dùng trong dự án phân tích."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da003-project"
+          ],
+          "rationale": "Dự án có quy trình làm sạch, chỉ số và giới hạn."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 20,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-da003-python",
+            "ev-da003-project"
+          ],
+          "rationale": "Hai yêu cầu có evidence; SQL là missing chứ không phải unsatisfied."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 18,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-da003-python",
+            "ev-da003-tableau",
+            "ev-da003-project"
+          ],
+          "rationale": "Có làm sạch, thống kê mô tả và dashboard nhưng chưa có evidence SQL."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 14,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-da003-project"
+          ],
+          "rationale": "Có chỉ số và giới hạn dữ liệu ở mức phù hợp với dự án cá nhân."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 11,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-da003-project"
+          ],
+          "rationale": "Vai trò và đầu ra rõ nhưng chưa có tác động định lượng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 7,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-da003-project"
+          ],
+          "rationale": "Mô tả dự án mạch lạc và không suy diễn phần SQL bị thiếu."
+        }
+      ],
+      "total_score": 70,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "missing-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Cần hỏi thêm hoặc xem portfolio để xác định ứng viên có evidence SQL hay không."
+      ],
+      "overall_rationale": "Điểm tạm tính nằm ở vùng Waitlist nhưng thiếu evidence SQL bắt buộc nên chính sách ưu tiên Needs Review.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "needs_review",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    },
+    {
+      "annotation_id": "annotation-da-004",
+      "cv_profile_id": "cv-pilot-da-004",
+      "source_cv_file": "data/samples/cvs/cv_pilot_da_004.json",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da004-sql"
+          ],
+          "rationale": "Có evidence SQL cơ bản dù phạm vi còn hạn chế."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "unsatisfied",
+          "evidence_ids": [
+            "ev-da004-explicit-gap"
+          ],
+          "rationale": "Ứng viên xác nhận rõ chưa từng sử dụng Python hoặc R."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "unsatisfied",
+          "evidence_ids": [
+            "ev-da004-explicit-gap",
+            "ev-da004-report-work"
+          ],
+          "rationale": "Ứng viên xác nhận chưa có dự án phân tích và công việc hiện tại chỉ cập nhật mẫu báo cáo."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 10,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-da004-sql",
+            "ev-da004-explicit-gap"
+          ],
+          "rationale": "Hai yêu cầu bắt buộc có evidence không đáp ứng rõ ràng."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 8,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-da004-sql",
+            "ev-da004-spreadsheet"
+          ],
+          "rationale": "Chỉ có SQL và spreadsheet ở mức cơ bản, không có ngôn ngữ phân tích."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 6,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-da004-report-work"
+          ],
+          "rationale": "Không có evidence về tự đặt câu hỏi, chọn chỉ số hoặc phương pháp."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 5,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-da004-report-work",
+            "ev-da004-explicit-gap"
+          ],
+          "rationale": "Không có dự án phân tích; công việc báo cáo theo mẫu có phạm vi hạn chế."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 7,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-da004-explicit-gap"
+          ],
+          "rationale": "Evidence phủ định được nêu rõ nên không cần suy diễn từ thông tin thiếu."
+        }
+      ],
+      "total_score": 36,
+      "draft_label": "reject",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Điểm dưới 60 và có evidence rõ rằng hai yêu cầu bắt buộc không đạt, vì vậy Reject phù hợp với chính sách.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "reject",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    },
+    {
+      "annotation_id": "annotation-da-005",
+      "cv_profile_id": "cv-pilot-da-005",
+      "source_cv_file": "data/samples/cvs/cv_pilot_da_005.json",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da005-sql",
+            "ev-da005-project"
+          ],
+          "rationale": "Phần việc SQL và truy vấn chiến dịch được mô tả trực tiếp."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "conflicting",
+          "evidence_ids": [
+            "ev-da005-python-listed",
+            "ev-da005-python-role"
+          ],
+          "rationale": "CV liệt kê Python nhưng phần làm rõ cho biết ứng viên không trực tiếp dùng Python hoặc R."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-da005-project",
+            "ev-da005-sql"
+          ],
+          "rationale": "Dự án nhóm có mục tiêu, truy vấn và dashboard, đồng thời phần việc SQL của ứng viên được nêu."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 20,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-da005-sql",
+            "ev-da005-project",
+            "ev-da005-python-listed",
+            "ev-da005-python-role"
+          ],
+          "rationale": "SQL và dự án có evidence; ngôn ngữ phân tích ở trạng thái conflicting."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 17,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-da005-sql",
+            "ev-da005-project"
+          ],
+          "rationale": "Có SQL và dashboard nhưng không thể xác nhận phần Python."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 14,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-da005-project"
+          ],
+          "rationale": "Mục tiêu và chỉ số có mô tả nhưng chưa nêu giới hạn hoặc kiểm tra."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 10,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-da005-project"
+          ],
+          "rationale": "Có dự án và phần việc SQL, nhưng tác động và phạm vi đóng góp chưa đầy đủ."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 5,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-da005-python-listed",
+            "ev-da005-python-role"
+          ],
+          "rationale": "Mâu thuẫn về Python làm giảm độ rõ của evidence."
+        }
+      ],
+      "total_score": 66,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Cần xác minh ứng viên có kinh nghiệm thực hành Python hoặc R ngoài phần việc đã mô tả hay không."
+      ],
+      "overall_rationale": "Điểm tạm tính nằm ở vùng Waitlist nhưng evidence mâu thuẫn ở yêu cầu bắt buộc phải được con người xem xét.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "needs_review",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    },
+    {
+      "annotation_id": "annotation-be-001",
+      "cv_profile_id": "cv-pilot-be-001",
+      "source_cv_file": "data/samples/cvs/cv_pilot_be_001.json",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be001-python",
+            "ev-be001-internship"
+          ],
+          "rationale": "Python được dùng trực tiếp trong backend và kỳ thực tập."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be001-api",
+            "ev-be001-project"
+          ],
+          "rationale": "REST API có endpoint, validation, xử lý lỗi và authentication."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be001-database"
+          ],
+          "rationale": "PostgreSQL, quan hệ và migration được mô tả."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be001-git",
+            "ev-be001-internship"
+          ],
+          "rationale": "Có branch, commit và pull request được review."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-be001-python",
+            "ev-be001-api",
+            "ev-be001-database",
+            "ev-be001-git"
+          ],
+          "rationale": "Bốn yêu cầu bắt buộc đều có evidence thực hành trực tiếp."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 23,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-be001-python",
+            "ev-be001-api",
+            "ev-be001-quality"
+          ],
+          "rationale": "Có validation, service organization, xử lý lỗi và automated tests."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 18,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-be001-api",
+            "ev-be001-database"
+          ],
+          "rationale": "API contract, authentication, quan hệ dữ liệu và migration được mô tả rõ."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 14,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-be001-project",
+            "ev-be001-quality",
+            "ev-be001-internship"
+          ],
+          "rationale": "Có repository tổng hợp, tài liệu, Docker, CI và đóng góp thực tập."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 9,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-be001-project",
+            "ev-be001-git"
+          ],
+          "rationale": "Phần việc, workflow và tài liệu kỹ thuật được trình bày rõ."
+        }
+      ],
+      "total_score": 94,
+      "draft_label": "pass",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ mạnh ở cấp junior, đáp ứng đầy đủ yêu cầu bắt buộc và có evidence về testing, delivery và bảo mật cơ bản.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "pass",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    },
+    {
+      "annotation_id": "annotation-be-002",
+      "cv_profile_id": "cv-pilot-be-002",
+      "source_cv_file": "data/samples/cvs/cv_pilot_be_002.json",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be002-python",
+            "ev-be002-project"
+          ],
+          "rationale": "Python được dùng để triển khai route và logic cơ bản."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be002-api",
+            "ev-be002-project"
+          ],
+          "rationale": "Có CRUD API bằng Flask với JSON request và response."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be002-database"
+          ],
+          "rationale": "Có SQLite và SQL trong dự án."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be002-git"
+          ],
+          "rationale": "Có repository tổng hợp với lịch sử Git."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-be002-python",
+            "ev-be002-api",
+            "ev-be002-database",
+            "ev-be002-git"
+          ],
+          "rationale": "Bốn yêu cầu bắt buộc đều có evidence ở mức cơ bản."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 15,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-be002-python",
+            "ev-be002-api"
+          ],
+          "rationale": "Có CRUD và xử lý lỗi cơ bản nhưng chưa có automated tests."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 11,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-be002-api",
+            "ev-be002-database"
+          ],
+          "rationale": "Thiết kế API và dữ liệu đủ dùng cho dự án nhỏ, thiếu migration và authentication."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 8,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-be002-project",
+            "ev-be002-git"
+          ],
+          "rationale": "Có đầu ra chạy cục bộ nhưng chưa có testing, container hoặc deployment."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-be002-project"
+          ],
+          "rationale": "Mô tả đủ hiểu nhưng README và quyết định kỹ thuật còn ngắn."
+        }
+      ],
+      "total_score": 70,
+      "draft_label": "waitlist",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ đáp ứng yêu cầu bắt buộc nhưng chất lượng triển khai và delivery mới ở mức dự án cá nhân cơ bản.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "waitlist",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    },
+    {
+      "annotation_id": "annotation-be-003",
+      "cv_profile_id": "cv-pilot-be-003",
+      "source_cv_file": "data/samples/cvs/cv_pilot_be_003.json",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be003-python",
+            "ev-be003-project"
+          ],
+          "rationale": "Python được dùng cho backend, serializer và validation."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be003-api",
+            "ev-be003-project"
+          ],
+          "rationale": "Django REST API có endpoint và xử lý lỗi."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be003-database"
+          ],
+          "rationale": "PostgreSQL, quan hệ và migration được mô tả."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "missing",
+          "evidence_ids": [],
+          "rationale": "CV không đề cập Git và cũng không có evidence phủ định kỹ năng Git."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 23,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-be003-python",
+            "ev-be003-api",
+            "ev-be003-database"
+          ],
+          "rationale": "Ba yêu cầu có evidence; Git là missing chứ không phải unsatisfied."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 18,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-be003-python",
+            "ev-be003-api",
+            "ev-be003-testing"
+          ],
+          "rationale": "Có validation, xử lý lỗi và một số automated tests."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 14,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-be003-api",
+            "ev-be003-database"
+          ],
+          "rationale": "API và schema quan hệ được mô tả ở mức phù hợp với junior."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 10,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-be003-project",
+            "ev-be003-testing"
+          ],
+          "rationale": "Dự án có đầu ra và test nhưng chưa có evidence về version control hoặc deployment."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 7,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-be003-project"
+          ],
+          "rationale": "Mô tả phần việc rõ và giữ trạng thái Git là missing."
+        }
+      ],
+      "total_score": 72,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "missing-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Cần hỏi thêm hoặc xem repository để xác định ứng viên có dùng Git hay không."
+      ],
+      "overall_rationale": "Điểm tạm tính nằm ở vùng Waitlist nhưng thiếu evidence Git bắt buộc nên chính sách ưu tiên Needs Review.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "needs_review",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    },
+    {
+      "annotation_id": "annotation-be-004",
+      "cv_profile_id": "cv-pilot-be-004",
+      "source_cv_file": "data/samples/cvs/cv_pilot_be_004.json",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be004-python",
+            "ev-be004-scripts"
+          ],
+          "rationale": "Có Python thực hành nhưng phạm vi là script, không phải backend web."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "unsatisfied",
+          "evidence_ids": [
+            "ev-be004-explicit-api-gap",
+            "ev-be004-scripts"
+          ],
+          "rationale": "Ứng viên xác nhận chưa xây API và dự án chỉ có CLI."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be004-sqlite"
+          ],
+          "rationale": "SQLite và SQL được dùng trong dự án."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be004-git"
+          ],
+          "rationale": "Có Git commit cho dự án cá nhân."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 18,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-be004-python",
+            "ev-be004-explicit-api-gap",
+            "ev-be004-sqlite",
+            "ev-be004-git"
+          ],
+          "rationale": "Yêu cầu API có evidence không đáp ứng rõ ràng; ba yêu cầu còn lại có evidence cơ bản."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 7,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-be004-python",
+            "ev-be004-scripts"
+          ],
+          "rationale": "Có Python script nhưng không có framework, endpoint, validation API hoặc testing."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 6,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-be004-sqlite",
+            "ev-be004-explicit-api-gap"
+          ],
+          "rationale": "Có dữ liệu quan hệ cơ bản nhưng không có thiết kế API."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 4,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-be004-scripts"
+          ],
+          "rationale": "Dự án CLI nhỏ, không có bằng chứng bàn giao dịch vụ backend."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 7,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-be004-explicit-api-gap"
+          ],
+          "rationale": "Phạm vi kinh nghiệm và khoảng thiếu API được nêu rõ."
+        }
+      ],
+      "total_score": 42,
+      "draft_label": "reject",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Điểm dưới 60 và có evidence rõ rằng yêu cầu REST API bắt buộc không đạt, vì vậy Reject phù hợp với chính sách.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "reject",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    },
+    {
+      "annotation_id": "annotation-be-005",
+      "cv_profile_id": "cv-pilot-be-005",
+      "source_cv_file": "data/samples/cvs/cv_pilot_be_005.json",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be005-python",
+            "ev-be005-project"
+          ],
+          "rationale": "Python được dùng trực tiếp cho route và validation."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be005-api",
+            "ev-be005-project"
+          ],
+          "rationale": "Có FastAPI endpoint với request và response."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be005-database"
+          ],
+          "rationale": "PostgreSQL và hai bảng quan hệ được mô tả."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-be005-git"
+          ],
+          "rationale": "Có Git branch và merge request trong dự án nhóm."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-be005-python",
+            "ev-be005-api",
+            "ev-be005-database",
+            "ev-be005-git"
+          ],
+          "rationale": "Bốn yêu cầu bắt buộc đều có evidence."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 18,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-be005-python",
+            "ev-be005-api"
+          ],
+          "rationale": "Có endpoint và validation nhưng thiếu xử lý lỗi đầy đủ và automated tests."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 13,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-be005-api",
+            "ev-be005-database"
+          ],
+          "rationale": "Thiết kế API và dữ liệu cơ bản, chưa có migration, transaction hoặc authentication."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 9,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-be005-project",
+            "ev-be005-git"
+          ],
+          "rationale": "Phần việc được nêu nhưng chưa có test, deployment, tác động hoặc repository kiểm tra."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-be005-project"
+          ],
+          "rationale": "Mô tả đủ hiểu nhưng bằng chứng bàn giao và chất lượng còn mỏng."
+        }
+      ],
+      "total_score": 76,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "upper-threshold-boundary"
+      ],
+      "ambiguity_notes": [
+        "Điểm 76 nằm trong vùng biên 73 đến 77, cần người duyệt phân biệt Pass và Waitlist."
+      ],
+      "overall_rationale": "Các yêu cầu bắt buộc đều đạt nhưng tổng điểm nằm trong vùng biên trên nên Needs Review được ưu tiên.",
+      "review": {
+        "status": "approved",
+        "reviewer_reference": "reviewer-user-001",
+        "final_label": "needs_review",
+        "criterion_score_overrides": [],
+        "notes": "Người dùng xác nhận bộ pilot và yêu cầu chuyển sang Stage 4.",
+        "reviewed_at": "2026-07-26T15:58:27.4666236+07:00"
+      }
+    }
+  ]
+}

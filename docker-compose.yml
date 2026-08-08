@@ -1,0 +1,25 @@
+services:
+  postgres:
+    image: pgvector/pgvector:0.8.1-pg16@sha256:33198da2828a14c30348d2ccb4750833d5ed9a44c88d840a0e523d7417120337
+    environment:
+      POSTGRES_DB: ${CLASSIFIER_POSTGRES_DB:?CLASSIFIER_POSTGRES_DB is required}
+      POSTGRES_USER: ${CLASSIFIER_POSTGRES_USER:?CLASSIFIER_POSTGRES_USER is required}
+      POSTGRES_PASSWORD: ${CLASSIFIER_POSTGRES_PASSWORD:?CLASSIFIER_POSTGRES_PASSWORD is required}
+      CLASSIFIER_POSTGRES_TEST_DB: ${CLASSIFIER_POSTGRES_TEST_DB:?CLASSIFIER_POSTGRES_TEST_DB is required}
+    ports:
+      - "127.0.0.1:${CLASSIFIER_POSTGRES_PORT:-55432}:5432"
+    healthcheck:
+      test:
+        - CMD-SHELL
+        - pg_isready -U "$${POSTGRES_USER}" -d "$${POSTGRES_DB}"
+      interval: 5s
+      timeout: 5s
+      retries: 12
+      start_period: 10s
+    volumes:
+      - classifier_postgres_data:/var/lib/postgresql/data
+      - ./scripts/init_test_database.sh:/docker-entrypoint-initdb.d/10-init-test-database.sh:ro
+    restart: unless-stopped
+
+volumes:
+  classifier_postgres_data:

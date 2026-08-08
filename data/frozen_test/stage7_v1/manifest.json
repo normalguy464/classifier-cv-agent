@@ -1,0 +1,54 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "stage7-five-role-test-v1",
+  "dataset_version": "1.0.1",
+  "status": "human_reviewed_gold_locked",
+  "frozen_at": "2026-08-07T18:00:00+07:00",
+  "runtime_configuration_set_id": "five-role-runtime-v1",
+  "runtime_manifest_path": "configs/runtime/five_role_v1/runtime_manifest.yaml",
+  "runtime_manifest_sha256": "d9215c6994217731b605c9d9053d5eab008980a69fcb09dc0925f8a0e8b688e6",
+  "source_directory": "data/to_review/stage7_test_v1",
+  "source_manifest_sha256": "b0cc6b35fa0e57ea0adadfeb6720b3e808d039788ef89d2808c4d60c6037f584",
+  "review_record_path": "review_record.json",
+  "review_record_sha256": "a42d89239317dc62d0c08192a85413779ab24838d0ecc62acb567474cd0636dd",
+  "review_mode": "two_person_consensus_panel",
+  "reviewer_references": [
+    "reviewer-user-001",
+    "reviewer-peer-001"
+  ],
+  "reviewed_pair_count": 50,
+  "pair_count": 50,
+  "dataset_tier": "gold",
+  "ground_truth_status": "human_reviewed_gold",
+  "locked_for_evaluation": true,
+  "classifier_results_generated_before_lock": false,
+  "llm_requests_made_before_lock": false,
+  "final_label_counts": {
+    "pass": 10,
+    "waitlist": 10,
+    "needs_review": 25,
+    "reject": 5
+  },
+  "files": [
+    {
+      "path": "cv_profiles.jsonl",
+      "sha256": "b3f9f435db94e22419c6dd7339d0bf591d030282ae63bb959ff678f9910a3e8a",
+      "record_count": 50
+    },
+    {
+      "path": "job_profiles.jsonl",
+      "sha256": "1be52b3995a90305535417a6a032e0d89007150d18cccac38b71377b694cdbd4",
+      "record_count": 5
+    },
+    {
+      "path": "rubrics.jsonl",
+      "sha256": "c6c0b399e65faa9ce83273d0e78fbfd71b00fb302ff88a7ee09835f6b3da63ff",
+      "record_count": 5
+    },
+    {
+      "path": "pairs.jsonl",
+      "sha256": "b744c47d400dccefc76dc7352f4e9685cbd3bbbaeb65204dee85df3cab8d4af2",
+      "record_count": 50
+    }
+  ]
+}

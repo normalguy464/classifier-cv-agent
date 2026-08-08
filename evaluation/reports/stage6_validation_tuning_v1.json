@@ -1,0 +1,3427 @@
+{
+  "report_schema_version": "1.0.0",
+  "report_id": "stage6-validation-tuning-v1",
+  "report_scope": "stage6-validation-only-controlled-l3",
+  "is_final_performance": false,
+  "generated_at": "2026-07-26T21:55:00+07:00",
+  "split_traceability": {
+    "split_manifest_file": "data/splits/stage6_split_manifest_v1.json",
+    "split_manifest_sha256": "89ddfb70e0dbde7b2ba6cc897a1a9c1a5c4a5d67598670708b2a206bd3ea9732",
+    "validation_partition_id": "stage6-validation-v1",
+    "validation_sample_count": 20,
+    "frozen_test_partition_id": "stage7-frozen-test-v1",
+    "frozen_test_evaluated": false,
+    "frozen_test_results_generated": false
+  },
+  "candidate_set": {
+    "candidate_set_id": "stage6-validation-candidates-v1",
+    "candidate_set_version": "1.2.0",
+    "source_configuration_version": "1.1.0",
+    "source_models_configuration_version": "1.1.0",
+    "candidate_protection_rules_fixed": true,
+    "selection_policy": {
+      "required_needs_review_recall": "1.0",
+      "required_false_reject_count": 0,
+      "required_unsafe_pass_count": 0,
+      "maximum_review_rate": "0.8",
+      "primary_metric": "macro_f1",
+      "secondary_metric": "lower_review_rate"
+    }
+  },
+  "execution_strategy": {
+    "l1": "versioned-deterministic-rules",
+    "configured_l2_model_identifier": "intfloat/multilingual-e5-base",
+    "configured_l2_model_version": "multilingual-e5-base",
+    "configured_l2_resolved_revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "configured_multilingual_l2_executed": true,
+    "comparison_l2": "deterministic-hashing-embedding-1.0.0",
+    "l3": "deterministic-offline-evidence-scorer-v1",
+    "live_llm_provider_executed": false,
+    "prompt_version": "l3-evidence-rubric-v1"
+  },
+  "level_summary": {
+    "average_l1": 90.0005,
+    "average_configured_l2_by_candidate": {
+      "approved-current-v1": 100.0,
+      "l2-calibrated-80-95-v1": 40.8065,
+      "l2-calibrated-85-98-v1": 10.1735,
+      "l1-heavy-calibrated-v1": 10.1735,
+      "semantic-heavy-calibrated-v1": 10.1735,
+      "wider-disagreement-calibrated-v1": 10.1735,
+      "stricter-thresholds-calibrated-v1": 10.1735
+    },
+    "average_hashing_l2": 20.51,
+    "average_deterministic_l3": 95.8
+  },
+  "model_strategy_comparison_at_current_config": {
+    "configured_l2": {
+      "candidate": {
+        "candidate_id": "approved-current-v1",
+        "description": "Current approved weights, thresholds and disagreement gate.",
+        "l2_matching": {
+          "similarity_floor": 0.2,
+          "similarity_ceiling": 0.8,
+          "top_k": 2
+        },
+        "aggregation": {
+          "l1_deterministic_rules": 0.45,
+          "l2_section_semantic_matching": 0.25,
+          "l3_evidence_grounded_reasoning": 0.3
+        },
+        "thresholds": {
+          "pass_minimum": 75.0,
+          "waitlist_minimum": 60.0
+        },
+        "disagreement_points": 25.0,
+        "boundary_offset_points": 2.0
+      },
+      "eligible_for_recommendation": false,
+      "safety": {
+        "needs_review_recall": 0.5454545454545454,
+        "false_reject_count": 0,
+        "false_reject_case_ids": [],
+        "unsafe_pass_count": 5,
+        "unsafe_pass_case_ids": [
+          "cv-s4-be-012",
+          "cv-s4-be-014",
+          "cv-s4-da-012",
+          "cv-s4-da-013",
+          "cv-s4-da-014"
+        ]
+      },
+      "review_rate": 0.35,
+      "decision_distribution": {
+        "needs_review": 7,
+        "pass": 13
+      },
+      "review_reason_distribution": {
+        "conflicting-critical-evidence": 2,
+        "critical-unsatisfied-at-or-above-waitlist-threshold": 2,
+        "large-level-disagreement": 7,
+        "missing-critical-evidence": 3
+      },
+      "label_match_count": 10,
+      "label_mismatch_count": 10,
+      "label_mismatch_case_ids": [
+        "cv-s4-be-005",
+        "cv-s4-be-006",
+        "cv-s4-be-011",
+        "cv-s4-be-012",
+        "cv-s4-be-014",
+        "cv-s4-da-004",
+        "cv-s4-da-006",
+        "cv-s4-da-012",
+        "cv-s4-da-013",
+        "cv-s4-da-014"
+      ],
+      "metrics": {
+        "sample_count": 20,
+        "accuracy": 0.5,
+        "macro_f1": 0.28431372549019607,
+        "cohen_kappa": 0.26199261992619927,
+        "labels": {
+          "pass": {
+            "precision": 0.3076923076923077,
+            "recall": 1.0,
+            "f1": 0.47058823529411764,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "needs_review": {
+            "precision": 0.8571428571428571,
+            "recall": 0.5454545454545454,
+            "f1": 0.6666666666666665,
+            "support": 11
+          }
+        },
+        "confusion_matrix": [
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            5,
+            0,
+            0,
+            6
+          ]
+        ]
+      }
+    },
+    "hashing_l2": {
+      "candidate": {
+        "candidate_id": "approved-current-v1",
+        "description": "Current approved weights, thresholds and disagreement gate.",
+        "l2_matching": {
+          "similarity_floor": 0.2,
+          "similarity_ceiling": 0.8,
+          "top_k": 2
+        },
+        "aggregation": {
+          "l1_deterministic_rules": 0.45,
+          "l2_section_semantic_matching": 0.25,
+          "l3_evidence_grounded_reasoning": 0.3
+        },
+        "thresholds": {
+          "pass_minimum": 75.0,
+          "waitlist_minimum": 60.0
+        },
+        "disagreement_points": 25.0,
+        "boundary_offset_points": 2.0
+      },
+      "eligible_for_recommendation": false,
+      "safety": {
+        "needs_review_recall": 1.0,
+        "false_reject_count": 0,
+        "false_reject_case_ids": [],
+        "unsafe_pass_count": 0,
+        "unsafe_pass_case_ids": []
+      },
+      "review_rate": 1.0,
+      "decision_distribution": {
+        "needs_review": 20
+      },
+      "review_reason_distribution": {
+        "conflicting-critical-evidence": 2,
+        "critical-unsatisfied-at-or-above-waitlist-threshold": 2,
+        "large-level-disagreement": 20,
+        "missing-critical-evidence": 3,
+        "upper-threshold-boundary": 2
+      },
+      "label_match_count": 11,
+      "label_mismatch_count": 9,
+      "label_mismatch_case_ids": [
+        "cv-s4-be-001",
+        "cv-s4-be-002",
+        "cv-s4-be-005",
+        "cv-s4-be-006",
+        "cv-s4-be-011",
+        "cv-s4-da-001",
+        "cv-s4-da-002",
+        "cv-s4-da-004",
+        "cv-s4-da-006"
+      ],
+      "metrics": {
+        "sample_count": 20,
+        "accuracy": 0.55,
+        "macro_f1": 0.1774193548387097,
+        "cohen_kappa": 0.0,
+        "labels": {
+          "pass": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "needs_review": {
+            "precision": 0.55,
+            "recall": 1.0,
+            "f1": 0.7096774193548387,
+            "support": 11
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            11
+          ]
+        ]
+      }
+    }
+  },
+  "candidate_results": [
+    {
+      "candidate": {
+        "candidate_id": "approved-current-v1",
+        "description": "Current approved weights, thresholds and disagreement gate.",
+        "l2_matching": {
+          "similarity_floor": 0.2,
+          "similarity_ceiling": 0.8,
+          "top_k": 2
+        },
+        "aggregation": {
+          "l1_deterministic_rules": 0.45,
+          "l2_section_semantic_matching": 0.25,
+          "l3_evidence_grounded_reasoning": 0.3
+        },
+        "thresholds": {
+          "pass_minimum": 75.0,
+          "waitlist_minimum": 60.0
+        },
+        "disagreement_points": 25.0,
+        "boundary_offset_points": 2.0
+      },
+      "eligible_for_recommendation": false,
+      "safety": {
+        "needs_review_recall": 0.5454545454545454,
+        "false_reject_count": 0,
+        "false_reject_case_ids": [],
+        "unsafe_pass_count": 5,
+        "unsafe_pass_case_ids": [
+          "cv-s4-be-012",
+          "cv-s4-be-014",
+          "cv-s4-da-012",
+          "cv-s4-da-013",
+          "cv-s4-da-014"
+        ]
+      },
+      "review_rate": 0.35,
+      "decision_distribution": {
+        "needs_review": 7,
+        "pass": 13
+      },
+      "review_reason_distribution": {
+        "conflicting-critical-evidence": 2,
+        "critical-unsatisfied-at-or-above-waitlist-threshold": 2,
+        "large-level-disagreement": 7,
+        "missing-critical-evidence": 3
+      },
+      "label_match_count": 10,
+      "label_mismatch_count": 10,
+      "label_mismatch_case_ids": [
+        "cv-s4-be-005",
+        "cv-s4-be-006",
+        "cv-s4-be-011",
+        "cv-s4-be-012",
+        "cv-s4-be-014",
+        "cv-s4-da-004",
+        "cv-s4-da-006",
+        "cv-s4-da-012",
+        "cv-s4-da-013",
+        "cv-s4-da-014"
+      ],
+      "metrics": {
+        "sample_count": 20,
+        "accuracy": 0.5,
+        "macro_f1": 0.28431372549019607,
+        "cohen_kappa": 0.26199261992619927,
+        "labels": {
+          "pass": {
+            "precision": 0.3076923076923077,
+            "recall": 1.0,
+            "f1": 0.47058823529411764,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "needs_review": {
+            "precision": 0.8571428571428571,
+            "recall": 0.5454545454545454,
+            "f1": 0.6666666666666665,
+            "support": 11
+          }
+        },
+        "confusion_matrix": [
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            5,
+            0,
+            0,
+            6
+          ]
+        ]
+      },
+      "cases": [
+        {
+          "cv_profile_id": "cv-s4-be-001",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 100.0,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-be-002",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 100.0,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-be-005",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "pass",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 100.0,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-be-006",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "pass",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 93.0
+          },
+          "final_score": 97.9,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-be-007",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 88.75,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-008",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 100.0,
+            "l3": 93.0
+          },
+          "final_score": 86.65,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-010",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 88.75,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-011",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "reject",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 100.0,
+            "l3": 93.0
+          },
+          "final_score": 86.65,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-012",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "pass",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 93.0
+          },
+          "final_score": 97.9,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-be-014",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "pass",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 100.0,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-da-001",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 100.0,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-da-002",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 100.0,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-da-004",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "pass",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 93.0
+          },
+          "final_score": 97.9,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-da-006",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "pass",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 86.0
+          },
+          "final_score": 95.8,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-da-007",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 100.0,
+            "l3": 93.0
+          },
+          "final_score": 82.9,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-010",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 85.0,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-012",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "pass",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 86.0
+          },
+          "final_score": 95.8,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-da-013",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "pass",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 86.0
+          },
+          "final_score": 95.8,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-da-014",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "pass",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 100.0,
+          "review_reasons": []
+        },
+        {
+          "cv_profile_id": "cv-s4-da-015",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 100.0,
+            "l3": 100.0
+          },
+          "final_score": 85.0,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "l2-calibrated-80-95-v1",
+        "description": "Recalibrate multilingual E5 without changing approved weights or thresholds.",
+        "l2_matching": {
+          "similarity_floor": 0.8,
+          "similarity_ceiling": 0.95,
+          "top_k": 2
+        },
+        "aggregation": {
+          "l1_deterministic_rules": 0.45,
+          "l2_section_semantic_matching": 0.25,
+          "l3_evidence_grounded_reasoning": 0.3
+        },
+        "thresholds": {
+          "pass_minimum": 75.0,
+          "waitlist_minimum": 60.0
+        },
+        "disagreement_points": 25.0,
+        "boundary_offset_points": 2.0
+      },
+      "eligible_for_recommendation": false,
+      "safety": {
+        "needs_review_recall": 1.0,
+        "false_reject_count": 0,
+        "false_reject_case_ids": [],
+        "unsafe_pass_count": 0,
+        "unsafe_pass_case_ids": []
+      },
+      "review_rate": 1.0,
+      "decision_distribution": {
+        "needs_review": 20
+      },
+      "review_reason_distribution": {
+        "conflicting-critical-evidence": 2,
+        "critical-unsatisfied-at-or-above-waitlist-threshold": 2,
+        "large-level-disagreement": 20,
+        "missing-critical-evidence": 3,
+        "upper-threshold-boundary": 1
+      },
+      "label_match_count": 11,
+      "label_mismatch_count": 9,
+      "label_mismatch_case_ids": [
+        "cv-s4-be-001",
+        "cv-s4-be-002",
+        "cv-s4-be-005",
+        "cv-s4-be-006",
+        "cv-s4-be-011",
+        "cv-s4-da-001",
+        "cv-s4-da-002",
+        "cv-s4-da-004",
+        "cv-s4-da-006"
+      ],
+      "metrics": {
+        "sample_count": 20,
+        "accuracy": 0.55,
+        "macro_f1": 0.1774193548387097,
+        "cohen_kappa": 0.0,
+        "labels": {
+          "pass": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "needs_review": {
+            "precision": 0.55,
+            "recall": 1.0,
+            "f1": 0.7096774193548387,
+            "support": 11
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            11
+          ]
+        ]
+      },
+      "cases": [
+        {
+          "cv_profile_id": "cv-s4-be-001",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 39.0,
+            "l3": 100.0
+          },
+          "final_score": 84.75,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-002",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 37.98,
+            "l3": 100.0
+          },
+          "final_score": 84.5,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-005",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 38.23,
+            "l3": 100.0
+          },
+          "final_score": 84.56,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-006",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 35.27,
+            "l3": 93.0
+          },
+          "final_score": 81.72,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-007",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 36.29,
+            "l3": 100.0
+          },
+          "final_score": 72.82,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-008",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 38.01,
+            "l3": 93.0
+          },
+          "final_score": 71.15,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-010",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 38.22,
+            "l3": 100.0
+          },
+          "final_score": 73.31,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-011",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "reject",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 31.11,
+            "l3": 93.0
+          },
+          "final_score": 69.43,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-012",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 35.69,
+            "l3": 93.0
+          },
+          "final_score": 81.82,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-014",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 38.57,
+            "l3": 100.0
+          },
+          "final_score": 84.64,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-001",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 47.78,
+            "l3": 100.0
+          },
+          "final_score": 86.95,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-002",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 46.93,
+            "l3": 100.0
+          },
+          "final_score": 86.73,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-004",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 44.45,
+            "l3": 93.0
+          },
+          "final_score": 84.01,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-006",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 42.78,
+            "l3": 86.0
+          },
+          "final_score": 81.5,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-007",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 42.17,
+            "l3": 93.0
+          },
+          "final_score": 68.44,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-010",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 44.93,
+            "l3": 100.0
+          },
+          "final_score": 71.23,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-012",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 43.78,
+            "l3": 86.0
+          },
+          "final_score": 81.75,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-013",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 43.02,
+            "l3": 86.0
+          },
+          "final_score": 81.56,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-014",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 48.11,
+            "l3": 100.0
+          },
+          "final_score": 87.03,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-015",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 43.81,
+            "l3": 100.0
+          },
+          "final_score": 70.95,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "l2-calibrated-85-98-v1",
+        "description": "Apply a stricter E5 similarity range without changing approved decision settings.",
+        "l2_matching": {
+          "similarity_floor": 0.85,
+          "similarity_ceiling": 0.98,
+          "top_k": 2
+        },
+        "aggregation": {
+          "l1_deterministic_rules": 0.45,
+          "l2_section_semantic_matching": 0.25,
+          "l3_evidence_grounded_reasoning": 0.3
+        },
+        "thresholds": {
+          "pass_minimum": 75.0,
+          "waitlist_minimum": 60.0
+        },
+        "disagreement_points": 25.0,
+        "boundary_offset_points": 2.0
+      },
+      "eligible_for_recommendation": false,
+      "safety": {
+        "needs_review_recall": 1.0,
+        "false_reject_count": 0,
+        "false_reject_case_ids": [],
+        "unsafe_pass_count": 0,
+        "unsafe_pass_case_ids": []
+      },
+      "review_rate": 1.0,
+      "decision_distribution": {
+        "needs_review": 20
+      },
+      "review_reason_distribution": {
+        "conflicting-critical-evidence": 2,
+        "critical-unsatisfied-at-or-above-waitlist-threshold": 2,
+        "large-level-disagreement": 20,
+        "lower-threshold-boundary": 2,
+        "missing-critical-evidence": 3,
+        "upper-threshold-boundary": 6
+      },
+      "label_match_count": 11,
+      "label_mismatch_count": 9,
+      "label_mismatch_case_ids": [
+        "cv-s4-be-001",
+        "cv-s4-be-002",
+        "cv-s4-be-005",
+        "cv-s4-be-006",
+        "cv-s4-be-011",
+        "cv-s4-da-001",
+        "cv-s4-da-002",
+        "cv-s4-da-004",
+        "cv-s4-da-006"
+      ],
+      "metrics": {
+        "sample_count": 20,
+        "accuracy": 0.55,
+        "macro_f1": 0.1774193548387097,
+        "cohen_kappa": 0.0,
+        "labels": {
+          "pass": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "needs_review": {
+            "precision": 0.55,
+            "recall": 1.0,
+            "f1": 0.7096774193548387,
+            "support": 11
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            11
+          ]
+        ]
+      },
+      "cases": [
+        {
+          "cv_profile_id": "cv-s4-be-001",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-002",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-005",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-006",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 74.49,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-007",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 5.61,
+            "l3": 100.0
+          },
+          "final_score": 65.15,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-008",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.38,
+            "l3": 93.0
+          },
+          "final_score": 63.75,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-010",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 65.87,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-011",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "reject",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 1.33,
+            "l3": 93.0
+          },
+          "final_score": 61.98,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-012",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 74.49,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-014",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-001",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 16.67,
+            "l3": 100.0
+          },
+          "final_score": 79.17,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-002",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 15.69,
+            "l3": 100.0
+          },
+          "final_score": 78.92,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-004",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.84,
+            "l3": 93.0
+          },
+          "final_score": 76.11,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-006",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.21,
+            "l3": 86.0
+          },
+          "final_score": 73.6,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-007",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 10.3,
+            "l3": 93.0
+          },
+          "final_score": 60.48,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-010",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 13.39,
+            "l3": 100.0
+          },
+          "final_score": 63.35,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-012",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.36,
+            "l3": 86.0
+          },
+          "final_score": 73.89,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-013",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.42,
+            "l3": 86.0
+          },
+          "final_score": 73.66,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-014",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 17.06,
+            "l3": 100.0
+          },
+          "final_score": 79.27,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-015",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 12.09,
+            "l3": 100.0
+          },
+          "final_score": 63.02,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "l1-heavy-calibrated-v1",
+        "description": "Combine stricter E5 calibration with greater deterministic-rule influence.",
+        "l2_matching": {
+          "similarity_floor": 0.85,
+          "similarity_ceiling": 0.98,
+          "top_k": 2
+        },
+        "aggregation": {
+          "l1_deterministic_rules": 0.55,
+          "l2_section_semantic_matching": 0.25,
+          "l3_evidence_grounded_reasoning": 0.2
+        },
+        "thresholds": {
+          "pass_minimum": 75.0,
+          "waitlist_minimum": 60.0
+        },
+        "disagreement_points": 25.0,
+        "boundary_offset_points": 2.0
+      },
+      "eligible_for_recommendation": false,
+      "safety": {
+        "needs_review_recall": 1.0,
+        "false_reject_count": 0,
+        "false_reject_case_ids": [],
+        "unsafe_pass_count": 0,
+        "unsafe_pass_case_ids": []
+      },
+      "review_rate": 1.0,
+      "decision_distribution": {
+        "needs_review": 20
+      },
+      "review_reason_distribution": {
+        "conflicting-critical-evidence": 2,
+        "critical-unsatisfied-at-or-above-waitlist-threshold": 1,
+        "large-level-disagreement": 20,
+        "low-score-without-explicit-critical-unsatisfied": 1,
+        "lower-threshold-boundary": 4,
+        "missing-critical-evidence": 3,
+        "upper-threshold-boundary": 6
+      },
+      "label_match_count": 11,
+      "label_mismatch_count": 9,
+      "label_mismatch_case_ids": [
+        "cv-s4-be-001",
+        "cv-s4-be-002",
+        "cv-s4-be-005",
+        "cv-s4-be-006",
+        "cv-s4-be-011",
+        "cv-s4-da-001",
+        "cv-s4-da-002",
+        "cv-s4-da-004",
+        "cv-s4-da-006"
+      ],
+      "metrics": {
+        "sample_count": 20,
+        "accuracy": 0.55,
+        "macro_f1": 0.1774193548387097,
+        "cohen_kappa": 0.0,
+        "labels": {
+          "pass": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "needs_review": {
+            "precision": 0.55,
+            "recall": 1.0,
+            "f1": 0.7096774193548387,
+            "support": 11
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            11
+          ]
+        ]
+      },
+      "cases": [
+        {
+          "cv_profile_id": "cv-s4-be-001",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-002",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-005",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-006",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 75.19,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-007",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 5.61,
+            "l3": 100.0
+          },
+          "final_score": 62.65,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-008",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.38,
+            "l3": 93.0
+          },
+          "final_score": 61.95,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-010",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 63.37,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-011",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "reject",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 1.33,
+            "l3": 93.0
+          },
+          "final_score": 60.18,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-012",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 75.19,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-014",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-001",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 16.67,
+            "l3": 100.0
+          },
+          "final_score": 79.17,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-002",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 15.69,
+            "l3": 100.0
+          },
+          "final_score": 78.92,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-004",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.84,
+            "l3": 93.0
+          },
+          "final_score": 76.81,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-006",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.21,
+            "l3": 86.0
+          },
+          "final_score": 75.0,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-007",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 10.3,
+            "l3": 93.0
+          },
+          "final_score": 57.84,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-010",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 13.39,
+            "l3": 100.0
+          },
+          "final_score": 60.02,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-012",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.36,
+            "l3": 86.0
+          },
+          "final_score": 75.29,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-013",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.42,
+            "l3": 86.0
+          },
+          "final_score": 75.06,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-014",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 17.06,
+            "l3": 100.0
+          },
+          "final_score": 79.27,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-015",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 12.09,
+            "l3": 100.0
+          },
+          "final_score": 59.69,
+          "review_reasons": [
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "semantic-heavy-calibrated-v1",
+        "description": "Combine stricter E5 calibration with greater multilingual semantic influence.",
+        "l2_matching": {
+          "similarity_floor": 0.85,
+          "similarity_ceiling": 0.98,
+          "top_k": 2
+        },
+        "aggregation": {
+          "l1_deterministic_rules": 0.35,
+          "l2_section_semantic_matching": 0.4,
+          "l3_evidence_grounded_reasoning": 0.25
+        },
+        "thresholds": {
+          "pass_minimum": 75.0,
+          "waitlist_minimum": 60.0
+        },
+        "disagreement_points": 25.0,
+        "boundary_offset_points": 2.0
+      },
+      "eligible_for_recommendation": false,
+      "safety": {
+        "needs_review_recall": 1.0,
+        "false_reject_count": 0,
+        "false_reject_case_ids": [],
+        "unsafe_pass_count": 0,
+        "unsafe_pass_case_ids": []
+      },
+      "review_rate": 1.0,
+      "decision_distribution": {
+        "needs_review": 20
+      },
+      "review_reason_distribution": {
+        "conflicting-critical-evidence": 2,
+        "large-level-disagreement": 20,
+        "low-score-without-explicit-critical-unsatisfied": 5,
+        "lower-threshold-boundary": 5,
+        "missing-critical-evidence": 3
+      },
+      "label_match_count": 11,
+      "label_mismatch_count": 9,
+      "label_mismatch_case_ids": [
+        "cv-s4-be-001",
+        "cv-s4-be-002",
+        "cv-s4-be-005",
+        "cv-s4-be-006",
+        "cv-s4-be-011",
+        "cv-s4-da-001",
+        "cv-s4-da-002",
+        "cv-s4-da-004",
+        "cv-s4-da-006"
+      ],
+      "metrics": {
+        "sample_count": 20,
+        "accuracy": 0.55,
+        "macro_f1": 0.1774193548387097,
+        "cohen_kappa": 0.0,
+        "labels": {
+          "pass": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "needs_review": {
+            "precision": 0.55,
+            "recall": 1.0,
+            "f1": 0.7096774193548387,
+            "support": 11
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            11
+          ]
+        ]
+      },
+      "cases": [
+        {
+          "cv_profile_id": "cv-s4-be-001",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 63.39,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-002",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 63.39,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-005",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 63.39,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-006",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 60.79,
+          "review_reasons": [
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-007",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 5.61,
+            "l3": 100.0
+          },
+          "final_score": 53.49,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-008",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.38,
+            "l3": 93.0
+          },
+          "final_score": 52.85,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-010",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 54.64,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-011",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "reject",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 1.33,
+            "l3": 93.0
+          },
+          "final_score": 50.03,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-012",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 60.79,
+          "review_reasons": [
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-014",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 63.39,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-001",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 16.67,
+            "l3": 100.0
+          },
+          "final_score": 66.67,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-002",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 15.69,
+            "l3": 100.0
+          },
+          "final_score": 66.28,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-004",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.84,
+            "l3": 93.0
+          },
+          "final_score": 63.39,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-006",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.21,
+            "l3": 86.0
+          },
+          "final_score": 60.98,
+          "review_reasons": [
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-007",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 10.3,
+            "l3": 93.0
+          },
+          "final_score": 50.7,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-010",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 13.39,
+            "l3": 100.0
+          },
+          "final_score": 53.69,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-012",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.36,
+            "l3": 86.0
+          },
+          "final_score": 61.44,
+          "review_reasons": [
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-013",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.42,
+            "l3": 86.0
+          },
+          "final_score": 61.07,
+          "review_reasons": [
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-014",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 17.06,
+            "l3": 100.0
+          },
+          "final_score": 66.82,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-015",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 12.09,
+            "l3": 100.0
+          },
+          "final_score": 53.17,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "wider-disagreement-calibrated-v1",
+        "description": "Combine stricter E5 calibration with a less sensitive disagreement trigger.",
+        "l2_matching": {
+          "similarity_floor": 0.85,
+          "similarity_ceiling": 0.98,
+          "top_k": 2
+        },
+        "aggregation": {
+          "l1_deterministic_rules": 0.45,
+          "l2_section_semantic_matching": 0.25,
+          "l3_evidence_grounded_reasoning": 0.3
+        },
+        "thresholds": {
+          "pass_minimum": 75.0,
+          "waitlist_minimum": 60.0
+        },
+        "disagreement_points": 35.0,
+        "boundary_offset_points": 2.0
+      },
+      "eligible_for_recommendation": false,
+      "safety": {
+        "needs_review_recall": 1.0,
+        "false_reject_count": 0,
+        "false_reject_case_ids": [],
+        "unsafe_pass_count": 0,
+        "unsafe_pass_case_ids": []
+      },
+      "review_rate": 1.0,
+      "decision_distribution": {
+        "needs_review": 20
+      },
+      "review_reason_distribution": {
+        "conflicting-critical-evidence": 2,
+        "critical-unsatisfied-at-or-above-waitlist-threshold": 2,
+        "large-level-disagreement": 20,
+        "lower-threshold-boundary": 2,
+        "missing-critical-evidence": 3,
+        "upper-threshold-boundary": 6
+      },
+      "label_match_count": 11,
+      "label_mismatch_count": 9,
+      "label_mismatch_case_ids": [
+        "cv-s4-be-001",
+        "cv-s4-be-002",
+        "cv-s4-be-005",
+        "cv-s4-be-006",
+        "cv-s4-be-011",
+        "cv-s4-da-001",
+        "cv-s4-da-002",
+        "cv-s4-da-004",
+        "cv-s4-da-006"
+      ],
+      "metrics": {
+        "sample_count": 20,
+        "accuracy": 0.55,
+        "macro_f1": 0.1774193548387097,
+        "cohen_kappa": 0.0,
+        "labels": {
+          "pass": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "needs_review": {
+            "precision": 0.55,
+            "recall": 1.0,
+            "f1": 0.7096774193548387,
+            "support": 11
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            11
+          ]
+        ]
+      },
+      "cases": [
+        {
+          "cv_profile_id": "cv-s4-be-001",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-002",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-005",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-006",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 74.49,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-007",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 5.61,
+            "l3": 100.0
+          },
+          "final_score": 65.15,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-008",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.38,
+            "l3": 93.0
+          },
+          "final_score": 63.75,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-010",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 65.87,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-011",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "reject",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 1.33,
+            "l3": 93.0
+          },
+          "final_score": 61.98,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-012",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 74.49,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-014",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-001",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 16.67,
+            "l3": 100.0
+          },
+          "final_score": 79.17,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-002",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 15.69,
+            "l3": 100.0
+          },
+          "final_score": 78.92,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-004",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.84,
+            "l3": 93.0
+          },
+          "final_score": 76.11,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-006",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.21,
+            "l3": 86.0
+          },
+          "final_score": 73.6,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-007",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 10.3,
+            "l3": 93.0
+          },
+          "final_score": 60.48,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-010",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 13.39,
+            "l3": 100.0
+          },
+          "final_score": 63.35,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-012",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.36,
+            "l3": 86.0
+          },
+          "final_score": 73.89,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-013",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.42,
+            "l3": 86.0
+          },
+          "final_score": 73.66,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-014",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 17.06,
+            "l3": 100.0
+          },
+          "final_score": 79.27,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-015",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 12.09,
+            "l3": 100.0
+          },
+          "final_score": 63.02,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate": {
+        "candidate_id": "stricter-thresholds-calibrated-v1",
+        "description": "Combine stricter E5 calibration with higher automatic decision thresholds.",
+        "l2_matching": {
+          "similarity_floor": 0.85,
+          "similarity_ceiling": 0.98,
+          "top_k": 2
+        },
+        "aggregation": {
+          "l1_deterministic_rules": 0.45,
+          "l2_section_semantic_matching": 0.25,
+          "l3_evidence_grounded_reasoning": 0.3
+        },
+        "thresholds": {
+          "pass_minimum": 78.0,
+          "waitlist_minimum": 62.0
+        },
+        "disagreement_points": 25.0,
+        "boundary_offset_points": 2.0
+      },
+      "eligible_for_recommendation": false,
+      "safety": {
+        "needs_review_recall": 1.0,
+        "false_reject_count": 0,
+        "false_reject_case_ids": [],
+        "unsafe_pass_count": 0,
+        "unsafe_pass_case_ids": []
+      },
+      "review_rate": 1.0,
+      "decision_distribution": {
+        "needs_review": 20
+      },
+      "review_reason_distribution": {
+        "conflicting-critical-evidence": 2,
+        "critical-unsatisfied-at-or-above-waitlist-threshold": 1,
+        "large-level-disagreement": 20,
+        "low-score-without-explicit-critical-unsatisfied": 1,
+        "lower-threshold-boundary": 5,
+        "missing-critical-evidence": 3,
+        "upper-threshold-boundary": 8
+      },
+      "label_match_count": 11,
+      "label_mismatch_count": 9,
+      "label_mismatch_case_ids": [
+        "cv-s4-be-001",
+        "cv-s4-be-002",
+        "cv-s4-be-005",
+        "cv-s4-be-006",
+        "cv-s4-be-011",
+        "cv-s4-da-001",
+        "cv-s4-da-002",
+        "cv-s4-da-004",
+        "cv-s4-da-006"
+      ],
+      "metrics": {
+        "sample_count": 20,
+        "accuracy": 0.55,
+        "macro_f1": 0.1774193548387097,
+        "cohen_kappa": 0.0,
+        "labels": {
+          "pass": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "needs_review": {
+            "precision": 0.55,
+            "recall": 1.0,
+            "f1": 0.7096774193548387,
+            "support": 11
+          }
+        },
+        "confusion_matrix": [
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            0,
+            0,
+            0,
+            1
+          ],
+          [
+            0,
+            0,
+            0,
+            11
+          ]
+        ]
+      },
+      "cases": [
+        {
+          "cv_profile_id": "cv-s4-be-001",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-002",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-005",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-006",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 74.49,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-007",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 5.61,
+            "l3": 100.0
+          },
+          "final_score": 65.15,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-008",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.38,
+            "l3": 93.0
+          },
+          "final_score": 63.75,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-010",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 65.87,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-011",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "reject",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 75.0,
+            "l2": 1.33,
+            "l3": 93.0
+          },
+          "final_score": 61.98,
+          "review_reasons": [
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-012",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 6.36,
+            "l3": 93.0
+          },
+          "final_score": 74.49,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-be-014",
+          "job_profile_id": "junior-python-backend-developer-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 8.48,
+            "l3": 100.0
+          },
+          "final_score": 77.12,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-001",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 16.67,
+            "l3": 100.0
+          },
+          "final_score": 79.17,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-002",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 15.69,
+            "l3": 100.0
+          },
+          "final_score": 78.92,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-004",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.84,
+            "l3": 93.0
+          },
+          "final_score": 76.11,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-006",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "label_match": false,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.21,
+            "l3": 86.0
+          },
+          "final_score": 73.6,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-007",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 10.3,
+            "l3": 93.0
+          },
+          "final_score": 60.48,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-010",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 13.39,
+            "l3": 100.0
+          },
+          "final_score": 63.35,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-012",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 12.36,
+            "l3": 86.0
+          },
+          "final_score": 73.89,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-013",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 11.42,
+            "l3": 86.0
+          },
+          "final_score": 73.66,
+          "review_reasons": [
+            "large-level-disagreement"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-014",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 100.0,
+            "l2": 17.06,
+            "l3": 100.0
+          },
+          "final_score": 79.27,
+          "review_reasons": [
+            "large-level-disagreement",
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "cv_profile_id": "cv-s4-da-015",
+          "job_profile_id": "junior-data-analyst-v1",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "label_match": true,
+          "level_scores": {
+            "l1": 66.67,
+            "l2": 12.09,
+            "l3": 100.0
+          },
+          "final_score": 63.02,
+          "review_reasons": [
+            "critical-unsatisfied-at-or-above-waitlist-threshold",
+            "large-level-disagreement",
+            "lower-threshold-boundary"
+          ]
+        }
+      ]
+    }
+  ],
+  "recommendation": {
+    "candidate_id": null,
+    "status": "provisional_pending_human_approval",
+    "requires_human_approval": true,
+    "ranking_rule": "Meet review-recall, false-Reject and unsafe-Pass constraints; stay within the maximum review rate; then maximize Macro-F1 and prefer lower review rate."
+  },
+  "freeze_readiness": {
+    "embedding_model_evaluated": true,
+    "aggregation_and_threshold_candidates_evaluated": true,
+    "live_llm_model_evaluated": false,
+    "prompt_quality_with_live_llm_evaluated": false,
+    "configuration_frozen": false,
+    "blocking_decision": "Choose whether the internship release freezes deterministic L3 or runs an environment-configured LLM validation before Gate 6."
+  }
+}

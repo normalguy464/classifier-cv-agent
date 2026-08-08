@@ -1,0 +1,205 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "runtime-v2-l3-development-panel-v2",
+  "generated_at": "2026-08-08T19:00:00+07:00",
+  "provider_identifier": "openai",
+  "model_identifier": "gpt-5.4-mini-2026-03-17",
+  "prompt_version": "l3-evidence-rubric-v15",
+  "score_mapping_version": "l3-deterministic-level-mapping-v2",
+  "request_count": 20,
+  "valid_output_count": 20,
+  "valid_output_rate": 1.0,
+  "requirement_status_match_rate": 1.0,
+  "unsafe_requirement_status_mismatch_count": 0,
+  "criterion_mae": 2.595,
+  "total_score_mae": 10.275,
+  "endpoint_score_rate": 0.01,
+  "estimated_cost_usd": "0.1891088",
+  "quality_gate": {
+    "passed": true,
+    "checks": {
+      "valid_output_rate": true,
+      "requirement_status_match_rate": true,
+      "unsafe_requirement_status_mismatch_count": true,
+      "criterion_mae": true,
+      "total_score_mae": true,
+      "endpoint_score_rate": true,
+      "estimated_cost": true
+    }
+  },
+  "cases": [
+    {
+      "pair_id": "v2d-pair-da-01",
+      "role": "data_analyst",
+      "human_total_score": 93.0,
+      "l3_total_score": 84.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-da-03",
+      "role": "data_analyst",
+      "human_total_score": 82.0,
+      "l3_total_score": 74.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-da-07",
+      "role": "data_analyst",
+      "human_total_score": 57.0,
+      "l3_total_score": 49.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-da-15",
+      "role": "data_analyst",
+      "human_total_score": 58.0,
+      "l3_total_score": 67.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-be-01",
+      "role": "python_backend",
+      "human_total_score": 93.0,
+      "l3_total_score": 74.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-be-04",
+      "role": "python_backend",
+      "human_total_score": 75.0,
+      "l3_total_score": 71.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-be-07",
+      "role": "python_backend",
+      "human_total_score": 57.0,
+      "l3_total_score": 49.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-be-09",
+      "role": "python_backend",
+      "human_total_score": 53.0,
+      "l3_total_score": 59.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-01",
+      "role": "frontend",
+      "human_total_score": 93.0,
+      "l3_total_score": 76.5,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-04",
+      "role": "frontend",
+      "human_total_score": 75.0,
+      "l3_total_score": 74.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-05",
+      "role": "frontend",
+      "human_total_score": 66.0,
+      "l3_total_score": 59.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-13",
+      "role": "frontend",
+      "human_total_score": 45.0,
+      "l3_total_score": 26.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-02",
+      "role": "qa_engineer",
+      "human_total_score": 88.0,
+      "l3_total_score": 79.5,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-03",
+      "role": "qa_engineer",
+      "human_total_score": 82.0,
+      "l3_total_score": 75.5,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-08",
+      "role": "qa_engineer",
+      "human_total_score": 24.0,
+      "l3_total_score": 40.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-11",
+      "role": "qa_engineer",
+      "human_total_score": 85.0,
+      "l3_total_score": 64.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-de-01",
+      "role": "data_engineer",
+      "human_total_score": 93.0,
+      "l3_total_score": 84.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-de-03",
+      "role": "data_engineer",
+      "human_total_score": 82.0,
+      "l3_total_score": 71.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-de-08",
+      "role": "data_engineer",
+      "human_total_score": 24.0,
+      "l3_total_score": 40.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-de-13",
+      "role": "data_engineer",
+      "human_total_score": 45.0,
+      "l3_total_score": 42.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    }
+  ],
+  "data_policy": {
+    "development_only": true,
+    "validation_allowed": false,
+    "stage7_v1_test_allowed": false,
+    "raw_provider_response_persisted": false
+  },
+  "traceability": {
+    "configuration_sha256": "3ba7820c6dbc52a1be0be32dfcf015e0c0d7d8a10c10984b9af75198de7c149d",
+    "reviewed_manifest_sha256": "7a61f45395b7a7ed0be0e957ff7790473b35ca0a7baae4f66e0ef6079f24317a",
+    "split_manifest_sha256": "3711c4735fc51970a62c76e925ba8bce3696eaaf078b7d583b5393acefcfd4dd",
+    "offline_checkpoint_sha256": "316d49facddbe77e35d2c86a61a78f2af49dab71acb5688e0ed5978280896367",
+    "raw_provider_response_persisted": false
+  }
+}

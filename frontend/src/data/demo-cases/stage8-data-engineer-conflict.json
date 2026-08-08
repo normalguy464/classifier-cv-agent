@@ -1,0 +1,425 @@
+{
+  "schema_version": "1.0.0",
+  "demo_case_id": "stage8-data-engineer-conflict",
+  "role": "data_engineer",
+  "scenario": "conflicting_critical",
+  "request": {
+    "schema_version": "1.1.0",
+    "request_id": "demo-request-data-engineer-conflict",
+    "cv_profile": {
+      "schema_version": "1.0.0",
+      "cv_profile_id": "cv-v2d-de-12",
+      "candidate_reference": "candidate-v2d-de-12",
+      "summary": "Hồ sơ có tổng điểm khá nhưng xác nhận một yêu cầu bắt buộc chưa đạt. Hồ sơ hướng tới vị trí Junior Data Engineer - Yêu cầu tiêu chuẩn.",
+      "skills": [
+        {
+          "name": "Python xử lý dữ liệu",
+          "evidence_ids": [
+            "ev-v2d-de-12-02"
+          ]
+        },
+        {
+          "name": "SQL cho kỹ thuật dữ liệu",
+          "evidence_ids": [
+            "ev-v2d-de-12-03"
+          ]
+        },
+        {
+          "name": "Pipeline ETL và ELT",
+          "evidence_ids": [
+            "ev-v2d-de-12-04"
+          ]
+        },
+        {
+          "name": "Mô hình và chất lượng dữ liệu",
+          "evidence_ids": [
+            "ev-v2d-de-12-05"
+          ]
+        }
+      ],
+      "work_experiences": [],
+      "education": [
+        {
+          "education_id": "education-v2d-de-12",
+          "degree": "Chương trình đào tạo kỹ thuật",
+          "field_of_study": "Kỹ thuật dữ liệu và hệ thống phân tích",
+          "institution_reference": "institution-de-synthetic",
+          "evidence_ids": [
+            "ev-v2d-de-12-01"
+          ]
+        }
+      ],
+      "projects": [
+        {
+          "project_id": "project-v2d-de-12",
+          "title": "Luồng dữ liệu sự kiện ứng dụng",
+          "summary": "Các năng lực còn lại có thực hành và đầu ra cụ thể. Nêu cách xử lý trong phạm vi đã biết và giới hạn cần hỗ trợ. Có artifact bàn giao cho phần việc đã hoàn thành.",
+          "technologies": [
+            "Python xử lý dữ liệu",
+            "SQL cho kỹ thuật dữ liệu",
+            "Pipeline ETL và ELT",
+            "Mô hình và chất lượng dữ liệu"
+          ],
+          "evidence_ids": [
+            "ev-v2d-de-12-02",
+            "ev-v2d-de-12-03",
+            "ev-v2d-de-12-04",
+            "ev-v2d-de-12-05",
+            "ev-v2d-de-12-07",
+            "ev-v2d-de-12-08",
+            "ev-v2d-de-12-09"
+          ]
+        }
+      ],
+      "certifications": [],
+      "evidence": [
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-01",
+          "source_type": "candidate",
+          "section": "education",
+          "text": "Chương trình học có bài tổng hợp về luồng dữ liệu sự kiện ứng dụng; mức đóng góp phải được xác định từ các mục thực hành bên dưới.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-02",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Viết Python đọc dữ liệu theo lô, chuẩn hóa schema và ghi log lỗi cho luồng dữ liệu sự kiện ứng dụng.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-03",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Tối ưu truy vấn sau khi đọc execution plan và bổ sung index cho bảng trung gian của luồng dữ liệu sự kiện ứng dụng.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-04",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Tách extract, transform và load thành các task có dependency rõ ràng cho luồng dữ liệu sự kiện ứng dụng.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-05",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Thiết kế fact, dimension và kiểm tra uniqueness, null, referential integrity cho luồng dữ liệu sự kiện ứng dụng.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-06",
+          "source_type": "candidate",
+          "section": "other",
+          "text": "Chưa dùng Git, Linux và chưa thể bàn giao môi trường pipeline.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-07",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Chiều sâu kỹ thuật của luồng dữ liệu sự kiện ứng dụng: Các năng lực còn lại có thực hành và đầu ra cụ thể.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-08",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Lập luận trong luồng dữ liệu sự kiện ứng dụng: Nêu cách xử lý trong phạm vi đã biết và giới hạn cần hỗ trợ.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-09",
+          "source_type": "candidate",
+          "section": "projects",
+          "text": "Bàn giao luồng dữ liệu sự kiện ứng dụng: Có artifact bàn giao cho phần việc đã hoàn thành.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        },
+        {
+          "schema_version": "1.0.0",
+          "evidence_id": "ev-v2d-de-12-10",
+          "source_type": "candidate",
+          "section": "other",
+          "text": "Cách trình bày luồng dữ liệu sự kiện ứng dụng: Hồ sơ minh bạch về năng lực chưa đạt.",
+          "location": {
+            "source_record_id": "source-v2d-de-12",
+            "page_number": null,
+            "character_start": null,
+            "character_end": null
+          },
+          "extraction_confidence": null,
+          "is_verified": false
+        }
+      ],
+      "quality_warnings": []
+    },
+    "job_profile": {
+      "schema_version": "1.0.0",
+      "job_profile_id": "junior-data-engineer-std-v2",
+      "title": "Junior Data Engineer - Yêu cầu tiêu chuẩn",
+      "language": "vi",
+      "seniority": "junior",
+      "experience_range": {
+        "minimum_years": 0,
+        "maximum_years": 2,
+        "formal_work_experience_required": false
+      },
+      "responsibilities": [
+        "Xây, lập lịch và theo dõi pipeline ETL hoặc ELT theo batch ở mức junior.",
+        "Dùng Python và SQL để tích hợp nhiều nguồn, chuẩn hóa schema và tối ưu truy vấn cơ bản.",
+        "Mô hình hóa dữ liệu cho warehouse, triển khai incremental load và data quality checks.",
+        "Điều tra job failure, quản lý code bằng Git và bàn giao môi trường chạy có thể tái tạo.",
+        "Kết hợp năng lực cốt lõi với quy trình làm việc nhóm."
+      ],
+      "requirements": [
+        {
+          "requirement_id": "de-python",
+          "title": "Có Python có cấu trúc cho xử lý và tích hợp dữ liệu.",
+          "description": "Có Python có cấu trúc cho xử lý và tích hợp dữ liệu.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Dùng Python với module, logging, configuration và exception handling để đọc nhiều nguồn, chuẩn hóa schema và xử lý dữ liệu lỗi.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "de-sql",
+          "title": "Có SQL trung cấp và hiểu tối ưu truy vấn cơ bản.",
+          "description": "Có SQL trung cấp và hiểu tối ưu truy vấn cơ bản.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Dùng CTE, nhiều JOIN, window function, execution plan hoặc index cơ bản và truy vấn kiểm tra chất lượng dữ liệu.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "de-pipeline",
+          "title": "Có dự án pipeline ETL hoặc ELT có thể chạy lại.",
+          "description": "Có dự án pipeline ETL hoặc ELT có thể chạy lại.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Xây pipeline batch có extract, transform, load, incremental strategy, retry, logging và kiểm tra đầu ra.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "de-data-model-quality",
+          "title": "Có data modeling và data quality cho warehouse.",
+          "description": "Có data modeling và data quality cho warehouse.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Xác định grain, fact, dimension, key và kiểm tra uniqueness, completeness, referential integrity trong data mart.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "de-delivery-workflow",
+          "title": "Có Git, Linux và container để bàn giao pipeline.",
+          "description": "Có Git, Linux và container để bàn giao pipeline.",
+          "priority": "required",
+          "is_critical": true,
+          "accepted_evidence": [
+            "Dùng branch và pull request, chạy pipeline trên Linux, đọc log và đóng gói môi trường bằng Docker Compose.",
+            "Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận."
+          ],
+          "missing_evidence_policy": "Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.",
+          "explicit_failure_policy": "Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng."
+        },
+        {
+          "requirement_id": "de-airflow",
+          "title": "Có orchestration.",
+          "description": "Có orchestration.",
+          "priority": "preferred",
+          "is_critical": false,
+          "accepted_evidence": [
+            "Tạo DAG Airflow có dependency, retry, backfill, parameter và cảnh báo job failure."
+          ],
+          "missing_evidence_policy": "Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.",
+          "explicit_failure_policy": "Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp."
+        },
+        {
+          "requirement_id": "de-cloud-warehouse",
+          "title": "Có cloud storage hoặc cloud warehouse.",
+          "description": "Có cloud storage hoặc cloud warehouse.",
+          "priority": "preferred",
+          "is_critical": false,
+          "accepted_evidence": [
+            "Dùng S3, GCS, BigQuery, Redshift, Snowflake hoặc dịch vụ tương đương trong pipeline thử nghiệm."
+          ],
+          "missing_evidence_policy": "Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.",
+          "explicit_failure_policy": "Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp."
+        }
+      ]
+    },
+    "rubric": {
+      "schema_version": "1.0.0",
+      "rubric_id": "de-std-rubric-v2",
+      "rubric_version": "2.0.1",
+      "job_profile_id": "junior-data-engineer-std-v2",
+      "criteria": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "title": "Yêu cầu bắt buộc",
+          "description": "Đối chiếu riêng từng yêu cầu bắt buộc và phân biệt đạt, không đạt, thiếu và mâu thuẫn.",
+          "weight": "30"
+        },
+        {
+          "criterion_id": "de-technical-specialization",
+          "title": "Năng lực kỹ thuật chuyên môn",
+          "description": "Đánh giá Python, SQL trung cấp, ETL/ELT, warehouse modeling, orchestration và môi trường chạy.",
+          "weight": "25"
+        },
+        {
+          "criterion_id": "de-role-capability",
+          "title": "Năng lực theo vai trò",
+          "description": "Đánh giá incremental load, idempotency, data quality, retry, logging và xử lý job failure.",
+          "weight": "20"
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "title": "Dự án, thực tập và tác động",
+          "description": "Đánh giá phạm vi đóng góp, khả năng tái tạo đầu ra và tác động phù hợp cấp junior.",
+          "weight": "15"
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "title": "Độ rõ ràng và khả năng kiểm tra của thông tin trong CV",
+          "description": "Đánh giá mức rõ ràng, nhất quán, khả năng kiểm tra và giới hạn được ứng viên trình bày.",
+          "weight": "10"
+        }
+      ],
+      "critical_requirement_ids": [
+        "de-python",
+        "de-sql",
+        "de-pipeline",
+        "de-data-model-quality",
+        "de-delivery-workflow"
+      ]
+    },
+    "configuration": {
+      "schema_version": "1.1.0",
+      "configuration_id": "classification-scoring-v3",
+      "configuration_version": "3.0.0",
+      "job_profile_artifact_version": "2.0.0",
+      "l1_rules_configuration_version": "3.0.0",
+      "models_configuration_version": "3.0.0",
+      "aggregation": {
+        "l1_deterministic_rules": "0.2",
+        "l2_section_semantic_matching": "0.3",
+        "l3_evidence_grounded_reasoning": "0.5"
+      },
+      "thresholds": {
+        "pass_minimum": "82",
+        "waitlist_minimum": "67"
+      },
+      "needs_review_policy": {
+        "missing_critical_evidence": true,
+        "conflicting_critical_evidence": true,
+        "invalid_provider_output": true,
+        "disagreement_points": "45",
+        "boundary_score_bands": [
+          {
+            "minimum": "65",
+            "maximum": "69"
+          },
+          {
+            "minimum": "80",
+            "maximum": "84"
+          }
+        ]
+      },
+      "models": {
+        "embedding_model_identifier": "intfloat/multilingual-e5-base",
+        "embedding_model_version": "d128750597153bb5987e10b1c3493a34e5a4502a",
+        "llm_provider_identifier": "deterministic_fake",
+        "llm_model_identifier": "deterministic-evidence-scorer-v1",
+        "prompt_version": "l3-evidence-rubric-v15"
+      }
+    }
+  }
+}

@@ -1,0 +1,85 @@
+artifact_kind: job_profile
+artifact_version: 2.0.0
+contract_status: approved_for_runtime
+job_profile_id: junior-data-engineer-std-v2
+title: Junior Data Engineer - Yêu cầu tiêu chuẩn
+language: vi
+seniority:
+  level: junior
+  experience_range_years:
+    minimum: 0
+    maximum: 2
+  formal_work_experience_required: false
+  equivalent_experience:
+    - relevant internship
+    - academic project
+    - personal project with verifiable evidence
+role_summary: Xây pipeline dữ liệu bằng Python và SQL với data modeling, data quality và môi trường bàn giao có thể tái tạo.
+responsibilities:
+  - Xây, lập lịch và theo dõi pipeline ETL hoặc ELT theo batch ở mức junior.
+  - Dùng Python và SQL để tích hợp nhiều nguồn, chuẩn hóa schema và tối ưu truy vấn cơ bản.
+  - Mô hình hóa dữ liệu cho warehouse, triển khai incremental load và data quality checks.
+  - Điều tra job failure, quản lý code bằng Git và bàn giao môi trường chạy có thể tái tạo.
+  - Kết hợp năng lực cốt lõi với quy trình làm việc nhóm.
+mandatory_requirements:
+  - requirement_id: de-python
+    description: Có Python có cấu trúc cho xử lý và tích hợp dữ liệu.
+    accepted_evidence:
+      - Dùng Python với module, logging, configuration và exception handling để đọc nhiều nguồn, chuẩn hóa schema và xử lý dữ liệu lỗi.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: de-sql
+    description: Có SQL trung cấp và hiểu tối ưu truy vấn cơ bản.
+    accepted_evidence:
+      - Dùng CTE, nhiều JOIN, window function, execution plan hoặc index cơ bản và truy vấn kiểm tra chất lượng dữ liệu.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: de-pipeline
+    description: Có dự án pipeline ETL hoặc ELT có thể chạy lại.
+    accepted_evidence:
+      - Xây pipeline batch có extract, transform, load, incremental strategy, retry, logging và kiểm tra đầu ra.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: de-data-model-quality
+    description: Có data modeling và data quality cho warehouse.
+    accepted_evidence:
+      - Xác định grain, fact, dimension, key và kiểm tra uniqueness, completeness, referential integrity trong data mart.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: de-delivery-workflow
+    description: Có Git, Linux và container để bàn giao pipeline.
+    accepted_evidence:
+      - Dùng branch và pull request, chạy pipeline trên Linux, đọc log và đóng gói môi trường bằng Docker Compose.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+preferred_requirements:
+  - requirement_id: de-airflow
+    description: Có orchestration.
+    accepted_evidence:
+      - Tạo DAG Airflow có dependency, retry, backfill, parameter và cảnh báo job failure.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+  - requirement_id: de-cloud-warehouse
+    description: Có cloud storage hoặc cloud warehouse.
+    accepted_evidence:
+      - Dùng S3, GCS, BigQuery, Redshift, Snowflake hoặc dịch vụ tương đương trong pipeline thử nghiệm.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+scoring_exclusions:
+  - age
+  - gender
+  - ethnicity
+  - religion
+  - marital_status
+  - disability
+  - hometown
+artifact_links:
+  rubric_id: de-std-rubric-v2
+  rubric_version: 2.0.1
+  scoring_configuration_version: 2.0.0
+  models_configuration_version: 2.0.0

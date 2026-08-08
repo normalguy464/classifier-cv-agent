@@ -1,0 +1,126 @@
+{
+  "schema_version": "1.1.0",
+  "dataset_id": "stage7-five-role-test-v1",
+  "dataset_version": "1.0.1",
+  "status": "draft_for_human_review",
+  "generated_at": "2026-08-07T16:00:00+07:00",
+  "source_type": "synthetic_new_profiles",
+  "runtime_configuration_set_id": "five-role-runtime-v1",
+  "runtime_manifest_path": "configs/runtime/five_role_v1/runtime_manifest.yaml",
+  "runtime_manifest_sha256": "d9215c6994217731b605c9d9053d5eab008980a69fcb09dc0925f8a0e8b688e6",
+  "cv_schema_version": "1.0.0",
+  "job_profile_schema_version": "1.0.0",
+  "rubric_schema_version": "1.0.0",
+  "candidate_count": 50,
+  "job_profile_count": 5,
+  "rubric_count": 5,
+  "pair_count": 50,
+  "role_pair_counts": {
+    "data_analyst": 10,
+    "python_backend": 10,
+    "frontend": 10,
+    "qa_engineer": 10,
+    "data_engineer": 10
+  },
+  "scenario_pair_counts": {
+    "strong": 5,
+    "solid": 5,
+    "moderate": 5,
+    "missing_critical": 5,
+    "conflicting_critical": 5,
+    "explicit_failure": 5,
+    "lower_boundary": 5,
+    "upper_boundary": 5,
+    "transferable": 5,
+    "hard_negative": 5
+  },
+  "draft_label_counts": {
+    "pass": 10,
+    "waitlist": 10,
+    "needs_review": 25,
+    "reject": 5
+  },
+  "dataset_tier": "bronze",
+  "ground_truth_status": "pending_human_review",
+  "minimum_human_reviewers_for_gold": 2,
+  "locked_for_evaluation": false,
+  "classifier_results_generated": false,
+  "llm_requests_made": false,
+  "source_dataset_version": "1.0.0",
+  "source_manifest_sha256": "1f420a79f94f0499198b69a3f70bec413f6483ce0552d44013e7c219949c0b24",
+  "prior_datasets": [
+    {
+      "dataset_id": "stage4-reviewed-v1",
+      "cv_profiles_path": "data/reviewed/stage4_cv_profiles_v1.jsonl",
+      "cv_profiles_sha256": "91e10605f62226a8648118faf050e4043f90ba733026e18f23724f0cc2e9ef98"
+    },
+    {
+      "dataset_id": "synthetic-expansion-v1",
+      "cv_profiles_path": "data/synthetic_expansion/v1/cv_profiles.jsonl",
+      "cv_profiles_sha256": "164513a7069ab574166dce5a67396eeb85a74976764841b3e4607e6dec25c467"
+    },
+    {
+      "dataset_id": "synthetic-expansion-v2-draft",
+      "cv_profiles_path": "data/synthetic_expansion/v2/cv_profiles.jsonl",
+      "cv_profiles_sha256": "f88aef2f11bd0a616edb0e0a6fe3896c5c5d3de0f986569d8db63d5d0b141f50"
+    },
+    {
+      "dataset_id": "synthetic-expansion-v2-reviewed",
+      "cv_profiles_path": "data/synthetic_expansion/reviewed/v2/cv_profiles.jsonl",
+      "cv_profiles_sha256": "f88aef2f11bd0a616edb0e0a6fe3896c5c5d3de0f986569d8db63d5d0b141f50"
+    },
+    {
+      "dataset_id": "synthetic-expansion-v2-2-reviewed",
+      "cv_profiles_path": "data/synthetic_expansion/reviewed/v2_2/cv_profiles.jsonl",
+      "cv_profiles_sha256": "fd889d4c7e2660efed83ba4ff9f5ad81499d78e989664727a6d3826bd12d8647"
+    },
+    {
+      "dataset_id": "synthetic-expansion-v2-3-reviewed",
+      "cv_profiles_path": "data/synthetic_expansion/reviewed/v2_3/cv_profiles.jsonl",
+      "cv_profiles_sha256": "ce058af28c694cd621743483289901ed1a144bf439d3271498f000bf7c457ce9"
+    },
+    {
+      "dataset_id": "synthetic-expansion-v2-3-1-reviewed",
+      "cv_profiles_path": "data/synthetic_expansion/reviewed/v2_3_1/cv_profiles.jsonl",
+      "cv_profiles_sha256": "060951ce6b0972700faf73d7d1ceaaf8be3bdc914b63b52c4b6f0fa26397106c"
+    }
+  ],
+  "provenance": [
+    "All CV profiles were newly authored for Stage 7 and contain no real candidate data.",
+    "Frozen five-role standard Job Profiles and rubrics were copied without modification.",
+    "Opaque identifiers exclude scenario names and draft labels to prevent label leakage.",
+    "Draft annotations are not ground truth until required human review is complete.",
+    "No classifier layer or LLM provider was executed while constructing this test set.",
+    "Version 1.0.1 resolves five cross-requirement evidence contradictions found during two-person human review.",
+    "Backend missing and explicit-failure scenarios now target delivery workflow instead of Python.",
+    "Frontend and QA explicit-failure scenarios now target testing automation or workflow requirements.",
+    "QA missing-critical now targets automation foundation instead of testing foundations."
+  ],
+  "files": [
+    {
+      "path": "cv_profiles.jsonl",
+      "sha256": "b3f9f435db94e22419c6dd7339d0bf591d030282ae63bb959ff678f9910a3e8a",
+      "record_count": 50
+    },
+    {
+      "path": "job_profiles.jsonl",
+      "sha256": "1be52b3995a90305535417a6a032e0d89007150d18cccac38b71377b694cdbd4",
+      "record_count": 5
+    },
+    {
+      "path": "rubrics.jsonl",
+      "sha256": "c6c0b399e65faa9ce83273d0e78fbfd71b00fb302ff88a7ee09835f6b3da63ff",
+      "record_count": 5
+    },
+    {
+      "path": "pairs.jsonl",
+      "sha256": "7ca43c5ddd7401b4e9e5a30d7370add2e0c967bbe6cf8325abc5c321da291642",
+      "record_count": 50
+    },
+    {
+      "path": "review_sheet.md",
+      "sha256": "1e9f2e15087589e3d73c3ff53a36b1ead46114c37adbe55450bb9665be6d0411",
+      "record_count": 50
+    }
+  ]
+}

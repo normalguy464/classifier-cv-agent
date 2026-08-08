@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-pilot-be-002",
+  "candidate_reference": "candidate-synthetic-be-002",
+  "summary": "Ứng viên chưa có kinh nghiệm chính thức, có một REST API cá nhân bằng Flask, SQLite và Git.",
+  "skills": [
+    {
+      "name": "Python",
+      "evidence_ids": [
+        "ev-be002-python",
+        "ev-be002-project"
+      ]
+    },
+    {
+      "name": "Flask",
+      "evidence_ids": [
+        "ev-be002-api",
+        "ev-be002-project"
+      ]
+    },
+    {
+      "name": "SQLite and SQL",
+      "evidence_ids": [
+        "ev-be002-database"
+      ]
+    },
+    {
+      "name": "Git",
+      "evidence_ids": [
+        "ev-be002-git"
+      ]
+    }
+  ],
+  "work_experiences": [],
+  "education": [
+    {
+      "education_id": "education-be002",
+      "degree": "Bachelor program",
+      "field_of_study": "Computer Science",
+      "institution_reference": "institution-synthetic-be-002",
+      "evidence_ids": [
+        "ev-be002-education"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "project-be002-notes-api",
+      "title": "Personal notes API",
+      "summary": "Xây CRUD API cơ bản cho ghi chú, lưu dữ liệu bằng SQLite và quản lý phiên bản bằng Git.",
+      "technologies": [
+        "Python",
+        "Flask",
+        "SQLite",
+        "Git"
+      ],
+      "evidence_ids": [
+        "ev-be002-project",
+        "ev-be002-python",
+        "ev-be002-api",
+        "ev-be002-database",
+        "ev-be002-git"
+      ]
+    }
+  ],
+  "certifications": [],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be002-python",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng Python để tổ chức route, model dữ liệu đơn giản và xử lý lỗi cơ bản.",
+      "location": {
+        "source_record_id": "record-be002-skills-python"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be002-api",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Flask API có endpoint tạo, đọc, cập nhật và xóa ghi chú với JSON request và response.",
+      "location": {
+        "source_record_id": "record-be002-api"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be002-database",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "SQLite gồm hai bảng và truy vấn SQL cơ bản; chưa mô tả migration hoặc transaction.",
+      "location": {
+        "source_record_id": "record-be002-database"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be002-git",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Repository tổng hợp repo-be002 có lịch sử commit cá nhân bằng Git.",
+      "location": {
+        "source_record_id": "record-be002-skills-git"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be002-project",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dự án chạy cục bộ và có README ngắn, chưa có automated test, authentication, Docker hoặc deployment.",
+      "location": {
+        "source_record_id": "record-be002-project"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be002-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Chương trình Computer Science có học phần Python nhập môn và cơ sở dữ liệu.",
+      "location": {
+        "source_record_id": "record-be002-education"
+      },
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": []
+}

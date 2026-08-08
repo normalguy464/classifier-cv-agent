@@ -1,0 +1,1015 @@
+{
+  "report_schema_version": "1.0.0",
+  "report_id": "synthetic-expansion-v2-google-ai-studio-l3-validation-v1",
+  "report_scope": "silver-development-google_ai_studio-live-l3",
+  "is_final_performance": false,
+  "experiment_status": "completed",
+  "generated_at": "2026-08-01T12:18:36+07:00",
+  "traceability": {
+    "configuration_file": "evaluation/configs/synthetic_expansion_l3_google_ai_studio_v1.yaml",
+    "configuration_sha256": "19fcad7c8fea71480af118d9df23650f63a5f45a79a97060d9e46e6f30b79ca5",
+    "dataset_manifest_sha256": "7eb7e2a3a7e64f14c18db84b13f13ae3771b1caa99233c7462d720eaf5a13c3b",
+    "split_manifest_sha256": "747e0e197c259c65a9095db5f79568b85dc7ecdec289413f6e26bcbdf8f28cf7",
+    "dataset_id": "synthetic-cv-jd-expansion-v2-reviewed-silver",
+    "dataset_version": "2.1.0",
+    "development_partition_id": "synthetic-expansion-v2-development-silver",
+    "primary_pair_count": 25,
+    "held_out_partition_id": "synthetic-expansion-v2-held-out-silver",
+    "held_out_evaluated": false,
+    "original_stage6_frozen_test_evaluated": false,
+    "provider_identifier": "google_ai_studio",
+    "model_identifier": "gemini-3.5-flash-lite",
+    "prompt_version": "l3-evidence-rubric-v3",
+    "raw_provider_response_persisted": false
+  },
+  "request_accounting": {
+    "hard_request_cap": 35,
+    "minimum_request_interval_seconds": 6.0,
+    "request_timeout_seconds": 60.0,
+    "maximum_total_retries_per_attempt": 1,
+    "include_temperature_parameter": false,
+    "total_http_request_count": 31,
+    "valid_attempt_count": 30,
+    "failed_request_count": 1,
+    "invalid_structured_output_count": 1,
+    "billing_tier_assumption": "free_tier_user_reported",
+    "estimated_provider_charge_usd": 0.0,
+    "charge_verified": false,
+    "request_quality": {
+      "valid_output_rate": 0.967741935483871,
+      "failure_category_counts": {
+        "other_schema_validation": 1
+      },
+      "average_duration_milliseconds": 3873.1290322580644,
+      "maximum_duration_milliseconds": 4506
+    }
+  },
+  "early_stopping": {
+    "triggered": false,
+    "reason": null
+  },
+  "provider_quality": {
+    "sample_count": 25,
+    "attempted_pair_count": 25,
+    "available_output_count": 25,
+    "valid_output_rate": 1.0,
+    "valid_output_rate_among_attempted_pairs": 1.0,
+    "endpoint_score_count": 7,
+    "endpoint_score_rate": 0.28,
+    "requirement_status_match_rate": 0.975,
+    "criterion_mean_absolute_error": 3.656,
+    "total_score_mean_absolute_error": 15.24,
+    "calibration_policy": {
+      "maximum_endpoint_score_rate": 0.4,
+      "maximum_criterion_mean_absolute_error": 3.5,
+      "maximum_total_score_mean_absolute_error": 12.0,
+      "passes": false
+    },
+    "usage_and_latency": {
+      "request_count": 25,
+      "requests_with_usage": 25,
+      "input_tokens": 82826,
+      "output_tokens": 27243,
+      "total_tokens": 110069,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_duration_milliseconds": 97626,
+      "average_duration_milliseconds": 3905.04,
+      "maximum_duration_milliseconds": 4506
+    },
+    "passes_primary_policy": false,
+    "cases": [
+      {
+        "pair_id": "pair-da-strong-std",
+        "role": "data_analyst",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "available",
+        "human_total_score": 94.0,
+        "l3_score": 98.0,
+        "requirement_status_match_count": 4,
+        "requirement_status_count": 4,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "da-technical-specialization": 1.0,
+          "da-role-capability": 2.0,
+          "projects-and-impact": 1.0,
+          "communication-and-evidence-quality": 0.0
+        },
+        "total_score_absolute_error": 4.0
+      },
+      {
+        "pair_id": "pair-be-strong-std",
+        "role": "python_backend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "available",
+        "human_total_score": 94.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "be-technical-specialization": 1.0,
+          "be-role-capability": 2.0,
+          "projects-and-impact": 1.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 6.0
+      },
+      {
+        "pair_id": "pair-fe-strong-std",
+        "role": "frontend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "available",
+        "human_total_score": 94.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "fe-technical-specialization": 1.0,
+          "fe-role-capability": 2.0,
+          "projects-and-impact": 1.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 6.0
+      },
+      {
+        "pair_id": "pair-qa-strong-std",
+        "role": "qa_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "available",
+        "human_total_score": 94.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "qa-technical-specialization": 1.0,
+          "qa-role-capability": 2.0,
+          "projects-and-impact": 1.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 6.0
+      },
+      {
+        "pair_id": "pair-de-strong-std",
+        "role": "data_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "available",
+        "human_total_score": 94.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "de-technical-specialization": 1.0,
+          "de-role-capability": 2.0,
+          "projects-and-impact": 1.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 6.0
+      },
+      {
+        "pair_id": "pair-da-upbd-std",
+        "role": "data_analyst",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 75.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 4,
+        "requirement_status_count": 4,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "da-technical-specialization": 7.0,
+          "da-role-capability": 7.0,
+          "projects-and-impact": 7.0,
+          "communication-and-evidence-quality": 4.0
+        },
+        "total_score_absolute_error": 25.0
+      },
+      {
+        "pair_id": "pair-be-moderate-std",
+        "role": "python_backend",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "available",
+        "human_total_score": 68.0,
+        "l3_score": 90.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "be-technical-specialization": 7.5,
+          "be-role-capability": 7.0,
+          "projects-and-impact": 5.5,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 22.0
+      },
+      {
+        "pair_id": "pair-fe-solid-std",
+        "role": "frontend",
+        "scenario": "solid",
+        "expected_label": "pass",
+        "outcome": "available",
+        "human_total_score": 84.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "fe-technical-specialization": 5.0,
+          "fe-role-capability": 4.0,
+          "projects-and-impact": 4.0,
+          "communication-and-evidence-quality": 3.0
+        },
+        "total_score_absolute_error": 16.0
+      },
+      {
+        "pair_id": "pair-qa-moderate-std",
+        "role": "qa_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "available",
+        "human_total_score": 68.0,
+        "l3_score": 90.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "qa-technical-specialization": 7.5,
+          "qa-role-capability": 7.0,
+          "projects-and-impact": 5.0,
+          "communication-and-evidence-quality": 2.5
+        },
+        "total_score_absolute_error": 22.0
+      },
+      {
+        "pair_id": "pair-de-moderate-std",
+        "role": "data_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "available",
+        "human_total_score": 68.0,
+        "l3_score": 90.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "de-technical-specialization": 8.0,
+          "de-role-capability": 7.0,
+          "projects-and-impact": 5.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 22.0
+      },
+      {
+        "pair_id": "pair-da-lowbd-std",
+        "role": "data_analyst",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 60.0,
+        "l3_score": 85.0,
+        "requirement_status_match_count": 4,
+        "requirement_status_count": 4,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 2.0,
+          "da-technical-specialization": 9.0,
+          "da-role-capability": 7.0,
+          "projects-and-impact": 3.0,
+          "communication-and-evidence-quality": 4.0
+        },
+        "total_score_absolute_error": 25.0
+      },
+      {
+        "pair_id": "pair-be-failed-std",
+        "role": "python_backend",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "outcome": "available",
+        "human_total_score": 38.0,
+        "l3_score": 25.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 5.0,
+          "be-technical-specialization": 1.0,
+          "be-role-capability": 3.0,
+          "projects-and-impact": 2.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 13.0
+      },
+      {
+        "pair_id": "pair-fe-upbd-std",
+        "role": "frontend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 75.0,
+        "l3_score": 90.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "fe-technical-specialization": 7.0,
+          "fe-role-capability": 5.0,
+          "projects-and-impact": 4.0,
+          "communication-and-evidence-quality": 1.0
+        },
+        "total_score_absolute_error": 15.0
+      },
+      {
+        "pair_id": "pair-qa-failed-std",
+        "role": "qa_engineer",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "outcome": "available",
+        "human_total_score": 38.0,
+        "l3_score": 35.0,
+        "requirement_status_match_count": 4,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "qa-technical-specialization": 1.0,
+          "qa-role-capability": 3.0,
+          "projects-and-impact": 0.0,
+          "communication-and-evidence-quality": 1.0
+        },
+        "total_score_absolute_error": 3.0
+      },
+      {
+        "pair_id": "pair-de-lowbd-std",
+        "role": "data_engineer",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 60.0,
+        "l3_score": 90.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 2.0,
+          "de-technical-specialization": 10.5,
+          "de-role-capability": 9.0,
+          "projects-and-impact": 5.5,
+          "communication-and-evidence-quality": 3.0
+        },
+        "total_score_absolute_error": 30.0
+      },
+      {
+        "pair_id": "pair-da-missing-std",
+        "role": "data_analyst",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 62.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 3,
+        "requirement_status_count": 4,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 10.0,
+          "da-technical-specialization": 9.0,
+          "da-role-capability": 8.0,
+          "projects-and-impact": 7.0,
+          "communication-and-evidence-quality": 4.0
+        },
+        "total_score_absolute_error": 38.0
+      },
+      {
+        "pair_id": "pair-be-hardneg-std",
+        "role": "python_backend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 32.0,
+        "l3_score": 10.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 14.0,
+          "be-technical-specialization": 6.0,
+          "be-role-capability": 3.0,
+          "projects-and-impact": 0.0,
+          "communication-and-evidence-quality": 1.0
+        },
+        "total_score_absolute_error": 22.0
+      },
+      {
+        "pair_id": "pair-fe-conflict-std",
+        "role": "frontend",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 64.0,
+        "l3_score": 60.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 7.0,
+          "fe-technical-specialization": 1.0,
+          "fe-role-capability": 0.0,
+          "projects-and-impact": 2.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 4.0
+      },
+      {
+        "pair_id": "pair-qa-conflict-std",
+        "role": "qa_engineer",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 64.0,
+        "l3_score": 60.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 4.0,
+          "qa-technical-specialization": 1.0,
+          "qa-role-capability": 0.0,
+          "projects-and-impact": 2.0,
+          "communication-and-evidence-quality": 1.0
+        },
+        "total_score_absolute_error": 4.0
+      },
+      {
+        "pair_id": "pair-de-missing-std",
+        "role": "data_engineer",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 62.0,
+        "l3_score": 85.0,
+        "requirement_status_match_count": 4,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 10.0,
+          "de-technical-specialization": 6.0,
+          "de-role-capability": 5.0,
+          "projects-and-impact": 3.0,
+          "communication-and-evidence-quality": 1.0
+        },
+        "total_score_absolute_error": 23.0
+      },
+      {
+        "pair_id": "pair-da-hardneg-std",
+        "role": "data_analyst",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 32.0,
+        "l3_score": 25.0,
+        "requirement_status_match_count": 4,
+        "requirement_status_count": 4,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 9.0,
+          "da-technical-specialization": 3.0,
+          "da-role-capability": 0.0,
+          "projects-and-impact": 3.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 7.0
+      },
+      {
+        "pair_id": "pair-be-upbd-std",
+        "role": "python_backend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 75.0,
+        "l3_score": 95.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "be-technical-specialization": 7.0,
+          "be-role-capability": 7.0,
+          "projects-and-impact": 4.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 20.0
+      },
+      {
+        "pair_id": "pair-fe-hardneg-std",
+        "role": "frontend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 32.0,
+        "l3_score": 35.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 14.0,
+          "fe-technical-specialization": 2.0,
+          "fe-role-capability": 5.0,
+          "projects-and-impact": 3.0,
+          "communication-and-evidence-quality": 7.0
+        },
+        "total_score_absolute_error": 3.0
+      },
+      {
+        "pair_id": "pair-qa-hardneg-std",
+        "role": "qa_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 32.0,
+        "l3_score": 15.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 14.0,
+          "qa-technical-specialization": 3.0,
+          "qa-role-capability": 0.0,
+          "projects-and-impact": 2.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 17.0
+      },
+      {
+        "pair_id": "pair-de-hardneg-std",
+        "role": "data_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 32.0,
+        "l3_score": 10.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 14.0,
+          "de-technical-specialization": 8.0,
+          "de-role-capability": 5.0,
+          "projects-and-impact": 2.0,
+          "communication-and-evidence-quality": 7.0
+        },
+        "total_score_absolute_error": 22.0
+      }
+    ]
+  },
+  "stability": {
+    "case_count": 5,
+    "evaluable_case_count": 5,
+    "attempts_per_pair": 2,
+    "maximum_score_range": 15.0,
+    "average_score_range": 6.4,
+    "requirement_status_agreement_rate": 1.0,
+    "usage_and_latency": {
+      "request_count": 10,
+      "requests_with_usage": 10,
+      "input_tokens": 33152,
+      "output_tokens": 11144,
+      "total_tokens": 44296,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_duration_milliseconds": 38480,
+      "average_duration_milliseconds": 3848,
+      "maximum_duration_milliseconds": 4402
+    },
+    "passes_stability_policy": false,
+    "cases": [
+      {
+        "pair_id": "pair-da-strong-std",
+        "status": "evaluable",
+        "scores": [
+          98.0,
+          100.0
+        ],
+        "score_range": 2.0,
+        "requirement_statuses_agree": true
+      },
+      {
+        "pair_id": "pair-be-failed-std",
+        "status": "evaluable",
+        "scores": [
+          25.0,
+          10.0
+        ],
+        "score_range": 15.0,
+        "requirement_statuses_agree": true
+      },
+      {
+        "pair_id": "pair-fe-conflict-std",
+        "status": "evaluable",
+        "scores": [
+          60.0,
+          60.0
+        ],
+        "score_range": 0.0,
+        "requirement_statuses_agree": true
+      },
+      {
+        "pair_id": "pair-qa-moderate-std",
+        "status": "evaluable",
+        "scores": [
+          90.0,
+          100.0
+        ],
+        "score_range": 10.0,
+        "requirement_statuses_agree": true
+      },
+      {
+        "pair_id": "pair-de-missing-std",
+        "status": "evaluable",
+        "scores": [
+          85.0,
+          90.0
+        ],
+        "score_range": 5.0,
+        "requirement_statuses_agree": true
+      }
+    ]
+  },
+  "hybrid_diagnostic": {
+    "l2_candidate_id": "coverage-70-95-v1",
+    "embedding_model_identifier": "intfloat/multilingual-e5-base",
+    "embedding_resolved_revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "accuracy": 0.56,
+    "macro_f1": 0.1794871794871795,
+    "needs_review_recall": 1.0,
+    "review_rate": 1.0,
+    "false_reject_count": 0,
+    "unsafe_pass_count": 0,
+    "cases": [
+      {
+        "pair_id": "pair-da-strong-std",
+        "role": "data_analyst",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 68.9,
+        "l3_score": 98.0,
+        "final_score": 91.63,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-be-strong-std",
+        "role": "python_backend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 70.93,
+        "l3_score": 100.0,
+        "final_score": 92.73,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-fe-strong-std",
+        "role": "frontend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 67.91,
+        "l3_score": 100.0,
+        "final_score": 91.98,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-qa-strong-std",
+        "role": "qa_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 67.33,
+        "l3_score": 100.0,
+        "final_score": 91.83,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-de-strong-std",
+        "role": "data_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 69.84,
+        "l3_score": 100.0,
+        "final_score": 92.46,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-da-upbd-std",
+        "role": "data_analyst",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 68.78,
+        "l3_score": 100.0,
+        "final_score": 92.2,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-be-moderate-std",
+        "role": "python_backend",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 70.22,
+        "l3_score": 90.0,
+        "final_score": 89.56,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-fe-solid-std",
+        "role": "frontend",
+        "scenario": "solid",
+        "expected_label": "pass",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 67.95,
+        "l3_score": 100.0,
+        "final_score": 91.99,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-qa-moderate-std",
+        "role": "qa_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 65.63,
+        "l3_score": 90.0,
+        "final_score": 88.41,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-de-moderate-std",
+        "role": "data_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 69.12,
+        "l3_score": 90.0,
+        "final_score": 89.28,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-da-lowbd-std",
+        "role": "data_analyst",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 67.86,
+        "l3_score": 85.0,
+        "final_score": 87.47,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-be-failed-std",
+        "role": "python_backend",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "predicted_label": "needs_review",
+        "l1_score": 80.0,
+        "l2_score": 64.18,
+        "l3_score": 25.0,
+        "final_score": 59.55,
+        "review_reasons": [
+          "large-level-disagreement",
+          "lower-threshold-boundary"
+        ]
+      },
+      {
+        "pair_id": "pair-fe-upbd-std",
+        "role": "frontend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 67.2,
+        "l3_score": 90.0,
+        "final_score": 88.8,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-qa-failed-std",
+        "role": "qa_engineer",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "predicted_label": "needs_review",
+        "l1_score": 80.0,
+        "l2_score": 64.76,
+        "l3_score": 35.0,
+        "final_score": 62.69,
+        "review_reasons": [
+          "critical-unsatisfied-at-or-above-waitlist-threshold",
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-de-lowbd-std",
+        "role": "data_engineer",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 69.0,
+        "l3_score": 90.0,
+        "final_score": 89.25,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-da-missing-std",
+        "role": "data_analyst",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 75.0,
+        "l2_score": 66.51,
+        "l3_score": 100.0,
+        "final_score": 80.38,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-be-hardneg-std",
+        "role": "python_backend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 0.0,
+        "l2_score": 28.9,
+        "l3_score": 10.0,
+        "final_score": 10.23,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied",
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-fe-conflict-std",
+        "role": "frontend",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 80.0,
+        "l2_score": 66.76,
+        "l3_score": 60.0,
+        "final_score": 70.69,
+        "review_reasons": [
+          "conflicting-critical-evidence"
+        ]
+      },
+      {
+        "pair_id": "pair-qa-conflict-std",
+        "role": "qa_engineer",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 80.0,
+        "l2_score": 67.1,
+        "l3_score": 60.0,
+        "final_score": 70.78,
+        "review_reasons": [
+          "conflicting-critical-evidence"
+        ]
+      },
+      {
+        "pair_id": "pair-de-missing-std",
+        "role": "data_engineer",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 80.0,
+        "l2_score": 67.49,
+        "l3_score": 85.0,
+        "final_score": 78.37,
+        "review_reasons": [
+          "missing-critical-evidence"
+        ]
+      },
+      {
+        "pair_id": "pair-da-hardneg-std",
+        "role": "data_analyst",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 0.0,
+        "l2_score": 31.25,
+        "l3_score": 25.0,
+        "final_score": 15.31,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied",
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-be-upbd-std",
+        "role": "python_backend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 100.0,
+        "l2_score": 70.93,
+        "l3_score": 95.0,
+        "final_score": 91.23,
+        "review_reasons": [
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-fe-hardneg-std",
+        "role": "frontend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 0.0,
+        "l2_score": 28.87,
+        "l3_score": 35.0,
+        "final_score": 17.72,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied",
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-qa-hardneg-std",
+        "role": "qa_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 0.0,
+        "l2_score": 31.15,
+        "l3_score": 15.0,
+        "final_score": 12.29,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied",
+          "large-level-disagreement"
+        ]
+      },
+      {
+        "pair_id": "pair-de-hardneg-std",
+        "role": "data_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "l1_score": 0.0,
+        "l2_score": 31.09,
+        "l3_score": 10.0,
+        "final_score": 10.77,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied",
+          "large-level-disagreement"
+        ]
+      }
+    ]
+  },
+  "quality_gate_passed": false,
+  "configuration_freeze_eligible": false,
+  "freeze_blockers": [
+    "The five-role labels are Silver and have one human reviewer.",
+    "The three new roles do not yet have approved runtime configuration artifacts.",
+    "Held-out and frozen-test evaluation is intentionally not executed."
+  ]
+}

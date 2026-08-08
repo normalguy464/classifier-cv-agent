@@ -1,0 +1,350 @@
+{
+  "report_schema_version": "1.0.0",
+  "report_id": "synthetic-expansion-v2-openrouter-l3-validation-v8",
+  "report_scope": "silver-development-openrouter-live-l3",
+  "is_final_performance": false,
+  "experiment_status": "stopped_provider_unavailable",
+  "generated_at": "2026-08-01T10:45:00+07:00",
+  "traceability": {
+    "configuration_file": "evaluation/configs/synthetic_expansion_l3_openrouter_v8.yaml",
+    "configuration_sha256": "ae017dd042844dd5d3e6bfaa8502ac9a92b4870abd62fa7c25b64958b51cd889",
+    "dataset_manifest_sha256": "7eb7e2a3a7e64f14c18db84b13f13ae3771b1caa99233c7462d720eaf5a13c3b",
+    "split_manifest_sha256": "747e0e197c259c65a9095db5f79568b85dc7ecdec289413f6e26bcbdf8f28cf7",
+    "dataset_id": "synthetic-cv-jd-expansion-v2-reviewed-silver",
+    "dataset_version": "2.1.0",
+    "development_partition_id": "synthetic-expansion-v2-development-silver",
+    "primary_pair_count": 25,
+    "held_out_partition_id": "synthetic-expansion-v2-held-out-silver",
+    "held_out_evaluated": false,
+    "original_stage6_frozen_test_evaluated": false,
+    "provider_identifier": "openrouter",
+    "model_identifier": "openai/gpt-oss-120b:free",
+    "prompt_version": "l3-evidence-rubric-v3",
+    "raw_provider_response_persisted": false
+  },
+  "request_accounting": {
+    "hard_request_cap": 40,
+    "total_http_request_count": 2,
+    "valid_attempt_count": 0,
+    "failed_request_count": 2,
+    "invalid_structured_output_count": 0,
+    "billing_tier_assumption": "free_variant",
+    "estimated_provider_charge_usd": 0.0,
+    "charge_verified": false,
+    "request_quality": {
+      "valid_output_rate": 0.0,
+      "failure_category_counts": {
+        "other_provider_failure": 2
+      },
+      "average_duration_milliseconds": 368,
+      "maximum_duration_milliseconds": 458
+    }
+  },
+  "early_stopping": {
+    "triggered": true,
+    "reason": "At least one primary case exhausted its provider-unavailable retry allowance, so the live experiment could not continue safely."
+  },
+  "provider_quality": {
+    "sample_count": 25,
+    "attempted_pair_count": 1,
+    "available_output_count": 0,
+    "valid_output_rate": 0.0,
+    "valid_output_rate_among_attempted_pairs": 0.0,
+    "endpoint_score_count": 0,
+    "endpoint_score_rate": null,
+    "requirement_status_match_rate": null,
+    "criterion_mean_absolute_error": null,
+    "total_score_mean_absolute_error": null,
+    "calibration_policy": {
+      "maximum_endpoint_score_rate": 0.4,
+      "maximum_criterion_mean_absolute_error": 3.5,
+      "maximum_total_score_mean_absolute_error": 12.0,
+      "passes": false
+    },
+    "usage_and_latency": {
+      "request_count": 0,
+      "requests_with_usage": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_duration_milliseconds": 0,
+      "average_duration_milliseconds": null,
+      "maximum_duration_milliseconds": null
+    },
+    "passes_primary_policy": false,
+    "cases": [
+      {
+        "pair_id": "pair-da-strong-std",
+        "role": "data_analyst",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-strong-std",
+        "role": "python_backend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-strong-std",
+        "role": "frontend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-strong-std",
+        "role": "qa_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-strong-std",
+        "role": "data_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-da-upbd-std",
+        "role": "data_analyst",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-moderate-std",
+        "role": "python_backend",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-solid-std",
+        "role": "frontend",
+        "scenario": "solid",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-moderate-std",
+        "role": "qa_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-moderate-std",
+        "role": "data_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-da-lowbd-std",
+        "role": "data_analyst",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-failed-std",
+        "role": "python_backend",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-upbd-std",
+        "role": "frontend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-failed-std",
+        "role": "qa_engineer",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-lowbd-std",
+        "role": "data_engineer",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-da-missing-std",
+        "role": "data_analyst",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-hardneg-std",
+        "role": "python_backend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-conflict-std",
+        "role": "frontend",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-conflict-std",
+        "role": "qa_engineer",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-missing-std",
+        "role": "data_engineer",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-da-hardneg-std",
+        "role": "data_analyst",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-upbd-std",
+        "role": "python_backend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-hardneg-std",
+        "role": "frontend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-hardneg-std",
+        "role": "qa_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-hardneg-std",
+        "role": "data_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      }
+    ]
+  },
+  "stability": {
+    "case_count": 5,
+    "evaluable_case_count": 0,
+    "attempts_per_pair": 2,
+    "maximum_score_range": null,
+    "average_score_range": null,
+    "requirement_status_agreement_rate": null,
+    "usage_and_latency": {
+      "request_count": 0,
+      "requests_with_usage": 0,
+      "input_tokens": 0,
+      "output_tokens": 0,
+      "total_tokens": 0,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_duration_milliseconds": 0,
+      "average_duration_milliseconds": null,
+      "maximum_duration_milliseconds": null
+    },
+    "passes_stability_policy": false,
+    "cases": [
+      {
+        "pair_id": "pair-da-strong-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-be-failed-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-fe-conflict-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-qa-moderate-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-de-missing-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      }
+    ]
+  },
+  "hybrid_diagnostic": {
+    "executed": false,
+    "reason": "Live L3 valid-output coverage is insufficient for a hybrid diagnostic."
+  },
+  "quality_gate_passed": false,
+  "configuration_freeze_eligible": false,
+  "freeze_blockers": [
+    "The configured OpenRouter model did not satisfy the structured-output quality policy.",
+    "The five-role labels are Silver and have one human reviewer.",
+    "The three new roles do not yet have approved runtime configuration artifacts.",
+    "Held-out and frozen-test evaluation is intentionally not executed."
+  ]
+}

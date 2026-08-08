@@ -1,0 +1,14 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "stage7-five-role-runtime-v2-test-v1",
+  "dataset_version": "1.0.0",
+  "review_mode": "two_person_consensus_panel",
+  "reviewer_references": [
+    "reviewer-user-001",
+    "reviewer-peer-001"
+  ],
+  "reviewed_at": "2026-08-08T16:00:00+07:00",
+  "approved_pair_count": 50,
+  "approved_correction_pair_ids": [],
+  "approval_statement": "Tôi và người thứ hai đã duyệt toàn bộ 50 case của stage7-five-role-runtime-v2-test-v1 phiên bản 1.0.0, gồm nội dung CV, requirement status, năm nhóm điểm, tổng điểm, nhãn và rationale; chúng tôi thống nhất dùng kết quả này làm human review cuối, chấp nhận protocol tối thiểu accuracy 70% cùng các điều kiện an toàn đã nêu, và cho phép khóa test set thành Gold. Chưa gọi API cho tới khi bước khóa và preflight hoàn tất."
+}

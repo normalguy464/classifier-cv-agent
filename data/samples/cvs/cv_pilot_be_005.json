@@ -1,0 +1,136 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-pilot-be-005",
+  "candidate_reference": "candidate-synthetic-be-005",
+  "summary": "Ứng viên có dự án nhóm FastAPI đáp ứng các yêu cầu bắt buộc nhưng evidence về chất lượng triển khai và tác động còn ở mức vừa.",
+  "skills": [
+    {
+      "name": "Python",
+      "evidence_ids": [
+        "ev-be005-python",
+        "ev-be005-project"
+      ]
+    },
+    {
+      "name": "FastAPI",
+      "evidence_ids": [
+        "ev-be005-api",
+        "ev-be005-project"
+      ]
+    },
+    {
+      "name": "PostgreSQL",
+      "evidence_ids": [
+        "ev-be005-database"
+      ]
+    },
+    {
+      "name": "Git",
+      "evidence_ids": [
+        "ev-be005-git"
+      ]
+    }
+  ],
+  "work_experiences": [],
+  "education": [
+    {
+      "education_id": "education-be005",
+      "degree": "Bachelor program",
+      "field_of_study": "Computer Engineering",
+      "institution_reference": "institution-synthetic-be-005",
+      "evidence_ids": [
+        "ev-be005-education"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "project-be005-booking-api",
+      "title": "Team booking API",
+      "summary": "Dự án nhóm xây API đặt lịch; ứng viên phụ trách ba endpoint, validation đầu vào và hai bảng PostgreSQL.",
+      "technologies": [
+        "Python",
+        "FastAPI",
+        "PostgreSQL",
+        "Git"
+      ],
+      "evidence_ids": [
+        "ev-be005-project",
+        "ev-be005-python",
+        "ev-be005-api",
+        "ev-be005-database",
+        "ev-be005-git"
+      ]
+    }
+  ],
+  "certifications": [],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be005-python",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng Python cho route handler và validation trong dự án nhóm.",
+      "location": {
+        "source_record_id": "record-be005-skills-python"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be005-api",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "FastAPI có ba endpoint đặt lịch, request validation và response JSON; chưa mô tả xử lý lỗi đầy đủ.",
+      "location": {
+        "source_record_id": "record-be005-api"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be005-database",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dùng PostgreSQL với hai bảng booking và time slot; không mô tả migration hoặc transaction.",
+      "location": {
+        "source_record_id": "record-be005-database"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be005-git",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng Git branch và merge request trong dự án nhóm.",
+      "location": {
+        "source_record_id": "record-be005-skills-git"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be005-project",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Mô tả phần việc ba endpoint và hai bảng nhưng chưa có automated test, Docker, deployment, số liệu sử dụng hoặc repository có thể kiểm tra.",
+      "location": {
+        "source_record_id": "record-be005-project"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-be005-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Chương trình Computer Engineering có học phần lập trình Python và cơ sở dữ liệu.",
+      "location": {
+        "source_record_id": "record-be005-education"
+      },
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": []
+}

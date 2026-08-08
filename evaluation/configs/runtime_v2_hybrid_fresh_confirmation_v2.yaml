@@ -1,0 +1,32 @@
+schema_version: 1.0.0
+experiment_id: runtime-v2-hybrid-fresh-confirmation-v2
+experiment_version: 2.0.0
+status: ready_after_development_selection
+reviewed_pairs_path: data/runtime_v2/reviewed/development_v1/pairs.jsonl
+offline_report_path: evaluation/reports/runtime_v2_offline_l1_l2_checkpoint_v1.json
+fresh_l3_report_path: evaluation/reports/runtime_v2_l3_fresh_confirmation_v2_rescore_v3.json
+partition: development
+development_selection_allowed: false
+validation_access_allowed: false
+stage7_v1_test_allowed: false
+llm_provider_calls_allowed: false
+selected_candidate:
+  candidate_id: hybrid-v5-pass82
+  l1_weight: 0.20
+  l2_weight: 0.30
+  l3_weight: 0.50
+  l3_score_offset: 0
+  waitlist_minimum: 70
+  pass_minimum: 82
+  disagreement_points: 45
+  lower_boundary_minimum: 68
+  lower_boundary_maximum: 72
+  upper_boundary_minimum: 80
+  upper_boundary_maximum: 84
+confirmation_policy:
+  minimum_accuracy: 0.65
+  minimum_macro_f1: 0.60
+  minimum_needs_review_recall: 0.90
+  maximum_false_reject_count: 0
+  maximum_unsafe_pass_count: 0
+  maximum_review_rate: 0.80

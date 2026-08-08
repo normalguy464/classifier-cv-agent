@@ -1,0 +1,53 @@
+schema_version: 1.0.0
+candidate_set_id: synthetic-expansion-v2-l2-development-candidates-v1
+candidate_set_version: 1.1.0
+dataset_id: synthetic-cv-jd-expansion-v2-reviewed-silver
+dataset_version: 2.1.0
+development_partition_id: synthetic-expansion-v2-development-silver
+held_out_partition_id: synthetic-expansion-v2-held-out-silver
+embedding_model_identifier: intfloat/multilingual-e5-base
+embedding_resolved_revision: d128750597153bb5987e10b1c3493a34e5a4502a
+query_strategy_version: job-requirement-coverage-v1
+selection_policy:
+  maximum_exact_ceiling_rate: 0.10
+  required_strong_over_hard_negative_roles: 5
+  required_false_reject_count: 0
+  required_unsafe_pass_count: 0
+candidates:
+  - candidate_id: coverage-65-95-v1
+    similarity_floor: 0.65
+    similarity_ceiling: 0.95
+    top_k: 1
+    minimum_query_score: 20
+  - candidate_id: coverage-70-95-v1
+    similarity_floor: 0.70
+    similarity_ceiling: 0.95
+    top_k: 1
+    minimum_query_score: 20
+  - candidate_id: coverage-75-95-v1
+    similarity_floor: 0.75
+    similarity_ceiling: 0.95
+    top_k: 1
+    minimum_query_score: 20
+  - candidate_id: coverage-80-95-v1
+    similarity_floor: 0.80
+    similarity_ceiling: 0.95
+    top_k: 1
+    minimum_query_score: 20
+  - candidate_id: coverage-82-94-v1
+    similarity_floor: 0.82
+    similarity_ceiling: 0.94
+    top_k: 1
+    minimum_query_score: 15
+  - candidate_id: coverage-85-95-v1
+    similarity_floor: 0.85
+    similarity_ceiling: 0.95
+    top_k: 1
+    minimum_query_score: 10
+section_weights:
+  skills: 0.55
+  work_experience: 1.00
+  projects: 1.00
+  education: 0.65
+  certifications: 0.55
+  other: 0.70

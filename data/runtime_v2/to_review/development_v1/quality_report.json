@@ -1,0 +1,22 @@
+{
+  "dataset_id": "five-role-runtime-v2-development-v1",
+  "cv_profile_count": 75,
+  "pair_count": 75,
+  "role_pair_counts": {
+    "data_analyst": 15,
+    "python_backend": 15,
+    "frontend": 15,
+    "qa_engineer": 15,
+    "data_engineer": 15
+  },
+  "label_counts": {
+    "pass": 15,
+    "waitlist": 10,
+    "needs_review": 40,
+    "reject": 10
+  },
+  "exact_prior_evidence_overlap_count": 0,
+  "maximum_prior_cv_token_jaccard": 0.36923076923076925,
+  "errors": [],
+  "warnings": []
+}

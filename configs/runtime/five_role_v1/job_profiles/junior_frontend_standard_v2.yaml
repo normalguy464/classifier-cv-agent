@@ -1,0 +1,85 @@
+artifact_kind: job_profile
+artifact_version: 2.0.0
+contract_status: approved_for_runtime
+job_profile_id: junior-frontend-std-v2
+title: Junior Frontend Developer - Yêu cầu tiêu chuẩn
+language: vi
+seniority:
+  level: junior
+  experience_range_years:
+    minimum: 0
+    maximum: 2
+  formal_work_experience_required: false
+  equivalent_experience:
+    - relevant internship
+    - academic project
+    - personal project with verifiable evidence
+role_summary: Phát triển giao diện React và TypeScript responsive, accessible, có tích hợp API và kiểm thử có thể chạy lại.
+responsibilities:
+  - Xây giao diện responsive và accessible bằng React cùng TypeScript.
+  - Tích hợp API, xác thực và quản lý trạng thái loading, error, empty và cache phía client.
+  - Viết unit hoặc component test, thực hiện code review và theo dõi lỗi giao diện.
+  - Tối ưu bundle, rendering và trải nghiệm trên nhiều kích thước màn hình.
+  - Kết hợp năng lực cốt lõi với quy trình làm việc nhóm.
+mandatory_requirements:
+  - requirement_id: fe-web-foundations
+    description: Có nền tảng HTML, CSS, responsive design và accessibility.
+    accepted_evidence:
+      - Xây giao diện bằng semantic HTML, CSS Grid hoặc Flexbox, responsive breakpoint, form accessible và keyboard navigation.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: fe-language
+    description: Có JavaScript hiện đại và TypeScript.
+    accepted_evidence:
+      - Dùng ES modules, async flow, array/object transformation và khai báo kiểu cho props, state và API response bằng TypeScript.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: fe-framework
+    description: Có React hoặc framework component tương đương.
+    accepted_evidence:
+      - Xây React component bằng Hooks, routing, form validation, composition và quản lý state phù hợp phạm vi.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: fe-api
+    description: Có kinh nghiệm tích hợp API phía client.
+    accepted_evidence:
+      - Tích hợp REST API có authentication, xử lý loading, empty, retry, lỗi và hủy request khi cần.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+  - requirement_id: fe-testing-workflow
+    description: Có Git và kiểm thử component hoặc luồng người dùng.
+    accepted_evidence:
+      - Dùng branch và pull request; viết test bằng Vitest hoặc Testing Library cho render, tương tác, lỗi API và trạng thái biên.
+      - Dự án học tập, dự án cá nhân hoặc thực tập có ngữ cảnh cụ thể được chấp nhận.
+    missing_evidence_policy: Thiếu thông tin phải được đánh dấu missing và chuyển người phụ trách xem lại.
+    explicit_failure_policy: Chỉ đánh dấu unsatisfied khi hồ sơ có thông tin phủ định rõ ràng.
+preferred_requirements:
+  - requirement_id: fe-framework-advanced
+    description: Có Next.js hoặc rendering phía server.
+    accepted_evidence:
+      - Dùng routing, server rendering hoặc data fetching của Next.js và giải thích ranh giới server-client.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+  - requirement_id: fe-performance
+    description: Có web performance và accessibility.
+    accepted_evidence:
+      - Đo bundle hoặc Core Web Vitals, áp dụng lazy loading, memoization có chủ đích và tối ưu hình ảnh.
+    missing_evidence_policy: Thiếu yêu cầu ưu tiên không đồng nghĩa không đạt yêu cầu bắt buộc.
+    explicit_failure_policy: Yêu cầu ưu tiên không tạo quyết định Reject trực tiếp.
+scoring_exclusions:
+  - age
+  - gender
+  - ethnicity
+  - religion
+  - marital_status
+  - disability
+  - hometown
+artifact_links:
+  rubric_id: fe-std-rubric-v2
+  rubric_version: 2.0.1
+  scoring_configuration_version: 2.0.0
+  models_configuration_version: 2.0.0

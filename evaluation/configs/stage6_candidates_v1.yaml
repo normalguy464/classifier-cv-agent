@@ -1,0 +1,127 @@
+schema_version: 1.0.0
+candidate_set_id: stage6-validation-candidates-v1
+candidate_set_version: 1.2.0
+source_configuration_version: 1.1.0
+source_models_configuration_version: 1.1.0
+validation_partition_id: stage6-validation-v1
+candidate_protection_rules_fixed: true
+model_strategy:
+  embedding_model_identifier: intfloat/multilingual-e5-base
+  embedding_configured_version: multilingual-e5-base
+  embedding_resolved_revision: d128750597153bb5987e10b1c3493a34e5a4502a
+  l3_provider_identifier: deterministic_fake
+  l3_model_identifier: deterministic-evidence-scorer-v1
+  prompt_version: l3-evidence-rubric-v1
+selection_policy:
+  required_needs_review_recall: 1.0
+  required_false_reject_count: 0
+  required_unsafe_pass_count: 0
+  maximum_review_rate: 0.80
+  primary_metric: macro_f1
+  secondary_metric: lower_review_rate
+candidates:
+  - candidate_id: approved-current-v1
+    description: Current approved weights, thresholds and disagreement gate.
+    l2_matching:
+      similarity_floor: 0.20
+      similarity_ceiling: 0.80
+      top_k: 2
+    aggregation:
+      l1_deterministic_rules: 0.45
+      l2_section_semantic_matching: 0.25
+      l3_evidence_grounded_reasoning: 0.30
+    thresholds:
+      pass_minimum: 75
+      waitlist_minimum: 60
+    disagreement_points: 25
+    boundary_offset_points: 2
+  - candidate_id: l2-calibrated-80-95-v1
+    description: Recalibrate multilingual E5 without changing approved weights or thresholds.
+    l2_matching:
+      similarity_floor: 0.80
+      similarity_ceiling: 0.95
+      top_k: 2
+    aggregation:
+      l1_deterministic_rules: 0.45
+      l2_section_semantic_matching: 0.25
+      l3_evidence_grounded_reasoning: 0.30
+    thresholds:
+      pass_minimum: 75
+      waitlist_minimum: 60
+    disagreement_points: 25
+    boundary_offset_points: 2
+  - candidate_id: l2-calibrated-85-98-v1
+    description: Apply a stricter E5 similarity range without changing approved decision settings.
+    l2_matching:
+      similarity_floor: 0.85
+      similarity_ceiling: 0.98
+      top_k: 2
+    aggregation:
+      l1_deterministic_rules: 0.45
+      l2_section_semantic_matching: 0.25
+      l3_evidence_grounded_reasoning: 0.30
+    thresholds:
+      pass_minimum: 75
+      waitlist_minimum: 60
+    disagreement_points: 25
+    boundary_offset_points: 2
+  - candidate_id: l1-heavy-calibrated-v1
+    description: Combine stricter E5 calibration with greater deterministic-rule influence.
+    l2_matching:
+      similarity_floor: 0.85
+      similarity_ceiling: 0.98
+      top_k: 2
+    aggregation:
+      l1_deterministic_rules: 0.55
+      l2_section_semantic_matching: 0.25
+      l3_evidence_grounded_reasoning: 0.20
+    thresholds:
+      pass_minimum: 75
+      waitlist_minimum: 60
+    disagreement_points: 25
+    boundary_offset_points: 2
+  - candidate_id: semantic-heavy-calibrated-v1
+    description: Combine stricter E5 calibration with greater multilingual semantic influence.
+    l2_matching:
+      similarity_floor: 0.85
+      similarity_ceiling: 0.98
+      top_k: 2
+    aggregation:
+      l1_deterministic_rules: 0.35
+      l2_section_semantic_matching: 0.40
+      l3_evidence_grounded_reasoning: 0.25
+    thresholds:
+      pass_minimum: 75
+      waitlist_minimum: 60
+    disagreement_points: 25
+    boundary_offset_points: 2
+  - candidate_id: wider-disagreement-calibrated-v1
+    description: Combine stricter E5 calibration with a less sensitive disagreement trigger.
+    l2_matching:
+      similarity_floor: 0.85
+      similarity_ceiling: 0.98
+      top_k: 2
+    aggregation:
+      l1_deterministic_rules: 0.45
+      l2_section_semantic_matching: 0.25
+      l3_evidence_grounded_reasoning: 0.30
+    thresholds:
+      pass_minimum: 75
+      waitlist_minimum: 60
+    disagreement_points: 35
+    boundary_offset_points: 2
+  - candidate_id: stricter-thresholds-calibrated-v1
+    description: Combine stricter E5 calibration with higher automatic decision thresholds.
+    l2_matching:
+      similarity_floor: 0.85
+      similarity_ceiling: 0.98
+      top_k: 2
+    aggregation:
+      l1_deterministic_rules: 0.45
+      l2_section_semantic_matching: 0.25
+      l3_evidence_grounded_reasoning: 0.30
+    thresholds:
+      pass_minimum: 78
+      waitlist_minimum: 62
+    disagreement_points: 25
+    boundary_offset_points: 2

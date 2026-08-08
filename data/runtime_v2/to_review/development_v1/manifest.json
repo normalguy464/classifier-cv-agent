@@ -1,0 +1,68 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "five-role-runtime-v2-development-v1",
+  "dataset_version": "1.0.0",
+  "status": "draft_for_human_review",
+  "generated_at": "2026-08-08T00:32:17.233495+07:00",
+  "source_runtime_configuration_set_id": "five-role-runtime-v1",
+  "intended_runtime_configuration_set_id": "five-role-runtime-v2",
+  "roles": [
+    "data_analyst",
+    "python_backend",
+    "frontend",
+    "qa_engineer",
+    "data_engineer"
+  ],
+  "cv_profile_count": 75,
+  "job_profile_count": 5,
+  "rubric_count": 5,
+  "pair_count": 75,
+  "pair_count_per_role": 15,
+  "tier": "bronze",
+  "ground_truth_status": "pending_human_review",
+  "tuning_allowed": false,
+  "classifier_results_generated": false,
+  "llm_requests_made": false,
+  "prior_references": [
+    {
+      "dataset_id": "synthetic-expansion-v2-3-1",
+      "directory": "data/synthetic_expansion/reviewed/v2_3_1"
+    },
+    {
+      "dataset_id": "stage7-five-role-test-v1",
+      "directory": "data/frozen_test/stage7_v1"
+    }
+  ],
+  "provenance": [
+    "Synthetic capability-focused development data created after runtime v1 final evaluation.",
+    "Stage 7 v1 case text and labels are excluded from tuning and are used only as a prior leakage source.",
+    "Draft annotations require explicit human approval before development or validation use."
+  ],
+  "files": [
+    {
+      "path": "cv_profiles.jsonl",
+      "sha256": "fda97583e0c73bbd589ad95e906154cfb6d4c105d14ac782507735d6c2a342f9",
+      "record_count": 75
+    },
+    {
+      "path": "job_profiles.jsonl",
+      "sha256": "bfaa078bc2a0372d55740c4eef86f418f9679495ad54905f3a6490f140c85a2e",
+      "record_count": 5
+    },
+    {
+      "path": "rubrics.jsonl",
+      "sha256": "8e1210558f7c9216b55888101e2ac9a28e81d94ebdda3df4aa6e4135d8ae8a5d",
+      "record_count": 5
+    },
+    {
+      "path": "pairs.jsonl",
+      "sha256": "307398877d2e840b2d7572d71b15c591d4f66ef60e3bfc7c95363bc381b70832",
+      "record_count": 75
+    },
+    {
+      "path": "review_sheet.md",
+      "sha256": "769c4153b93fa311b63b9ac95eb3dd2c3f279f5b2d21d05be034618ac0c13c25",
+      "record_count": 75
+    }
+  ]
+}

@@ -1,0 +1,246 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "runtime-v2-l3-validation-v1",
+  "generated_at": "2026-08-08T20:30:00+07:00",
+  "provider_identifier": "openai",
+  "model_identifier": "gpt-5.4-mini-2026-03-17",
+  "prompt_version": "l3-evidence-rubric-v15",
+  "score_mapping_version": "l3-deterministic-level-mapping-v2",
+  "request_count": 25,
+  "valid_output_count": 25,
+  "valid_output_rate": 1.0,
+  "requirement_status_match_rate": 1.0,
+  "unsafe_requirement_status_mismatch_count": 0,
+  "criterion_mae": 2.936,
+  "total_score_mae": 10.64,
+  "endpoint_score_rate": 0.0,
+  "estimated_cost_usd": "0.2316900",
+  "quality_gate": {
+    "passed": true,
+    "checks": {
+      "valid_output_rate": true,
+      "requirement_status_match_rate": true,
+      "unsafe_requirement_status_mismatch_count": true,
+      "criterion_mae": true,
+      "total_score_mae": true,
+      "endpoint_score_rate": true,
+      "estimated_cost": true
+    }
+  },
+  "cases": [
+    {
+      "pair_id": "v2d-pair-be-03",
+      "role": "python_backend",
+      "human_total_score": 82.0,
+      "l3_total_score": 67.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-be-08",
+      "role": "python_backend",
+      "human_total_score": 24.0,
+      "l3_total_score": 40.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-be-13",
+      "role": "python_backend",
+      "human_total_score": 45.0,
+      "l3_total_score": 37.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-be-14",
+      "role": "python_backend",
+      "human_total_score": 89.0,
+      "l3_total_score": 72.5,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-be-15",
+      "role": "python_backend",
+      "human_total_score": 58.0,
+      "l3_total_score": 67.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-da-02",
+      "role": "data_analyst",
+      "human_total_score": 88.0,
+      "l3_total_score": 81.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-da-04",
+      "role": "data_analyst",
+      "human_total_score": 75.0,
+      "l3_total_score": 74.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-da-08",
+      "role": "data_analyst",
+      "human_total_score": 24.0,
+      "l3_total_score": 40.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-da-09",
+      "role": "data_analyst",
+      "human_total_score": 53.0,
+      "l3_total_score": 57.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-da-11",
+      "role": "data_analyst",
+      "human_total_score": 85.0,
+      "l3_total_score": 67.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-de-02",
+      "role": "data_engineer",
+      "human_total_score": 88.0,
+      "l3_total_score": 74.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-de-04",
+      "role": "data_engineer",
+      "human_total_score": 75.0,
+      "l3_total_score": 74.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-de-05",
+      "role": "data_engineer",
+      "human_total_score": 66.0,
+      "l3_total_score": 63.5,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-de-07",
+      "role": "data_engineer",
+      "human_total_score": 57.0,
+      "l3_total_score": 45.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-de-09",
+      "role": "data_engineer",
+      "human_total_score": 53.0,
+      "l3_total_score": 53.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-02",
+      "role": "frontend",
+      "human_total_score": 88.0,
+      "l3_total_score": 67.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-03",
+      "role": "frontend",
+      "human_total_score": 82.0,
+      "l3_total_score": 67.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-08",
+      "role": "frontend",
+      "human_total_score": 24.0,
+      "l3_total_score": 38.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-09",
+      "role": "frontend",
+      "human_total_score": 53.0,
+      "l3_total_score": 45.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-15",
+      "role": "frontend",
+      "human_total_score": 58.0,
+      "l3_total_score": 65.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-01",
+      "role": "qa_engineer",
+      "human_total_score": 93.0,
+      "l3_total_score": 77.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-04",
+      "role": "qa_engineer",
+      "human_total_score": 75.0,
+      "l3_total_score": 74.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-07",
+      "role": "qa_engineer",
+      "human_total_score": 57.0,
+      "l3_total_score": 49.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-10",
+      "role": "qa_engineer",
+      "human_total_score": 68.0,
+      "l3_total_score": 59.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-12",
+      "role": "qa_engineer",
+      "human_total_score": 79.0,
+      "l3_total_score": 52.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    }
+  ],
+  "data_policy": {
+    "partition": "validation",
+    "development_only": false,
+    "validation_allowed": true,
+    "stage7_v1_test_allowed": false,
+    "raw_provider_response_persisted": false
+  },
+  "traceability": {
+    "configuration_sha256": "f8c63910cc547bf9040dd3d53fe3d2f427a38362dee270b36c24d3d19ad33c6d",
+    "reviewed_manifest_sha256": "7a61f45395b7a7ed0be0e957ff7790473b35ca0a7baae4f66e0ef6079f24317a",
+    "split_manifest_sha256": "3711c4735fc51970a62c76e925ba8bce3696eaaf078b7d583b5393acefcfd4dd",
+    "offline_checkpoint_sha256": "316d49facddbe77e35d2c86a61a78f2af49dab71acb5688e0ed5978280896367",
+    "raw_provider_response_persisted": false
+  }
+}

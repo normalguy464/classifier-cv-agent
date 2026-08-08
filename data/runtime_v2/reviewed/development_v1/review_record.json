@@ -1,0 +1,15 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "five-role-runtime-v2-development-v1",
+  "review_status": "approved_unchanged",
+  "reviewer_reference": "reviewer-user-runtime-v2",
+  "reviewed_at": "2026-08-08T00:50:37.049205+07:00",
+  "approved_pair_count": 75,
+  "approval_scope": [
+    "critical requirement status and linked information",
+    "five criterion scores and total score",
+    "classification label and Needs Review reasons",
+    "criterion and overall rationale"
+  ],
+  "user_statement": "Tôi duyệt toàn bộ 75 case của five-role-runtime-v2-development-v1, gồm requirement status, năm nhóm điểm, nhãn và rationale. Hãy chuyển dataset sang Silver và tiếp tục cải thiện L1/L2; chưa gọi API cho đến khi checkpoint offline đạt."
+}

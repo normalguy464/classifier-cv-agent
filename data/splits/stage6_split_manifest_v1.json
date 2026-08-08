@@ -1,0 +1,87 @@
+{
+  "schema_version": "1.0.0",
+  "split_manifest_id": "stage6-reviewed-dataset-split-v1",
+  "split_policy_version": "1.0.0",
+  "selection_method": "stratified-role-label-sha256-ranking",
+  "split_seed_identifier": "stage6-role-label-sha256-v1",
+  "frozen_at": "2026-07-26T21:24:00.467287+07:00",
+  "source": {
+    "dataset_id": "stage4-review-dataset-v1",
+    "dataset_version": "1.0.0",
+    "cv_file": "data/reviewed/stage4_cv_profiles_v1.jsonl",
+    "annotation_file": "data/reviewed/stage4_annotations_v1.json",
+    "cv_sha256": "91e10605f62226a8648118faf050e4043f90ba733026e18f23724f0cc2e9ef98",
+    "annotation_sha256": "a115f2d80627c3670054c78c9542dcb84c7eb521354c4892d378a311fa6d0d8d",
+    "sample_count": 30
+  },
+  "validation": {
+    "partition_id": "stage6-validation-v1",
+    "tuning_allowed": true,
+    "sample_count": 20,
+    "distribution": {
+      "roles": {
+        "junior-data-analyst-v1": 10,
+        "junior-python-backend-developer-v1": 10
+      },
+      "labels": {
+        "needs_review": 11,
+        "pass": 4,
+        "reject": 1,
+        "waitlist": 4
+      }
+    },
+    "cv_profile_ids": [
+      "cv-s4-be-001",
+      "cv-s4-be-002",
+      "cv-s4-be-005",
+      "cv-s4-be-006",
+      "cv-s4-be-007",
+      "cv-s4-be-008",
+      "cv-s4-be-010",
+      "cv-s4-be-011",
+      "cv-s4-be-012",
+      "cv-s4-be-014",
+      "cv-s4-da-001",
+      "cv-s4-da-002",
+      "cv-s4-da-004",
+      "cv-s4-da-006",
+      "cv-s4-da-007",
+      "cv-s4-da-010",
+      "cv-s4-da-012",
+      "cv-s4-da-013",
+      "cv-s4-da-014",
+      "cv-s4-da-015"
+    ]
+  },
+  "frozen_test": {
+    "partition_id": "stage7-frozen-test-v1",
+    "tuning_allowed": false,
+    "evaluation_allowed_from_stage": 7,
+    "classifier_results_generated": false,
+    "sample_count": 10,
+    "distribution": {
+      "roles": {
+        "junior-data-analyst-v1": 5,
+        "junior-python-backend-developer-v1": 5
+      },
+      "labels": {
+        "needs_review": 5,
+        "pass": 2,
+        "reject": 1,
+        "waitlist": 2
+      }
+    },
+    "cv_profile_ids": [
+      "cv-s4-be-003",
+      "cv-s4-be-004",
+      "cv-s4-be-009",
+      "cv-s4-be-013",
+      "cv-s4-be-015",
+      "cv-s4-da-003",
+      "cv-s4-da-005",
+      "cv-s4-da-008",
+      "cv-s4-da-009",
+      "cv-s4-da-011"
+    ]
+  }
+}

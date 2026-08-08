@@ -1,0 +1,3415 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "stage4-review-dataset-v1",
+  "dataset_version": "1.0.0",
+  "cv_schema_version": "1.0.0",
+  "job_profile_artifact_version": "1.0.0",
+  "rubric_version": "1.0.0",
+  "configuration_version": "1.1.0",
+  "models_configuration_version": "1.1.0",
+  "l1_rules_configuration_version": "1.0.0",
+  "annotation_status": "draft",
+  "records": [
+    {
+      "annotation_id": "annotation-s4-da-001",
+      "cv_profile_id": "cv-s4-da-001",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-001-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-001-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-001-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-001-req-1",
+            "ev-s4-da-001-req-2",
+            "ev-s4-da-001-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 23,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-001-req-1",
+            "ev-s4-da-001-req-2",
+            "ev-s4-da-001-req-3",
+            "ev-s4-da-001-preferred-1",
+            "ev-s4-da-001-preferred-2",
+            "ev-s4-da-001-preferred-3",
+            "ev-s4-da-001-preferred-4",
+            "ev-s4-da-001-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 18,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-001-reasoning",
+            "ev-s4-da-001-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 13,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-001-req-1",
+            "ev-s4-da-001-req-2",
+            "ev-s4-da-001-req-3",
+            "ev-s4-da-001-preferred-1",
+            "ev-s4-da-001-preferred-2",
+            "ev-s4-da-001-preferred-3",
+            "ev-s4-da-001-preferred-4",
+            "ev-s4-da-001-technical",
+            "ev-s4-da-001-reasoning",
+            "ev-s4-da-001-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 9,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-001-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        }
+      ],
+      "total_score": 93,
+      "draft_label": "pass",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-002",
+      "cv_profile_id": "cv-s4-da-002",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-002-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-002-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-002-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-002-req-1",
+            "ev-s4-da-002-req-2",
+            "ev-s4-da-002-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 21,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-002-req-1",
+            "ev-s4-da-002-req-2",
+            "ev-s4-da-002-req-3",
+            "ev-s4-da-002-preferred-1",
+            "ev-s4-da-002-preferred-2",
+            "ev-s4-da-002-preferred-3",
+            "ev-s4-da-002-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 16,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-002-reasoning",
+            "ev-s4-da-002-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 12,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-002-req-1",
+            "ev-s4-da-002-req-2",
+            "ev-s4-da-002-req-3",
+            "ev-s4-da-002-preferred-1",
+            "ev-s4-da-002-preferred-2",
+            "ev-s4-da-002-preferred-3",
+            "ev-s4-da-002-technical",
+            "ev-s4-da-002-reasoning",
+            "ev-s4-da-002-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 8,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-002-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        }
+      ],
+      "total_score": 87,
+      "draft_label": "pass",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-003",
+      "cv_profile_id": "cv-s4-da-003",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-003-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-003-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-003-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-003-req-1",
+            "ev-s4-da-003-req-2",
+            "ev-s4-da-003-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 19,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-003-req-1",
+            "ev-s4-da-003-req-2",
+            "ev-s4-da-003-req-3",
+            "ev-s4-da-003-preferred-1",
+            "ev-s4-da-003-preferred-2",
+            "ev-s4-da-003-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 14,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-003-reasoning",
+            "ev-s4-da-003-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 10,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-003-req-1",
+            "ev-s4-da-003-req-2",
+            "ev-s4-da-003-req-3",
+            "ev-s4-da-003-preferred-1",
+            "ev-s4-da-003-preferred-2",
+            "ev-s4-da-003-technical",
+            "ev-s4-da-003-reasoning",
+            "ev-s4-da-003-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 7,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-003-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 80,
+      "draft_label": "pass",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-004",
+      "cv_profile_id": "cv-s4-da-004",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-004-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-004-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-004-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-004-req-1",
+            "ev-s4-da-004-req-2",
+            "ev-s4-da-004-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 16,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-004-req-1",
+            "ev-s4-da-004-req-2",
+            "ev-s4-da-004-req-3",
+            "ev-s4-da-004-preferred-1",
+            "ev-s4-da-004-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 11,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-004-reasoning",
+            "ev-s4-da-004-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 8,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-004-req-1",
+            "ev-s4-da-004-req-2",
+            "ev-s4-da-004-req-3",
+            "ev-s4-da-004-preferred-1",
+            "ev-s4-da-004-technical",
+            "ev-s4-da-004-reasoning",
+            "ev-s4-da-004-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 5,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-004-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        }
+      ],
+      "total_score": 70,
+      "draft_label": "waitlist",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-005",
+      "cv_profile_id": "cv-s4-da-005",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-005-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-005-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-005-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-005-req-1",
+            "ev-s4-da-005-req-2",
+            "ev-s4-da-005-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 14,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-005-req-1",
+            "ev-s4-da-005-req-2",
+            "ev-s4-da-005-req-3",
+            "ev-s4-da-005-preferred-1",
+            "ev-s4-da-005-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 10,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-005-reasoning",
+            "ev-s4-da-005-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 7,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-005-req-1",
+            "ev-s4-da-005-req-2",
+            "ev-s4-da-005-req-3",
+            "ev-s4-da-005-preferred-1",
+            "ev-s4-da-005-technical",
+            "ev-s4-da-005-reasoning",
+            "ev-s4-da-005-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-005-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 67,
+      "draft_label": "waitlist",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-006",
+      "cv_profile_id": "cv-s4-da-006",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-006-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-006-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-006-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-006-req-1",
+            "ev-s4-da-006-req-2",
+            "ev-s4-da-006-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 13,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-006-req-1",
+            "ev-s4-da-006-req-2",
+            "ev-s4-da-006-req-3",
+            "ev-s4-da-006-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 9,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-006-reasoning",
+            "ev-s4-da-006-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 7,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-006-req-1",
+            "ev-s4-da-006-req-2",
+            "ev-s4-da-006-req-3",
+            "ev-s4-da-006-technical",
+            "ev-s4-da-006-reasoning",
+            "ev-s4-da-006-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 5,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-006-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        }
+      ],
+      "total_score": 64,
+      "draft_label": "waitlist",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-007",
+      "cv_profile_id": "cv-s4-da-007",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "missing",
+          "evidence_ids": [],
+          "rationale": "da-sql không được đề cập và không có thông tin phủ định."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-007-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-007-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 20,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-007-req-2",
+            "ev-s4-da-007-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 2 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 1 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 17,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-007-req-2",
+            "ev-s4-da-007-req-3",
+            "ev-s4-da-007-preferred-1",
+            "ev-s4-da-007-preferred-2",
+            "ev-s4-da-007-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 13,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-007-reasoning",
+            "ev-s4-da-007-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 10,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-007-req-2",
+            "ev-s4-da-007-req-3",
+            "ev-s4-da-007-preferred-1",
+            "ev-s4-da-007-preferred-2",
+            "ev-s4-da-007-technical",
+            "ev-s4-da-007-reasoning",
+            "ev-s4-da-007-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-007-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 66,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "missing-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Một năng lực cốt lõi chưa có thông tin trực tiếp; người review cần xác nhận trước khi dùng kết quả."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 2 mục có thông tin thực hành, 1 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-008",
+      "cv_profile_id": "cv-s4-da-008",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-008-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "missing",
+          "evidence_ids": [],
+          "rationale": "da-analysis-language không được đề cập và không có thông tin phủ định."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-008-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 20,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-008-req-1",
+            "ev-s4-da-008-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 2 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 1 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 15,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-008-req-1",
+            "ev-s4-da-008-req-3",
+            "ev-s4-da-008-preferred-1",
+            "ev-s4-da-008-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 12,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-008-reasoning",
+            "ev-s4-da-008-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 9,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-008-req-1",
+            "ev-s4-da-008-req-3",
+            "ev-s4-da-008-preferred-1",
+            "ev-s4-da-008-technical",
+            "ev-s4-da-008-reasoning",
+            "ev-s4-da-008-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-008-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 62,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "missing-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Một năng lực cốt lõi chưa có thông tin trực tiếp; người review cần xác nhận trước khi dùng kết quả."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 2 mục có thông tin thực hành, 1 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-009",
+      "cv_profile_id": "cv-s4-da-009",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "conflicting",
+          "evidence_ids": [
+            "ev-s4-da-009-req-1",
+            "ev-s4-da-009-gap-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành và thông tin phủ định mâu thuẫn."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-009-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-009-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 22,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-009-req-1",
+            "ev-s4-da-009-gap-1",
+            "ev-s4-da-009-req-2",
+            "ev-s4-da-009-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 2 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 1 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 17,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-009-req-1",
+            "ev-s4-da-009-req-2",
+            "ev-s4-da-009-req-3",
+            "ev-s4-da-009-preferred-1",
+            "ev-s4-da-009-preferred-2",
+            "ev-s4-da-009-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 13,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-009-reasoning",
+            "ev-s4-da-009-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 9,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-009-req-1",
+            "ev-s4-da-009-req-2",
+            "ev-s4-da-009-req-3",
+            "ev-s4-da-009-preferred-1",
+            "ev-s4-da-009-preferred-2",
+            "ev-s4-da-009-technical",
+            "ev-s4-da-009-reasoning",
+            "ev-s4-da-009-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-009-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 67,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Một năng lực cốt lõi có cả mô tả thực hành và xác nhận phủ định; người review cần làm rõ nguồn nào chính xác."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 2 mục có thông tin thực hành, 1 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-010",
+      "cv_profile_id": "cv-s4-da-010",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-010-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "conflicting",
+          "evidence_ids": [
+            "ev-s4-da-010-req-2",
+            "ev-s4-da-010-gap-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành và thông tin phủ định mâu thuẫn."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-010-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 22,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-010-req-1",
+            "ev-s4-da-010-req-2",
+            "ev-s4-da-010-gap-2",
+            "ev-s4-da-010-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 2 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 1 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 16,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-010-req-1",
+            "ev-s4-da-010-req-2",
+            "ev-s4-da-010-req-3",
+            "ev-s4-da-010-preferred-1",
+            "ev-s4-da-010-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 12,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-010-reasoning",
+            "ev-s4-da-010-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 9,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-010-req-1",
+            "ev-s4-da-010-req-2",
+            "ev-s4-da-010-req-3",
+            "ev-s4-da-010-preferred-1",
+            "ev-s4-da-010-technical",
+            "ev-s4-da-010-reasoning",
+            "ev-s4-da-010-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-010-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 65,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Một năng lực cốt lõi có cả mô tả thực hành và xác nhận phủ định; người review cần làm rõ nguồn nào chính xác."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 2 mục có thông tin thực hành, 1 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-011",
+      "cv_profile_id": "cv-s4-da-011",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-011-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "unsatisfied",
+          "evidence_ids": [
+            "ev-s4-da-011-gap-2"
+          ],
+          "rationale": "da-analysis-language có xác nhận rõ rằng ứng viên chưa đáp ứng."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-011-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 10,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-011-req-1",
+            "ev-s4-da-011-gap-2",
+            "ev-s4-da-011-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 2 mục có thông tin thực hành, 1 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 11,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-011-req-1",
+            "ev-s4-da-011-req-3",
+            "ev-s4-da-011-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 9,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-011-reasoning",
+            "ev-s4-da-011-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 3,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-011-req-1",
+            "ev-s4-da-011-req-3",
+            "ev-s4-da-011-technical",
+            "ev-s4-da-011-reasoning",
+            "ev-s4-da-011-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 7,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-011-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 40,
+      "draft_label": "reject",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 2 mục có thông tin thực hành, 0 mục cần làm rõ và 1 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-012",
+      "cv_profile_id": "cv-s4-da-012",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-012-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-012-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-012-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 24,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-012-req-1",
+            "ev-s4-da-012-req-2",
+            "ev-s4-da-012-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 10,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-012-req-1",
+            "ev-s4-da-012-req-2",
+            "ev-s4-da-012-req-3",
+            "ev-s4-da-012-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 8,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-012-reasoning",
+            "ev-s4-da-012-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 7,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-012-req-1",
+            "ev-s4-da-012-req-2",
+            "ev-s4-da-012-req-3",
+            "ev-s4-da-012-technical",
+            "ev-s4-da-012-reasoning",
+            "ev-s4-da-012-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-012-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 55,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "low-score-without-explicit-critical-unsatisfied"
+      ],
+      "ambiguity_notes": [
+        "Kết quả tổng hợp thấp nhưng không có xác nhận phủ định cho năng lực cốt lõi."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-013",
+      "cv_profile_id": "cv-s4-da-013",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-013-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-013-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-013-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 27,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-013-req-1",
+            "ev-s4-da-013-req-2",
+            "ev-s4-da-013-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 13,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-013-req-1",
+            "ev-s4-da-013-req-2",
+            "ev-s4-da-013-req-3",
+            "ev-s4-da-013-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 10,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-013-reasoning",
+            "ev-s4-da-013-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 6,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-013-req-1",
+            "ev-s4-da-013-req-2",
+            "ev-s4-da-013-req-3",
+            "ev-s4-da-013-technical",
+            "ev-s4-da-013-reasoning",
+            "ev-s4-da-013-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 5,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-013-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        }
+      ],
+      "total_score": 61,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "lower-threshold-boundary"
+      ],
+      "ambiguity_notes": [
+        "Kết quả tổng hợp nằm gần mốc chuyển ở vùng thấp và cần người review kiểm tra."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-014",
+      "cv_profile_id": "cv-s4-da-014",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-014-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-014-req-2"
+          ],
+          "rationale": "da-analysis-language có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-014-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-014-req-1",
+            "ev-s4-da-014-req-2",
+            "ev-s4-da-014-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 18,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-014-req-1",
+            "ev-s4-da-014-req-2",
+            "ev-s4-da-014-req-3",
+            "ev-s4-da-014-preferred-1",
+            "ev-s4-da-014-preferred-2",
+            "ev-s4-da-014-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 13,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-014-reasoning",
+            "ev-s4-da-014-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 8,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-014-req-1",
+            "ev-s4-da-014-req-2",
+            "ev-s4-da-014-req-3",
+            "ev-s4-da-014-preferred-1",
+            "ev-s4-da-014-preferred-2",
+            "ev-s4-da-014-technical",
+            "ev-s4-da-014-reasoning",
+            "ev-s4-da-014-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 5,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-014-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        }
+      ],
+      "total_score": 74,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "upper-threshold-boundary"
+      ],
+      "ambiguity_notes": [
+        "Kết quả tổng hợp nằm gần mốc chuyển ở vùng cao và cần người review kiểm tra."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-da-015",
+      "cv_profile_id": "cv-s4-da-015",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-data-analyst-v1",
+      "rubric_id": "junior-data-analyst-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "da-sql",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-015-req-1"
+          ],
+          "rationale": "da-sql có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "da-analysis-language",
+          "evidence_status": "unsatisfied",
+          "evidence_ids": [
+            "ev-s4-da-015-gap-2"
+          ],
+          "rationale": "da-analysis-language có xác nhận rõ rằng ứng viên chưa đáp ứng."
+        },
+        {
+          "requirement_id": "da-analytical-project",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-da-015-req-3"
+          ],
+          "rationale": "da-analytical-project có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 18,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-da-015-req-1",
+            "ev-s4-da-015-gap-2",
+            "ev-s4-da-015-req-3"
+          ],
+          "rationale": "Ba nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 2 mục có thông tin thực hành, 1 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "technical-analysis",
+          "awarded_points": 17,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-da-015-req-1",
+            "ev-s4-da-015-req-3",
+            "ev-s4-da-015-preferred-1",
+            "ev-s4-da-015-preferred-2",
+            "ev-s4-da-015-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "analytical-reasoning",
+          "awarded_points": 13,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-da-015-reasoning",
+            "ev-s4-da-015-req-3"
+          ],
+          "rationale": "Cách đặt mục tiêu, lựa chọn phương pháp và ghi nhận giới hạn được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-impact",
+          "awarded_points": 10,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-da-015-req-1",
+            "ev-s4-da-015-req-3",
+            "ev-s4-da-015-preferred-1",
+            "ev-s4-da-015-preferred-2",
+            "ev-s4-da-015-technical",
+            "ev-s4-da-015-reasoning",
+            "ev-s4-da-015-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng tái tạo đầu ra và tác động được đối chiếu với phần bàn giao. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-da-015-communication"
+          ],
+          "rationale": "Mức rõ ràng của hướng dẫn, giả định và giới hạn được xem xét từ tài liệu đi kèm. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 64,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ],
+      "ambiguity_notes": [
+        "Có xác nhận phủ định cho một năng lực cốt lõi trong khi các phần còn lại có thông tin thực hành."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 3 năng lực cốt lõi của vị trí; 2 mục có thông tin thực hành, 0 mục cần làm rõ và 1 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi truy vấn, xử lý và kiểm tra chất lượng dữ liệu.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-001",
+      "cv_profile_id": "cv-s4-be-001",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-001-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-001-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-001-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-001-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-001-req-1",
+            "ev-s4-be-001-req-2",
+            "ev-s4-be-001-req-3",
+            "ev-s4-be-001-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 4 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 23,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-001-req-1",
+            "ev-s4-be-001-req-2",
+            "ev-s4-be-001-req-3",
+            "ev-s4-be-001-req-4",
+            "ev-s4-be-001-preferred-1",
+            "ev-s4-be-001-preferred-2",
+            "ev-s4-be-001-preferred-3",
+            "ev-s4-be-001-preferred-4",
+            "ev-s4-be-001-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 18,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-001-reasoning",
+            "ev-s4-be-001-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 13,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-001-req-1",
+            "ev-s4-be-001-req-2",
+            "ev-s4-be-001-req-3",
+            "ev-s4-be-001-req-4",
+            "ev-s4-be-001-preferred-1",
+            "ev-s4-be-001-preferred-2",
+            "ev-s4-be-001-preferred-3",
+            "ev-s4-be-001-preferred-4",
+            "ev-s4-be-001-technical",
+            "ev-s4-be-001-reasoning",
+            "ev-s4-be-001-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 9,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-001-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        }
+      ],
+      "total_score": 93,
+      "draft_label": "pass",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 4 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-002",
+      "cv_profile_id": "cv-s4-be-002",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-002-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-002-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-002-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-002-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-002-req-1",
+            "ev-s4-be-002-req-2",
+            "ev-s4-be-002-req-3",
+            "ev-s4-be-002-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 4 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 21,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-002-req-1",
+            "ev-s4-be-002-req-2",
+            "ev-s4-be-002-req-3",
+            "ev-s4-be-002-req-4",
+            "ev-s4-be-002-preferred-1",
+            "ev-s4-be-002-preferred-2",
+            "ev-s4-be-002-preferred-3",
+            "ev-s4-be-002-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 16,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-002-reasoning",
+            "ev-s4-be-002-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 12,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-002-req-1",
+            "ev-s4-be-002-req-2",
+            "ev-s4-be-002-req-3",
+            "ev-s4-be-002-req-4",
+            "ev-s4-be-002-preferred-1",
+            "ev-s4-be-002-preferred-2",
+            "ev-s4-be-002-preferred-3",
+            "ev-s4-be-002-technical",
+            "ev-s4-be-002-reasoning",
+            "ev-s4-be-002-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 8,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-002-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin có phạm vi rộng, nêu được bước kiểm tra và đầu ra có thể đối chiếu."
+        }
+      ],
+      "total_score": 87,
+      "draft_label": "pass",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 4 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-003",
+      "cv_profile_id": "cv-s4-be-003",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-003-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-003-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-003-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-003-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-003-req-1",
+            "ev-s4-be-003-req-2",
+            "ev-s4-be-003-req-3",
+            "ev-s4-be-003-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 4 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 19,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-003-req-1",
+            "ev-s4-be-003-req-2",
+            "ev-s4-be-003-req-3",
+            "ev-s4-be-003-req-4",
+            "ev-s4-be-003-preferred-1",
+            "ev-s4-be-003-preferred-2",
+            "ev-s4-be-003-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 14,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-003-reasoning",
+            "ev-s4-be-003-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 10,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-003-req-1",
+            "ev-s4-be-003-req-2",
+            "ev-s4-be-003-req-3",
+            "ev-s4-be-003-req-4",
+            "ev-s4-be-003-preferred-1",
+            "ev-s4-be-003-preferred-2",
+            "ev-s4-be-003-technical",
+            "ev-s4-be-003-reasoning",
+            "ev-s4-be-003-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 7,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-003-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 80,
+      "draft_label": "pass",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 4 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-004",
+      "cv_profile_id": "cv-s4-be-004",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-004-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-004-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-004-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-004-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-004-req-1",
+            "ev-s4-be-004-req-2",
+            "ev-s4-be-004-req-3",
+            "ev-s4-be-004-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 4 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 16,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-004-req-1",
+            "ev-s4-be-004-req-2",
+            "ev-s4-be-004-req-3",
+            "ev-s4-be-004-req-4",
+            "ev-s4-be-004-preferred-1",
+            "ev-s4-be-004-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 11,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-004-reasoning",
+            "ev-s4-be-004-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 8,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-004-req-1",
+            "ev-s4-be-004-req-2",
+            "ev-s4-be-004-req-3",
+            "ev-s4-be-004-req-4",
+            "ev-s4-be-004-preferred-1",
+            "ev-s4-be-004-technical",
+            "ev-s4-be-004-reasoning",
+            "ev-s4-be-004-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 5,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-004-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        }
+      ],
+      "total_score": 70,
+      "draft_label": "waitlist",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 4 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-005",
+      "cv_profile_id": "cv-s4-be-005",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-005-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-005-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-005-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-005-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-005-req-1",
+            "ev-s4-be-005-req-2",
+            "ev-s4-be-005-req-3",
+            "ev-s4-be-005-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 4 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 14,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-005-req-1",
+            "ev-s4-be-005-req-2",
+            "ev-s4-be-005-req-3",
+            "ev-s4-be-005-req-4",
+            "ev-s4-be-005-preferred-1",
+            "ev-s4-be-005-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 10,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-005-reasoning",
+            "ev-s4-be-005-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 7,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-005-req-1",
+            "ev-s4-be-005-req-2",
+            "ev-s4-be-005-req-3",
+            "ev-s4-be-005-req-4",
+            "ev-s4-be-005-preferred-1",
+            "ev-s4-be-005-technical",
+            "ev-s4-be-005-reasoning",
+            "ev-s4-be-005-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-005-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 67,
+      "draft_label": "waitlist",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 4 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-006",
+      "cv_profile_id": "cv-s4-be-006",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-006-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-006-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-006-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-006-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-006-req-1",
+            "ev-s4-be-006-req-2",
+            "ev-s4-be-006-req-3",
+            "ev-s4-be-006-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 4 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 13,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-006-req-1",
+            "ev-s4-be-006-req-2",
+            "ev-s4-be-006-req-3",
+            "ev-s4-be-006-req-4",
+            "ev-s4-be-006-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 9,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-006-reasoning",
+            "ev-s4-be-006-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 7,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-006-req-1",
+            "ev-s4-be-006-req-2",
+            "ev-s4-be-006-req-3",
+            "ev-s4-be-006-req-4",
+            "ev-s4-be-006-technical",
+            "ev-s4-be-006-reasoning",
+            "ev-s4-be-006-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 5,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-006-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        }
+      ],
+      "total_score": 64,
+      "draft_label": "waitlist",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 4 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-007",
+      "cv_profile_id": "cv-s4-be-007",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "missing",
+          "evidence_ids": [],
+          "rationale": "be-python không được đề cập và không có thông tin phủ định."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-007-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-007-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-007-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 20,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-007-req-2",
+            "ev-s4-be-007-req-3",
+            "ev-s4-be-007-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 1 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 17,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-007-req-2",
+            "ev-s4-be-007-req-3",
+            "ev-s4-be-007-req-4",
+            "ev-s4-be-007-preferred-1",
+            "ev-s4-be-007-preferred-2",
+            "ev-s4-be-007-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 13,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-007-reasoning",
+            "ev-s4-be-007-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 10,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-007-req-2",
+            "ev-s4-be-007-req-3",
+            "ev-s4-be-007-req-4",
+            "ev-s4-be-007-preferred-1",
+            "ev-s4-be-007-preferred-2",
+            "ev-s4-be-007-technical",
+            "ev-s4-be-007-reasoning",
+            "ev-s4-be-007-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-007-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 66,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "missing-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Một năng lực cốt lõi chưa có thông tin trực tiếp; người review cần xác nhận trước khi dùng kết quả."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 1 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-008",
+      "cv_profile_id": "cv-s4-be-008",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-008-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "missing",
+          "evidence_ids": [],
+          "rationale": "be-rest-api không được đề cập và không có thông tin phủ định."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-008-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-008-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 20,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-008-req-1",
+            "ev-s4-be-008-req-3",
+            "ev-s4-be-008-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 1 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 15,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-008-req-1",
+            "ev-s4-be-008-req-3",
+            "ev-s4-be-008-req-4",
+            "ev-s4-be-008-preferred-1",
+            "ev-s4-be-008-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 12,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-008-reasoning"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 9,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-008-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-008-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 62,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "missing-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Một năng lực cốt lõi chưa có thông tin trực tiếp; người review cần xác nhận trước khi dùng kết quả."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 1 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-009",
+      "cv_profile_id": "cv-s4-be-009",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "conflicting",
+          "evidence_ids": [
+            "ev-s4-be-009-req-1",
+            "ev-s4-be-009-gap-1"
+          ],
+          "rationale": "be-python có thông tin thực hành và thông tin phủ định mâu thuẫn."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-009-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-009-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-009-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 22,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-009-req-1",
+            "ev-s4-be-009-gap-1",
+            "ev-s4-be-009-req-2",
+            "ev-s4-be-009-req-3",
+            "ev-s4-be-009-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 1 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 17,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-009-req-1",
+            "ev-s4-be-009-req-2",
+            "ev-s4-be-009-req-3",
+            "ev-s4-be-009-req-4",
+            "ev-s4-be-009-preferred-1",
+            "ev-s4-be-009-preferred-2",
+            "ev-s4-be-009-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 13,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-009-reasoning",
+            "ev-s4-be-009-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 9,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-009-req-1",
+            "ev-s4-be-009-req-2",
+            "ev-s4-be-009-req-3",
+            "ev-s4-be-009-req-4",
+            "ev-s4-be-009-preferred-1",
+            "ev-s4-be-009-preferred-2",
+            "ev-s4-be-009-technical",
+            "ev-s4-be-009-reasoning",
+            "ev-s4-be-009-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-009-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 67,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Một năng lực cốt lõi có cả mô tả thực hành và xác nhận phủ định; người review cần làm rõ nguồn nào chính xác."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 1 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-010",
+      "cv_profile_id": "cv-s4-be-010",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-010-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "conflicting",
+          "evidence_ids": [
+            "ev-s4-be-010-req-2",
+            "ev-s4-be-010-gap-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành và thông tin phủ định mâu thuẫn."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-010-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-010-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 22,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-010-req-1",
+            "ev-s4-be-010-req-2",
+            "ev-s4-be-010-gap-2",
+            "ev-s4-be-010-req-3",
+            "ev-s4-be-010-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 1 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 16,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-010-req-1",
+            "ev-s4-be-010-req-2",
+            "ev-s4-be-010-req-3",
+            "ev-s4-be-010-req-4",
+            "ev-s4-be-010-preferred-1",
+            "ev-s4-be-010-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 12,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-010-reasoning",
+            "ev-s4-be-010-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 9,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-010-req-1",
+            "ev-s4-be-010-req-2",
+            "ev-s4-be-010-req-3",
+            "ev-s4-be-010-req-4",
+            "ev-s4-be-010-preferred-1",
+            "ev-s4-be-010-technical",
+            "ev-s4-be-010-reasoning",
+            "ev-s4-be-010-delivery",
+            "ev-s4-be-010-gap-2"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-010-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 65,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ],
+      "ambiguity_notes": [
+        "Một năng lực cốt lõi có cả mô tả thực hành và xác nhận phủ định; người review cần làm rõ nguồn nào chính xác."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 1 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-011",
+      "cv_profile_id": "cv-s4-be-011",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-011-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "unsatisfied",
+          "evidence_ids": [
+            "ev-s4-be-011-gap-2"
+          ],
+          "rationale": "be-rest-api có xác nhận rõ rằng ứng viên chưa đáp ứng."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-011-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-011-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 10,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-011-req-1",
+            "ev-s4-be-011-gap-2",
+            "ev-s4-be-011-req-3",
+            "ev-s4-be-011-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 1 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 11,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-011-req-1",
+            "ev-s4-be-011-req-3",
+            "ev-s4-be-011-req-4",
+            "ev-s4-be-011-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 9,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-011-reasoning"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 3,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-011-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 7,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-011-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 40,
+      "draft_label": "reject",
+      "review_reasons": [],
+      "ambiguity_notes": [],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 1 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-012",
+      "cv_profile_id": "cv-s4-be-012",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-012-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-012-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-012-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-012-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 24,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-012-req-1",
+            "ev-s4-be-012-req-2",
+            "ev-s4-be-012-req-3",
+            "ev-s4-be-012-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 4 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 10,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-012-req-1",
+            "ev-s4-be-012-req-2",
+            "ev-s4-be-012-req-3",
+            "ev-s4-be-012-req-4",
+            "ev-s4-be-012-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 8,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-012-reasoning",
+            "ev-s4-be-012-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 7,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-012-req-1",
+            "ev-s4-be-012-req-2",
+            "ev-s4-be-012-req-3",
+            "ev-s4-be-012-req-4",
+            "ev-s4-be-012-technical",
+            "ev-s4-be-012-reasoning",
+            "ev-s4-be-012-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-012-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 55,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "low-score-without-explicit-critical-unsatisfied"
+      ],
+      "ambiguity_notes": [
+        "Kết quả tổng hợp thấp nhưng không có xác nhận phủ định cho năng lực cốt lõi."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 4 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-013",
+      "cv_profile_id": "cv-s4-be-013",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-013-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-013-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-013-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-013-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 27,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-013-req-1",
+            "ev-s4-be-013-req-2",
+            "ev-s4-be-013-req-3",
+            "ev-s4-be-013-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 4 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 13,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-013-req-1",
+            "ev-s4-be-013-req-2",
+            "ev-s4-be-013-req-3",
+            "ev-s4-be-013-req-4",
+            "ev-s4-be-013-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 10,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-013-reasoning",
+            "ev-s4-be-013-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 6,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-013-req-1",
+            "ev-s4-be-013-req-2",
+            "ev-s4-be-013-req-3",
+            "ev-s4-be-013-req-4",
+            "ev-s4-be-013-technical",
+            "ev-s4-be-013-reasoning",
+            "ev-s4-be-013-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 5,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-013-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        }
+      ],
+      "total_score": 61,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "lower-threshold-boundary"
+      ],
+      "ambiguity_notes": [
+        "Kết quả tổng hợp nằm gần mốc chuyển ở vùng thấp và cần người review kiểm tra."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 4 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-014",
+      "cv_profile_id": "cv-s4-be-014",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-014-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-014-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-014-req-3"
+          ],
+          "rationale": "be-relational-data có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-014-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 30,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-014-req-1",
+            "ev-s4-be-014-req-2",
+            "ev-s4-be-014-req-3",
+            "ev-s4-be-014-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 4 mục có thông tin thực hành, 0 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 18,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-014-req-1",
+            "ev-s4-be-014-req-2",
+            "ev-s4-be-014-req-3",
+            "ev-s4-be-014-req-4",
+            "ev-s4-be-014-preferred-1",
+            "ev-s4-be-014-preferred-2",
+            "ev-s4-be-014-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 13,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-014-reasoning",
+            "ev-s4-be-014-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 8,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-014-req-1",
+            "ev-s4-be-014-req-2",
+            "ev-s4-be-014-req-3",
+            "ev-s4-be-014-req-4",
+            "ev-s4-be-014-preferred-1",
+            "ev-s4-be-014-preferred-2",
+            "ev-s4-be-014-technical",
+            "ev-s4-be-014-reasoning",
+            "ev-s4-be-014-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 5,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-014-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin hiện có chủ yếu ở mức tác vụ cơ bản hoặc chưa đủ chi tiết để kiểm chứng."
+        }
+      ],
+      "total_score": 74,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "upper-threshold-boundary"
+      ],
+      "ambiguity_notes": [
+        "Kết quả tổng hợp nằm gần mốc chuyển ở vùng cao và cần người review kiểm tra."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 4 mục có thông tin thực hành, 0 mục cần làm rõ và 0 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    },
+    {
+      "annotation_id": "annotation-s4-be-015",
+      "cv_profile_id": "cv-s4-be-015",
+      "source_dataset_file": "data/to_review/stage4_cv_profiles_v1.jsonl",
+      "job_profile_id": "junior-python-backend-developer-v1",
+      "rubric_id": "junior-python-backend-developer-rubric-v1",
+      "critical_requirement_assessments": [
+        {
+          "requirement_id": "be-python",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-015-req-1"
+          ],
+          "rationale": "be-python có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-rest-api",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-015-req-2"
+          ],
+          "rationale": "be-rest-api có thông tin thực hành trực tiếp trong CV."
+        },
+        {
+          "requirement_id": "be-relational-data",
+          "evidence_status": "unsatisfied",
+          "evidence_ids": [
+            "ev-s4-be-015-gap-3"
+          ],
+          "rationale": "be-relational-data có xác nhận rõ rằng ứng viên chưa đáp ứng."
+        },
+        {
+          "requirement_id": "be-git",
+          "evidence_status": "satisfied",
+          "evidence_ids": [
+            "ev-s4-be-015-req-4"
+          ],
+          "rationale": "be-git có thông tin thực hành trực tiếp trong CV."
+        }
+      ],
+      "criterion_assessments": [
+        {
+          "criterion_id": "mandatory-requirements",
+          "awarded_points": 18,
+          "maximum_points": 30,
+          "evidence_ids": [
+            "ev-s4-be-015-req-1",
+            "ev-s4-be-015-req-2",
+            "ev-s4-be-015-gap-3",
+            "ev-s4-be-015-req-4"
+          ],
+          "rationale": "Bốn nhóm năng lực cốt lõi được đối chiếu riêng với thông tin thực hành và xác nhận phủ định. Kết quả đối chiếu gồm 3 mục có thông tin thực hành, 1 mục có xác nhận phủ định, 0 mục chưa có thông tin và 0 mục có mô tả mâu thuẫn."
+        },
+        {
+          "criterion_id": "backend-implementation",
+          "awarded_points": 17,
+          "maximum_points": 25,
+          "evidence_ids": [
+            "ev-s4-be-015-req-1",
+            "ev-s4-be-015-req-2",
+            "ev-s4-be-015-req-4",
+            "ev-s4-be-015-preferred-1",
+            "ev-s4-be-015-preferred-2",
+            "ev-s4-be-015-technical"
+          ],
+          "rationale": "Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "api-and-data-design",
+          "awarded_points": 13,
+          "maximum_points": 20,
+          "evidence_ids": [
+            "ev-s4-be-015-reasoning",
+            "ev-s4-be-015-req-2"
+          ],
+          "rationale": "Thiết kế request, response, dữ liệu quan hệ và tính nhất quán được xem xét từ phần dự án. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "projects-and-delivery",
+          "awarded_points": 10,
+          "maximum_points": 15,
+          "evidence_ids": [
+            "ev-s4-be-015-req-1",
+            "ev-s4-be-015-req-2",
+            "ev-s4-be-015-req-4",
+            "ev-s4-be-015-preferred-1",
+            "ev-s4-be-015-preferred-2",
+            "ev-s4-be-015-technical",
+            "ev-s4-be-015-reasoning",
+            "ev-s4-be-015-delivery"
+          ],
+          "rationale": "Phạm vi đóng góp, khả năng chạy lại và tài liệu bàn giao được đối chiếu với đầu ra. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        },
+        {
+          "criterion_id": "communication-and-evidence-quality",
+          "awarded_points": 6,
+          "maximum_points": 10,
+          "evidence_ids": [
+            "ev-s4-be-015-communication"
+          ],
+          "rationale": "Mức rõ ràng của README, quyết định kỹ thuật và phần việc cá nhân được xem xét từ tài liệu. Thông tin mô tả được thao tác liên quan nhưng phạm vi kiểm chứng còn giới hạn."
+        }
+      ],
+      "total_score": 64,
+      "draft_label": "needs_review",
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ],
+      "ambiguity_notes": [
+        "Có xác nhận phủ định cho một năng lực cốt lõi trong khi các phần còn lại có thông tin thực hành."
+      ],
+      "overall_rationale": "Hồ sơ được đối chiếu theo 4 năng lực cốt lõi của vị trí; 3 mục có thông tin thực hành, 0 mục cần làm rõ và 1 mục có xác nhận phủ định. Các mô tả kỹ thuật thể hiện phạm vi triển khai Python, validation, xử lý lỗi và kiểm thử.",
+      "review": {
+        "status": "pending",
+        "reviewer_reference": null,
+        "final_label": null,
+        "criterion_score_overrides": [],
+        "notes": null,
+        "reviewed_at": null
+      }
+    }
+  ]
+}

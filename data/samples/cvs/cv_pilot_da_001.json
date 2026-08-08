@@ -1,0 +1,152 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-pilot-da-001",
+  "candidate_reference": "candidate-synthetic-da-001",
+  "summary": "Ứng viên cấp junior có thực tập phân tích dữ liệu và một dự án cá nhân về hiệu quả bán hàng.",
+  "skills": [
+    {
+      "name": "SQL",
+      "evidence_ids": [
+        "ev-da001-sql",
+        "ev-da001-internship"
+      ]
+    },
+    {
+      "name": "Python",
+      "evidence_ids": [
+        "ev-da001-python",
+        "ev-da001-project"
+      ]
+    },
+    {
+      "name": "Power BI",
+      "evidence_ids": [
+        "ev-da001-bi",
+        "ev-da001-internship"
+      ]
+    },
+    {
+      "name": "Applied statistics",
+      "evidence_ids": [
+        "ev-da001-project"
+      ]
+    }
+  ],
+  "work_experiences": [
+    {
+      "experience_id": "experience-da001-internship",
+      "title": "Data Analyst Intern",
+      "organization_reference": "organization-synthetic-da-001",
+      "duration_months": 6,
+      "summary": "Làm sạch dữ liệu giao dịch, viết truy vấn SQL và xây dashboard theo dõi doanh thu tuần.",
+      "technologies": [
+        "SQL",
+        "Python",
+        "Power BI"
+      ],
+      "evidence_ids": [
+        "ev-da001-internship"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "education_id": "education-da001",
+      "degree": "Bachelor program",
+      "field_of_study": "Information Systems",
+      "institution_reference": "institution-synthetic-da-001",
+      "evidence_ids": [
+        "ev-da001-education"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "project-da001-sales-analysis",
+      "title": "Sales performance analysis",
+      "summary": "Phân tích dữ liệu bán hàng tổng hợp, xác định tỷ lệ chuyển đổi theo kênh và nêu giới hạn do thiếu dữ liệu hoàn trả.",
+      "technologies": [
+        "Python",
+        "pandas",
+        "SQL",
+        "Power BI"
+      ],
+      "evidence_ids": [
+        "ev-da001-project",
+        "ev-da001-sql",
+        "ev-da001-python",
+        "ev-da001-bi"
+      ]
+    }
+  ],
+  "certifications": [],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da001-sql",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Sử dụng SQL với join, CTE, aggregate và window function trong bài toán doanh thu.",
+      "location": {
+        "source_record_id": "record-da001-skills-sql"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da001-python",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Dùng Python, pandas và NumPy để làm sạch, kiểm tra và tổng hợp dữ liệu.",
+      "location": {
+        "source_record_id": "record-da001-skills-python"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da001-bi",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "Xây dashboard Power BI với định nghĩa chỉ số và bộ lọc theo kênh bán hàng.",
+      "location": {
+        "source_record_id": "record-da001-skills-bi"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da001-internship",
+      "source_type": "manual",
+      "section": "work_experience",
+      "text": "Trong kỳ thực tập sáu tháng, ứng viên viết truy vấn SQL, kiểm tra dữ liệu bằng Python và tự động hóa dashboard giúp giảm khoảng 30 phần trăm thời gian chuẩn bị báo cáo.",
+      "location": {
+        "source_record_id": "record-da001-internship"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da001-project",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Dự án nêu câu hỏi nghiệp vụ, nguồn dữ liệu tổng hợp, chỉ số chuyển đổi, phương pháp xử lý và giới hạn do không có dữ liệu hoàn trả; có repository tổng hợp mã repo-da001.",
+      "location": {
+        "source_record_id": "record-da001-project"
+      },
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-da001-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Đang hoàn thành chương trình Information Systems với học phần cơ sở dữ liệu và thống kê ứng dụng.",
+      "location": {
+        "source_record_id": "record-da001-education"
+      },
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": []
+}

@@ -1,0 +1,402 @@
+{
+  "report_schema_version": "1.0.0",
+  "report_id": "synthetic-expansion-v2-openrouter-l3-validation-v1",
+  "report_scope": "silver-development-openrouter-live-l3",
+  "is_final_performance": false,
+  "experiment_status": "stopped_quality_failure",
+  "generated_at": "2026-07-31T23:30:00+07:00",
+  "traceability": {
+    "configuration_file": "evaluation/configs/synthetic_expansion_l3_openrouter_v1.yaml",
+    "configuration_sha256": "2f8438af1d1dc47e90feffe1dfd570541beb2d23ed6747c81b58858b26385a29",
+    "dataset_manifest_sha256": "7eb7e2a3a7e64f14c18db84b13f13ae3771b1caa99233c7462d720eaf5a13c3b",
+    "split_manifest_sha256": "747e0e197c259c65a9095db5f79568b85dc7ecdec289413f6e26bcbdf8f28cf7",
+    "dataset_id": "synthetic-cv-jd-expansion-v2-reviewed-silver",
+    "dataset_version": "2.1.0",
+    "development_partition_id": "synthetic-expansion-v2-development-silver",
+    "primary_pair_count": 25,
+    "held_out_partition_id": "synthetic-expansion-v2-held-out-silver",
+    "held_out_evaluated": false,
+    "original_stage6_frozen_test_evaluated": false,
+    "provider_identifier": "openrouter",
+    "model_identifier": "google/gemma-4-26b-a4b-it:free",
+    "prompt_version": "l3-evidence-rubric-v3",
+    "raw_provider_response_persisted": false
+  },
+  "request_accounting": {
+    "hard_request_cap": 40,
+    "total_http_request_count": 11,
+    "valid_attempt_count": 4,
+    "failed_request_count": 7,
+    "invalid_structured_output_count": 7,
+    "billing_tier_assumption": "free_variant",
+    "estimated_provider_charge_usd": 0.0,
+    "charge_verified": false,
+    "request_quality": {
+      "valid_output_rate": 0.36363636363636365,
+      "failure_category_counts": {
+        "legacy_unspecified_structured_validation": 3,
+        "overall_score_above_100": 2,
+        "malformed_output_json": 2
+      },
+      "average_duration_milliseconds": 69335.27272727272,
+      "maximum_duration_milliseconds": 114546
+    }
+  },
+  "early_stopping": {
+    "triggered": true,
+    "reason": "At least one primary case exhausted its invalid-output retry allowance, so the required 100% primary valid-output rate became unreachable."
+  },
+  "provider_quality": {
+    "sample_count": 25,
+    "attempted_pair_count": 8,
+    "available_output_count": 4,
+    "valid_output_rate": 0.16,
+    "valid_output_rate_among_attempted_pairs": 0.5,
+    "endpoint_score_count": 4,
+    "requirement_status_match_rate": 1.0,
+    "criterion_mean_absolute_error": 3.8,
+    "total_score_mean_absolute_error": 19.0,
+    "usage_and_latency": {
+      "request_count": 4,
+      "requests_with_usage": 4,
+      "input_tokens": 17095,
+      "output_tokens": 3116,
+      "total_tokens": 20211,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_duration_milliseconds": 304072,
+      "average_duration_milliseconds": 76018,
+      "maximum_duration_milliseconds": 114546
+    },
+    "passes_primary_policy": false,
+    "cases": [
+      {
+        "pair_id": "pair-da-strong-std",
+        "role": "data_analyst",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "available",
+        "human_total_score": 94.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 4,
+        "requirement_status_count": 4,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "da-technical-specialization": 1.0,
+          "da-role-capability": 2.0,
+          "projects-and-impact": 1.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 6.0
+      },
+      {
+        "pair_id": "pair-da-upbd-std",
+        "role": "data_analyst",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "invalid_exhausted",
+        "failure_reasons": [
+          "LLM provider output failed structured validation.",
+          "LLM provider output failed schema validation: overall_score:less_than_equal."
+        ]
+      },
+      {
+        "pair_id": "pair-da-lowbd-std",
+        "role": "data_analyst",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "outcome": "invalid_exhausted",
+        "failure_reasons": [
+          "LLM provider output failed structured validation.",
+          "LLM provider output failed schema validation: root:json_invalid."
+        ]
+      },
+      {
+        "pair_id": "pair-da-missing-std",
+        "role": "data_analyst",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "outcome": "invalid_exhausted",
+        "failure_reasons": [
+          "LLM provider output failed structured validation.",
+          "LLM provider output failed schema validation: overall_score:less_than_equal."
+        ]
+      },
+      {
+        "pair_id": "pair-da-hardneg-std",
+        "role": "data_analyst",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "available",
+        "human_total_score": 32.0,
+        "l3_score": 0.0,
+        "requirement_status_match_count": 4,
+        "requirement_status_count": 4,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 14.0,
+          "da-technical-specialization": 8.0,
+          "da-role-capability": 5.0,
+          "projects-and-impact": 2.0,
+          "communication-and-evidence-quality": 3.0
+        },
+        "total_score_absolute_error": 32.0
+      },
+      {
+        "pair_id": "pair-be-strong-std",
+        "role": "python_backend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "available",
+        "human_total_score": 94.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "be-technical-specialization": 1.0,
+          "be-role-capability": 2.0,
+          "projects-and-impact": 1.0,
+          "communication-and-evidence-quality": 2.0
+        },
+        "total_score_absolute_error": 6.0
+      },
+      {
+        "pair_id": "pair-be-moderate-std",
+        "role": "python_backend",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "available",
+        "human_total_score": 68.0,
+        "l3_score": 100.0,
+        "requirement_status_match_count": 5,
+        "requirement_status_count": 5,
+        "criterion_absolute_errors": {
+          "mandatory-requirements": 0.0,
+          "be-technical-specialization": 10.0,
+          "be-role-capability": 9.0,
+          "projects-and-impact": 8.0,
+          "communication-and-evidence-quality": 5.0
+        },
+        "total_score_absolute_error": 32.0
+      },
+      {
+        "pair_id": "pair-be-failed-std",
+        "role": "python_backend",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "outcome": "not_available",
+        "failure_reasons": [
+          "LLM provider output failed schema validation: root:json_invalid."
+        ]
+      },
+      {
+        "pair_id": "pair-be-hardneg-std",
+        "role": "python_backend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-be-upbd-std",
+        "role": "python_backend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-strong-std",
+        "role": "frontend",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-solid-std",
+        "role": "frontend",
+        "scenario": "solid",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-upbd-std",
+        "role": "frontend",
+        "scenario": "upper_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-conflict-std",
+        "role": "frontend",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-fe-hardneg-std",
+        "role": "frontend",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-strong-std",
+        "role": "qa_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-moderate-std",
+        "role": "qa_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-failed-std",
+        "role": "qa_engineer",
+        "scenario": "explicit_failure",
+        "expected_label": "reject",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-conflict-std",
+        "role": "qa_engineer",
+        "scenario": "conflicting_critical",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-qa-hardneg-std",
+        "role": "qa_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-strong-std",
+        "role": "data_engineer",
+        "scenario": "strong",
+        "expected_label": "pass",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-moderate-std",
+        "role": "data_engineer",
+        "scenario": "moderate",
+        "expected_label": "waitlist",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-lowbd-std",
+        "role": "data_engineer",
+        "scenario": "lower_boundary",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-missing-std",
+        "role": "data_engineer",
+        "scenario": "missing_critical",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      },
+      {
+        "pair_id": "pair-de-hardneg-std",
+        "role": "data_engineer",
+        "scenario": "hard_negative",
+        "expected_label": "needs_review",
+        "outcome": "not_available",
+        "failure_reasons": []
+      }
+    ]
+  },
+  "stability": {
+    "case_count": 5,
+    "evaluable_case_count": 0,
+    "attempts_per_pair": 2,
+    "maximum_score_range": null,
+    "average_score_range": null,
+    "requirement_status_agreement_rate": null,
+    "usage_and_latency": {
+      "request_count": 1,
+      "requests_with_usage": 1,
+      "input_tokens": 4425,
+      "output_tokens": 755,
+      "total_tokens": 5180,
+      "cached_input_tokens": 0,
+      "reasoning_tokens": 0,
+      "total_duration_milliseconds": 78095,
+      "average_duration_milliseconds": 78095,
+      "maximum_duration_milliseconds": 78095
+    },
+    "passes_stability_policy": false,
+    "cases": [
+      {
+        "pair_id": "pair-da-strong-std",
+        "status": "not_evaluable",
+        "scores": [
+          100.0
+        ],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-be-failed-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-fe-conflict-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-qa-moderate-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      },
+      {
+        "pair_id": "pair-de-missing-std",
+        "status": "not_evaluable",
+        "scores": [],
+        "score_range": null,
+        "requirement_statuses_agree": null
+      }
+    ]
+  },
+  "hybrid_diagnostic": {
+    "executed": false,
+    "reason": "Live L3 valid-output coverage is insufficient for a hybrid diagnostic."
+  },
+  "quality_gate_passed": false,
+  "configuration_freeze_eligible": false,
+  "freeze_blockers": [
+    "The configured OpenRouter model did not satisfy the structured-output quality policy.",
+    "The five-role labels are Silver and have one human reviewer.",
+    "The three new roles do not yet have approved runtime configuration artifacts.",
+    "Held-out and frozen-test evaluation is intentionally not executed."
+  ]
+}

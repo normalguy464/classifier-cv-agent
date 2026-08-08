@@ -1,0 +1,93 @@
+schema_version: 1.0.0
+experiment_id: runtime-v2-hybrid-offset-tuning-v4
+experiment_version: 4.0.0
+status: ready_after_l3_validation
+reviewed_pairs_path: data/runtime_v2/reviewed/development_v1/pairs.jsonl
+offline_report_path: evaluation/reports/runtime_v2_offline_l1_l2_checkpoint_v1.json
+development_l3_report_path: evaluation/reports/runtime_v2_l3_development_panel_v2.json
+validation_l3_report_path: evaluation/reports/runtime_v2_l3_validation_v1.json
+validation_evaluation_allowed: false
+stage7_v1_test_allowed: false
+llm_provider_calls_allowed: false
+candidates:
+  - candidate_id: hybrid-v4-offset00
+    l1_weight: 0.20
+    l2_weight: 0.30
+    l3_weight: 0.50
+    l3_score_offset: 0
+    waitlist_minimum: 70
+    pass_minimum: 85
+    disagreement_points: 45
+    lower_boundary_minimum: 68
+    lower_boundary_maximum: 72
+    upper_boundary_minimum: 83
+    upper_boundary_maximum: 88
+  - candidate_id: hybrid-v4-offset05
+    l1_weight: 0.20
+    l2_weight: 0.30
+    l3_weight: 0.50
+    l3_score_offset: 5
+    waitlist_minimum: 70
+    pass_minimum: 85
+    disagreement_points: 45
+    lower_boundary_minimum: 68
+    lower_boundary_maximum: 72
+    upper_boundary_minimum: 83
+    upper_boundary_maximum: 88
+  - candidate_id: hybrid-v4-offset08
+    l1_weight: 0.20
+    l2_weight: 0.30
+    l3_weight: 0.50
+    l3_score_offset: 8
+    waitlist_minimum: 70
+    pass_minimum: 85
+    disagreement_points: 45
+    lower_boundary_minimum: 68
+    lower_boundary_maximum: 72
+    upper_boundary_minimum: 83
+    upper_boundary_maximum: 88
+  - candidate_id: hybrid-v4-offset10
+    l1_weight: 0.20
+    l2_weight: 0.30
+    l3_weight: 0.50
+    l3_score_offset: 10
+    waitlist_minimum: 70
+    pass_minimum: 85
+    disagreement_points: 45
+    lower_boundary_minimum: 68
+    lower_boundary_maximum: 72
+    upper_boundary_minimum: 83
+    upper_boundary_maximum: 88
+  - candidate_id: hybrid-v4-offset12
+    l1_weight: 0.20
+    l2_weight: 0.30
+    l3_weight: 0.50
+    l3_score_offset: 12
+    waitlist_minimum: 70
+    pass_minimum: 85
+    disagreement_points: 45
+    lower_boundary_minimum: 68
+    lower_boundary_maximum: 72
+    upper_boundary_minimum: 83
+    upper_boundary_maximum: 88
+  - candidate_id: hybrid-v4-offset15
+    l1_weight: 0.20
+    l2_weight: 0.30
+    l3_weight: 0.50
+    l3_score_offset: 15
+    waitlist_minimum: 70
+    pass_minimum: 85
+    disagreement_points: 45
+    lower_boundary_minimum: 68
+    lower_boundary_maximum: 72
+    upper_boundary_minimum: 83
+    upper_boundary_maximum: 88
+selection_policy:
+  development_selects_candidate: true
+  validation_selects_candidate: false
+  minimum_accuracy: 0.65
+  minimum_macro_f1: 0.60
+  minimum_needs_review_recall: 0.90
+  maximum_false_reject_count: 0
+  maximum_unsafe_pass_count: 0
+  maximum_review_rate: 0.80

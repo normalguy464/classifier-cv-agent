@@ -1,0 +1,3137 @@
+{
+  "report_schema_version": "1.0.0",
+  "report_id": "synthetic-expansion-v2-development-diagnostic",
+  "report_scope": "silver-development-controlled-l1-local-l2-deterministic-l3",
+  "is_final_performance": false,
+  "generated_at": "2026-07-31T21:10:00+07:00",
+  "dataset_traceability": {
+    "dataset_id": "synthetic-cv-jd-expansion-v2-reviewed-silver",
+    "dataset_version": "2.1.0",
+    "dataset_tier": "silver",
+    "reviewed_manifest_sha256": "7eb7e2a3a7e64f14c18db84b13f13ae3771b1caa99233c7462d720eaf5a13c3b",
+    "split_manifest_sha256": "747e0e197c259c65a9095db5f79568b85dc7ecdec289413f6e26bcbdf8f28cf7",
+    "partition_id": "synthetic-expansion-v2-development-silver",
+    "candidate_count": 30,
+    "pair_count": 150,
+    "held_out_partition_evaluated": false,
+    "held_out_results_generated": false,
+    "original_stage6_frozen_test_evaluated": false
+  },
+  "execution_strategy": {
+    "l1": "synthetic-v2-versioned-requirement-rules",
+    "l1_generator_vocabulary_alignment_risk": true,
+    "l2_model_identifier": "intfloat/multilingual-e5-base",
+    "l2_model_version": "multilingual-e5-base",
+    "l2_resolved_revision": "d128750597153bb5987e10b1c3493a34e5a4502a",
+    "configured_multilingual_l2_executed": true,
+    "l3": "deterministic-evidence-scorer-v1",
+    "l3_provider_identifier": "deterministic_fake",
+    "live_llm_provider_executed": false,
+    "prompt_version": "l3-evidence-rubric-v1",
+    "automatic_pass_gate_applied": false
+  },
+  "summary": {
+    "ground_truth_distribution": {
+      "needs_review": 97,
+      "pass": 30,
+      "reject": 8,
+      "waitlist": 15
+    },
+    "prediction_distribution": {
+      "needs_review": 60,
+      "pass": 90
+    },
+    "overall_metrics": {
+      "sample_count": 150,
+      "accuracy": 0.5466666666666666,
+      "macro_f1": 0.2906050955414013,
+      "cohen_kappa": 0.27038641115150813,
+      "labels": {
+        "pass": {
+          "precision": 0.3333333333333333,
+          "recall": 1.0,
+          "f1": 0.5,
+          "support": 30
+        },
+        "waitlist": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 15
+        },
+        "reject": {
+          "precision": 0.0,
+          "recall": 0.0,
+          "f1": 0.0,
+          "support": 8
+        },
+        "needs_review": {
+          "precision": 0.8666666666666667,
+          "recall": 0.5360824742268041,
+          "f1": 0.6624203821656052,
+          "support": 97
+        }
+      },
+      "confusion_matrix": [
+        [
+          30,
+          0,
+          0,
+          0
+        ],
+        [
+          15,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          8
+        ],
+        [
+          45,
+          0,
+          0,
+          52
+        ]
+      ]
+    },
+    "role_metrics": {
+      "data_analyst": {
+        "sample_count": 30,
+        "accuracy": 0.5333333333333333,
+        "macro_f1": 0.27667493796526055,
+        "cohen_kappa": 0.26315855955713663,
+        "labels": {
+          "pass": {
+            "precision": 0.3,
+            "recall": 1.0,
+            "f1": 0.4615384615384615,
+            "support": 6
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 3
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "needs_review": {
+            "precision": 1.0,
+            "recall": 0.47619047619047616,
+            "f1": 0.6451612903225806,
+            "support": 21
+          }
+        },
+        "confusion_matrix": [
+          [
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            3,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            11,
+            0,
+            0,
+            10
+          ]
+        ]
+      },
+      "python_backend": {
+        "sample_count": 30,
+        "accuracy": 0.4,
+        "macro_f1": 0.23538461538461536,
+        "cohen_kappa": 0.14285714285714285,
+        "labels": {
+          "pass": {
+            "precision": 0.3,
+            "recall": 1.0,
+            "f1": 0.4615384615384615,
+            "support": 6
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 5
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "needs_review": {
+            "precision": 0.6,
+            "recall": 0.4,
+            "f1": 0.48,
+            "support": 15
+          }
+        },
+        "confusion_matrix": [
+          [
+            6,
+            0,
+            0,
+            0
+          ],
+          [
+            5,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            9,
+            0,
+            0,
+            6
+          ]
+        ]
+      },
+      "frontend": {
+        "sample_count": 30,
+        "accuracy": 0.6666666666666666,
+        "macro_f1": 0.3390804597701149,
+        "cohen_kappa": 0.41176387543301446,
+        "labels": {
+          "pass": {
+            "precision": 0.5,
+            "recall": 1.0,
+            "f1": 0.6666666666666666,
+            "support": 10
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 1
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "needs_review": {
+            "precision": 1.0,
+            "recall": 0.5263157894736842,
+            "f1": 0.6896551724137931,
+            "support": 19
+          }
+        },
+        "confusion_matrix": [
+          [
+            10,
+            0,
+            0,
+            0
+          ],
+          [
+            1,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            9,
+            0,
+            0,
+            10
+          ]
+        ]
+      },
+      "qa_engineer": {
+        "sample_count": 30,
+        "accuracy": 0.6666666666666666,
+        "macro_f1": 0.3428571428571429,
+        "cohen_kappa": 0.3478265973536081,
+        "labels": {
+          "pass": {
+            "precision": 0.4,
+            "recall": 1.0,
+            "f1": 0.5714285714285715,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 2
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "needs_review": {
+            "precision": 0.8,
+            "recall": 0.8,
+            "f1": 0.8000000000000002,
+            "support": 20
+          }
+        },
+        "confusion_matrix": [
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            2,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            4
+          ],
+          [
+            4,
+            0,
+            0,
+            16
+          ]
+        ]
+      },
+      "data_engineer": {
+        "sample_count": 30,
+        "accuracy": 0.4666666666666667,
+        "macro_f1": 0.23958333333333334,
+        "cohen_kappa": 0.1999994000003,
+        "labels": {
+          "pass": {
+            "precision": 0.2,
+            "recall": 1.0,
+            "f1": 0.33333333333333337,
+            "support": 4
+          },
+          "waitlist": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 4
+          },
+          "reject": {
+            "precision": 0.0,
+            "recall": 0.0,
+            "f1": 0.0,
+            "support": 0
+          },
+          "needs_review": {
+            "precision": 1.0,
+            "recall": 0.45454545454545453,
+            "f1": 0.625,
+            "support": 22
+          }
+        },
+        "confusion_matrix": [
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            4,
+            0,
+            0,
+            0
+          ],
+          [
+            0,
+            0,
+            0,
+            0
+          ],
+          [
+            12,
+            0,
+            0,
+            10
+          ]
+        ]
+      }
+    },
+    "l1_requirement_status_match_rate": 1.0,
+    "average_l2_score": 100.0,
+    "l2_score_at_100_count": 150,
+    "deterministic_l3_total_score_mae": 27.8,
+    "needs_review_recall": 0.5360824742268041,
+    "review_rate": 0.4,
+    "false_reject_count": 0,
+    "unsafe_pass_count": 45
+  },
+  "limitations": [
+    "All records are synthetic Silver data reviewed by one person.",
+    "Five pairs from one candidate are correlated and are not independent samples.",
+    "L1 rules intentionally reuse generator vocabulary and cannot establish real-CV generalization.",
+    "L3 uses a deterministic fake; live provider quality was not measured in this report.",
+    "The held-out Silver partition and the original Stage 6 frozen test were not evaluated."
+  ],
+  "cases": [
+    {
+      "pair_id": "pair-da-strong-min",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-strong-v2",
+      "job_profile_id": "junior-data-analyst-min-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-missing-min",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-missing-v2",
+      "job_profile_id": "junior-data-analyst-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 75.0,
+        "l2": 100.0,
+        "l3": 86.0
+      },
+      "final_score": 84.55,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-da-lowbd-min",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-lowbd-v2",
+      "job_profile_id": "junior-data-analyst-min-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-upbd-min",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-upbd-v2",
+      "job_profile_id": "junior-data-analyst-min-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-transfer-min",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-transfer-v2",
+      "job_profile_id": "junior-data-analyst-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-hardneg-min",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-hardneg-v2",
+      "job_profile_id": "junior-data-analyst-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 78.0
+      },
+      "final_score": 48.4,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-da-strong-std",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-strong-v2",
+      "job_profile_id": "junior-data-analyst-std-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-missing-std",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-missing-v2",
+      "job_profile_id": "junior-data-analyst-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 75.0,
+        "l2": 100.0,
+        "l3": 86.0
+      },
+      "final_score": 84.55,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-da-lowbd-std",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-lowbd-v2",
+      "job_profile_id": "junior-data-analyst-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-upbd-std",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-upbd-v2",
+      "job_profile_id": "junior-data-analyst-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-transfer-std",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-transfer-v2",
+      "job_profile_id": "junior-data-analyst-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-hardneg-std",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-hardneg-v2",
+      "job_profile_id": "junior-data-analyst-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 78.0
+      },
+      "final_score": 48.4,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-da-strong-pref",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-strong-v2",
+      "job_profile_id": "junior-data-analyst-pref-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-missing-pref",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-missing-v2",
+      "job_profile_id": "junior-data-analyst-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 75.0,
+        "l2": 100.0,
+        "l3": 86.0
+      },
+      "final_score": 84.55,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-da-lowbd-pref",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-lowbd-v2",
+      "job_profile_id": "junior-data-analyst-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-upbd-pref",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-upbd-v2",
+      "job_profile_id": "junior-data-analyst-pref-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-transfer-pref",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-transfer-v2",
+      "job_profile_id": "junior-data-analyst-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-hardneg-pref",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-hardneg-v2",
+      "job_profile_id": "junior-data-analyst-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 78.0
+      },
+      "final_score": 48.4,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-da-strong-amb",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-strong-v2",
+      "job_profile_id": "junior-data-analyst-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-missing-amb",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-missing-v2",
+      "job_profile_id": "junior-data-analyst-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 75.0,
+        "l2": 100.0,
+        "l3": 86.0
+      },
+      "final_score": 84.55,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-da-lowbd-amb",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-lowbd-v2",
+      "job_profile_id": "junior-data-analyst-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-upbd-amb",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-upbd-v2",
+      "job_profile_id": "junior-data-analyst-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-transfer-amb",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-transfer-v2",
+      "job_profile_id": "junior-data-analyst-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-hardneg-amb",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-hardneg-v2",
+      "job_profile_id": "junior-data-analyst-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 78.0
+      },
+      "final_score": 48.4,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-da-strong-proj",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-strong-v2",
+      "job_profile_id": "junior-data-analyst-proj-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-missing-proj",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-missing-v2",
+      "job_profile_id": "junior-data-analyst-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 75.0,
+        "l2": 100.0,
+        "l3": 86.0
+      },
+      "final_score": 84.55,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-da-lowbd-proj",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-lowbd-v2",
+      "job_profile_id": "junior-data-analyst-proj-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-upbd-proj",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-upbd-v2",
+      "job_profile_id": "junior-data-analyst-proj-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-transfer-proj",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-transfer-v2",
+      "job_profile_id": "junior-data-analyst-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-da-hardneg-proj",
+      "role": "data_analyst",
+      "cv_profile_id": "cv-syn-da-hardneg-v2",
+      "job_profile_id": "junior-data-analyst-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 78.0
+      },
+      "final_score": 48.4,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-be-strong-min",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-strong-v2",
+      "job_profile_id": "junior-python-backend-min-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-moderate-min",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-moderate-v2",
+      "job_profile_id": "junior-python-backend-min-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-failed-min",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-failed-v2",
+      "job_profile_id": "junior-python-backend-min-v2",
+      "expected_label": "reject",
+      "predicted_label": "needs_review",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-be-lowbd-min",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-lowbd-v2",
+      "job_profile_id": "junior-python-backend-min-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-upbd-min",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-upbd-v2",
+      "job_profile_id": "junior-python-backend-min-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-hardneg-min",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-hardneg-v2",
+      "job_profile_id": "junior-python-backend-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-be-strong-std",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-strong-v2",
+      "job_profile_id": "junior-python-backend-std-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-moderate-std",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-moderate-v2",
+      "job_profile_id": "junior-python-backend-std-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-failed-std",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-failed-v2",
+      "job_profile_id": "junior-python-backend-std-v2",
+      "expected_label": "reject",
+      "predicted_label": "needs_review",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-be-lowbd-std",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-lowbd-v2",
+      "job_profile_id": "junior-python-backend-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-upbd-std",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-upbd-v2",
+      "job_profile_id": "junior-python-backend-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-hardneg-std",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-hardneg-v2",
+      "job_profile_id": "junior-python-backend-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-be-strong-pref",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-strong-v2",
+      "job_profile_id": "junior-python-backend-pref-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-moderate-pref",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-moderate-v2",
+      "job_profile_id": "junior-python-backend-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-failed-pref",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-failed-v2",
+      "job_profile_id": "junior-python-backend-pref-v2",
+      "expected_label": "reject",
+      "predicted_label": "needs_review",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-be-lowbd-pref",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-lowbd-v2",
+      "job_profile_id": "junior-python-backend-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-upbd-pref",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-upbd-v2",
+      "job_profile_id": "junior-python-backend-pref-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-hardneg-pref",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-hardneg-v2",
+      "job_profile_id": "junior-python-backend-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-be-strong-amb",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-strong-v2",
+      "job_profile_id": "junior-python-backend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-moderate-amb",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-moderate-v2",
+      "job_profile_id": "junior-python-backend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-failed-amb",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-failed-v2",
+      "job_profile_id": "junior-python-backend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-be-lowbd-amb",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-lowbd-v2",
+      "job_profile_id": "junior-python-backend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-upbd-amb",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-upbd-v2",
+      "job_profile_id": "junior-python-backend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-hardneg-amb",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-hardneg-v2",
+      "job_profile_id": "junior-python-backend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-be-strong-proj",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-strong-v2",
+      "job_profile_id": "junior-python-backend-proj-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-moderate-proj",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-moderate-v2",
+      "job_profile_id": "junior-python-backend-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-failed-proj",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-failed-v2",
+      "job_profile_id": "junior-python-backend-proj-v2",
+      "expected_label": "reject",
+      "predicted_label": "needs_review",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-be-lowbd-proj",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-lowbd-v2",
+      "job_profile_id": "junior-python-backend-proj-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-upbd-proj",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-upbd-v2",
+      "job_profile_id": "junior-python-backend-proj-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-be-hardneg-proj",
+      "role": "python_backend",
+      "cv_profile_id": "cv-syn-be-hardneg-v2",
+      "job_profile_id": "junior-python-backend-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-strong-min",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-strong-v2",
+      "job_profile_id": "junior-frontend-min-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-solid-min",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-solid-v2",
+      "job_profile_id": "junior-frontend-min-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-conflict-min",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-conflict-v2",
+      "job_profile_id": "junior-frontend-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-upbd-min",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-upbd-v2",
+      "job_profile_id": "junior-frontend-min-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-transfer-min",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-transfer-v2",
+      "job_profile_id": "junior-frontend-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-hardneg-min",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-hardneg-v2",
+      "job_profile_id": "junior-frontend-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-strong-std",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-strong-v2",
+      "job_profile_id": "junior-frontend-std-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-solid-std",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-solid-v2",
+      "job_profile_id": "junior-frontend-std-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-conflict-std",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-conflict-v2",
+      "job_profile_id": "junior-frontend-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-upbd-std",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-upbd-v2",
+      "job_profile_id": "junior-frontend-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-transfer-std",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-transfer-v2",
+      "job_profile_id": "junior-frontend-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-hardneg-std",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-hardneg-v2",
+      "job_profile_id": "junior-frontend-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-strong-pref",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-strong-v2",
+      "job_profile_id": "junior-frontend-pref-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-solid-pref",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-solid-v2",
+      "job_profile_id": "junior-frontend-pref-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-conflict-pref",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-conflict-v2",
+      "job_profile_id": "junior-frontend-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-upbd-pref",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-upbd-v2",
+      "job_profile_id": "junior-frontend-pref-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-transfer-pref",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-transfer-v2",
+      "job_profile_id": "junior-frontend-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-hardneg-pref",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-hardneg-v2",
+      "job_profile_id": "junior-frontend-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-strong-amb",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-strong-v2",
+      "job_profile_id": "junior-frontend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-solid-amb",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-solid-v2",
+      "job_profile_id": "junior-frontend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-conflict-amb",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-conflict-v2",
+      "job_profile_id": "junior-frontend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-upbd-amb",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-upbd-v2",
+      "job_profile_id": "junior-frontend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-transfer-amb",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-transfer-v2",
+      "job_profile_id": "junior-frontend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-hardneg-amb",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-hardneg-v2",
+      "job_profile_id": "junior-frontend-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-strong-proj",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-strong-v2",
+      "job_profile_id": "junior-frontend-proj-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-solid-proj",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-solid-v2",
+      "job_profile_id": "junior-frontend-proj-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-conflict-proj",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-conflict-v2",
+      "job_profile_id": "junior-frontend-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-fe-upbd-proj",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-upbd-v2",
+      "job_profile_id": "junior-frontend-proj-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-transfer-proj",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-transfer-v2",
+      "job_profile_id": "junior-frontend-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-fe-hardneg-proj",
+      "role": "frontend",
+      "cv_profile_id": "cv-syn-fe-hardneg-v2",
+      "job_profile_id": "junior-frontend-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-strong-min",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-strong-v2",
+      "job_profile_id": "junior-qa-engineer-min-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-moderate-min",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-moderate-v2",
+      "job_profile_id": "junior-qa-engineer-min-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-missing-min",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-missing-v2",
+      "job_profile_id": "junior-qa-engineer-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-conflict-min",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-conflict-v2",
+      "job_profile_id": "junior-qa-engineer-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-failed-min",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-failed-v2",
+      "job_profile_id": "junior-qa-engineer-min-v2",
+      "expected_label": "reject",
+      "predicted_label": "needs_review",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-hardneg-min",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-hardneg-v2",
+      "job_profile_id": "junior-qa-engineer-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-strong-std",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-strong-v2",
+      "job_profile_id": "junior-qa-engineer-std-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-moderate-std",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-moderate-v2",
+      "job_profile_id": "junior-qa-engineer-std-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-missing-std",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-missing-v2",
+      "job_profile_id": "junior-qa-engineer-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-conflict-std",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-conflict-v2",
+      "job_profile_id": "junior-qa-engineer-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-failed-std",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-failed-v2",
+      "job_profile_id": "junior-qa-engineer-std-v2",
+      "expected_label": "reject",
+      "predicted_label": "needs_review",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-hardneg-std",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-hardneg-v2",
+      "job_profile_id": "junior-qa-engineer-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-strong-pref",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-strong-v2",
+      "job_profile_id": "junior-qa-engineer-pref-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-moderate-pref",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-moderate-v2",
+      "job_profile_id": "junior-qa-engineer-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-missing-pref",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-missing-v2",
+      "job_profile_id": "junior-qa-engineer-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-conflict-pref",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-conflict-v2",
+      "job_profile_id": "junior-qa-engineer-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-failed-pref",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-failed-v2",
+      "job_profile_id": "junior-qa-engineer-pref-v2",
+      "expected_label": "reject",
+      "predicted_label": "needs_review",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-hardneg-pref",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-hardneg-v2",
+      "job_profile_id": "junior-qa-engineer-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-strong-amb",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-strong-v2",
+      "job_profile_id": "junior-qa-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-moderate-amb",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-moderate-v2",
+      "job_profile_id": "junior-qa-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-missing-amb",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-missing-v2",
+      "job_profile_id": "junior-qa-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-conflict-amb",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-conflict-v2",
+      "job_profile_id": "junior-qa-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-failed-amb",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-failed-v2",
+      "job_profile_id": "junior-qa-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-hardneg-amb",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-hardneg-v2",
+      "job_profile_id": "junior-qa-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-strong-proj",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-strong-v2",
+      "job_profile_id": "junior-qa-engineer-proj-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-moderate-proj",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-moderate-v2",
+      "job_profile_id": "junior-qa-engineer-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-qa-missing-proj",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-missing-v2",
+      "job_profile_id": "junior-qa-engineer-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-conflict-proj",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-conflict-v2",
+      "job_profile_id": "junior-qa-engineer-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "conflicting-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-failed-proj",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-failed-v2",
+      "job_profile_id": "junior-qa-engineer-proj-v2",
+      "expected_label": "reject",
+      "predicted_label": "needs_review",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "critical-unsatisfied-at-or-above-waitlist-threshold"
+      ]
+    },
+    {
+      "pair_id": "pair-qa-hardneg-proj",
+      "role": "qa_engineer",
+      "cv_profile_id": "cv-syn-qa-hardneg-v2",
+      "job_profile_id": "junior-qa-engineer-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-de-strong-min",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-strong-v2",
+      "job_profile_id": "junior-data-engineer-min-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-moderate-min",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-moderate-v2",
+      "job_profile_id": "junior-data-engineer-min-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-missing-min",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-missing-v2",
+      "job_profile_id": "junior-data-engineer-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-de-lowbd-min",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-lowbd-v2",
+      "job_profile_id": "junior-data-engineer-min-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-transfer-min",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-transfer-v2",
+      "job_profile_id": "junior-data-engineer-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-hardneg-min",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-hardneg-v2",
+      "job_profile_id": "junior-data-engineer-min-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-de-strong-std",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-strong-v2",
+      "job_profile_id": "junior-data-engineer-std-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-moderate-std",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-moderate-v2",
+      "job_profile_id": "junior-data-engineer-std-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-missing-std",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-missing-v2",
+      "job_profile_id": "junior-data-engineer-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-de-lowbd-std",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-lowbd-v2",
+      "job_profile_id": "junior-data-engineer-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-transfer-std",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-transfer-v2",
+      "job_profile_id": "junior-data-engineer-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-hardneg-std",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-hardneg-v2",
+      "job_profile_id": "junior-data-engineer-std-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-de-strong-pref",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-strong-v2",
+      "job_profile_id": "junior-data-engineer-pref-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-moderate-pref",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-moderate-v2",
+      "job_profile_id": "junior-data-engineer-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-missing-pref",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-missing-v2",
+      "job_profile_id": "junior-data-engineer-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-de-lowbd-pref",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-lowbd-v2",
+      "job_profile_id": "junior-data-engineer-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-transfer-pref",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-transfer-v2",
+      "job_profile_id": "junior-data-engineer-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-hardneg-pref",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-hardneg-v2",
+      "job_profile_id": "junior-data-engineer-pref-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-de-strong-amb",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-strong-v2",
+      "job_profile_id": "junior-data-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-moderate-amb",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-moderate-v2",
+      "job_profile_id": "junior-data-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-missing-amb",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-missing-v2",
+      "job_profile_id": "junior-data-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-de-lowbd-amb",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-lowbd-v2",
+      "job_profile_id": "junior-data-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-transfer-amb",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-transfer-v2",
+      "job_profile_id": "junior-data-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-hardneg-amb",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-hardneg-v2",
+      "job_profile_id": "junior-data-engineer-amb-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    },
+    {
+      "pair_id": "pair-de-strong-proj",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-strong-v2",
+      "job_profile_id": "junior-data-engineer-proj-v2",
+      "expected_label": "pass",
+      "predicted_label": "pass",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-moderate-proj",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-moderate-v2",
+      "job_profile_id": "junior-data-engineer-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-missing-proj",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-missing-v2",
+      "job_profile_id": "junior-data-engineer-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 80.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 88.9,
+      "review_reasons": [
+        "missing-critical-evidence"
+      ]
+    },
+    {
+      "pair_id": "pair-de-lowbd-proj",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-lowbd-v2",
+      "job_profile_id": "junior-data-engineer-proj-v2",
+      "expected_label": "waitlist",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-transfer-proj",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-transfer-v2",
+      "job_profile_id": "junior-data-engineer-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "pass",
+      "label_match": false,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 100.0,
+        "l2": 100.0,
+        "l3": 93.0
+      },
+      "final_score": 97.9,
+      "review_reasons": []
+    },
+    {
+      "pair_id": "pair-de-hardneg-proj",
+      "role": "data_engineer",
+      "cv_profile_id": "cv-syn-de-hardneg-v2",
+      "job_profile_id": "junior-data-engineer-proj-v2",
+      "expected_label": "needs_review",
+      "predicted_label": "needs_review",
+      "label_match": true,
+      "l1_requirement_status_match": true,
+      "level_scores": {
+        "l1": 0.0,
+        "l2": 100.0,
+        "l3": 85.0
+      },
+      "final_score": 50.5,
+      "review_reasons": [
+        "missing-critical-evidence",
+        "low-score-without-explicit-critical-unsatisfied",
+        "large-level-disagreement"
+      ]
+    }
+  ]
+}

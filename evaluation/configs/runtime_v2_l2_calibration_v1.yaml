@@ -1,0 +1,32 @@
+schema_version: 1.0.0
+experiment_id: runtime-v2-l2-calibration-v1
+experiment_version: 1.0.0
+status: approved_for_offline_tuning
+base_tuning_report_path: evaluation/reports/runtime_v2_l2_tuning_v3.json
+semantic_candidate_id: l2-quality-v3-70-95-min20
+reviewed_dataset_directory: data/runtime_v2/reviewed/development_v1
+split_manifest_path: data/runtime_v2/splits/development_v1_split.json
+stage7_v1_test_allowed: false
+llm_provider_calls_allowed: false
+training_partition: development
+selection_partition: validation
+feature_schema:
+  - mandatory-requirements
+  - technical-specialization
+  - role-capability
+  - projects-and-impact
+  - communication-and-evidence-quality
+  - role-one-hot
+model_family: sklearn-extra-trees-regressor
+n_estimators: 200
+random_state: 4208
+candidates:
+  - candidate_id: extra-trees-leaf2-v1
+    minimum_samples_per_leaf: 2
+  - candidate_id: extra-trees-leaf3-v1
+    minimum_samples_per_leaf: 3
+  - candidate_id: extra-trees-leaf4-v1
+    minimum_samples_per_leaf: 4
+selected_candidate_id: extra-trees-leaf3-v1
+model_output_path: evaluation/models/runtime_v2_l2_calibrator_development_v1.joblib
+selection_rationale: Chọn leaf 3 vì đạt toàn bộ gate trên development và validation, đồng thời regularization mạnh hơn leaf 2.

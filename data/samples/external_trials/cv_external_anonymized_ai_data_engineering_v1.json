@@ -1,0 +1,261 @@
+{
+  "schema_version": "1.0.0",
+  "cv_profile_id": "cv-external-anonymized-ai-data-v1",
+  "candidate_reference": "candidate-anonymized-external-001",
+  "summary": "Final-year Data Engineering student with internship and project experience in Python backend systems, retrieval pipelines, databases, automated testing and containerized deployment.",
+  "skills": [
+    {
+      "name": "Python",
+      "evidence_ids": [
+        "ev-ext-ai-data-python",
+        "ev-ext-ai-data-internship"
+      ]
+    },
+    {
+      "name": "Relational and document databases",
+      "evidence_ids": [
+        "ev-ext-ai-data-databases"
+      ]
+    },
+    {
+      "name": "RAG data ingestion and retrieval",
+      "evidence_ids": [
+        "ev-ext-ai-data-rag-pipeline",
+        "ev-ext-ai-data-metadata"
+      ]
+    },
+    {
+      "name": "Docker and automated testing",
+      "evidence_ids": [
+        "ev-ext-ai-data-delivery"
+      ]
+    },
+    {
+      "name": "Technical communication",
+      "evidence_ids": [
+        "ev-ext-ai-data-communication"
+      ]
+    }
+  ],
+  "work_experiences": [
+    {
+      "experience_id": "experience-ext-ai-engineering-internship",
+      "title": "AI Engineering Intern",
+      "organization_reference": null,
+      "duration_months": 6,
+      "summary": "Developed Python backend components for an AI application, implemented retrieval workflows, integrated model APIs and measured retrieval quality, latency and usage.",
+      "technologies": [
+        "Python",
+        "RAG",
+        "Vector database",
+        "Docker",
+        "LLM API"
+      ],
+      "evidence_ids": [
+        "ev-ext-ai-data-internship",
+        "ev-ext-ai-data-python",
+        "ev-ext-ai-data-rag-pipeline",
+        "ev-ext-ai-data-evaluation",
+        "ev-ext-ai-data-delivery"
+      ]
+    },
+    {
+      "experience_id": "experience-ext-technical-teaching",
+      "title": "Programming Instructor and Customer Support",
+      "organization_reference": null,
+      "duration_months": 8,
+      "summary": "Explained programming concepts, clarified user needs, prepared instructions and provided technical support in a customer-facing environment.",
+      "technologies": [
+        "Programming education",
+        "Technical documentation"
+      ],
+      "evidence_ids": [
+        "ev-ext-ai-data-communication"
+      ]
+    }
+  ],
+  "education": [
+    {
+      "education_id": "education-ext-data-engineering",
+      "degree": "Bachelor program",
+      "field_of_study": "Data Engineering",
+      "institution_reference": null,
+      "evidence_ids": [
+        "ev-ext-ai-data-education"
+      ]
+    }
+  ],
+  "projects": [
+    {
+      "project_id": "project-ext-agentic-rag-backend",
+      "title": "Anonymized agentic retrieval backend",
+      "summary": "Built a modular Python backend that ingests documents, preserves structured metadata, indexes content for semantic retrieval, integrates multiple model providers and supports repeatable deployment.",
+      "technologies": [
+        "Python",
+        "RAG",
+        "Vector database",
+        "Database migrations",
+        "Automated tests",
+        "Docker Compose"
+      ],
+      "evidence_ids": [
+        "ev-ext-ai-data-python",
+        "ev-ext-ai-data-rag-pipeline",
+        "ev-ext-ai-data-metadata",
+        "ev-ext-ai-data-delivery",
+        "ev-ext-ai-data-project-scope"
+      ]
+    }
+  ],
+  "certifications": [
+    {
+      "certification_id": "certification-ext-cloud-data-foundations",
+      "name": "Cloud, data engineering and machine learning foundation courses",
+      "issuer_reference": null,
+      "evidence_ids": [
+        "ev-ext-ai-data-certifications"
+      ]
+    }
+  ],
+  "evidence": [
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-education",
+      "source_type": "manual",
+      "section": "education",
+      "text": "Final-year student in a Data Engineering bachelor program with coursework related to AI systems, retrieval and cloud foundations.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-education"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-internship",
+      "source_type": "manual",
+      "section": "work_experience",
+      "text": "A six-month internship involved developing backend components for an AI application and connecting application logic, data retrieval and external model services.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-internship"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-python",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "Python was used as the primary language for modular backend logic, document processing, retrieval orchestration and API integration.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-python"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-databases",
+      "source_type": "manual",
+      "section": "skills",
+      "text": "The profile lists practical work with relational and document databases, CRUD operations, data flows and basic backend integration.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-databases"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-rag-pipeline",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "A retrieval pipeline parsed documents, applied structured chunking, indexed content in a vector database and retrieved source-linked passages.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-rag-pipeline"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-metadata",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "The document pipeline preserved reusable metadata for source, hierarchy, timestamps and version information to support traceability and later indexing.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-metadata"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-evaluation",
+      "source_type": "manual",
+      "section": "work_experience",
+      "text": "The internship evaluated retrieval quality, response latency and model API usage and introduced semantic caching for repeated queries.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-evaluation"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-delivery",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "The project included database migrations, environment configuration, automated tests, Docker and Docker Compose for repeatable deployment.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-delivery"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-project-scope",
+      "source_type": "manual",
+      "section": "projects",
+      "text": "The project describes a production-oriented architecture and maintainability goals, but does not explicitly document intermediate SQL, batch ETL, warehouse modeling or data-quality checks.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-scope"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-communication",
+      "source_type": "manual",
+      "section": "work_experience",
+      "text": "Customer-facing teaching work required requirement clarification, accessible technical explanations, written instructions and stakeholder communication.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-communication"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    },
+    {
+      "schema_version": "1.0.0",
+      "evidence_id": "ev-ext-ai-data-certifications",
+      "source_type": "manual",
+      "section": "certifications",
+      "text": "Completed foundation-level courses covering cloud systems, data engineering and machine learning.",
+      "location": {
+        "source_record_id": "record-ext-anonymized-certifications"
+      },
+      "extraction_confidence": null,
+      "is_verified": false
+    }
+  ],
+  "quality_warnings": [
+    {
+      "code": "manual-anonymized-adaptation",
+      "severity": "info",
+      "message": "This profile is a manually anonymized paraphrase for a Stage 8 trial and is not direct Parser Agent output or verified candidate information."
+    }
+  ]
+}

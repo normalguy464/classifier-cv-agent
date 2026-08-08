@@ -1,0 +1,1789 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "runtime-v2-hybrid-expanded-development-v5",
+  "generated_at": "2026-08-08T23:00:00+07:00",
+  "llm_provider_calls_made": false,
+  "stage7_v1_test_accessed": false,
+  "development_candidates": [
+    {
+      "candidate_id": "hybrid-v5-pass81",
+      "sample_count": 30,
+      "accuracy": 0.8,
+      "macro_f1": 0.7470751231527094,
+      "cohen_kappa": 0.7034594421479026,
+      "needs_review_recall": 1.0,
+      "review_rate": 0.5666666666666667,
+      "false_reject_count": 0,
+      "false_reject_case_ids": [],
+      "unsafe_pass_count": 0,
+      "unsafe_pass_case_ids": [],
+      "confusion_matrix": [
+        [
+          7,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          12
+        ]
+      ],
+      "cases": [
+        {
+          "pair_id": "v2d-pair-be-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 83.31,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-02",
+          "expected_label": "pass",
+          "predicted_label": "waitlist",
+          "final_score": 75.97,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-04",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 78.34,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 72.07,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-be-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 59.57,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-09",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 55.08,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 86.23,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 81.95,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.96,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 58.91,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-14",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 84.28,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.86,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 87.75,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 79.47,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 67.57,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 32.03,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 33.65,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.38,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 84.63,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-fe-04",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 80.81,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.43,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-10",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.57,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 24.57,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-14",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 80.22,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-02",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 86.1,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 82.53,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.54,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 31.4,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-11",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 73.37,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-14",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 84.91,
+          "review_reasons": []
+        }
+      ]
+    },
+    {
+      "candidate_id": "hybrid-v5-pass82",
+      "sample_count": 30,
+      "accuracy": 0.8,
+      "macro_f1": 0.781896551724138,
+      "cohen_kappa": 0.7054010302125974,
+      "needs_review_recall": 1.0,
+      "review_rate": 0.5666666666666667,
+      "false_reject_count": 0,
+      "false_reject_case_ids": [],
+      "unsafe_pass_count": 0,
+      "unsafe_pass_case_ids": [],
+      "confusion_matrix": [
+        [
+          6,
+          1,
+          0,
+          2
+        ],
+        [
+          0,
+          2,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          12
+        ]
+      ],
+      "cases": [
+        {
+          "pair_id": "v2d-pair-be-01",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 83.31,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-be-02",
+          "expected_label": "pass",
+          "predicted_label": "waitlist",
+          "final_score": 75.97,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-04",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 78.34,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 72.07,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-be-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 59.57,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-09",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 55.08,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 86.23,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 81.95,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.96,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 58.91,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-14",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 84.28,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.86,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 87.75,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-03",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 79.47,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 67.57,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 32.03,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 33.65,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.38,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 84.63,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-fe-04",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 80.81,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.43,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-10",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.57,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 24.57,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-14",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 80.22,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-02",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 86.1,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 82.53,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.54,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 31.4,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-11",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 73.37,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-14",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 84.91,
+          "review_reasons": []
+        }
+      ]
+    },
+    {
+      "candidate_id": "hybrid-v5-pass83",
+      "sample_count": 30,
+      "accuracy": 0.7333333333333333,
+      "macro_f1": 0.725,
+      "cohen_kappa": 0.6103903314222932,
+      "needs_review_recall": 1.0,
+      "review_rate": 0.6,
+      "false_reject_count": 0,
+      "false_reject_case_ids": [],
+      "unsafe_pass_count": 0,
+      "unsafe_pass_case_ids": [],
+      "confusion_matrix": [
+        [
+          3,
+          2,
+          0,
+          4
+        ],
+        [
+          0,
+          3,
+          0,
+          2
+        ],
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          12
+        ]
+      ],
+      "cases": [
+        {
+          "pair_id": "v2d-pair-be-01",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 83.31,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-be-02",
+          "expected_label": "pass",
+          "predicted_label": "waitlist",
+          "final_score": 75.97,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-04",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 78.34,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 72.07,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-be-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 59.57,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-09",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 55.08,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 86.23,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 81.95,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.96,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 58.91,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-14",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 84.28,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.86,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 87.75,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-03",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 79.47,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 67.57,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 32.03,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 33.65,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.38,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-01",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 84.63,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-04",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 80.81,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-fe-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.43,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-10",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.57,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 24.57,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-14",
+          "expected_label": "pass",
+          "predicted_label": "waitlist",
+          "final_score": 80.22,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-02",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 86.1,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 82.53,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.54,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 31.4,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-11",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 73.37,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-14",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 84.91,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        }
+      ]
+    },
+    {
+      "candidate_id": "hybrid-v5-pass82-l2-40",
+      "sample_count": 30,
+      "accuracy": 0.8,
+      "macro_f1": 0.7470751231527094,
+      "cohen_kappa": 0.7034594421479026,
+      "needs_review_recall": 1.0,
+      "review_rate": 0.5666666666666667,
+      "false_reject_count": 0,
+      "false_reject_case_ids": [],
+      "unsafe_pass_count": 0,
+      "unsafe_pass_case_ids": [],
+      "confusion_matrix": [
+        [
+          7,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          12
+        ]
+      ],
+      "cases": [
+        {
+          "pair_id": "v2d-pair-be-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 84.68,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-02",
+          "expected_label": "pass",
+          "predicted_label": "waitlist",
+          "final_score": 76.76,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-04",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 78.85,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 72.63,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-be-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 61.03,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-09",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 55.04,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 85.91,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 82.86,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.41,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 60.48,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-14",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 84.77,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.28,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 87.93,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 80.36,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 68.5,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 32.04,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 33.67,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.71,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 85.78,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-fe-04",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 81.34,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.17,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-10",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.36,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 25.82,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-14",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 82.03,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-02",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 86.94,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 83.24,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.85,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 31.2,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-11",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 75.42,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-14",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 85.48,
+          "review_reasons": []
+        }
+      ]
+    },
+    {
+      "candidate_id": "hybrid-v5-pass82-l1-25",
+      "sample_count": 30,
+      "accuracy": 0.7333333333333333,
+      "macro_f1": 0.7094907407407408,
+      "cohen_kappa": 0.6135260869565218,
+      "needs_review_recall": 0.8333333333333334,
+      "review_rate": 0.5,
+      "false_reject_count": 0,
+      "false_reject_case_ids": [],
+      "unsafe_pass_count": 0,
+      "unsafe_pass_case_ids": [],
+      "confusion_matrix": [
+        [
+          7,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          1,
+          0,
+          4
+        ],
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          2,
+          0,
+          10
+        ]
+      ],
+      "cases": [
+        {
+          "pair_id": "v2d-pair-be-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 84.61,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-02",
+          "expected_label": "pass",
+          "predicted_label": "waitlist",
+          "final_score": 77.62,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-04",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 79.79,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 72.67,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-be-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 61.12,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-09",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 54.13,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 87.03,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 83.25,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.61,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 60.21,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-14",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 85.35,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-15",
+          "expected_label": "needs_review",
+          "predicted_label": "waitlist",
+          "final_score": 73.51,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 88.55,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 80.92,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 68.52,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied",
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 30.03,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 31.55,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-15",
+          "expected_label": "needs_review",
+          "predicted_label": "waitlist",
+          "final_score": 73.23,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-fe-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 85.81,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-fe-04",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 82.11,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.48,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-10",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.62,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 23.27,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-14",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 81.8,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-02",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 87.13,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 83.76,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 67.44,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 29.4,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-11",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 74.17,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-14",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 85.96,
+          "review_reasons": []
+        }
+      ]
+    },
+    {
+      "candidate_id": "hybrid-v5-pass82-upper85",
+      "sample_count": 30,
+      "accuracy": 0.7,
+      "macro_f1": 0.6875,
+      "cohen_kappa": 0.5514950911137723,
+      "needs_review_recall": 1.0,
+      "review_rate": 0.6666666666666666,
+      "false_reject_count": 0,
+      "false_reject_case_ids": [],
+      "unsafe_pass_count": 0,
+      "unsafe_pass_case_ids": [],
+      "confusion_matrix": [
+        [
+          3,
+          1,
+          0,
+          5
+        ],
+        [
+          0,
+          2,
+          0,
+          3
+        ],
+        [
+          0,
+          0,
+          4,
+          0
+        ],
+        [
+          0,
+          0,
+          0,
+          12
+        ]
+      ],
+      "cases": [
+        {
+          "pair_id": "v2d-pair-be-01",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 83.31,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-be-02",
+          "expected_label": "pass",
+          "predicted_label": "waitlist",
+          "final_score": 75.97,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-04",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 78.34,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 72.07,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-be-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 59.57,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-be-09",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 55.08,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 86.23,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 81.95,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.96,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-07",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 58.91,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-da-14",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 84.28,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-da-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.86,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-01",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 87.75,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-03",
+          "expected_label": "waitlist",
+          "predicted_label": "waitlist",
+          "final_score": 79.47,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-06",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 67.57,
+          "review_reasons": [
+            "conflicting-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 32.03,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-de-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 33.65,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-de-15",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 71.38,
+          "review_reasons": [
+            "lower-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-01",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 84.63,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-04",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 80.81,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.43,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-10",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 65.57,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-13",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 24.57,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-fe-14",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 80.22,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-02",
+          "expected_label": "pass",
+          "predicted_label": "pass",
+          "final_score": 86.1,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-03",
+          "expected_label": "waitlist",
+          "predicted_label": "needs_review",
+          "final_score": 82.53,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-05",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 66.54,
+          "review_reasons": [
+            "missing-critical-evidence",
+            "low-score-without-explicit-critical-unsatisfied"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-08",
+          "expected_label": "reject",
+          "predicted_label": "reject",
+          "final_score": 31.4,
+          "review_reasons": []
+        },
+        {
+          "pair_id": "v2d-pair-qa-11",
+          "expected_label": "needs_review",
+          "predicted_label": "needs_review",
+          "final_score": 73.37,
+          "review_reasons": [
+            "conflicting-critical-evidence"
+          ]
+        },
+        {
+          "pair_id": "v2d-pair-qa-14",
+          "expected_label": "pass",
+          "predicted_label": "needs_review",
+          "final_score": 84.91,
+          "review_reasons": [
+            "upper-threshold-boundary"
+          ]
+        }
+      ]
+    }
+  ],
+  "selected_candidate_id": "hybrid-v5-pass82",
+  "development_selection_passed": true,
+  "validation": null,
+  "quality_gate": {
+    "passed": true
+  },
+  "traceability": {
+    "configuration_sha256": "0361134abb41cb2f83fa04448f953e2b11b5ca7f926b0e66bcc12e55fbea8b32",
+    "reviewed_pairs_sha256": "9a6ae4b79a2c0001e43288dc3beacd68e02bc1d6ca39c26333a3addf7a01a210",
+    "offline_report_sha256": "316d49facddbe77e35d2c86a61a78f2af49dab71acb5688e0ed5978280896367",
+    "development_l3_report_sha256": "e1919c8b4ba5dd3ea6db7ce8a845d66fabbed30b0dbe5651697fbbadd3ad177d",
+    "additional_development_l3_report_sha256": [
+      "f198ddf9b0219ceef223c0bbd8998760e99ac6151b8b4487d666c912861db394"
+    ],
+    "validation_l3_report_sha256": null
+  }
+}

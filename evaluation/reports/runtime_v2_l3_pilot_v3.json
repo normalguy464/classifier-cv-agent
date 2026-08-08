@@ -1,0 +1,84 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "runtime-v2-l3-pilot-v3",
+  "generated_at": "2026-08-08T16:30:00+07:00",
+  "provider_identifier": "openai",
+  "model_identifier": "gpt-5.4-mini-2026-03-17",
+  "prompt_version": "l3-evidence-rubric-v14",
+  "request_count": 5,
+  "valid_output_count": 5,
+  "valid_output_rate": 1.0,
+  "requirement_status_match_rate": 1.0,
+  "unsafe_requirement_status_mismatch_count": 0,
+  "criterion_mae": 2.5,
+  "total_score_mae": 10.3,
+  "endpoint_score_rate": 0.08,
+  "estimated_cost_usd": "0.0450202",
+  "quality_gate": {
+    "passed": true,
+    "checks": {
+      "valid_output_rate": true,
+      "requirement_status_match_rate": true,
+      "unsafe_requirement_status_mismatch_count": true,
+      "criterion_mae": true,
+      "total_score_mae": true,
+      "endpoint_score_rate": true,
+      "estimated_cost": true
+    }
+  },
+  "cases": [
+    {
+      "pair_id": "v2d-pair-da-06",
+      "role": "data_analyst",
+      "human_total_score": 76.0,
+      "l3_total_score": 71.0,
+      "requirement_matches": 4,
+      "requirement_count": 4
+    },
+    {
+      "pair_id": "v2d-pair-be-05",
+      "role": "python_backend",
+      "human_total_score": 66.0,
+      "l3_total_score": 60.5,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-fe-07",
+      "role": "frontend",
+      "human_total_score": 57.0,
+      "l3_total_score": 49.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-qa-13",
+      "role": "qa_engineer",
+      "human_total_score": 45.0,
+      "l3_total_score": 23.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    },
+    {
+      "pair_id": "v2d-pair-de-14",
+      "role": "data_engineer",
+      "human_total_score": 89.0,
+      "l3_total_score": 78.0,
+      "requirement_matches": 5,
+      "requirement_count": 5
+    }
+  ],
+  "data_policy": {
+    "development_only": true,
+    "validation_allowed": false,
+    "stage7_v1_test_allowed": false,
+    "raw_provider_response_persisted": false
+  },
+  "traceability": {
+    "configuration_sha256": "d1eb5d0e7aba480b7bb464ac8a7f54765bd693d8dafb1fe1a02a4064bd41b5e1",
+    "reviewed_manifest_sha256": "7a61f45395b7a7ed0be0e957ff7790473b35ca0a7baae4f66e0ef6079f24317a",
+    "split_manifest_sha256": "3711c4735fc51970a62c76e925ba8bce3696eaaf078b7d583b5393acefcfd4dd",
+    "offline_checkpoint_sha256": "316d49facddbe77e35d2c86a61a78f2af49dab71acb5688e0ed5978280896367",
+    "raw_provider_response_persisted": false
+  }
+}

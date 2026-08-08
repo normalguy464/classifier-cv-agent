@@ -1,0 +1,52 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "runtime-v2-l3-pilot-v1",
+  "generated_at": "2026-08-08T10:20:00+07:00",
+  "provider_identifier": "openai",
+  "model_identifier": "gpt-5.4-mini-2026-03-17",
+  "prompt_version": "l3-evidence-rubric-v12",
+  "request_count": 2,
+  "valid_output_count": 1,
+  "valid_output_rate": 0.2,
+  "requirement_status_match_rate": 0.75,
+  "unsafe_requirement_status_mismatch_count": 1,
+  "criterion_mae": 3.6,
+  "total_score_mae": 6.0,
+  "endpoint_score_rate": 0.0,
+  "estimated_cost_usd": "0.0096270",
+  "quality_gate": {
+    "passed": false,
+    "checks": {
+      "valid_output_rate": false,
+      "requirement_status_match_rate": false,
+      "unsafe_requirement_status_mismatch_count": false,
+      "criterion_mae": false,
+      "total_score_mae": true,
+      "endpoint_score_rate": true,
+      "estimated_cost": true
+    }
+  },
+  "cases": [
+    {
+      "pair_id": "v2d-pair-da-06",
+      "role": "data_analyst",
+      "human_total_score": 76.0,
+      "l3_total_score": 70.0,
+      "requirement_matches": 3,
+      "requirement_count": 4
+    }
+  ],
+  "data_policy": {
+    "development_only": true,
+    "validation_allowed": false,
+    "stage7_v1_test_allowed": false,
+    "raw_provider_response_persisted": false
+  },
+  "traceability": {
+    "configuration_sha256": "09b6f4515df022294315d7516e6b1d6f768b0469fdd2de361760b4128a186381",
+    "reviewed_manifest_sha256": "7a61f45395b7a7ed0be0e957ff7790473b35ca0a7baae4f66e0ef6079f24317a",
+    "split_manifest_sha256": "3711c4735fc51970a62c76e925ba8bce3696eaaf078b7d583b5393acefcfd4dd",
+    "offline_checkpoint_sha256": "316d49facddbe77e35d2c86a61a78f2af49dab71acb5688e0ed5978280896367",
+    "raw_provider_response_persisted": false
+  }
+}

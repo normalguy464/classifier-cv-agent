@@ -1,0 +1,62 @@
+{
+  "schema_version": "1.0.0",
+  "dataset_id": "five-role-runtime-v2-development-v1-reviewed-silver",
+  "dataset_version": "1.1.0",
+  "status": "human_reviewed_silver",
+  "reviewed_at": "2026-08-08T00:50:37.049205+07:00",
+  "source_dataset_id": "five-role-runtime-v2-development-v1",
+  "source_dataset_version": "1.0.0",
+  "source_manifest_sha256": "1ed97277ebb9df91087a9b22330e03ad73abfcd1abf7703555698f2419a0a161",
+  "reviewer_references": [
+    "reviewer-user-runtime-v2"
+  ],
+  "roles": [
+    "data_analyst",
+    "python_backend",
+    "frontend",
+    "qa_engineer",
+    "data_engineer"
+  ],
+  "cv_profile_count": 75,
+  "job_profile_count": 5,
+  "rubric_count": 5,
+  "pair_count": 75,
+  "tier": "silver",
+  "ground_truth_status": "human_reviewed_silver",
+  "split_status": "unassigned",
+  "classifier_results_generated": false,
+  "llm_requests_made": false,
+  "provenance": [
+    "Synthetic capability-focused development data created after runtime v1 final evaluation.",
+    "Stage 7 v1 case text and labels are excluded from tuning and are used only as a prior leakage source.",
+    "Draft annotations require explicit human approval before development or validation use.",
+    "All 75 draft annotations were approved unchanged by one pseudonymous human reviewer."
+  ],
+  "files": [
+    {
+      "path": "cv_profiles.jsonl",
+      "sha256": "fda97583e0c73bbd589ad95e906154cfb6d4c105d14ac782507735d6c2a342f9",
+      "record_count": 75
+    },
+    {
+      "path": "job_profiles.jsonl",
+      "sha256": "bfaa078bc2a0372d55740c4eef86f418f9679495ad54905f3a6490f140c85a2e",
+      "record_count": 5
+    },
+    {
+      "path": "rubrics.jsonl",
+      "sha256": "8e1210558f7c9216b55888101e2ac9a28e81d94ebdda3df4aa6e4135d8ae8a5d",
+      "record_count": 5
+    },
+    {
+      "path": "pairs.jsonl",
+      "sha256": "9a6ae4b79a2c0001e43288dc3beacd68e02bc1d6ca39c26333a3addf7a01a210",
+      "record_count": 75
+    },
+    {
+      "path": "review_record.json",
+      "sha256": "c2529faae1465108f230453b639372c867a0e257bd0fca114c66d87e04acada1",
+      "record_count": 1
+    }
+  ]
+}

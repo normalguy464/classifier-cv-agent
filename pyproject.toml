@@ -1,0 +1,44 @@
+[project]
+name = "ai-classifier-agent"
+version = "0.1.0"
+description = "Evidence-grounded hybrid recruitment classifier with human review."
+requires-python = ">=3.12,<3.13"
+dependencies = [
+  "alembic>=1.14.0,<2.0.0",
+  "fastapi>=0.115.0,<1.0.0",
+  "httpx>=0.28.0,<1.0.0",
+  "langgraph>=0.2.0,<2.0.0",
+  "numpy>=2.0.0,<3.0.0",
+  "pandas>=2.2.0,<4.0.0",
+  "pydantic>=2.13.4,<3.0.0",
+  "pydantic-settings>=2.7.0,<3.0.0",
+  "pgvector>=0.3.6,<1.0.0",
+  "psycopg[binary]>=3.2.0,<4.0.0",
+  "pyyaml>=6.0.2,<7.0.0",
+  "scikit-learn>=1.6.0,<2.0.0",
+  "sentence-transformers>=3.3.0,<6.0.0",
+  "sqlalchemy>=2.0.36,<3.0.0",
+  "uvicorn[standard]>=0.34.0,<1.0.0",
+]
+
+[dependency-groups]
+dev = [
+  "pytest-asyncio>=0.25.0,<2.0.0",
+  "pyright>=1.1.408,<2.0.0",
+  "pytest>=9.0.2,<10.0.0",
+  "ruff>=0.15.1,<0.16.0",
+]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["."]
+asyncio_mode = "auto"
+
+[tool.ruff]
+line-length = 100
+target-version = "py312"
+
+[tool.pyright]
+include = ["backend", "evaluation", "scripts"]
+pythonVersion = "3.12"
+typeCheckingMode = "strict"

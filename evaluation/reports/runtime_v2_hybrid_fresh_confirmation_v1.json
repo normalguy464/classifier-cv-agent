@@ -1,0 +1,150 @@
+{
+  "schema_version": "1.0.0",
+  "report_id": "runtime-v2-hybrid-fresh-confirmation-v1",
+  "generated_at": "2026-08-08T22:30:00+07:00",
+  "development_selection_performed": false,
+  "validation_accessed": false,
+  "llm_provider_calls_made": false,
+  "stage7_v1_test_accessed": false,
+  "selected_candidate_id": "hybrid-v2-20-30-50",
+  "confirmation": {
+    "candidate_id": "hybrid-v2-20-30-50",
+    "sample_count": 10,
+    "accuracy": 0.6,
+    "macro_f1": 0.21428571428571427,
+    "cohen_kappa": 0.23076923076923078,
+    "needs_review_recall": 1.0,
+    "review_rate": 0.8,
+    "false_reject_count": 0,
+    "false_reject_case_ids": [],
+    "unsafe_pass_count": 0,
+    "unsafe_pass_case_ids": [],
+    "confusion_matrix": [
+      [
+        0,
+        2,
+        0,
+        2
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        0
+      ],
+      [
+        0,
+        0,
+        0,
+        6
+      ]
+    ],
+    "cases": [
+      {
+        "pair_id": "v2d-pair-be-02",
+        "expected_label": "pass",
+        "predicted_label": "waitlist",
+        "final_score": 75.97,
+        "review_reasons": []
+      },
+      {
+        "pair_id": "v2d-pair-be-06",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 72.07,
+        "review_reasons": [
+          "conflicting-critical-evidence"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-05",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 65.96,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-da-14",
+        "expected_label": "pass",
+        "predicted_label": "needs_review",
+        "final_score": 84.28,
+        "review_reasons": [
+          "upper-threshold-boundary"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-06",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 67.57,
+        "review_reasons": [
+          "conflicting-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-de-15",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 71.38,
+        "review_reasons": [
+          "lower-threshold-boundary"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-10",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 65.57,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-fe-14",
+        "expected_label": "pass",
+        "predicted_label": "waitlist",
+        "final_score": 80.22,
+        "review_reasons": []
+      },
+      {
+        "pair_id": "v2d-pair-qa-05",
+        "expected_label": "needs_review",
+        "predicted_label": "needs_review",
+        "final_score": 66.54,
+        "review_reasons": [
+          "missing-critical-evidence",
+          "low-score-without-explicit-critical-unsatisfied"
+        ]
+      },
+      {
+        "pair_id": "v2d-pair-qa-14",
+        "expected_label": "pass",
+        "predicted_label": "needs_review",
+        "final_score": 84.91,
+        "review_reasons": [
+          "upper-threshold-boundary"
+        ]
+      }
+    ]
+  },
+  "quality_gate": {
+    "passed": false
+  },
+  "traceability": {
+    "configuration_sha256": "6c33c8999ddd5e5ff0b8089e140857d4b29067d04a3bf84667812107b3aa26ce",
+    "reviewed_pairs_sha256": "9a6ae4b79a2c0001e43288dc3beacd68e02bc1d6ca39c26333a3addf7a01a210",
+    "offline_report_sha256": "316d49facddbe77e35d2c86a61a78f2af49dab71acb5688e0ed5978280896367",
+    "fresh_l3_report_sha256": "f198ddf9b0219ceef223c0bbd8998760e99ac6151b8b4487d666c912861db394"
+  }
+}

@@ -1,0 +1,67 @@
+schema_version: 1.0.0
+experiment_id: synthetic-expansion-v2-openrouter-l3-validation-v14
+experiment_version: 14.0.0
+dataset_id: synthetic-cv-jd-expansion-v2-reviewed-silver
+dataset_version: 2.1.0
+development_partition_id: synthetic-expansion-v2-development-silver
+held_out_partition_id: synthetic-expansion-v2-held-out-silver
+provider_identifier: openrouter
+model_identifier: qwen/qwen3-next-80b-a3b-instruct:free
+prompt_version: l3-evidence-rubric-v3
+l2_candidate_set_id: synthetic-expansion-v2-l2-development-candidates-v1
+l2_candidate_set_version: 1.1.0
+l2_candidate_id: coverage-70-95-v1
+billing_tier_assumption: free_variant
+data_policy:
+  development_only: true
+  held_out_allowed: false
+  original_frozen_test_allowed: false
+  raw_provider_response_persisted: false
+request_policy:
+  hard_request_cap: 40
+  minimum_request_interval_seconds: 4
+  maximum_invalid_retries_per_attempt: 1
+  require_supported_parameters: false
+  response_healing_enabled: false
+primary_pair_ids:
+  - pair-da-strong-std
+  - pair-be-strong-std
+  - pair-fe-strong-std
+  - pair-qa-strong-std
+  - pair-de-strong-std
+  - pair-da-upbd-std
+  - pair-be-moderate-std
+  - pair-fe-solid-std
+  - pair-qa-moderate-std
+  - pair-de-moderate-std
+  - pair-da-lowbd-std
+  - pair-be-failed-std
+  - pair-fe-upbd-std
+  - pair-qa-failed-std
+  - pair-de-lowbd-std
+  - pair-da-missing-std
+  - pair-be-hardneg-std
+  - pair-fe-conflict-std
+  - pair-qa-conflict-std
+  - pair-de-missing-std
+  - pair-da-hardneg-std
+  - pair-be-upbd-std
+  - pair-fe-hardneg-std
+  - pair-qa-hardneg-std
+  - pair-de-hardneg-std
+stability:
+  pair_ids:
+    - pair-da-strong-std
+    - pair-be-failed-std
+    - pair-fe-conflict-std
+    - pair-qa-moderate-std
+    - pair-de-missing-std
+  total_attempts_per_pair: 2
+quality_policy:
+  required_primary_valid_output_rate: 1.0
+  required_requirement_status_match_rate: 1.0
+  maximum_stability_score_range: 10
+  required_stability_requirement_agreement_rate: 1.0
+  maximum_endpoint_score_rate: 0.4
+  maximum_criterion_mean_absolute_error: 3.5
+  maximum_total_score_mean_absolute_error: 12
