@@ -138,7 +138,7 @@ Lần phân loại đầu tiên có thể tải snapshot `intfloat/multilingual-
 PowerShell thứ nhất, backend offline:
 
 ```powershell
-Set-Location D:\graduation_project\Classifier_agent_code
+Set-Location D:\graduation_project\Classifier_agent_code\classifier_agent
 $env:CLASSIFIER_LLM_ADAPTER="deterministic_fake"
 uv run uvicorn backend.app.main:app --reload --port 8000
 ```
@@ -146,7 +146,7 @@ uv run uvicorn backend.app.main:app --reload --port 8000
 PowerShell thứ hai, backend LLM:
 
 ```powershell
-Set-Location D:\graduation_project\Classifier_agent_code
+Set-Location D:\graduation_project\Classifier_agent_code\classifier_agent
 $env:CLASSIFIER_LLM_ADAPTER="environment_configured"
 uv run uvicorn backend.app.main:app --reload --port 8001
 ```
